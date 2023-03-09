@@ -1,5 +1,5 @@
-CMakeFiles/Kamil.dir/src/kamil.cpp.o: \
- /home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp \
+CMakeFiles/Kamil.dir/src/App.cpp.o: \
+ /home/alan/top_secret/cpp/NEA/Kamil/src/App.cpp \
  /usr/include/stdc-predef.h \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/App.h \
  /usr/local/include/SFML/System/Time.hpp \

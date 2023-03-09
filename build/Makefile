@@ -174,29 +174,29 @@ Kamil/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/build
 .PHONY : Kamil/fast
 
-src/Window.o: src/Window.cpp.o
-.PHONY : src/Window.o
+src/App.o: src/App.cpp.o
+.PHONY : src/App.o
 
 # target to build an object file
-src/Window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/Window.cpp.o
-.PHONY : src/Window.cpp.o
+src/App.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/App.cpp.o
+.PHONY : src/App.cpp.o
 
-src/Window.i: src/Window.cpp.i
-.PHONY : src/Window.i
+src/App.i: src/App.cpp.i
+.PHONY : src/App.i
 
 # target to preprocess a source file
-src/Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/Window.cpp.i
-.PHONY : src/Window.cpp.i
+src/App.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/App.cpp.i
+.PHONY : src/App.cpp.i
 
-src/Window.s: src/Window.cpp.s
-.PHONY : src/Window.s
+src/App.s: src/App.cpp.s
+.PHONY : src/App.s
 
 # target to generate assembly for a file
-src/Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/Window.cpp.s
-.PHONY : src/Window.cpp.s
+src/App.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/App.cpp.s
+.PHONY : src/App.cpp.s
 
 src/kamil.o: src/kamil.cpp.o
 .PHONY : src/kamil.o
@@ -235,9 +235,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... Kamil"
-	@echo "... src/Window.o"
-	@echo "... src/Window.i"
-	@echo "... src/Window.s"
+	@echo "... src/App.o"
+	@echo "... src/App.i"
+	@echo "... src/App.s"
 	@echo "... src/kamil.o"
 	@echo "... src/kamil.i"
 	@echo "... src/kamil.s"

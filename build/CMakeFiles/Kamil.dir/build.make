@@ -83,30 +83,30 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kamil.dir/src/kamil.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp -o CMakeFiles/Kamil.dir/src/kamil.cpp.s
 
-CMakeFiles/Kamil.dir/src/Window.cpp.o: CMakeFiles/Kamil.dir/flags.make
-CMakeFiles/Kamil.dir/src/Window.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/Window.cpp
-CMakeFiles/Kamil.dir/src/Window.cpp.o: CMakeFiles/Kamil.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Kamil.dir/src/Window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Kamil.dir/src/Window.cpp.o -MF CMakeFiles/Kamil.dir/src/Window.cpp.o.d -o CMakeFiles/Kamil.dir/src/Window.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Window.cpp
+CMakeFiles/Kamil.dir/src/App.cpp.o: CMakeFiles/Kamil.dir/flags.make
+CMakeFiles/Kamil.dir/src/App.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/App.cpp
+CMakeFiles/Kamil.dir/src/App.cpp.o: CMakeFiles/Kamil.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Kamil.dir/src/App.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Kamil.dir/src/App.cpp.o -MF CMakeFiles/Kamil.dir/src/App.cpp.o.d -o CMakeFiles/Kamil.dir/src/App.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/App.cpp
 
-CMakeFiles/Kamil.dir/src/Window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kamil.dir/src/Window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alan/top_secret/cpp/NEA/Kamil/src/Window.cpp > CMakeFiles/Kamil.dir/src/Window.cpp.i
+CMakeFiles/Kamil.dir/src/App.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kamil.dir/src/App.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alan/top_secret/cpp/NEA/Kamil/src/App.cpp > CMakeFiles/Kamil.dir/src/App.cpp.i
 
-CMakeFiles/Kamil.dir/src/Window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kamil.dir/src/Window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/top_secret/cpp/NEA/Kamil/src/Window.cpp -o CMakeFiles/Kamil.dir/src/Window.cpp.s
+CMakeFiles/Kamil.dir/src/App.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kamil.dir/src/App.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/top_secret/cpp/NEA/Kamil/src/App.cpp -o CMakeFiles/Kamil.dir/src/App.cpp.s
 
 # Object files for target Kamil
 Kamil_OBJECTS = \
 "CMakeFiles/Kamil.dir/src/kamil.cpp.o" \
-"CMakeFiles/Kamil.dir/src/Window.cpp.o"
+"CMakeFiles/Kamil.dir/src/App.cpp.o"
 
 # External object files for target Kamil
 Kamil_EXTERNAL_OBJECTS =
 
 Kamil: CMakeFiles/Kamil.dir/src/kamil.cpp.o
-Kamil: CMakeFiles/Kamil.dir/src/Window.cpp.o
+Kamil: CMakeFiles/Kamil.dir/src/App.cpp.o
 Kamil: CMakeFiles/Kamil.dir/build.make
 Kamil: /usr/lib/libOpenGL.so
 Kamil: /usr/lib/libGLX.so
