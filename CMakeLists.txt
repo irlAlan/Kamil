@@ -22,7 +22,7 @@ find_package(OpenGL REQUIRED)
 
 add_executable(${PROJECT_NAME}
         ./src/kamil.cpp
-        ./src/Window.cpp
+        ./src/App.cpp
     )
 
 # Allows us to use <> when including files

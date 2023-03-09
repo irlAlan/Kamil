@@ -1,7 +1,8 @@
-#include "Kamil/kamil.h"
+#include <Kamil/App.h>
 
 int main()
 {
-    Kamil k{};
+    App kam{500,500};
+    kam.run();
     return 0;
 }
