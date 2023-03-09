@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Kamil.dir/src/kamil.cpp.o CMakeFiles/Kamil.dir/src/Window.cpp.o -o Kamil  -Wl,-rpath,/usr/local/lib: /usr/lib/libOpenGL.so /usr/lib/libGLX.so /usr/lib/libGLU.so /usr/local/lib/libsfml-graphics.so.2.5.1 /usr/local/lib/libsfml-window.so.2.5.1 /usr/local/lib/libsfml-system.so.2.5.1 

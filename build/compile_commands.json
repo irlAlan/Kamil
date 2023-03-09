@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/kamil.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp",
+  "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp"
+},
+{
+  "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/Window.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Window.cpp",
+  "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/Window.cpp"
+}
+]

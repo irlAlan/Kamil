@@ -1,0 +1,7 @@
+/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles/Kamil.dir
+/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles/edit_cache.dir
+/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles/rebuild_cache.dir
+/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles/list_install_components.dir
+/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles/install.dir
+/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles/install/local.dir
+/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles/install/strip.dir
