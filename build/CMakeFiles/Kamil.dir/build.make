@@ -83,30 +83,46 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kamil.dir/src/kamil.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp -o CMakeFiles/Kamil.dir/src/kamil.cpp.s
 
-CMakeFiles/Kamil.dir/src/App.cpp.o: CMakeFiles/Kamil.dir/flags.make
-CMakeFiles/Kamil.dir/src/App.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/App.cpp
-CMakeFiles/Kamil.dir/src/App.cpp.o: CMakeFiles/Kamil.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Kamil.dir/src/App.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Kamil.dir/src/App.cpp.o -MF CMakeFiles/Kamil.dir/src/App.cpp.o.d -o CMakeFiles/Kamil.dir/src/App.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/App.cpp
+CMakeFiles/Kamil.dir/src/TextBox.cpp.o: CMakeFiles/Kamil.dir/flags.make
+CMakeFiles/Kamil.dir/src/TextBox.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/TextBox.cpp
+CMakeFiles/Kamil.dir/src/TextBox.cpp.o: CMakeFiles/Kamil.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Kamil.dir/src/TextBox.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Kamil.dir/src/TextBox.cpp.o -MF CMakeFiles/Kamil.dir/src/TextBox.cpp.o.d -o CMakeFiles/Kamil.dir/src/TextBox.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/TextBox.cpp
 
-CMakeFiles/Kamil.dir/src/App.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kamil.dir/src/App.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alan/top_secret/cpp/NEA/Kamil/src/App.cpp > CMakeFiles/Kamil.dir/src/App.cpp.i
+CMakeFiles/Kamil.dir/src/TextBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kamil.dir/src/TextBox.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alan/top_secret/cpp/NEA/Kamil/src/TextBox.cpp > CMakeFiles/Kamil.dir/src/TextBox.cpp.i
 
-CMakeFiles/Kamil.dir/src/App.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kamil.dir/src/App.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/top_secret/cpp/NEA/Kamil/src/App.cpp -o CMakeFiles/Kamil.dir/src/App.cpp.s
+CMakeFiles/Kamil.dir/src/TextBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kamil.dir/src/TextBox.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/top_secret/cpp/NEA/Kamil/src/TextBox.cpp -o CMakeFiles/Kamil.dir/src/TextBox.cpp.s
+
+CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o: CMakeFiles/Kamil.dir/flags.make
+CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/EditorWindow.cpp
+CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o: CMakeFiles/Kamil.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o -MF CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o.d -o CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/EditorWindow.cpp
+
+CMakeFiles/Kamil.dir/src/EditorWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kamil.dir/src/EditorWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alan/top_secret/cpp/NEA/Kamil/src/EditorWindow.cpp > CMakeFiles/Kamil.dir/src/EditorWindow.cpp.i
+
+CMakeFiles/Kamil.dir/src/EditorWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kamil.dir/src/EditorWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/top_secret/cpp/NEA/Kamil/src/EditorWindow.cpp -o CMakeFiles/Kamil.dir/src/EditorWindow.cpp.s
 
 # Object files for target Kamil
 Kamil_OBJECTS = \
 "CMakeFiles/Kamil.dir/src/kamil.cpp.o" \
-"CMakeFiles/Kamil.dir/src/App.cpp.o"
+"CMakeFiles/Kamil.dir/src/TextBox.cpp.o" \
+"CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o"
 
 # External object files for target Kamil
 Kamil_EXTERNAL_OBJECTS =
 
 Kamil: CMakeFiles/Kamil.dir/src/kamil.cpp.o
-Kamil: CMakeFiles/Kamil.dir/src/App.cpp.o
+Kamil: CMakeFiles/Kamil.dir/src/TextBox.cpp.o
+Kamil: CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o
 Kamil: CMakeFiles/Kamil.dir/build.make
 Kamil: /usr/lib/libOpenGL.so
 Kamil: /usr/lib/libGLX.so
@@ -115,7 +131,7 @@ Kamil: /usr/local/lib/libsfml-graphics.so.2.5.1
 Kamil: /usr/local/lib/libsfml-window.so.2.5.1
 Kamil: /usr/local/lib/libsfml-system.so.2.5.1
 Kamil: CMakeFiles/Kamil.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Kamil"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Kamil"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Kamil.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

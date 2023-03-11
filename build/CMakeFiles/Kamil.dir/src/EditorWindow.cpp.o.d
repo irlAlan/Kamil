@@ -1,7 +1,7 @@
-CMakeFiles/Kamil.dir/src/kamil.cpp.o: \
- /home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp \
+CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o: \
+ /home/alan/top_secret/cpp/NEA/Kamil/src/EditorWindow.cpp \
  /usr/include/stdc-predef.h \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorWindow.h \
  /usr/local/include/SFML/Graphics.hpp /usr/local/include/SFML/Window.hpp \
  /usr/local/include/SFML/System.hpp /usr/local/include/SFML/Config.hpp \
  /usr/local/include/SFML/System/Clock.hpp \
@@ -232,8 +232,8 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: \
  /usr/local/include/SFML/Graphics/Sprite.hpp \
  /usr/local/include/SFML/Graphics/Text.hpp \
  /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
  /usr/include/c++/12.2.1/sstream /usr/include/c++/12.2.1/istream \
  /usr/include/c++/12.2.1/bits/istream.tcc \
  /usr/include/c++/12.2.1/bits/sstream.tcc \
- /usr/include/c++/12.2.1/iostream \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorWindow.h
+ /usr/include/c++/12.2.1/iostream

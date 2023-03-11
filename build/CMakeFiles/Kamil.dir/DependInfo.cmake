@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/alan/top_secret/cpp/NEA/Kamil/src/App.cpp" "CMakeFiles/Kamil.dir/src/App.cpp.o" "gcc" "CMakeFiles/Kamil.dir/src/App.cpp.o.d"
+  "/home/alan/top_secret/cpp/NEA/Kamil/src/EditorWindow.cpp" "CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o" "gcc" "CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o.d"
+  "/home/alan/top_secret/cpp/NEA/Kamil/src/TextBox.cpp" "CMakeFiles/Kamil.dir/src/TextBox.cpp.o" "gcc" "CMakeFiles/Kamil.dir/src/TextBox.cpp.o.d"
   "/home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp" "CMakeFiles/Kamil.dir/src/kamil.cpp.o" "gcc" "CMakeFiles/Kamil.dir/src/kamil.cpp.o.d"
   )
 

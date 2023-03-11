@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Kamil.dir/src/App.cpp.o"
-  "CMakeFiles/Kamil.dir/src/App.cpp.o.d"
+  "CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o"
+  "CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o.d"
+  "CMakeFiles/Kamil.dir/src/TextBox.cpp.o"
+  "CMakeFiles/Kamil.dir/src/TextBox.cpp.o.d"
   "CMakeFiles/Kamil.dir/src/kamil.cpp.o"
   "CMakeFiles/Kamil.dir/src/kamil.cpp.o.d"
   "Kamil"

@@ -22,12 +22,14 @@ find_package(OpenGL REQUIRED)
 
 add_executable(${PROJECT_NAME}
         ./src/kamil.cpp
-        ./src/App.cpp
+        ./src/TextBox.cpp
+        ./src/EditorWindow.cpp
     )
 
 # Allows us to use <> when including files
 target_include_directories(${PROJECT_NAME}
     PUBLIC "include/" 
+    PUBLIC "resource/"
     PRIVATE "${PROJECT_BINARY_DIR}"
     )
 

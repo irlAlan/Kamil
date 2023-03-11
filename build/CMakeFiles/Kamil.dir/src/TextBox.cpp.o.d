@@ -1,5 +1,5 @@
-CMakeFiles/Kamil.dir/src/kamil.cpp.o: \
- /home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp \
+CMakeFiles/Kamil.dir/src/TextBox.cpp.o: \
+ /home/alan/top_secret/cpp/NEA/Kamil/src/TextBox.cpp \
  /usr/include/stdc-predef.h \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
  /usr/local/include/SFML/Graphics.hpp /usr/local/include/SFML/Window.hpp \
@@ -235,5 +235,4 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: \
  /usr/include/c++/12.2.1/sstream /usr/include/c++/12.2.1/istream \
  /usr/include/c++/12.2.1/bits/istream.tcc \
  /usr/include/c++/12.2.1/bits/sstream.tcc \
- /usr/include/c++/12.2.1/iostream \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorWindow.h
+ /usr/include/c++/12.2.1/iostream

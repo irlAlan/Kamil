@@ -174,29 +174,53 @@ Kamil/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/build
 .PHONY : Kamil/fast
 
-src/App.o: src/App.cpp.o
-.PHONY : src/App.o
+src/EditorWindow.o: src/EditorWindow.cpp.o
+.PHONY : src/EditorWindow.o
 
 # target to build an object file
-src/App.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/App.cpp.o
-.PHONY : src/App.cpp.o
+src/EditorWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/EditorWindow.cpp.o
+.PHONY : src/EditorWindow.cpp.o
 
-src/App.i: src/App.cpp.i
-.PHONY : src/App.i
+src/EditorWindow.i: src/EditorWindow.cpp.i
+.PHONY : src/EditorWindow.i
 
 # target to preprocess a source file
-src/App.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/App.cpp.i
-.PHONY : src/App.cpp.i
+src/EditorWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/EditorWindow.cpp.i
+.PHONY : src/EditorWindow.cpp.i
 
-src/App.s: src/App.cpp.s
-.PHONY : src/App.s
+src/EditorWindow.s: src/EditorWindow.cpp.s
+.PHONY : src/EditorWindow.s
 
 # target to generate assembly for a file
-src/App.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/App.cpp.s
-.PHONY : src/App.cpp.s
+src/EditorWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/EditorWindow.cpp.s
+.PHONY : src/EditorWindow.cpp.s
+
+src/TextBox.o: src/TextBox.cpp.o
+.PHONY : src/TextBox.o
+
+# target to build an object file
+src/TextBox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/TextBox.cpp.o
+.PHONY : src/TextBox.cpp.o
+
+src/TextBox.i: src/TextBox.cpp.i
+.PHONY : src/TextBox.i
+
+# target to preprocess a source file
+src/TextBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/TextBox.cpp.i
+.PHONY : src/TextBox.cpp.i
+
+src/TextBox.s: src/TextBox.cpp.s
+.PHONY : src/TextBox.s
+
+# target to generate assembly for a file
+src/TextBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/TextBox.cpp.s
+.PHONY : src/TextBox.cpp.s
 
 src/kamil.o: src/kamil.cpp.o
 .PHONY : src/kamil.o
@@ -235,9 +259,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... Kamil"
-	@echo "... src/App.o"
-	@echo "... src/App.i"
-	@echo "... src/App.s"
+	@echo "... src/EditorWindow.o"
+	@echo "... src/EditorWindow.i"
+	@echo "... src/EditorWindow.s"
+	@echo "... src/TextBox.o"
+	@echo "... src/TextBox.i"
+	@echo "... src/TextBox.s"
 	@echo "... src/kamil.o"
 	@echo "... src/kamil.i"
 	@echo "... src/kamil.s"
