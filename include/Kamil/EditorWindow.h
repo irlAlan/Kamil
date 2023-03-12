@@ -17,10 +17,13 @@
 class EditorWindow{
     public:
         EditorWindow(sf::RenderWindow&, TextBox&);
+        EditorWindow(sf::RenderWindow&, TextBox&, sf::Event&);
         void draw();
+        // void setEvents(sf::Event&);
     private:
         sf::RenderWindow* m_window;
         TextBox* m_text;
+        sf::Event* m_event;
 };
 
 
