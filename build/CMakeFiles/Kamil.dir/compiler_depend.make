@@ -592,7 +592,18 @@ CMakeFiles/Kamil.dir/src/TextBox.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/
 
 CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp \
   /usr/include/stdc-predef.h \
-  /usr/include/c++/12.2.1/iostream \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
+  /usr/local/include/SFML/Graphics.hpp \
+  /usr/local/include/SFML/Window.hpp \
+  /usr/local/include/SFML/System.hpp \
+  /usr/local/include/SFML/Config.hpp \
+  /usr/local/include/SFML/System/Clock.hpp \
+  /usr/local/include/SFML/System/Export.hpp \
+  /usr/local/include/SFML/System/Time.hpp \
+  /usr/local/include/SFML/System/Err.hpp \
+  /usr/include/c++/12.2.1/ostream \
+  /usr/include/c++/12.2.1/ios \
+  /usr/include/c++/12.2.1/iosfwd \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/features.h \
@@ -605,9 +616,6 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
   /usr/include/gnu/stubs-64.h \
   /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/12.2.1/pstl/pstl_config.h \
-  /usr/include/c++/12.2.1/ostream \
-  /usr/include/c++/12.2.1/ios \
-  /usr/include/c++/12.2.1/iosfwd \
   /usr/include/c++/12.2.1/bits/stringfwd.h \
   /usr/include/c++/12.2.1/bits/memoryfwd.h \
   /usr/include/c++/12.2.1/bits/postypes.h \
@@ -771,17 +779,6 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
   /usr/include/c++/12.2.1/bits/locale_facets.tcc \
   /usr/include/c++/12.2.1/bits/basic_ios.tcc \
   /usr/include/c++/12.2.1/bits/ostream.tcc \
-  /usr/include/c++/12.2.1/istream \
-  /usr/include/c++/12.2.1/bits/istream.tcc \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorWindow.h \
-  /usr/local/include/SFML/Graphics.hpp \
-  /usr/local/include/SFML/Window.hpp \
-  /usr/local/include/SFML/System.hpp \
-  /usr/local/include/SFML/Config.hpp \
-  /usr/local/include/SFML/System/Clock.hpp \
-  /usr/local/include/SFML/System/Export.hpp \
-  /usr/local/include/SFML/System/Time.hpp \
-  /usr/local/include/SFML/System/Err.hpp \
   /usr/local/include/SFML/System/FileInputStream.hpp \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/NonCopyable.hpp \
@@ -881,9 +878,12 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
   /usr/local/include/SFML/Graphics/Sprite.hpp \
   /usr/local/include/SFML/Graphics/Text.hpp \
   /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
   /usr/include/c++/12.2.1/sstream \
-  /usr/include/c++/12.2.1/bits/sstream.tcc
+  /usr/include/c++/12.2.1/istream \
+  /usr/include/c++/12.2.1/bits/istream.tcc \
+  /usr/include/c++/12.2.1/bits/sstream.tcc \
+  /usr/include/c++/12.2.1/iostream \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorWindow.h
 
 
 /home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp:
