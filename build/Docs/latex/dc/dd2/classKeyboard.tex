@@ -1,0 +1,208 @@
+\hypertarget{classKeyboard}{}\doxysection{Keyboard Class Reference}
+\label{classKeyboard}\index{Keyboard@{Keyboard}}
+
+
+A class to handle \mbox{\hyperlink{classKeyboard}{Keyboard}} input.  
+
+
+
+
+{\ttfamily \#include $<$Keyboard.\+h$>$}
+
+
+
+Collaboration diagram for Keyboard\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classKeyboard_a6f2c2dc64bea58149a78e7056bfd8f85}{Keyboard}} (sf\+::\+Render\+Window $\ast$, sf\+::\+Vector2f)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classKeyboard}{Keyboard}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classKeyboard_adeefc0fbd6da98d1ce45f3ebdff58af5}{is\+Key\+Pressed}} (sf\+::\+Keyboard\+::\+Key)
+\begin{DoxyCompactList}\small\item\em checks if a key is pressed \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classKeyboard_a7e60951ef40673ec9a03ab57815e9981}{is\+Text\+Entered}} ()
+\begin{DoxyCompactList}\small\item\em checks if a text is entered \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classKeyboard_ad0df3d61c6cd369177379b9d051402bd}{is\+Text\+Deleted}} ()
+\begin{DoxyCompactList}\small\item\em check if text is being deleted \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classKeyboard_ad7fce631b48c46c4fbe0428abfda74fc}{get\+Text\+Entered}} ()
+\begin{DoxyCompactList}\small\item\em returns text entered \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyboard_a8d6e7d2493b27ec4dff9293a555e5c8e}{set\+Text\+Entered}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em sets text \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classKeyboard_af30d4f01cf85e3511c5aac5d60862632}{get\+Bounds}} () const
+\begin{DoxyCompactList}\small\item\em get the bounds of the area we are in \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyboard_aa1a7684a8cdd57383590ca287b251e7d}{back\+Space}} ()
+\begin{DoxyCompactList}\small\item\em when we backspace on teh text \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyboard_a3075fffc882ce1a1639103bd9af35f59}{handle\+Event}} (sf\+::\+Event \&event)
+\begin{DoxyCompactList}\small\item\em handle keyboard events \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{classKeyboard_a90f55d2a92e75ef0a65db349cd7eeb80}{window}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classKeyboard_ae8a954666b158a370365919fcb8151b8}{bounds}}
+\item 
+std\+::string \mbox{\hyperlink{classKeyboard_a971290f8bf8b381a893d2f52632043f5}{t\+Entered}}
+\item 
+std\+::string \mbox{\hyperlink{classKeyboard_ac5a5f4aae8cd9cd3c64ff3862471d910}{t\+Deleted}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to handle \mbox{\hyperlink{classKeyboard}{Keyboard}} input. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKeyboard_a6f2c2dc64bea58149a78e7056bfd8f85}\label{classKeyboard_a6f2c2dc64bea58149a78e7056bfd8f85}} 
+\index{Keyboard@{Keyboard}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{Keyboard()}{Keyboard()}}
+{\footnotesize\ttfamily Keyboard\+::\+Keyboard (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{,  }\item[{sf\+::\+Vector2f}]{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classKeyboard}{Keyboard}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & -\/ reference to main window \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classKeyboard_aa1a7684a8cdd57383590ca287b251e7d}\label{classKeyboard_aa1a7684a8cdd57383590ca287b251e7d}} 
+\index{Keyboard@{Keyboard}!backSpace@{backSpace}}
+\index{backSpace@{backSpace}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{backSpace()}{backSpace()}}
+{\footnotesize\ttfamily void Keyboard\+::back\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+when we backspace on teh text 
+
+\mbox{\Hypertarget{classKeyboard_af30d4f01cf85e3511c5aac5d60862632}\label{classKeyboard_af30d4f01cf85e3511c5aac5d60862632}} 
+\index{Keyboard@{Keyboard}!getBounds@{getBounds}}
+\index{getBounds@{getBounds}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{getBounds()}{getBounds()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Keyboard\+::get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the bounds of the area we are in 
+
+\begin{DoxyReturn}{Returns}
+sf\+::\+Vector2f bounded area 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKeyboard_ad7fce631b48c46c4fbe0428abfda74fc}\label{classKeyboard_ad7fce631b48c46c4fbe0428abfda74fc}} 
+\index{Keyboard@{Keyboard}!getTextEntered@{getTextEntered}}
+\index{getTextEntered@{getTextEntered}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{getTextEntered()}{getTextEntered()}}
+{\footnotesize\ttfamily std\+::string Keyboard\+::get\+Text\+Entered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns text entered 
+
+\begin{DoxyReturn}{Returns}
+std\+::string text entered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKeyboard_a3075fffc882ce1a1639103bd9af35f59}\label{classKeyboard_a3075fffc882ce1a1639103bd9af35f59}} 
+\index{Keyboard@{Keyboard}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily void Keyboard\+::handle\+Event (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+handle keyboard events 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & -\/ to get text entered from events \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKeyboard_adeefc0fbd6da98d1ce45f3ebdff58af5}\label{classKeyboard_adeefc0fbd6da98d1ce45f3ebdff58af5}} 
+\index{Keyboard@{Keyboard}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool Keyboard\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{ }\end{DoxyParamCaption})}
+
+
+
+checks if a key is pressed 
+
+\begin{DoxyReturn}{Returns}
+bool true if key is pressed false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKeyboard_ad0df3d61c6cd369177379b9d051402bd}\label{classKeyboard_ad0df3d61c6cd369177379b9d051402bd}} 
+\index{Keyboard@{Keyboard}!isTextDeleted@{isTextDeleted}}
+\index{isTextDeleted@{isTextDeleted}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{isTextDeleted()}{isTextDeleted()}}
+{\footnotesize\ttfamily bool Keyboard\+::is\+Text\+Deleted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if text is being deleted 
+
+\begin{DoxyReturn}{Returns}
+bool true if text is being deleted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKeyboard_a7e60951ef40673ec9a03ab57815e9981}\label{classKeyboard_a7e60951ef40673ec9a03ab57815e9981}} 
+\index{Keyboard@{Keyboard}!isTextEntered@{isTextEntered}}
+\index{isTextEntered@{isTextEntered}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{isTextEntered()}{isTextEntered()}}
+{\footnotesize\ttfamily bool Keyboard\+::is\+Text\+Entered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+checks if a text is entered 
+
+\begin{DoxyReturn}{Returns}
+bool true if key is pressed false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKeyboard_a8d6e7d2493b27ec4dff9293a555e5c8e}\label{classKeyboard_a8d6e7d2493b27ec4dff9293a555e5c8e}} 
+\index{Keyboard@{Keyboard}!setTextEntered@{setTextEntered}}
+\index{setTextEntered@{setTextEntered}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{setTextEntered()}{setTextEntered()}}
+{\footnotesize\ttfamily void Keyboard\+::set\+Text\+Entered (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+sets text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nstring} & -\/ new string \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classKeyboard_ae8a954666b158a370365919fcb8151b8}\label{classKeyboard_ae8a954666b158a370365919fcb8151b8}} 
+\index{Keyboard@{Keyboard}!bounds@{bounds}}
+\index{bounds@{bounds}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Keyboard\+::bounds\hspace{0.3cm}{\ttfamily [private]}}
+
+store the bounded area \mbox{\Hypertarget{classKeyboard_ac5a5f4aae8cd9cd3c64ff3862471d910}\label{classKeyboard_ac5a5f4aae8cd9cd3c64ff3862471d910}} 
+\index{Keyboard@{Keyboard}!tDeleted@{tDeleted}}
+\index{tDeleted@{tDeleted}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{tDeleted}{tDeleted}}
+{\footnotesize\ttfamily std\+::string Keyboard\+::t\+Deleted\hspace{0.3cm}{\ttfamily [private]}}
+
+the text deleted \mbox{\Hypertarget{classKeyboard_a971290f8bf8b381a893d2f52632043f5}\label{classKeyboard_a971290f8bf8b381a893d2f52632043f5}} 
+\index{Keyboard@{Keyboard}!tEntered@{tEntered}}
+\index{tEntered@{tEntered}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{tEntered}{tEntered}}
+{\footnotesize\ttfamily std\+::string Keyboard\+::t\+Entered\hspace{0.3cm}{\ttfamily [private]}}
+
+the text entered \mbox{\Hypertarget{classKeyboard_a90f55d2a92e75ef0a65db349cd7eeb80}\label{classKeyboard_a90f55d2a92e75ef0a65db349cd7eeb80}} 
+\index{Keyboard@{Keyboard}!window@{window}}
+\index{window@{window}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ Keyboard\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+refernce to window 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Kamil/\mbox{\hyperlink{Keyboard_8h}{Keyboard.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{TextBox_8h_source}{}\doxysection{Text\+Box.\+h}
+\label{TextBox_8h_source}\index{include/Kamil/TextBox.h@{include/Kamil/TextBox.h}}
+\mbox{\hyperlink{TextBox_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KAMIL\_TEXTBOX\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KAMIL\_TEXTBOX\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Color.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Drawable.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Font.hpp>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RectangleShape.hpp>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderStates.hpp>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderTarget.hpp>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderWindow.hpp>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Text.hpp>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <SFML/Window/Keyboard.hpp>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Keyboard_8h}{Keyboard.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MyRect_8h}{MyRect.h}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ TODO:}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Make\ a\ RectangleShape\ that\ acts\ as\ the\ bounds\ of\ the\ TextBox}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \ \ then\ add\ limits\ to\ the\ textbox\ so\ it\ stays\ in\ the\ limits}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Add\ the\ Keybord\ manager\ class\ here\ and\ use\ its\ methods}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ \ \ \ \ \ \ to\ handle\ the\ key\ events}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTextBox}{TextBox}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classMyRect}{MyRect}}}
+\DoxyCodeLine{00039\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextBox_a7d42208d5cb0cdb21b822af53da4aab0}{TextBox}}(sf::RenderWindow*,\ sf::Vector2f,\ sf::Vector2f,\ std::string,\ \textcolor{keywordtype}{int},\ sf::Color,\ sf::Color,\ \textcolor{keywordtype}{float});}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_a8059aa2490a7b8c3e9aa9a7865d13f2b}{setTextSize}}(\textcolor{keywordtype}{int});\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTextBox_aeb94b749199642bb10b168dce2560502}{getTextSize}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_aacc2157fe5f64f4c63ba6f8c29bd1d9a}{setTextColour}}(sf::Color);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ sf::Color\ \mbox{\hyperlink{classTextBox_aca392ca5ef3966761e6279f2239f23fe}{getTextColour}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_a869edcef24e87c5008eb3ed88271256c}{setFont}}(sf::Font\&);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ sf::Text\ \mbox{\hyperlink{classTextBox_a78c37f8453105f1c044ecd2c03bf7ae6}{getTextBox}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_ab09dbec80385d180c43c14e11d24ef1c}{deleteChar}}();}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_a1fde06b82de152b1555e36a8d285a88d}{enterPress}}();}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_a3739d491e8c1d2151e686c2e0b507877}{setString}}(std::string);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classTextBox_a3cf46750f94b668e6c338334c9deefbb}{getString}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_a9b58260a30644338453856b8e8652d62}{draw}}(sf::RenderTarget\&\ target,\ sf::RenderStates\ states)\textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classTextBox_a2b8a490293ae7f522091b2b690d5bf13}{isMouseHover}}();}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ sf::RenderWindow*\ \mbox{\hyperlink{classTextBox_a742324ac5a95df153f2df064cd06df75}{window}};\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ sf::Text\ \mbox{\hyperlink{classTextBox_a2406f7db801cda6fd44875062a5f3d4e}{tbox}}\{\};\ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ sf::Font\ \mbox{\hyperlink{classTextBox_a2ab6b534d788191784115d891a4bc2f7}{font}}\{\};\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classTextBox_aba3bb93bd63568f63bcdec6c1c79d28c}{fname}}\{\};\ }
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTextBox_a29d2a814bf7d164b61a387cf078a56e8}{fsize}}\{\};\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ sf::Color\ \mbox{\hyperlink{classTextBox_a75f6b5783e47dcd456fbdba2da186373}{fcol}}\{\};\ }
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classTextBox_abd72a5930ce6ccc08a88a635f564e68e}{mouseHover}};}
+\DoxyCodeLine{00133\ \};}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KAMIL\_TEXTBOX\_HPP}}
+
+\end{DoxyCode}

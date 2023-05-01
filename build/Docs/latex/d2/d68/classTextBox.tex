@@ -1,0 +1,343 @@
+\hypertarget{classTextBox}{}\doxysection{Text\+Box Class Reference}
+\label{classTextBox}\index{TextBox@{TextBox}}
+
+
+A class that makes a Textbox in SFML.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Box.\+h$>$}
+
+
+
+Inheritance diagram for Text\+Box\+:
+% FIG 0
+
+
+Collaboration diagram for Text\+Box\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTextBox_a7d42208d5cb0cdb21b822af53da4aab0}{Text\+Box}} (sf\+::\+Render\+Window $\ast$, sf\+::\+Vector2f, sf\+::\+Vector2f, std\+::string, int, sf\+::\+Color, sf\+::\+Color, float)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classTextBox}{Text\+Box}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_a8059aa2490a7b8c3e9aa9a7865d13f2b}{set\+Text\+Size}} (int)
+\begin{DoxyCompactList}\small\item\em Set the size of the text. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTextBox_aeb94b749199642bb10b168dce2560502}{get\+Text\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size of the text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_aacc2157fe5f64f4c63ba6f8c29bd1d9a}{set\+Text\+Colour}} (sf\+::\+Color)
+\begin{DoxyCompactList}\small\item\em Set the colour of the text. \end{DoxyCompactList}\item 
+sf\+::\+Color \mbox{\hyperlink{classTextBox_aca392ca5ef3966761e6279f2239f23fe}{get\+Text\+Colour}} () const
+\begin{DoxyCompactList}\small\item\em Get the colour of the text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_a869edcef24e87c5008eb3ed88271256c}{set\+Font}} (sf\+::\+Font \&)
+\begin{DoxyCompactList}\small\item\em set what font you use \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{classTextBox_a78c37f8453105f1c044ecd2c03bf7ae6}{get\+Text\+Box}} () const
+\begin{DoxyCompactList}\small\item\em Get both the main textbox and the cmd textbox in a vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_ab09dbec80385d180c43c14e11d24ef1c}{delete\+Char}} ()
+\begin{DoxyCompactList}\small\item\em Delete last character entered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_a1fde06b82de152b1555e36a8d285a88d}{enter\+Press}} ()
+\begin{DoxyCompactList}\small\item\em Handles Enter key press. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_a3739d491e8c1d2151e686c2e0b507877}{set\+String}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Sets the string. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTextBox_a3cf46750f94b668e6c338334c9deefbb}{get\+String}} () const
+\begin{DoxyCompactList}\small\item\em returns the text in tbox \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_a9b58260a30644338453856b8e8652d62}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em used to draw to the screen virutal method inherited from sf\+::\+Drawable \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTextBox_a2b8a490293ae7f522091b2b690d5bf13}{is\+Mouse\+Hover}} ()
+\begin{DoxyCompactList}\small\item\em check if mouse is hovering over current textbox \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classMyRect}{My\+Rect}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMyRect_aad4e1c357ceaf2fea88dd9e572517abd}{My\+Rect}} (sf\+::\+Vector2f, sf\+::\+Vector2f, sf\+::\+Color, sf\+::\+Color, float)
+\begin{DoxyCompactList}\small\item\em constructor for \mbox{\hyperlink{classMyRect}{My\+Rect}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyRect_afc532aab785abaa543781ba92370a53d}{set\+Position}} (sf\+::\+Vector2f)
+\begin{DoxyCompactList}\small\item\em sets the position of rect \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_aba57079a7eb2337d8bab558899fb67c6}{get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em get the position of rect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyRect_aa4ec759e58e7357686e7644b324af38a}{set\+Fill\+Colour}} (sf\+::\+Color)
+\begin{DoxyCompactList}\small\item\em set the fill colour \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyRect_a468d13e312ecad9c3176c42cfa07bddc}{set\+Size}} (sf\+::\+Vector2f)
+\begin{DoxyCompactList}\small\item\em set the size \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_aaa28af9ede7c38a67be121afb2e2b6b4}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em get the size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyRect_af2e2556e7d3fb5408b7a287a0d4d0ed1}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em draw to window \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{classTextBox_a742324ac5a95df153f2df064cd06df75}{window}}
+\item 
+sf\+::\+Text \mbox{\hyperlink{classTextBox_a2406f7db801cda6fd44875062a5f3d4e}{tbox}} \{\}
+\item 
+sf\+::\+Font \mbox{\hyperlink{classTextBox_a2ab6b534d788191784115d891a4bc2f7}{font}} \{\}
+\item 
+std\+::string \mbox{\hyperlink{classTextBox_aba3bb93bd63568f63bcdec6c1c79d28c}{fname}} \{\}
+\item 
+int \mbox{\hyperlink{classTextBox_a29d2a814bf7d164b61a387cf078a56e8}{fsize}} \{\}
+\item 
+sf\+::\+Color \mbox{\hyperlink{classTextBox_a75f6b5783e47dcd456fbdba2da186373}{fcol}} \{\}
+\item 
+bool \mbox{\hyperlink{classTextBox_abd72a5930ce6ccc08a88a635f564e68e}{mouse\+Hover}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classMyRect}{My\+Rect}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{classMyRect_a909f557941744adbada4f6268230f15a}{f\+Rect}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}}
+\item 
+sf\+::\+Color \mbox{\hyperlink{classMyRect_af5dc0b3d01b20c3ba06e6217709d825f}{fill\+Colour}}
+\item 
+sf\+::\+Color \mbox{\hyperlink{classMyRect_a5ae95d256f69eabd3151c991e751657e}{outline\+Colour}}
+\item 
+float \mbox{\hyperlink{classMyRect_a37e3d9054f98bb1ed6a4969f335213f7}{outline\+Thicknes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that makes a Textbox in SFML. 
+
+The class creates a textbox for inputting and handling text and \mbox{\hyperlink{classKeyboard}{Keyboard}} commands and allows the use of commands in the secondary textbox cmdbox 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTextBox_a7d42208d5cb0cdb21b822af53da4aab0}\label{classTextBox_a7d42208d5cb0cdb21b822af53da4aab0}} 
+\index{TextBox@{TextBox}!TextBox@{TextBox}}
+\index{TextBox@{TextBox}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{TextBox()}{TextBox()}}
+{\footnotesize\ttfamily Text\+Box\+::\+Text\+Box (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{,  }\item[{sf\+::\+Vector2f}]{,  }\item[{sf\+::\+Vector2f}]{,  }\item[{std\+::string}]{,  }\item[{int}]{,  }\item[{sf\+::\+Color}]{,  }\item[{sf\+::\+Color}]{,  }\item[{float}]{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classTextBox}{Text\+Box}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & -\/ Render\+Window the \mbox{\hyperlink{classTextBox}{Text\+Box}} is drawn onto \\
+\hline
+{\em pos} & -\/ the initial position of the \mbox{\hyperlink{classTextBox}{Text\+Box}} \\
+\hline
+{\em size} & -\/ the initial size of the \mbox{\hyperlink{classTextBox}{Text\+Box}} \\
+\hline
+{\em sfont} & -\/ the initial font used by the \mbox{\hyperlink{classTextBox}{Text\+Box}} \\
+\hline
+{\em fsize} & -\/ the inital font size \\
+\hline
+{\em fcol} & -\/ the initial font colour \\
+\hline
+{\em background} & -\/ the initial background colour \\
+\hline
+{\em thicc} & -\/ the padding for the Rectangle\+Shape \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTextBox_ab09dbec80385d180c43c14e11d24ef1c}\label{classTextBox_ab09dbec80385d180c43c14e11d24ef1c}} 
+\index{TextBox@{TextBox}!deleteChar@{deleteChar}}
+\index{deleteChar@{deleteChar}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{deleteChar()}{deleteChar()}}
+{\footnotesize\ttfamily void Text\+Box\+::delete\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delete last character entered. 
+
+\mbox{\Hypertarget{classTextBox_a9b58260a30644338453856b8e8652d62}\label{classTextBox_a9b58260a30644338453856b8e8652d62}} 
+\index{TextBox@{TextBox}!draw@{draw}}
+\index{draw@{draw}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Text\+Box\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+used to draw to the screen virutal method inherited from sf\+::\+Drawable 
+
+\mbox{\Hypertarget{classTextBox_a1fde06b82de152b1555e36a8d285a88d}\label{classTextBox_a1fde06b82de152b1555e36a8d285a88d}} 
+\index{TextBox@{TextBox}!enterPress@{enterPress}}
+\index{enterPress@{enterPress}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{enterPress()}{enterPress()}}
+{\footnotesize\ttfamily void Text\+Box\+::enter\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles Enter key press. 
+
+\mbox{\Hypertarget{classTextBox_a3cf46750f94b668e6c338334c9deefbb}\label{classTextBox_a3cf46750f94b668e6c338334c9deefbb}} 
+\index{TextBox@{TextBox}!getString@{getString}}
+\index{getString@{getString}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}}
+{\footnotesize\ttfamily std\+::string Text\+Box\+::get\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+returns the text in tbox 
+
+\begin{DoxyReturn}{Returns}
+type std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTextBox_a78c37f8453105f1c044ecd2c03bf7ae6}\label{classTextBox_a78c37f8453105f1c044ecd2c03bf7ae6}} 
+\index{TextBox@{TextBox}!getTextBox@{getTextBox}}
+\index{getTextBox@{getTextBox}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{getTextBox()}{getTextBox()}}
+{\footnotesize\ttfamily sf\+::\+Text Text\+Box\+::get\+Text\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get both the main textbox and the cmd textbox in a vector. 
+
+\begin{DoxyReturn}{Returns}
+type Boxv2 that contains textbox and cmdbox 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTextBox_aca392ca5ef3966761e6279f2239f23fe}\label{classTextBox_aca392ca5ef3966761e6279f2239f23fe}} 
+\index{TextBox@{TextBox}!getTextColour@{getTextColour}}
+\index{getTextColour@{getTextColour}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{getTextColour()}{getTextColour()}}
+{\footnotesize\ttfamily sf\+::\+Color Text\+Box\+::get\+Text\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the colour of the text. 
+
+\begin{DoxyReturn}{Returns}
+sf\+::\+Colour text\+Colour 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTextBox_aeb94b749199642bb10b168dce2560502}\label{classTextBox_aeb94b749199642bb10b168dce2560502}} 
+\index{TextBox@{TextBox}!getTextSize@{getTextSize}}
+\index{getTextSize@{getTextSize}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{getTextSize()}{getTextSize()}}
+{\footnotesize\ttfamily int Text\+Box\+::get\+Text\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the size of the text. 
+
+\begin{DoxyReturn}{Returns}
+an int of the text size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTextBox_a2b8a490293ae7f522091b2b690d5bf13}\label{classTextBox_a2b8a490293ae7f522091b2b690d5bf13}} 
+\index{TextBox@{TextBox}!isMouseHover@{isMouseHover}}
+\index{isMouseHover@{isMouseHover}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{isMouseHover()}{isMouseHover()}}
+{\footnotesize\ttfamily bool Text\+Box\+::is\+Mouse\+Hover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if mouse is hovering over current textbox 
+
+\begin{DoxyReturn}{Returns}
+bool -\/ yes if hovering 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTextBox_a869edcef24e87c5008eb3ed88271256c}\label{classTextBox_a869edcef24e87c5008eb3ed88271256c}} 
+\index{TextBox@{TextBox}!setFont@{setFont}}
+\index{setFont@{setFont}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{setFont()}{setFont()}}
+{\footnotesize\ttfamily void Text\+Box\+::set\+Font (\begin{DoxyParamCaption}\item[{sf\+::\+Font \&}]{ }\end{DoxyParamCaption})}
+
+
+
+set what font you use 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & file dir of font \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTextBox_a3739d491e8c1d2151e686c2e0b507877}\label{classTextBox_a3739d491e8c1d2151e686c2e0b507877}} 
+\index{TextBox@{TextBox}!setString@{setString}}
+\index{setString@{setString}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{setString()}{setString()}}
+{\footnotesize\ttfamily void Text\+Box\+::set\+String (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Sets the string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nstring} & -\/ new string placed on tbox \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTextBox_aacc2157fe5f64f4c63ba6f8c29bd1d9a}\label{classTextBox_aacc2157fe5f64f4c63ba6f8c29bd1d9a}} 
+\index{TextBox@{TextBox}!setTextColour@{setTextColour}}
+\index{setTextColour@{setTextColour}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{setTextColour()}{setTextColour()}}
+{\footnotesize\ttfamily void Text\+Box\+::set\+Text\+Colour (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{ }\end{DoxyParamCaption})}
+
+
+
+Set the colour of the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fill} & font colour \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTextBox_a8059aa2490a7b8c3e9aa9a7865d13f2b}\label{classTextBox_a8059aa2490a7b8c3e9aa9a7865d13f2b}} 
+\index{TextBox@{TextBox}!setTextSize@{setTextSize}}
+\index{setTextSize@{setTextSize}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{setTextSize()}{setTextSize()}}
+{\footnotesize\ttfamily void Text\+Box\+::set\+Text\+Size (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Set the size of the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & text size \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTextBox_a75f6b5783e47dcd456fbdba2da186373}\label{classTextBox_a75f6b5783e47dcd456fbdba2da186373}} 
+\index{TextBox@{TextBox}!fcol@{fcol}}
+\index{fcol@{fcol}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{fcol}{fcol}}
+{\footnotesize\ttfamily sf\+::\+Color Text\+Box\+::fcol \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+the font colour \mbox{\Hypertarget{classTextBox_aba3bb93bd63568f63bcdec6c1c79d28c}\label{classTextBox_aba3bb93bd63568f63bcdec6c1c79d28c}} 
+\index{TextBox@{TextBox}!fname@{fname}}
+\index{fname@{fname}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{fname}{fname}}
+{\footnotesize\ttfamily std\+::string Text\+Box\+::fname \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+the name of the font used \mbox{\Hypertarget{classTextBox_a2ab6b534d788191784115d891a4bc2f7}\label{classTextBox_a2ab6b534d788191784115d891a4bc2f7}} 
+\index{TextBox@{TextBox}!font@{font}}
+\index{font@{font}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily sf\+::\+Font Text\+Box\+::font \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+the font that the \mbox{\hyperlink{classTextBox}{Text\+Box}} uses \mbox{\Hypertarget{classTextBox_a29d2a814bf7d164b61a387cf078a56e8}\label{classTextBox_a29d2a814bf7d164b61a387cf078a56e8}} 
+\index{TextBox@{TextBox}!fsize@{fsize}}
+\index{fsize@{fsize}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{fsize}{fsize}}
+{\footnotesize\ttfamily int Text\+Box\+::fsize \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+the font size \mbox{\Hypertarget{classTextBox_abd72a5930ce6ccc08a88a635f564e68e}\label{classTextBox_abd72a5930ce6ccc08a88a635f564e68e}} 
+\index{TextBox@{TextBox}!mouseHover@{mouseHover}}
+\index{mouseHover@{mouseHover}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{mouseHover}{mouseHover}}
+{\footnotesize\ttfamily bool Text\+Box\+::mouse\+Hover\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTextBox_a2406f7db801cda6fd44875062a5f3d4e}\label{classTextBox_a2406f7db801cda6fd44875062a5f3d4e}} 
+\index{TextBox@{TextBox}!tbox@{tbox}}
+\index{tbox@{tbox}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{tbox}{tbox}}
+{\footnotesize\ttfamily sf\+::\+Text Text\+Box\+::tbox \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+the text that everything is written onto \mbox{\Hypertarget{classTextBox_a742324ac5a95df153f2df064cd06df75}\label{classTextBox_a742324ac5a95df153f2df064cd06df75}} 
+\index{TextBox@{TextBox}!window@{window}}
+\index{window@{window}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ Text\+Box\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+pointer to the main Render\+Window variable 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Kamil/\mbox{\hyperlink{TextBox_8h}{Text\+Box.\+h}}\end{DoxyCompactItemize}

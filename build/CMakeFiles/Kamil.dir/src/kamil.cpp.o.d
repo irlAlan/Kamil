@@ -232,8 +232,10 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: \
  /usr/local/include/SFML/Graphics/Sprite.hpp \
  /usr/local/include/SFML/Graphics/Text.hpp \
  /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
- /usr/include/c++/12.2.1/sstream /usr/include/c++/12.2.1/istream \
+ /usr/include/c++/12.2.1/iostream /usr/include/c++/12.2.1/istream \
  /usr/include/c++/12.2.1/bits/istream.tcc \
- /usr/include/c++/12.2.1/bits/sstream.tcc \
- /usr/include/c++/12.2.1/iostream \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorWindow.h
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Keyboard.h \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/MyRect.h \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h

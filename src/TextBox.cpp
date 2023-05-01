@@ -1,82 +1,89 @@
+#include "Kamil/MyRect.h"
 #include <Kamil/TextBox.h>
-#include <SFML/Graphics/Font.hpp>
+#include <SFML/Graphics/RectangleShape.hpp>
+#include <SFML/Graphics/RenderStates.hpp>
+#include <SFML/System/Vector2.hpp>
 #include <SFML/Window/Keyboard.hpp>
 
+/**
+ * Implementation of the TextBox class
+ * @note other structs or classes may be used here
+ */
 
-TextBox::TextBox()
+/**
+ * @brief Constrcutor Implementation for TextBox class
+ * @param win - RenderWindow the TextBox is drawn onto
+ * @param pos - the initial position of the TextBox
+ * @param size - the initial size of the TextBox
+ * @param sfont - the initial font used by the TextBox
+ * @param fsize - the inital font size
+ * @param fcol - the initial font colour
+ * @param background - the initial background colour
+ * @param thicc - the padding for the RectangleShape
+ */
+TextBox::TextBox(sf::RenderWindow* win, sf::Vector2f pos, sf::Vector2f size, std::string sfont, int fsize, sf::Color fcol, sf::Color background, float thicc)
+    : MyRect(pos, size,background, background, thicc)
+    , window{win}
+    , fname{sfont}
+    , fsize{fsize}
+    , fcol{fcol}
 {
 
-    // Loading font
-    m_font.loadFromFile("../resource/fonts/arial.ttf");
-    m_fontfill = sf::Color::Red;
-    m_textsize = 16;
+  /**
+   * @brief setting  up the text and font
+   */
+  font.loadFromFile(fname); 
+  tbox.setFont(font); 
+  tbox.setCharacterSize(fsize);
+  tbox.setFillColor(sf::Color::Black);
+  tbox.setPosition(15.0f,0.0f);
+}
+        
+void TextBox::draw(sf::RenderTarget& target, sf::RenderStates states)const {    
+     sf::RectangleShape rec;
+     rec.setSize(size);
+     rec.setPosition(pos);
+     rec.setFillColor(fillColour);
+     window->draw(rec);
+     window->draw(tbox);
+}
 
-    //setting  text
-    m_textbox.setFont(m_font);
-    m_textbox.setCharacterSize(m_textsize);
-    m_textbox.setFillColor(m_fontfill);
-
+bool TextBox::isMouseHover(){
+    sf::Vector2i mousePos{sf::Mouse::getPosition(*window)};
+    sf::Vector2f worldPos{window->mapPixelToCoords(mousePos)};
+    if(fRect.contains(worldPos))
+        return true;
+    return false;
 }
 
 
-TextBox::TextBox(sf::Font &font, int size, sf::Color colour)
-    : m_font(font), m_textsize(size), m_fontfill(colour)
-{
+void TextBox::setString(std::string nstring){
+    tbox.setString(nstring);
+}
 
-    //setting  text
-    m_textbox.setFont(m_font);
-    m_textbox.setCharacterSize(m_textsize);
-    m_textbox.setFillColor(m_fontfill);
+std::string TextBox::getString()const{
+    return tbox.getString();
 }
 
 
-
-void TextBox::inputLogic(int char_typed){
-    switch(char_typed){
-        case ENTER:
-            m_osstream << " Enter ";
-            break;
-        case DELETE:
-            m_osstream << " Delete ";
-            break;
-        case UP_ARROW:
-            increaseTextSize(1);
-            break;
-        default:
-            m_osstream << static_cast<char>(char_typed);
-            break;
-    }
-    m_textbox.setString(m_osstream.str() + '-');
-    std::cout << m_textsize;
+void TextBox::setFont(sf::Font& font) {
+  font = font;
 }
 
-void TextBox::typedOn(const sf::Event& event){
-    int char_typed = event.text.unicode;
-    if (char_typed <= 256) // only allow up to extended ascii
-        inputLogic(char_typed);
+void TextBox::setTextSize(int size) {
+  fsize = size;
+}
+int TextBox::getTextSize() const {
+  return fsize;
 }
 
-
-void TextBox::increaseTextSize(int size){
-    m_textsize += size;
-    m_textbox.setCharacterSize(getTextSize());
+void TextBox::setTextColour(sf::Color fill) {
+  fcol = fill;
 }
-void TextBox::decreaseTextSize(int size){
-    m_textsize -= size;
-    m_textbox.setCharacterSize(getTextSize());
+sf::Color TextBox::getTextColour() const {
+  return fcol;
 }
 
-
-void TextBox::setFont(sf::Font &font){m_font = font;}
-
-void TextBox::setTextSize(int size){m_textsize = size;}
-int TextBox::getTextSize()const{return m_textsize;}
-
-void TextBox::setFontFill(sf::Color fill){m_fontfill = fill;}
-sf::Color TextBox::getFontFill()const{return m_fontfill;}
-sf::Text TextBox::getTextBox()const{
-    return m_textbox;
+sf::Text TextBox::getTextBox() const {
+  return tbox;
 }
-
-
-

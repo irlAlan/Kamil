@@ -17,13 +17,41 @@ find_package(SFML 2.5
         COMPONENTS
             system window graphics network audio
         REQUIRED)
+
+# for documentation
+# find_package(Doxygen REQUIRED)
+# if(DOXYGEN_FOUND)
+#     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile @ONLY)
+#     add_custom_target(doc
+#     COMMAND ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
+#     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+#     COMMENT "Generating Doxygen documentation"
+#     VERBATIM)
+# endif()
+
+
+find_package(fmt)
+
+
+#for formatting
+add_custom_target(format
+    COMMAND clang-format
+    --style=file
+    -i
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/Kamil/*.h
+    )
+
 # opengl is required by sfml so we need to find it too
 find_package(OpenGL REQUIRED)
 
 add_executable(${PROJECT_NAME}
         ./src/kamil.cpp
         ./src/TextBox.cpp
-        ./src/EditorWindow.cpp
+        ./src/Editor.cpp
+        ./src/Utils/Stack.cpp
+        ./src/Keyboard.cpp
+        ./src/MyRect.cpp
     )
 
 # Allows us to use <> when including files
@@ -33,6 +61,6 @@ target_include_directories(${PROJECT_NAME}
     PRIVATE "${PROJECT_BINARY_DIR}"
     )
 
-target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} sfml-window sfml-graphics)
+target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} fmt::fmt sfml-window sfml-graphics)
 
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)

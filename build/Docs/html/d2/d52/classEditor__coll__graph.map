@@ -1,0 +1,19 @@
+<map id="Editor" name="Editor">
+<area shape="rect" id="node1" title="Class that handles and draws everything in the Editor." alt="" coords="245,859,329,965"/>
+<area shape="rect" id="node2" href="$d2/d68/classTextBox.html" title="A class that makes a Textbox in SFML." alt="" coords="433,403,559,656"/>
+<area shape="rect" id="node15" href="$d1/d51/classCmdBox.html" title="Class to handle the command TextBox." alt="" coords="455,719,545,796"/>
+<area shape="rect" id="node3" href="$d9/d1c/classMyRect.html" title="gives extra functionality to FloatRect" alt="" coords="672,160,787,325"/>
+<area shape="rect" id="node4" title=" " alt="" coords="597,5,696,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="720,5,816,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="317,5,387,83"/>
+<area shape="rect" id="node17" href="$dc/dd2/classKeyboard.html" title="A class to handle Keyboard input." alt="" coords="156,432,287,627"/>
+<area shape="rect" id="node7" title=" " alt="" coords="864,5,917,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="507,5,554,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,204,125,281"/>
+<area shape="rect" id="node10" title=" " alt="" coords="394,204,441,281"/>
+<area shape="rect" id="node11" title=" " alt="" coords="465,204,513,281"/>
+<area shape="rect" id="node12" title=" " alt="" coords="307,204,362,281"/>
+<area shape="rect" id="node13" title=" " alt="" coords="538,204,577,281"/>
+<area shape="rect" id="node14" title=" " alt="" coords="601,204,647,281"/>
+<area shape="rect" id="node16" title=" " alt="" coords="365,719,430,796"/>
+</map>
