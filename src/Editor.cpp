@@ -6,7 +6,7 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/System/Vector2.hpp>
 
-#include <fmt/core.h>
+// #include <fmt/core.h>
 
 // Move the Number Lines into a seperate struct that is with teh textBox
 
@@ -25,8 +25,8 @@ Editor::~Editor(){
 
 void Editor::draw(){
     int charTyped;
-    fmt::print("{}, {}\n", textBox->getPos().x, textBox->getPos().y);
-    fmt::print("{}, {}\n", textBox->getSize().x, textBox->getSize().y);
+  //  fmt::print("{}, {}\n", textBox->getPos().x, textBox->getPos().y);
+  //  fmt::print("{}, {}\n", textBox->getSize().x, textBox->getSize().y);
 
     while(window->isOpen()){
         while(window->pollEvent(*event)){
@@ -51,7 +51,8 @@ void Editor::draw(){
             if(kb.isTextEntered()){
                 cbox->setString(kb.getTextEntered() + "-");
                 if(kb.getTextEntered() == "open"){
-                    fmt::print("open says me\n");
+                    std::cout << "OPen says me\n";
+                    //fmt::print("open says me\n");
                 }
             }
         }
