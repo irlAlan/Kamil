@@ -1,6 +1,17 @@
 #ifndef KAMIL_KEYBOARD_H
 #define KAMIL_KEYBOARD_H
 
+
+/**
+ * @file Keyboard.h
+ *
+ * @brief Interface file for Keyboard.h
+ *
+ * A class that handles all keyboard and mouse events for the editor
+ * is responsible for manging input of keyboard data and their corresponding command
+ */
+
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/System/Vector2.hpp>
@@ -29,8 +40,9 @@ class Keyboard{
         /**
          * @brief Constructor for Keyboard class
          * @param win - reference to main window
+         * @param bounds - bounds of the window we are working in
          */
-        Keyboard(sf::RenderWindow*, sf::Vector2f);
+        Keyboard(sf::RenderWindow* win, sf::Vector2f bounds);
 
 
         /**
@@ -45,6 +57,11 @@ class Keyboard{
          */
         bool isTextEntered();
 
+        /**
+         * @brief checks if text is entered to the command box
+         * @return bool tru eif key is pressed false if not
+         */
+        bool isCmdTextEntered();
 
         /**
          * @brief check if text is being deleted
@@ -57,12 +74,27 @@ class Keyboard{
          * @return std::string text entered
          */
         std::string getTextEntered();
+        
+
+        /**
+         * @brief returns text entered
+         * @return std::string text entered
+         */
+        std::string getCmdTextEntered();
+
 
         /**
          * @brief sets text
          * @param nstring - new string
          */
         void setTextEntered(std::string);
+        
+
+        /**
+         * @brief sets text
+         * @param nstring - new string
+         */
+        void setCmdTextEntered(std::string);
 
 
         /**
@@ -80,12 +112,28 @@ class Keyboard{
          * @brief handle keyboard events
          * @param event - to get text entered from events
          */
-        void handleEvent(sf::Event& event);
+        void handleKeyEvent(sf::Event& event);
+
+
+        /**
+         * @brief handle keyboard events
+         * @param event - to get text entered from events
+         */
+        void handleCmdKeyEvent(/**sf::Event& event*/);
+
+        /**
+         * @brief mouse keyboard events
+         * @param event - to get text entered from events
+         */
+        void handleMouseEvent(sf::Event& event); // not implemented yet
 
     private:
         sf::RenderWindow* window; /**< refernce to window */
         sf::Vector2f bounds; /**< store the bounded area */
-        std::string tEntered; /**< the text entered */
-        std::string tDeleted; /**< the text deleted */
+        std::string tEntered; /**< the text entered  to main box*/
+        std::string tDeleted; /**< the text deleted from main box*/
+
+        std::string ctEntered; /**< tmp for text enterd to cmd */
+        std::string ctDeleted; /**< tmp for text deleted to cmd */
 };
 #endif // KAMIL_KEYBOARD_H

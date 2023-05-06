@@ -1,6 +1,18 @@
 #ifndef KAMIL_EDITOR_WINDOW_HPP
 #define KAMIL_EDITOR_WINDOW_HPP
 
+/**
+ * @file Editor.h
+ *
+ * @brief Interface file for the Editor class
+ *
+ * The Editor class is responsible for the interaction between the different classes.
+ * All things outside the main while loop will be checked or initialise.
+ * Anything to do with the Editor Window will happen here
+ */
+
+
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
@@ -9,18 +21,6 @@
 #include "TextBox.h"
 #include "Keyboard.h"
 #include "CmdBox.h"
-
-/** 
- * @file Editor.h
- *
- * EditorWindow contains the textbox and keyboard stuff so nested classes will be used
- * EditorWindow is just a namespace not a class 
- *
- * 
- * anything to do with the Editor window always through the EditorWindow namespace i.e.
- * EditorWindow editor;
- *
- */
 
 
 /**
@@ -41,9 +41,19 @@ class Editor{
         ~Editor();
 
         /**
+         *
+         * DEPRECATED
          * @brief function that draws everything to RenderWindow
          */
         void draw();
+
+        /**
+         * @brief handle the events for the Editor
+         *
+         * where all event handles are called when interacting with other classes
+         * e.g. kb.handleEvent(); kb.handleMouseEvents();
+         */
+        void handleEvent();
     private:
         TextBox* textBox; /**< reference to textbox that we draw */
         CmdBox* cbox; /**< reference to command box that we draw */

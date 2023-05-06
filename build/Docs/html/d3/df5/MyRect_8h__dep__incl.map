@@ -1,6 +1,6 @@
 <map id="include/Kamil/MyRect.h" name="include/Kamil/MyRect.h">
-<area shape="rect" id="node1" title=" " alt="" coords="68,5,229,31"/>
-<area shape="rect" id="node2" href="$d6/d16/TextBox_8h.html" title=" " alt="" coords="67,79,230,104"/>
-<area shape="rect" id="node3" href="$db/d9f/CmdBox_8h.html" title=" " alt="" coords="5,152,172,177"/>
-<area shape="rect" id="node4" href="$de/d6e/Editor_8h.html" title=" " alt="" coords="75,225,223,251"/>
+<area shape="rect" id="node1" title="Interface file for the MyRect class." alt="" coords="68,5,228,32"/>
+<area shape="rect" id="node2" href="$d6/d16/TextBox_8h.html" title=" " alt="" coords="67,80,229,107"/>
+<area shape="rect" id="node3" href="$db/d9f/CmdBox_8h.html" title=" " alt="" coords="5,155,171,181"/>
+<area shape="rect" id="node4" href="$de/d6e/Editor_8h.html" title="Interface file for the Editor class." alt="" coords="74,229,222,256"/>
 </map>

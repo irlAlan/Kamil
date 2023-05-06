@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['outlinecolour_0',['outlineColour',['../d9/d1c/classMyRect.html#a5ae95d256f69eabd3151c991e751657e',1,'MyRect']]],
-  ['outlinethicknes_1',['outlineThicknes',['../d9/d1c/classMyRect.html#a37e3d9054f98bb1ed6a4969f335213f7',1,'MyRect']]]
+  ['max_5fsize_0',['max_size',['../dd/db7/classCommand_1_1Stack.html#ac443635a239a17f70e59c7fe3b7e9f38',1,'Command::Stack']]],
+  ['mousehover_1',['mouseHover',['../d2/d68/classTextBox.html#abd72a5930ce6ccc08a88a635f564e68e',1,'TextBox']]],
+  ['myrect_2',['MyRect',['../d9/d1c/classMyRect.html',1,'MyRect'],['../d9/d1c/classMyRect.html#a06af1d222788e2a608ff7f4e48a57380',1,'MyRect::MyRect()']]],
+  ['myrect_2eh_3',['MyRect.h',['../d2/ded/MyRect_8h.html',1,'']]]
 ];

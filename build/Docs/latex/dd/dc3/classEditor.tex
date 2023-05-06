@@ -12,7 +12,13 @@ Class that handles and draws everything in the \mbox{\hyperlink{classEditor}{Edi
 
 
 Collaboration diagram for Editor\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d52/classEditor__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -21,7 +27,9 @@ Collaboration diagram for Editor\+:
 \mbox{\hyperlink{classEditor_ad465abc9575af92b4fa61525085172d6}{$\sim$\+Editor}} ()
 \begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classEditor}{Editor}} class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classEditor_a560909c31ad3cd0035c8d050f1042377}{draw}} ()
-\begin{DoxyCompactList}\small\item\em function that draws everything to Render\+Window \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em function that draws everything to Render\+Window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEditor_aad337f55ba36e46406a31a4879d1f19f}{handle\+Event}} ()
+\begin{DoxyCompactList}\small\item\em handle the events for the \mbox{\hyperlink{classEditor}{Editor}} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -81,7 +89,17 @@ Destructor for \mbox{\hyperlink{classEditor}{Editor}} class.
 
 function that draws everything to Render\+Window 
 
+DEPRECATED \mbox{\Hypertarget{classEditor_aad337f55ba36e46406a31a4879d1f19f}\label{classEditor_aad337f55ba36e46406a31a4879d1f19f}} 
+\index{Editor@{Editor}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!Editor@{Editor}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily void Editor\+::handle\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+handle the events for the \mbox{\hyperlink{classEditor}{Editor}} 
+
+where all event handles are called when interacting with other classes e.\+g. kb.\+handle\+Event(); kb.\+handle\+Mouse\+Events(); 
 
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classEditor_a070263877941d980adb2dfe1697e89dd}\label{classEditor_a070263877941d980adb2dfe1697e89dd}} 

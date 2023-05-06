@@ -1,5 +1,10 @@
 \hypertarget{Editor_8h}{}\doxysection{include/\+Kamil/\+Editor.h File Reference}
 \label{Editor_8h}\index{include/Kamil/Editor.h@{include/Kamil/Editor.h}}
+
+
+Interface file for the \mbox{\hyperlink{classEditor}{Editor}} class.  
+
+
 {\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
 {\ttfamily \#include $<$SFML/\+Graphics/\+Rectangle\+Shape.\+hpp$>$}\newline
 {\ttfamily \#include $<$SFML/\+Graphics/\+Render\+Window.\+hpp$>$}\newline
@@ -8,7 +13,13 @@
 {\ttfamily \#include \char`\"{}Keyboard.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Cmd\+Box.\+h\char`\"{}}\newline
 Include dependency graph for Editor.\+h\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d85/Editor_8h__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -17,6 +28,6 @@ class \mbox{\hyperlink{classEditor}{Editor}}
 
 
 \doxysubsection{Detailed Description}
-Editor\+Window contains the textbox and keyboard stuff so nested classes will be used Editor\+Window is just a namespace not a class
+Interface file for the \mbox{\hyperlink{classEditor}{Editor}} class. 
 
-anything to do with the \mbox{\hyperlink{classEditor}{Editor}} window always through the Editor\+Window namespace i.\+e. Editor\+Window editor; 
+The \mbox{\hyperlink{classEditor}{Editor}} class is responsible for the interaction between the different classes. All things outside the main while loop will be checked or initialise. Anything to do with the \mbox{\hyperlink{classEditor}{Editor}} Window will happen here 

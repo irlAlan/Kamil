@@ -1,0 +1,76 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}General Overview}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Features}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Order i should implement things}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Structure}{2}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Namespace Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Namespace List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Namespace Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Command Namespace Reference}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}hey Namespace Reference}{7}{section.4.2}%
+\contentsline {chapter}{\numberline {5}File Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Document.cpp File Reference}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Editor.cpp File Reference}{9}{section.5.2}%
+\contentsline {section}{\numberline {5.3}src/kamil.cpp File Reference}{9}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Function Documentation}{10}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}main()}{10}{subsubsection.5.3.1.1}%
+\contentsline {section}{\numberline {5.4}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard.cpp File Reference}{10}{section.5.4}%
+\contentsline {section}{\numberline {5.5}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rect.cpp File Reference}{10}{section.5.5}%
+\contentsline {section}{\numberline {5.6}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Notes.md File Reference}{10}{section.5.6}%
+\contentsline {section}{\numberline {5.7}src/test/another.cpp File Reference}{10}{section.5.7}%
+\contentsline {section}{\numberline {5.8}src/test/build/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CMake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Files/3.26.2/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compiler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Id\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CMake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CCompiler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Id.c File Reference}{11}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Macro Definition Documentation}{11}{subsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.1}\_\_has\_include}{11}{subsubsection.5.8.1.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.2}ARCHITECTURE\_ID}{11}{subsubsection.5.8.1.2}%
+\contentsline {subsubsection}{\numberline {5.8.1.3}C\_VERSION}{12}{subsubsection.5.8.1.3}%
+\contentsline {subsubsection}{\numberline {5.8.1.4}COMPILER\_ID}{12}{subsubsection.5.8.1.4}%
+\contentsline {subsubsection}{\numberline {5.8.1.5}DEC}{12}{subsubsection.5.8.1.5}%
+\contentsline {subsubsection}{\numberline {5.8.1.6}HEX}{12}{subsubsection.5.8.1.6}%
+\contentsline {subsubsection}{\numberline {5.8.1.7}PLATFORM\_ID}{12}{subsubsection.5.8.1.7}%
+\contentsline {subsubsection}{\numberline {5.8.1.8}STRINGIFY}{13}{subsubsection.5.8.1.8}%
+\contentsline {subsubsection}{\numberline {5.8.1.9}STRINGIFY\_HELPER}{13}{subsubsection.5.8.1.9}%
+\contentsline {subsection}{\numberline {5.8.2}Function Documentation}{13}{subsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.1}main()}{13}{subsubsection.5.8.2.1}%
+\contentsline {subsection}{\numberline {5.8.3}Variable Documentation}{13}{subsection.5.8.3}%
+\contentsline {subsubsection}{\numberline {5.8.3.1}info\_arch}{13}{subsubsection.5.8.3.1}%
+\contentsline {subsubsection}{\numberline {5.8.3.2}info\_compiler}{13}{subsubsection.5.8.3.2}%
+\contentsline {subsubsection}{\numberline {5.8.3.3}info\_language\_extensions\_default}{13}{subsubsection.5.8.3.3}%
+\contentsline {subsubsection}{\numberline {5.8.3.4}info\_language\_standard\_default}{14}{subsubsection.5.8.3.4}%
+\contentsline {subsubsection}{\numberline {5.8.3.5}info\_platform}{14}{subsubsection.5.8.3.5}%
+\contentsline {section}{\numberline {5.9}src/test/build/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CMake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Files/3.26.2/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Compiler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Id\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CXX/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CMake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CXXCompiler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Id.cpp File Reference}{14}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Macro Definition Documentation}{14}{subsection.5.9.1}%
+\contentsline {subsubsection}{\numberline {5.9.1.1}\_\_has\_include}{15}{subsubsection.5.9.1.1}%
+\contentsline {subsubsection}{\numberline {5.9.1.2}ARCHITECTURE\_ID}{15}{subsubsection.5.9.1.2}%
+\contentsline {subsubsection}{\numberline {5.9.1.3}COMPILER\_ID}{15}{subsubsection.5.9.1.3}%
+\contentsline {subsubsection}{\numberline {5.9.1.4}CXX\_STD}{15}{subsubsection.5.9.1.4}%
+\contentsline {subsubsection}{\numberline {5.9.1.5}DEC}{15}{subsubsection.5.9.1.5}%
+\contentsline {subsubsection}{\numberline {5.9.1.6}HEX}{15}{subsubsection.5.9.1.6}%
+\contentsline {subsubsection}{\numberline {5.9.1.7}PLATFORM\_ID}{16}{subsubsection.5.9.1.7}%
+\contentsline {subsubsection}{\numberline {5.9.1.8}STRINGIFY}{16}{subsubsection.5.9.1.8}%
+\contentsline {subsubsection}{\numberline {5.9.1.9}STRINGIFY\_HELPER}{16}{subsubsection.5.9.1.9}%
+\contentsline {subsection}{\numberline {5.9.2}Function Documentation}{16}{subsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2.1}main()}{16}{subsubsection.5.9.2.1}%
+\contentsline {subsection}{\numberline {5.9.3}Variable Documentation}{16}{subsection.5.9.3}%
+\contentsline {subsubsection}{\numberline {5.9.3.1}info\_arch}{16}{subsubsection.5.9.3.1}%
+\contentsline {subsubsection}{\numberline {5.9.3.2}info\_compiler}{16}{subsubsection.5.9.3.2}%
+\contentsline {subsubsection}{\numberline {5.9.3.3}info\_language\_extensions\_default}{17}{subsubsection.5.9.3.3}%
+\contentsline {subsubsection}{\numberline {5.9.3.4}info\_language\_standard\_default}{17}{subsubsection.5.9.3.4}%
+\contentsline {subsubsection}{\numberline {5.9.3.5}info\_platform}{17}{subsubsection.5.9.3.5}%
+\contentsline {section}{\numberline {5.10}src/test/build/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CMake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Files/test.dir/main.cpp.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}o.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}d File Reference}{17}{section.5.10}%
+\contentsline {section}{\numberline {5.11}src/test/hey.py File Reference}{17}{section.5.11}%
+\contentsline {section}{\numberline {5.12}src/test/main.cpp File Reference}{18}{section.5.12}%
+\contentsline {subsection}{\numberline {5.12.1}Function Documentation}{18}{subsection.5.12.1}%
+\contentsline {subsubsection}{\numberline {5.12.1.1}deleteChar()}{18}{subsubsection.5.12.1.1}%
+\contentsline {subsubsection}{\numberline {5.12.1.2}deleteOtherChar()}{18}{subsubsection.5.12.1.2}%
+\contentsline {subsubsection}{\numberline {5.12.1.3}main()}{18}{subsubsection.5.12.1.3}%
+\contentsline {section}{\numberline {5.13}src/test/test.cpp File Reference}{19}{section.5.13}%
+\contentsline {subsection}{\numberline {5.13.1}Function Documentation}{19}{subsection.5.13.1}%
+\contentsline {subsubsection}{\numberline {5.13.1.1}main()}{19}{subsubsection.5.13.1.1}%
+\contentsline {section}{\numberline {5.14}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Text\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box.cpp File Reference}{19}{section.5.14}%
+\contentsline {section}{\numberline {5.15}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stack.cpp File Reference}{19}{section.5.15}%
+\contentsline {section}{\numberline {5.16}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils/tet.cpp File Reference}{19}{section.5.16}%
+\contentsline {subsection}{\numberline {5.16.1}Function Documentation}{20}{subsection.5.16.1}%
+\contentsline {subsubsection}{\numberline {5.16.1.1}main()}{20}{subsubsection.5.16.1.1}%
+\contentsline {chapter}{Index}{21}{section*.13}%

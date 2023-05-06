@@ -6,7 +6,7 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/System/Vector2.hpp>
 
-// #include <fmt/core.h>
+#include <fmt/core.h>
 
 // Move the Number Lines into a seperate struct that is with teh textBox
 
@@ -23,10 +23,17 @@ Editor::~Editor(){
     delete textBox;
 }
 
+
+void Editor::handleEvent(){
+    kb.handleKeyEvent(*event);
+    kb.handleMouseEvent(*event);
+}
+
+
 void Editor::draw(){
     int charTyped;
-  //  fmt::print("{}, {}\n", textBox->getPos().x, textBox->getPos().y);
-  //  fmt::print("{}, {}\n", textBox->getSize().x, textBox->getSize().y);
+    fmt::print("{}, {}\n", textBox->getPos().x, textBox->getPos().y);
+    fmt::print("{}, {}\n", textBox->getSize().x, textBox->getSize().y);
 
     while(window->isOpen()){
         while(window->pollEvent(*event)){
@@ -37,7 +44,8 @@ void Editor::draw(){
                 default:
                     break;
             }
-            kb.handleEvent(*event);
+            kb.handleKeyEvent(*event);
+            kb.handleCmdKeyEvent();
         }
 
 
@@ -48,11 +56,10 @@ void Editor::draw(){
         }
 
         if(cbox->isMouseHover()){
-            if(kb.isTextEntered()){
-                cbox->setString(kb.getTextEntered() + "-");
-                if(kb.getTextEntered() == "open"){
-                    std::cout << "OPen says me\n";
-                    //fmt::print("open says me\n");
+            if(kb.isCmdTextEntered()){
+                cbox->setString(kb.getCmdTextEntered() + "-");
+                if(kb.getCmdTextEntered() == "open"){
+                    fmt::print("open says me\n");
                 }
             }
         }

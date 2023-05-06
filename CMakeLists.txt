@@ -14,27 +14,27 @@ endif()
 
 
 
-include(ExternalProject)
-
-set(SFML_VERSION "2.5.1")
-
-ExternalProject_Add(SFML
-    URL "https://www.sfml-dev.org/files/SFML-${SFML_VERSION}-windows-gcc-7.3.0-mingw-64-bit.zip"
-    URL_MD5 "abcd1234"
-    PREFIX "${CMAKE_CURRENT_BINARY_DIR}/SFML"
-    CMAKE_ARGS
-        -DCMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_BINARY_DIR}/SFML-install
-        -DCMAKE_BUILD_TYPE=Release
-        -DSFML_BUILD_EXAMPLES=OFF
-        -DSFML_BUILD_TESTS=OFF
-        -DSFML_BUILD_DOC=OFF
-    )
-
-# Add SFML include and library directories to the project
-set(SFML_INCLUDE_DIR "${CMAKE_CURRENT_BINARY_DIR}/SFML-install/include")
-set(SFML_LIBRARY_DIR "${CMAKE_CURRENT_BINARY_DIR}/SFML-install/lib")
-include_directories(${SFML_INCLUDE_DIR})
-link_directories(${SFML_LIBRARY_DIR})
+# include(ExternalProject)
+# 
+# set(SFML_VERSION "2.5.1")
+# 
+# ExternalProject_Add(SFML
+#     URL "https://www.sfml-dev.org/files/SFML-${SFML_VERSION}-windows-gcc-7.3.0-mingw-64-bit.zip"
+#     URL_MD5 "abcd1234"
+#     PREFIX "${CMAKE_CURRENT_BINARY_DIR}/SFML"
+#     CMAKE_ARGS
+#         -DCMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_BINARY_DIR}/SFML-install
+#         -DCMAKE_BUILD_TYPE=Release
+#         -DSFML_BUILD_EXAMPLES=OFF
+#         -DSFML_BUILD_TESTS=OFF
+#         -DSFML_BUILD_DOC=OFF
+#     )
+# 
+# # Add SFML include and library directories to the project
+# set(SFML_INCLUDE_DIR "${CMAKE_CURRENT_BINARY_DIR}/SFML-install/include")
+# set(SFML_LIBRARY_DIR "${CMAKE_CURRENT_BINARY_DIR}/SFML-install/lib")
+# include_directories(${SFML_INCLUDE_DIR})
+# link_directories(${SFML_LIBRARY_DIR})
 
 
 
@@ -44,10 +44,10 @@ find_package(SFML 2.5
             system window graphics network audio
         REQUIRED)
 
-if(NOT SFML_FOUND)
-    message("SFML has not been found, building SFML first...")
-    add_dependencies(${PROJECT_NAME} SFML)
-endif()
+    # if(NOT SFML_FOUND)
+    #     message("SFML has not been found, building SFML first...")
+    #     add_dependencies(${PROJECT_NAME} SFML)
+    # endif()
 
 
 
@@ -65,8 +65,8 @@ endif()
 
 
 
-# find_package(fmt)
-
+find_package(fmt)
+find_package(Python REQUIRED Development)
 
 #for formatting
 add_custom_target(format
@@ -87,6 +87,7 @@ add_executable(${PROJECT_NAME}
         ./src/Utils/Stack.cpp
         ./src/Keyboard.cpp
         ./src/MyRect.cpp
+        ./src/Document.cpp
     )
 
 # Allows us to use <> when including files
@@ -96,7 +97,6 @@ target_include_directories(${PROJECT_NAME}
     PRIVATE "${PROJECT_BINARY_DIR}"
     )
 
-# fmt::fmt 
-target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} sfml-window sfml-graphics)
+target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} Python::Python fmt::fmt sfml-window sfml-graphics)
 
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)

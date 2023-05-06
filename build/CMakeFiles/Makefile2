@@ -71,36 +71,9 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/doc.dir/clean
 clean: CMakeFiles/format.dir/clean
 clean: CMakeFiles/Kamil.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/doc.dir
-
-# All Build rule for target.
-CMakeFiles/doc.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles --progress-num=8 "Built target doc"
-.PHONY : CMakeFiles/doc.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/doc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/doc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles 0
-.PHONY : CMakeFiles/doc.dir/rule
-
-# Convenience name for target.
-doc: CMakeFiles/doc.dir/rule
-.PHONY : doc
-
-# clean rule for target.
-CMakeFiles/doc.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/clean
-.PHONY : CMakeFiles/doc.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/format.dir
@@ -135,12 +108,12 @@ CMakeFiles/format.dir/clean:
 CMakeFiles/Kamil.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Kamil"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Kamil"
 .PHONY : CMakeFiles/Kamil.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Kamil.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Kamil.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alan/top_secret/cpp/NEA/Kamil/build/CMakeFiles 0
 .PHONY : CMakeFiles/Kamil.dir/rule

@@ -162,19 +162,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named doc
-
-# Build rule for target.
-doc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc
-.PHONY : doc
-
-# fast build rule for target.
-doc/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
-.PHONY : doc/fast
-
-#=============================================================================
 # Target rules for targets named format
 
 # Build rule for target.
@@ -199,6 +186,30 @@ Kamil: cmake_check_build_system
 Kamil/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/build
 .PHONY : Kamil/fast
+
+src/Document.o: src/Document.cpp.o
+.PHONY : src/Document.o
+
+# target to build an object file
+src/Document.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/Document.cpp.o
+.PHONY : src/Document.cpp.o
+
+src/Document.i: src/Document.cpp.i
+.PHONY : src/Document.i
+
+# target to preprocess a source file
+src/Document.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/Document.cpp.i
+.PHONY : src/Document.cpp.i
+
+src/Document.s: src/Document.cpp.s
+.PHONY : src/Document.s
+
+# target to generate assembly for a file
+src/Document.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/Document.cpp.s
+.PHONY : src/Document.cpp.s
 
 src/Editor.o: src/Editor.cpp.o
 .PHONY : src/Editor.o
@@ -356,9 +367,11 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... doc"
 	@echo "... format"
 	@echo "... Kamil"
+	@echo "... src/Document.o"
+	@echo "... src/Document.i"
+	@echo "... src/Document.s"
 	@echo "... src/Editor.o"
 	@echo "... src/Editor.i"
 	@echo "... src/Editor.s"

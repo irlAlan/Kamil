@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['editor_0',['Editor',['../dd/dc3/classEditor.html',1,'']]]
+  ['document_0',['Document',['../d1/d67/classDocument.html',1,'']]]
 ];

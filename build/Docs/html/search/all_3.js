@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['editor_0',['Editor',['../dd/dc3/classEditor.html',1,'Editor'],['../dd/dc3/classEditor.html#a4e70a8913b22edf541384811521eda7e',1,'Editor::Editor()']]],
-  ['editor_2eh_1',['Editor.h',['../de/d6e/Editor_8h.html',1,'']]],
-  ['enter_2',['ENTER',['../dc/d32/namespaceKEYS.html#aee8ab20957db1a914620e3e5699e5065aded341e23f0353519f0cd5cb046d2b01',1,'KEYS']]],
-  ['enterpress_3',['enterPress',['../d2/d68/classTextBox.html#a1fde06b82de152b1555e36a8d285a88d',1,'TextBox']]],
-  ['escape_4',['ESCAPE',['../dc/d32/namespaceKEYS.html#aee8ab20957db1a914620e3e5699e5065a3be57d8b1a4ea103e58a0402207b85ad',1,'KEYS']]],
-  ['event_5',['event',['../dd/dc3/classEditor.html#acb4234d552a8fd36b0e53131b954dab0',1,'Editor']]],
-  ['extend_6',['extend',['../dd/db7/classCommand_1_1Stack.html#a74d474689c37e7fb3080d1e18598ffb0',1,'Command::Stack']]]
+  ['delete_0',['DELETE',['../dc/d32/namespaceKEYS.html#aee8ab20957db1a914620e3e5699e5065ab0a71601906de387b51e327934215649',1,'KEYS']]],
+  ['deletechar_1',['deleteChar',['../d2/d68/classTextBox.html#ab09dbec80385d180c43c14e11d24ef1c',1,'TextBox']]],
+  ['docchanged_2',['docChanged',['../d1/d67/classDocument.html#a99777bedaef459f015d134396b0dd003',1,'Document']]],
+  ['document_3',['Document',['../d1/d67/classDocument.html',1,'Document'],['../d1/d67/classDocument.html#acdbcbe550084e8c20f4f67eb229ad66a',1,'Document::Document()'],['../d1/d67/classDocument.html#a80a43b24529f3eed449847823bb6ab47',1,'Document::Document(std::string fileP)']]],
+  ['document_2eh_4',['Document.h',['../df/def/Document_8h.html',1,'']]],
+  ['draw_5',['draw',['../dd/dc3/classEditor.html#a560909c31ad3cd0035c8d050f1042377',1,'Editor::draw()'],['../d9/d1c/classMyRect.html#af2e2556e7d3fb5408b7a287a0d4d0ed1',1,'MyRect::draw()'],['../d2/d68/classTextBox.html#a9b58260a30644338453856b8e8652d62',1,'TextBox::draw()']]]
 ];

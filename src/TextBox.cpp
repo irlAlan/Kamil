@@ -21,6 +21,11 @@
  * @param background - the initial background colour
  * @param thicc - the padding for the RectangleShape
  */
+
+
+// Change the way we store the text into a 2d vector of strings
+
+
 TextBox::TextBox(sf::RenderWindow* win, sf::Vector2f pos, sf::Vector2f size, std::string sfont, int fsize, sf::Color fcol, sf::Color background, float thicc)
     : MyRect(pos, size,background, background, thicc)
     , window{win}

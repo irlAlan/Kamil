@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['fcol_0',['fcol',['../d2/d68/classTextBox.html#a75f6b5783e47dcd456fbdba2da186373',1,'TextBox']]],
-  ['fillcolour_1',['fillColour',['../d9/d1c/classMyRect.html#af5dc0b3d01b20c3ba06e6217709d825f',1,'MyRect']]],
-  ['fname_2',['fname',['../d2/d68/classTextBox.html#aba3bb93bd63568f63bcdec6c1c79d28c',1,'TextBox']]],
-  ['font_3',['font',['../d2/d68/classTextBox.html#a2ab6b534d788191784115d891a4bc2f7',1,'TextBox']]],
-  ['frect_4',['fRect',['../d9/d1c/classMyRect.html#a909f557941744adbada4f6268230f15a',1,'MyRect']]],
-  ['fsize_5',['fsize',['../d2/d68/classTextBox.html#a29d2a814bf7d164b61a387cf078a56e8',1,'TextBox']]]
+  ['editor_0',['Editor',['../dd/dc3/classEditor.html',1,'Editor'],['../dd/dc3/classEditor.html#a4e70a8913b22edf541384811521eda7e',1,'Editor::Editor()']]],
+  ['editor_2eh_1',['Editor.h',['../de/d6e/Editor_8h.html',1,'']]],
+  ['enter_2',['ENTER',['../dc/d32/namespaceKEYS.html#aee8ab20957db1a914620e3e5699e5065aded341e23f0353519f0cd5cb046d2b01',1,'KEYS']]],
+  ['enterpress_3',['enterPress',['../d2/d68/classTextBox.html#a1fde06b82de152b1555e36a8d285a88d',1,'TextBox']]],
+  ['escape_4',['ESCAPE',['../dc/d32/namespaceKEYS.html#aee8ab20957db1a914620e3e5699e5065a3be57d8b1a4ea103e58a0402207b85ad',1,'KEYS']]],
+  ['event_5',['event',['../dd/dc3/classEditor.html#acb4234d552a8fd36b0e53131b954dab0',1,'Editor']]],
+  ['extend_6',['extend',['../dd/db7/classCommand_1_1Stack.html#a74d474689c37e7fb3080d1e18598ffb0',1,'Command::Stack']]]
 ];

@@ -1,6 +1,16 @@
 #ifndef KAMIL_TEXTBOX_HPP
 #define KAMIL_TEXTBOX_HPP
 
+/**
+ * @file Interface file for the TextBox class
+ *
+ * Inherits from MyRect class and defines a basic text box in SFML
+ * Allowd text to be written and deleted from it aswell has check if anything 
+ * is hovering over or selcted.
+ */
+
+
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Graphics/Color.hpp>
 #include <SFML/Graphics/Drawable.hpp>
@@ -49,13 +59,13 @@ class TextBox : public MyRect
          * @param background - the initial background colour
          * @param thicc - the padding for the RectangleShape
          */
-        TextBox(sf::RenderWindow*, sf::Vector2f, sf::Vector2f, std::string, int, sf::Color, sf::Color, float);
+        TextBox(sf::RenderWindow* win, sf::Vector2f pos, sf::Vector2f size, std::string sfont, int fsize, sf::Color fcol, sf::Color background, float thicc);
 
         /** 
          * @brief Set the size of the text
          * @param size text size
          */
-        void setTextSize(int); 
+        void setTextSize(int size); 
 
         /**
          * @brief Get the size of the text
@@ -67,7 +77,7 @@ class TextBox : public MyRect
          * @brief Set the colour of the text 
          * @param fill font colour
          */
-        void setTextColour(sf::Color);
+        void setTextColour(sf::Color colour);
 
         /** 
          * @brief Get the colour of the text
@@ -79,7 +89,7 @@ class TextBox : public MyRect
           * @brief set what font you use
           * @param font file dir of font
           */
-        void setFont(sf::Font&);
+        void setFont(sf::Font& font);
 
         /**
          * @brief Get both the main textbox and the cmd textbox 
@@ -102,7 +112,7 @@ class TextBox : public MyRect
          * @brief Sets the string
          * @param nstring - new string placed on tbox
          */
-        void setString(std::string);
+        void setString(std::string nstring);
 
         /**
          * @brief returns the text in tbox
@@ -112,7 +122,10 @@ class TextBox : public MyRect
 
         /**
          * @brief used to draw to the screen
-         * virutal method inherited from sf::Drawable
+         * virutal method inherited from MyRect -> sf::Drawable thats overrided here
+         * is what allows us to draw to window using window.draw(TextBox)
+         *
+         * Example of polymorphism
          */
         void draw(sf::RenderTarget& target, sf::RenderStates states)const override;
 
@@ -129,6 +142,6 @@ class TextBox : public MyRect
         std::string fname{}; /**< the name of the font used */
         int fsize{}; /**< the font size */
         sf::Color fcol{}; /**< the font colour */
-        bool mouseHover;
+        bool mouseHover; /**< if the mouse is hovering over */
 };
 #endif // KAMIL_TEXTBOX_HPP

@@ -1,0 +1,204 @@
+\hypertarget{classDocument}{}\doxysection{Document Class Reference}
+\label{classDocument}\index{Document@{Document}}
+
+
+\mbox{\hyperlink{classDocument}{Document}} class.  
+
+
+
+
+{\ttfamily \#include $<$Document.\+h$>$}
+
+
+
+Collaboration diagram for Document\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{da/d5f/classDocument__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}{Document}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classDocument}{Document}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDocument_a80a43b24529f3eed449847823bb6ab47}{Document}} (std\+::string fileP)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classDocument}{Document}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}{init}} ()
+\begin{DoxyCompactList}\small\item\em initialise the file TODO\+: overload this with file path \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocument_aa3d6389af1b8fbd7a5519f52f3a2fb69}{read\+File}} ()
+\begin{DoxyCompactList}\small\item\em read the file \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classDocument_ae7c19c8c497d76f99c3c3ab59e7fcd75}{get\+Rel\+Path}} ()
+\begin{DoxyCompactList}\small\item\em get the relative path \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classDocument_a7aa7f956d6fd898fb4ec61aceb45158e}{get\+Abs\+Path}} ()
+\begin{DoxyCompactList}\small\item\em get the relative path \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocument_aeab361d3adbecbc696fd339d7158b71d}{create\+File}} ()
+\begin{DoxyCompactList}\small\item\em create the file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocument_ab463a291d80c8538a246edbcde0aa50d}{create\+Dir}} ()
+\begin{DoxyCompactList}\small\item\em create a directory \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDocument_a0ee9d0dc188296e457eb28202c45ffa6}{save\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em save to a file \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDocument_a01fab747cf4573078e23bbd49db21def}{has\+Changed}} ()
+\begin{DoxyCompactList}\small\item\em if the file has changed \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classDocument_a439e52a616c80fd6de04aee141224f3f}{rel\+Path}}
+\item 
+std\+::string \mbox{\hyperlink{classDocument_afc0689ac2a0253d3682072f60d78a9b0}{abs\+Path}}
+\item 
+std\+::string \mbox{\hyperlink{classDocument_a5e14b182439e8c8fcfaf12b00425011c}{buff\+Info}}
+\item 
+bool \mbox{\hyperlink{classDocument_a99777bedaef459f015d134396b0dd003}{doc\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classDocument}{Document}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}\label{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}} 
+\index{Document@{Document}!Document@{Document}}
+\index{Document@{Document}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{Document()}{Document()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Document\+::\+Document (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classDocument}{Document}} class. 
+
+\mbox{\Hypertarget{classDocument_a80a43b24529f3eed449847823bb6ab47}\label{classDocument_a80a43b24529f3eed449847823bb6ab47}} 
+\index{Document@{Document}!Document@{Document}}
+\index{Document@{Document}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{Document()}{Document()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Document\+::\+Document (\begin{DoxyParamCaption}\item[{std\+::string}]{fileP }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classDocument}{Document}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fileP} & -\/ file path \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDocument_ab463a291d80c8538a246edbcde0aa50d}\label{classDocument_ab463a291d80c8538a246edbcde0aa50d}} 
+\index{Document@{Document}!createDir@{createDir}}
+\index{createDir@{createDir}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{createDir()}{createDir()}}
+{\footnotesize\ttfamily void Document\+::create\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+create a directory 
+
+\mbox{\Hypertarget{classDocument_aeab361d3adbecbc696fd339d7158b71d}\label{classDocument_aeab361d3adbecbc696fd339d7158b71d}} 
+\index{Document@{Document}!createFile@{createFile}}
+\index{createFile@{createFile}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{createFile()}{createFile()}}
+{\footnotesize\ttfamily void Document\+::create\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+create the file 
+
+\mbox{\Hypertarget{classDocument_a7aa7f956d6fd898fb4ec61aceb45158e}\label{classDocument_a7aa7f956d6fd898fb4ec61aceb45158e}} 
+\index{Document@{Document}!getAbsPath@{getAbsPath}}
+\index{getAbsPath@{getAbsPath}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{getAbsPath()}{getAbsPath()}}
+{\footnotesize\ttfamily std\+::string Document\+::get\+Abs\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the relative path 
+
+\mbox{\Hypertarget{classDocument_ae7c19c8c497d76f99c3c3ab59e7fcd75}\label{classDocument_ae7c19c8c497d76f99c3c3ab59e7fcd75}} 
+\index{Document@{Document}!getRelPath@{getRelPath}}
+\index{getRelPath@{getRelPath}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{getRelPath()}{getRelPath()}}
+{\footnotesize\ttfamily std\+::string Document\+::get\+Rel\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the relative path 
+
+\mbox{\Hypertarget{classDocument_a01fab747cf4573078e23bbd49db21def}\label{classDocument_a01fab747cf4573078e23bbd49db21def}} 
+\index{Document@{Document}!hasChanged@{hasChanged}}
+\index{hasChanged@{hasChanged}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{hasChanged()}{hasChanged()}}
+{\footnotesize\ttfamily bool Document\+::has\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+if the file has changed 
+
+\begin{DoxyReturn}{Returns}
+bool -\/ true if file has changed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}\label{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}} 
+\index{Document@{Document}!init@{init}}
+\index{init@{init}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Document\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initialise the file TODO\+: overload this with file path 
+
+\mbox{\Hypertarget{classDocument_aa3d6389af1b8fbd7a5519f52f3a2fb69}\label{classDocument_aa3d6389af1b8fbd7a5519f52f3a2fb69}} 
+\index{Document@{Document}!readFile@{readFile}}
+\index{readFile@{readFile}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily void Document\+::read\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+read the file 
+
+\mbox{\Hypertarget{classDocument_a0ee9d0dc188296e457eb28202c45ffa6}\label{classDocument_a0ee9d0dc188296e457eb28202c45ffa6}} 
+\index{Document@{Document}!saveFile@{saveFile}}
+\index{saveFile@{saveFile}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{saveFile()}{saveFile()}}
+{\footnotesize\ttfamily bool Document\+::save\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+save to a file 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDocument_afc0689ac2a0253d3682072f60d78a9b0}\label{classDocument_afc0689ac2a0253d3682072f60d78a9b0}} 
+\index{Document@{Document}!absPath@{absPath}}
+\index{absPath@{absPath}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{absPath}{absPath}}
+{\footnotesize\ttfamily std\+::string Document\+::abs\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+absolute path \mbox{\Hypertarget{classDocument_a5e14b182439e8c8fcfaf12b00425011c}\label{classDocument_a5e14b182439e8c8fcfaf12b00425011c}} 
+\index{Document@{Document}!buffInfo@{buffInfo}}
+\index{buffInfo@{buffInfo}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{buffInfo}{buffInfo}}
+{\footnotesize\ttfamily std\+::string Document\+::buff\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDocument_a99777bedaef459f015d134396b0dd003}\label{classDocument_a99777bedaef459f015d134396b0dd003}} 
+\index{Document@{Document}!docChanged@{docChanged}}
+\index{docChanged@{docChanged}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{docChanged}{docChanged}}
+{\footnotesize\ttfamily bool Document\+::doc\+Changed\hspace{0.3cm}{\ttfamily [private]}}
+
+buffer information (the file text) if the file has changed \mbox{\Hypertarget{classDocument_a439e52a616c80fd6de04aee141224f3f}\label{classDocument_a439e52a616c80fd6de04aee141224f3f}} 
+\index{Document@{Document}!relPath@{relPath}}
+\index{relPath@{relPath}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{relPath}{relPath}}
+{\footnotesize\ttfamily std\+::string Document\+::rel\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+relative path 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Kamil/\mbox{\hyperlink{Document_8h}{Document.\+h}}\end{DoxyCompactItemize}

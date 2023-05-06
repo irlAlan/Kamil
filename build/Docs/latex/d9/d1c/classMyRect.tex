@@ -12,28 +12,40 @@ gives extra functionality to Float\+Rect
 
 
 Inheritance diagram for My\+Rect\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/db3/classMyRect__inherit__graph}
+\end{center}
+\end{figure}
 
 
 Collaboration diagram for My\+Rect\+:
-% FIG 1
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d10/classMyRect__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classMyRect_aad4e1c357ceaf2fea88dd9e572517abd}{My\+Rect}} (sf\+::\+Vector2f, sf\+::\+Vector2f, sf\+::\+Color, sf\+::\+Color, float)
+\mbox{\hyperlink{classMyRect_a06af1d222788e2a608ff7f4e48a57380}{My\+Rect}} (sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}}, sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}}, sf\+::\+Color \mbox{\hyperlink{classMyRect_af5dc0b3d01b20c3ba06e6217709d825f}{fill\+Colour}}, sf\+::\+Color \mbox{\hyperlink{classMyRect_a5ae95d256f69eabd3151c991e751657e}{outline\+Colour}}, float \mbox{\hyperlink{classMyRect_a37e3d9054f98bb1ed6a4969f335213f7}{outline\+Thicknes}})
 \begin{DoxyCompactList}\small\item\em constructor for \mbox{\hyperlink{classMyRect}{My\+Rect}} \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classMyRect_afc532aab785abaa543781ba92370a53d}{set\+Position}} (sf\+::\+Vector2f)
+void \mbox{\hyperlink{classMyRect_a8d82606eca0c71f19e4e51ec047e37f4}{set\+Position}} (sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}})
 \begin{DoxyCompactList}\small\item\em sets the position of rect \end{DoxyCompactList}\item 
 sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_aba57079a7eb2337d8bab558899fb67c6}{get\+Pos}} () const
 \begin{DoxyCompactList}\small\item\em get the position of rect \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classMyRect_aa4ec759e58e7357686e7644b324af38a}{set\+Fill\+Colour}} (sf\+::\+Color)
-\begin{DoxyCompactList}\small\item\em set the fill colour \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classMyRect_a468d13e312ecad9c3176c42cfa07bddc}{set\+Size}} (sf\+::\+Vector2f)
-\begin{DoxyCompactList}\small\item\em set the size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyRect_abf35db87008be9e2a804b603e46fb4e2}{set\+Fill\+Colour}} (sf\+::\+Color colour)
+\begin{DoxyCompactList}\small\item\em set the fill colour of the rect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyRect_a63d3276bf02e1a4f7bd000854a1ff8e7}{set\+Size}} (sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}})
+\begin{DoxyCompactList}\small\item\em set the size of the rect \end{DoxyCompactList}\item 
 sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_aaa28af9ede7c38a67be121afb2e2b6b4}{get\+Size}} () const
-\begin{DoxyCompactList}\small\item\em get the size \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em get the size of the rect \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMyRect_af2e2556e7d3fb5408b7a287a0d4d0ed1}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
-\begin{DoxyCompactList}\small\item\em draw to window \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em virutal method to draw to window \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -57,11 +69,11 @@ gives extra functionality to Float\+Rect
 Uses Float\+Rect for the ability to collision detect better than Rectangle\+Shape and inherits from Drawable so we are able to keep uniform sytax of window.\+draw(\+Drawable object) 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classMyRect_aad4e1c357ceaf2fea88dd9e572517abd}\label{classMyRect_aad4e1c357ceaf2fea88dd9e572517abd}} 
+\mbox{\Hypertarget{classMyRect_a06af1d222788e2a608ff7f4e48a57380}\label{classMyRect_a06af1d222788e2a608ff7f4e48a57380}} 
 \index{MyRect@{MyRect}!MyRect@{MyRect}}
 \index{MyRect@{MyRect}!MyRect@{MyRect}}
 \doxysubsubsection{\texorpdfstring{MyRect()}{MyRect()}}
-{\footnotesize\ttfamily My\+Rect\+::\+My\+Rect (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{,  }\item[{sf\+::\+Vector2f}]{,  }\item[{sf\+::\+Color}]{,  }\item[{sf\+::\+Color}]{,  }\item[{float}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily My\+Rect\+::\+My\+Rect (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{sf\+::\+Color}]{fill\+Colour,  }\item[{sf\+::\+Color}]{outline\+Colour,  }\item[{float}]{outline\+Thicknes }\end{DoxyParamCaption})}
 
 
 
@@ -91,9 +103,11 @@ constructor for \mbox{\hyperlink{classMyRect}{My\+Rect}}
 
 
 
-draw to window 
+virutal method to draw to window 
 
-virutal method inherited from sf\+::\+Drawable \mbox{\Hypertarget{classMyRect_aba57079a7eb2337d8bab558899fb67c6}\label{classMyRect_aba57079a7eb2337d8bab558899fb67c6}} 
+Inherited from sf\+::\+Drawable it is what allows us to draw to the screen using window.\+draw(\+My\+Rect); instead of My\+Rect.\+draw(window) keeping similar drawing standard to base SFML code making our class more modular and familiar to those who use SFML
+
+Example of polymorphism \mbox{\Hypertarget{classMyRect_aba57079a7eb2337d8bab558899fb67c6}\label{classMyRect_aba57079a7eb2337d8bab558899fb67c6}} 
 \index{MyRect@{MyRect}!getPos@{getPos}}
 \index{getPos@{getPos}!MyRect@{MyRect}}
 \doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
@@ -114,31 +128,31 @@ sf\+::\+Vector2f pos
 
 
 
-get the size 
+get the size of the rect 
 
 \begin{DoxyReturn}{Returns}
 sf\+::\+Vector2f size 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classMyRect_aa4ec759e58e7357686e7644b324af38a}\label{classMyRect_aa4ec759e58e7357686e7644b324af38a}} 
+\mbox{\Hypertarget{classMyRect_abf35db87008be9e2a804b603e46fb4e2}\label{classMyRect_abf35db87008be9e2a804b603e46fb4e2}} 
 \index{MyRect@{MyRect}!setFillColour@{setFillColour}}
 \index{setFillColour@{setFillColour}!MyRect@{MyRect}}
 \doxysubsubsection{\texorpdfstring{setFillColour()}{setFillColour()}}
-{\footnotesize\ttfamily void My\+Rect\+::set\+Fill\+Colour (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void My\+Rect\+::set\+Fill\+Colour (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{colour }\end{DoxyParamCaption})}
 
 
 
-set the fill colour 
+set the fill colour of the rect 
 
 
 \begin{DoxyParams}{Parameters}
 {\em sf\+::\+Color} & colour \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMyRect_afc532aab785abaa543781ba92370a53d}\label{classMyRect_afc532aab785abaa543781ba92370a53d}} 
+\mbox{\Hypertarget{classMyRect_a8d82606eca0c71f19e4e51ec047e37f4}\label{classMyRect_a8d82606eca0c71f19e4e51ec047e37f4}} 
 \index{MyRect@{MyRect}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!MyRect@{MyRect}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
-{\footnotesize\ttfamily void My\+Rect\+::set\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void My\+Rect\+::set\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
 
 
 
@@ -149,15 +163,15 @@ sets the position of rect
 {\em sf\+::\+Vector2f} & pos \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMyRect_a468d13e312ecad9c3176c42cfa07bddc}\label{classMyRect_a468d13e312ecad9c3176c42cfa07bddc}} 
+\mbox{\Hypertarget{classMyRect_a63d3276bf02e1a4f7bd000854a1ff8e7}\label{classMyRect_a63d3276bf02e1a4f7bd000854a1ff8e7}} 
 \index{MyRect@{MyRect}!setSize@{setSize}}
 \index{setSize@{setSize}!MyRect@{MyRect}}
 \doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
-{\footnotesize\ttfamily void My\+Rect\+::set\+Size (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void My\+Rect\+::set\+Size (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{size }\end{DoxyParamCaption})}
 
 
 
-set the size 
+set the size of the rect 
 
 
 \begin{DoxyParams}{Parameters}
@@ -173,7 +187,7 @@ set the size
 \doxysubsubsection{\texorpdfstring{fillColour}{fillColour}}
 {\footnotesize\ttfamily sf\+::\+Color My\+Rect\+::fill\+Colour\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classMyRect_a909f557941744adbada4f6268230f15a}\label{classMyRect_a909f557941744adbada4f6268230f15a}} 
+colour of rect \mbox{\Hypertarget{classMyRect_a909f557941744adbada4f6268230f15a}\label{classMyRect_a909f557941744adbada4f6268230f15a}} 
 \index{MyRect@{MyRect}!fRect@{fRect}}
 \index{fRect@{fRect}!MyRect@{MyRect}}
 \doxysubsubsection{\texorpdfstring{fRect}{fRect}}
@@ -185,25 +199,25 @@ for collision checking \mbox{\Hypertarget{classMyRect_a5ae95d256f69eabd3151c991e
 \doxysubsubsection{\texorpdfstring{outlineColour}{outlineColour}}
 {\footnotesize\ttfamily sf\+::\+Color My\+Rect\+::outline\+Colour\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classMyRect_a37e3d9054f98bb1ed6a4969f335213f7}\label{classMyRect_a37e3d9054f98bb1ed6a4969f335213f7}} 
+outline colour of rect \mbox{\Hypertarget{classMyRect_a37e3d9054f98bb1ed6a4969f335213f7}\label{classMyRect_a37e3d9054f98bb1ed6a4969f335213f7}} 
 \index{MyRect@{MyRect}!outlineThicknes@{outlineThicknes}}
 \index{outlineThicknes@{outlineThicknes}!MyRect@{MyRect}}
 \doxysubsubsection{\texorpdfstring{outlineThicknes}{outlineThicknes}}
 {\footnotesize\ttfamily float My\+Rect\+::outline\+Thicknes\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}\label{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}} 
+outline thickness of rect \mbox{\Hypertarget{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}\label{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}} 
 \index{MyRect@{MyRect}!pos@{pos}}
 \index{pos@{pos}!MyRect@{MyRect}}
 \doxysubsubsection{\texorpdfstring{pos}{pos}}
 {\footnotesize\ttfamily sf\+::\+Vector2f My\+Rect\+::pos\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}\label{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}} 
+position of rect \mbox{\Hypertarget{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}\label{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}} 
 \index{MyRect@{MyRect}!size@{size}}
 \index{size@{size}!MyRect@{MyRect}}
 \doxysubsubsection{\texorpdfstring{size}{size}}
 {\footnotesize\ttfamily sf\+::\+Vector2f My\+Rect\+::size\hspace{0.3cm}{\ttfamily [protected]}}
 
-
+size of rect 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

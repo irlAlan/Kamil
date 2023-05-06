@@ -238,4 +238,25 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/MyRect.h \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h \
+ /usr/local/include/fmt/core.h /usr/include/c++/12.2.1/cstddef \
+ /usr/include/c++/12.2.1/cstring /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/12.2.1/limits \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Document.h \
+ /usr/include/c++/12.2.1/filesystem /usr/include/c++/12.2.1/bits/fs_fwd.h \
+ /usr/include/c++/12.2.1/bits/chrono.h /usr/include/c++/12.2.1/ratio \
+ /usr/include/c++/12.2.1/bits/parse_numbers.h \
+ /usr/include/c++/12.2.1/bits/fs_path.h /usr/include/c++/12.2.1/iomanip \
+ /usr/include/c++/12.2.1/bits/quoted_string.h \
+ /usr/include/c++/12.2.1/sstream /usr/include/c++/12.2.1/bits/sstream.tcc \
+ /usr/include/c++/12.2.1/codecvt \
+ /usr/include/c++/12.2.1/ext/concurrence.h \
+ /usr/include/c++/12.2.1/bits/shared_ptr.h \
+ /usr/include/c++/12.2.1/bits/shared_ptr_base.h \
+ /usr/include/c++/12.2.1/bits/allocated_ptr.h \
+ /usr/include/c++/12.2.1/bits/unique_ptr.h \
+ /usr/include/c++/12.2.1/bits/fs_dir.h \
+ /usr/include/c++/12.2.1/bits/fs_ops.h /usr/include/c++/12.2.1/fstream \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/12.2.1/bits/fstream.tcc

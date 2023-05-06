@@ -1,6 +1,6 @@
 <map id="Keyboard" name="Keyboard">
-<area shape="rect" id="node1" title="A class to handle Keyboard input." alt="" coords="120,160,251,355"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,125,83"/>
-<area shape="rect" id="node3" title=" " alt="" coords="150,5,221,83"/>
-<area shape="rect" id="node4" title=" " alt="" coords="245,5,299,83"/>
+<area shape="rect" id="node1" title="A class to handle Keyboard input." alt="" coords="102,199,266,488"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,125,87"/>
+<area shape="rect" id="node3" title=" " alt="" coords="149,5,219,87"/>
+<area shape="rect" id="node4" title=" " alt="" coords="242,5,296,87"/>
 </map>

@@ -34,5 +34,11 @@
   "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/MyRect.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/MyRect.cpp",
   "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/MyRect.cpp",
   "output": "CMakeFiles/Kamil.dir/src/MyRect.cpp.o"
+},
+{
+  "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/Document.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Document.cpp",
+  "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/Document.cpp",
+  "output": "CMakeFiles/Kamil.dir/src/Document.cpp.o"
 }
 ]
