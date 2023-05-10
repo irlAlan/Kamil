@@ -60,6 +60,7 @@ class TextBox : public MyRect
          * @param thicc - the padding for the RectangleShape
          */
         TextBox(sf::RenderWindow* win, sf::Vector2f pos, sf::Vector2f size, std::string sfont, int fsize, sf::Color fcol, sf::Color background, float thicc);
+        TextBox();
 
         /** 
          * @brief Set the size of the text

@@ -1,12 +1,17 @@
+#include <Kamil/Document.h>
 #include <Kamil/Keyboard.h>
 #include <Kamil/Editor.h>
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Window/Event.hpp>
 #include <SFML/Window/Keyboard.hpp>
 
+#include <cstdint>
+#include <fmt/core.h>
+#include <vector>
 
-Keyboard::Keyboard(sf::RenderWindow* win, sf::Vector2f bounds)
+Keyboard::Keyboard(sf::RenderWindow* win,Document* doc,  sf::Vector2f bounds)
     :window{win}
+    //,doc{doc}
     ,bounds{bounds}
 {
 }
@@ -27,12 +32,17 @@ void Keyboard::handleKeyEvent(sf::Event& event){
                 case KEYS::BS:
                     backSpace();
                     break;
-               //  case KEYS::DELETE:
-               //      deleteKey();
+                case KEYS::ESCAPE:
+                    //backSpace();
+                    break;
                default:
                     tEntered += static_cast<char>(event.text.unicode);
                     break;
             }
+//            if(event.text.unicode == 0x73 && sf::Keyboard::isKeyPressed(sf::Keyboard::LControl)){
+//                fmt::print("S + LControl");
+//                doc->saveFile();
+//            }
         }
     }
 }
@@ -90,6 +100,16 @@ void Keyboard::backSpace(){
    }
 }
 
+
+
+int Keyboard::getLineNumber(){
+    int lineNumber;
+    for(const auto& val : tEntered){
+        if(val == '\n')
+            ++lineNumber;
+    }
+    return lineNumber;
+}
 
 sf::Vector2f Keyboard::getBounds() const{
     return bounds;

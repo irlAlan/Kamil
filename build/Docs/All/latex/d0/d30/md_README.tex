@@ -1,0 +1,100 @@
+A Text \mbox{\hyperlink{classEditor}{Editor}} for kamil\hypertarget{md_README_autotoc_md1}{}\doxysection{Analysis}\label{md_README_autotoc_md1}
+\hypertarget{md_README_autotoc_md2}{}\doxysubsection{Background and Identifying the problem}\label{md_README_autotoc_md2}
+The Project I will be developing will be in answer to the challenge set out by the end user and friend of mine, Kamil. He challenged me to make a light weight editor that he can use in his day to day life and when doing python projects.
+
+This leads me on to identifying the base problems at hand and summing them into 3 questions\+: \begin{DoxyVerb}1) What is a text editor and how does it differ from an IDE?
+2) How do I make a text editor or IDE for kamil
+3) How do I make it efficient enough to meet his standards?
+\end{DoxyVerb}
+ To kick things along I began to do research on Text editors and IDE\textquotesingle{}s and found out that the difference between isnt limited to Operating System platforms or by how much better one is at a specific task but by the features each can do. Text Editors, as the name suggest are specifically desinged for manipulting any form of text that it can open. While an IDE (Integrated Development Environment) is specifically desinged for software development and comes with a multitude of features that engineers can make use of to streemline their workflow.
+
+A table of pros and cons\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Pros   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ cons    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Pros   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ cons    }\\\cline{1-3}
+\endhead
+Text \mbox{\hyperlink{classEditor}{Editor}}   &Light weight,   &Limited in capability    \\\cline{1-3}
+&Fast,   &\\\cline{1-3}
+&Resource efficient,   &\\\cline{1-3}
+&Very Modular   &\\\cline{1-3}
+&&\\\cline{1-3}
+IDE   &Has everything out   &Slow    \\\cline{1-3}
+&the box,   &Not very Resource efficient    \\\cline{1-3}
+&Modular   &\\\cline{1-3}
+&&\\\cline{1-3}
+\end{longtabu}
+
+
+Here are pictures of some text editors and IDE\textquotesingle{}s\+:
+
+ 
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{neovimLook}}
+\end{DoxyImageNoCaption}
+
+
+ 
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{baseVimLook}}
+\end{DoxyImageNoCaption}
+\hypertarget{md_README_autotoc_md3}{}\doxysubsection{End User needs}\label{md_README_autotoc_md3}
+When talking to Kamil about his needs it was apparant that he wanted something modular in the sense that it comes with what he needs so its not a hassle to work with and it works with multiple different file types.
+
+ 
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{Kamil_info}}
+\end{DoxyImageNoCaption}
+
+
+To conclude the User needs\+: Kamil would like\+:
+
+
+\begin{DoxyItemize}
+\item Not laggy
+\item multple fonts
+\item import own fonts
+\item change colour of text
+\item change size of font
+\item select and format characters
+\end{DoxyItemize}
+
+Extra Features\+:
+
+
+\begin{DoxyItemize}
+\item Zoom in / Out
+\item Scroll up and down
+\item change background colour
+\item change text colour
+\item (potentially) load default colour\+Scheme
+\item Handle commands such as cmd + s to save etc
+\item Use arrorw keys and H,J,K,L to move through the text
+\item Use mouse position to place cursor in text
+\item select text using mouse
+\item Save files
+\item Load files
+\item create directory tree
+\item traverse directory
+\item handled in .txt format
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md4}{}\doxysection{Structure}\label{md_README_autotoc_md4}
+Kamil.\+cpp -\/ Main window (text window is used) -\/Window (has the text box window and the line number) -\/inupts (handles events like keyboard clicks and mouse events, state changes happen here) -\/textdoc (handles the file like saving it)
+
+window
+\begin{DoxyItemize}
+\item Main Window \mbox{\hyperlink{classEditor}{Editor}}
+\item Where text is handled (same size as window)
+\item Rectangle on left for margin
+\item font
+\item line info
+\item drawn on main window Input
+\item mouse and keyboard window Text\+Document
+\end{DoxyItemize}
+
+-- Disliked buttons no button in mine -- Dislike having to hunt for library to get stuff done -- doesnt like writing code -\/ no response -- maybe, stong yes 

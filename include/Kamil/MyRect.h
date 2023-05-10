@@ -49,6 +49,7 @@ class MyRect : public sf::FloatRect
          * @param outlineThicknes - outline thickness of rect
          */
         MyRect(sf::Vector2f pos, sf::Vector2f size, sf::Color fillColour, sf::Color outlineColour, float outlineThicknes);
+        MyRect();
 
         /**
          * @brief sets the position of rect

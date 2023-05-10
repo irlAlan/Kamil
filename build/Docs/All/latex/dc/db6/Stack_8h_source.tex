@@ -1,0 +1,34 @@
+\hypertarget{Stack_8h_source}{}\doxysection{Stack.\+h}
+\label{Stack_8h_source}\index{include/Kamil/Utils/Stack.h@{include/Kamil/Utils/Stack.h}}
+\mbox{\hyperlink{Stack_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KAMIL\_STACK\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KAMIL\_STACK\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceCommand}{Command}}\{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Dynamic\ stack\ array}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCommand_1_1Stack}{Stack}}\{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classCommand_1_1Stack}{Stack}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCommand_1_1Stack_a31d83873e189af242a46cde3246e4c0d}{getMax}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCommand_1_1Stack_a97d3263a57b60c2ee7c6364ee039e34c}{printStack}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCommand_1_1Stack_a041536927895418a2083326e9475e637}{pop}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCommand_1_1Stack_a0d755844911720afb8d140cdf3f419ac}{push}}(T);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCommand_1_1Stack_a74d474689c37e7fb3080d1e18598ffb0}{extend}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCommand_1_1Stack_ac443635a239a17f70e59c7fe3b7e9f38}{max\_size}}\{\};}
+\DoxyCodeLine{00024\ \ \ \ \ T*\ \mbox{\hyperlink{classCommand_1_1Stack_a5ff9e1f366877184e56a19cf696646d7}{stack\_array}}\{\textcolor{keyword}{new}\ T[\mbox{\hyperlink{classCommand_1_1Stack_ac443635a239a17f70e59c7fe3b7e9f38}{max\_size}}]\};}
+\DoxyCodeLine{00025\ \ \ \ \ T*\ \mbox{\hyperlink{classCommand_1_1Stack_a43cb43dfb4808a7e2c9feab888ec3c1f}{SP}}\ =\ \&\mbox{\hyperlink{classCommand_1_1Stack_a5ff9e1f366877184e56a19cf696646d7}{stack\_array}}[\mbox{\hyperlink{classCommand_1_1Stack_ac443635a239a17f70e59c7fe3b7e9f38}{max\_size}}];}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCommand_1_1Stack_a809d07bfeefeb0af0b9109df96a25e41}{SP\_pos}}\ =\ \mbox{\hyperlink{classCommand_1_1Stack_ac443635a239a17f70e59c7fe3b7e9f38}{max\_size}};}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \}\ \textcolor{comment}{//\ Command}}
+
+\end{DoxyCode}

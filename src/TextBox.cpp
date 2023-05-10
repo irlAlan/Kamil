@@ -1,4 +1,4 @@
-#include "Kamil/MyRect.h"
+#include <Kamil/MyRect.h>
 #include <Kamil/TextBox.h>
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderStates.hpp>
@@ -24,7 +24,6 @@
 
 
 // Change the way we store the text into a 2d vector of strings
-
 
 TextBox::TextBox(sf::RenderWindow* win, sf::Vector2f pos, sf::Vector2f size, std::string sfont, int fsize, sf::Color fcol, sf::Color background, float thicc)
     : MyRect(pos, size,background, background, thicc)

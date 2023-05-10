@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build
+CXX_INCLUDES = -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -isystem /usr/include/python3.11
 
 CXX_FLAGS = -g -std=c++17
 

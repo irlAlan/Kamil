@@ -1,0 +1,5 @@
+<map id="Keyboard::handleKeyEvent" name="Keyboard::handleKeyEvent">
+<area shape="rect" id="node1" title="handle keyboard events" alt="" coords="5,31,185,57"/>
+<area shape="rect" id="node2" href="$dc/dd2/classKeyboard.html#aa1a7684a8cdd57383590ca287b251e7d" title="when we backspace on teh text" alt="" coords="233,5,382,32"/>
+<area shape="rect" id="node3" href="$dc/dd2/classKeyboard.html#af30d4f01cf85e3511c5aac5d60862632" title="get the bounds of the area we are in" alt="" coords="234,56,381,83"/>
+</map>

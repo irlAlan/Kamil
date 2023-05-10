@@ -37,10 +37,16 @@ public:
      */
     void init();
 
+    void init(std::string inF);
+
+
+    int getLineCount();
+
     /**
      * @brief read the file
+     * @return std::string to the buffer info
      */
-    void readFile();
+    std::string readFile();
 
     /**
      * @brief get the relative path
@@ -67,11 +73,20 @@ public:
      */
     bool saveFile(const std::string& filename);
 
+    bool saveFile();
+
+
+    void setBuffInfo(std::string info);
+
     /**
      * @brief if the file has changed
      * @return bool - true if file has changed
      */
     bool hasChanged();
+
+    bool hasChanged(bool val);
+
+    bool docHasText();
 
     // void addTextToPos(std::string txt, int pos);
 

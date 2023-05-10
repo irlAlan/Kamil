@@ -1,0 +1,42 @@
+I want to make a light Text \mbox{\hyperlink{classEditor}{Editor}} similar in style to vim/neovim. It enables you to edit, save, load and manipulate text in a custom UI built using SFML and cpp.\+It should be mouse and keyboard friendly and be able to run commands from a command line similar to other vim-\/like editors\hypertarget{md_include_Kamil_Info_autotoc_md1}{}\doxysection{Features}\label{md_include_Kamil_Info_autotoc_md1}
+\begin{DoxyVerb}Editor:
+    - Zoom in / Out
+    - Scroll up and down
+    - change background colour
+    - change text colour
+    - (potentially) load default colourScheme
+
+KeyBoard:
+    - Handle commands such as cmd + s to save etc
+    - Use arrorw keys and H,J,K,L to move through the text
+Mouse:
+    - Use mouse position to place cursor in text
+    - select text using mouse
+
+Files:
+    - Save files
+    - Load files
+    - create directory tree
+    - traverse directory 
+    - handled in .txt format
+\end{DoxyVerb}
+ \hypertarget{md_include_Kamil_Info_autotoc_md2}{}\doxysection{Order i should implement things}\label{md_include_Kamil_Info_autotoc_md2}
+\begin{DoxyVerb}- Make window
+- section window in two for lines and text box
+- add cursor to text box side
+\end{DoxyVerb}
+ \hypertarget{md_include_Kamil_Info_autotoc_md3}{}\doxysection{Structure}\label{md_include_Kamil_Info_autotoc_md3}
+Kamil.\+cpp -\/ Main window (text window is used) -\/Window (has the text box window and the line number) -\/inupts (handles events like keyboard clicks and mouse events, state changes happen here) -\/textdoc (handles the file like saving it)
+
+window
+\begin{DoxyItemize}
+\item Main Window \mbox{\hyperlink{classEditor}{Editor}}
+\item Where text is handled (same size as window)
+\item Rectangle on left for margin
+\item font
+\item line info
+\item drawn on main window Input
+\item mouse and keyboard window Text\+Document
+\end{DoxyItemize}
+
+-- Disliked buttons no button in mine -- Dislike having to hunt for library to get stuff done -- doesnt like writing code -\/ no response -- maybe, stong yes 

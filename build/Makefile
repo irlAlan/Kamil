@@ -235,6 +235,30 @@ src/Editor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/Editor.cpp.s
 .PHONY : src/Editor.cpp.s
 
+src/EditorCam.o: src/EditorCam.cpp.o
+.PHONY : src/EditorCam.o
+
+# target to build an object file
+src/EditorCam.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/EditorCam.cpp.o
+.PHONY : src/EditorCam.cpp.o
+
+src/EditorCam.i: src/EditorCam.cpp.i
+.PHONY : src/EditorCam.i
+
+# target to preprocess a source file
+src/EditorCam.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/EditorCam.cpp.i
+.PHONY : src/EditorCam.cpp.i
+
+src/EditorCam.s: src/EditorCam.cpp.s
+.PHONY : src/EditorCam.s
+
+# target to generate assembly for a file
+src/EditorCam.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kamil.dir/build.make CMakeFiles/Kamil.dir/src/EditorCam.cpp.s
+.PHONY : src/EditorCam.cpp.s
+
 src/Keyboard.o: src/Keyboard.cpp.o
 .PHONY : src/Keyboard.o
 
@@ -375,6 +399,9 @@ help:
 	@echo "... src/Editor.o"
 	@echo "... src/Editor.i"
 	@echo "... src/Editor.s"
+	@echo "... src/EditorCam.o"
+	@echo "... src/EditorCam.i"
+	@echo "... src/EditorCam.s"
 	@echo "... src/Keyboard.o"
 	@echo "... src/Keyboard.i"
 	@echo "... src/Keyboard.s"

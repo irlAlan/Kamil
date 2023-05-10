@@ -88,6 +88,7 @@ add_executable(${PROJECT_NAME}
         ./src/Keyboard.cpp
         ./src/MyRect.cpp
         ./src/Document.cpp
+        ./src/EditorCam.cpp
     )
 
 # Allows us to use <> when including files

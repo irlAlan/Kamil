@@ -17,6 +17,11 @@
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Window/Keyboard.hpp>
 
+#include "Document.h"
+#include <fmt/core.h>
+
+#include <array>
+
 /**
  * @brief An enum for Keyboard characters in hex form
  */
@@ -32,6 +37,14 @@ namespace KEYS{
 }
 
 
+#ifdef USE_KEYS
+
+#define "LControl" sf::Keyboard::KEYS::LControl
+
+#endif
+
+
+
 /**
  * @brief A class to handle Keyboard input
  */
@@ -42,7 +55,7 @@ class Keyboard{
          * @param win - reference to main window
          * @param bounds - bounds of the window we are working in
          */
-        Keyboard(sf::RenderWindow* win, sf::Vector2f bounds);
+        Keyboard(sf::RenderWindow* win, Document* doc, sf::Vector2f bounds);
 
 
         /**
@@ -126,9 +139,24 @@ class Keyboard{
          * @param event - to get text entered from events
          */
         void handleMouseEvent(sf::Event& event); // not implemented yet
+        
+
+        int getLineNumber();
+
+        template<typename T, size_t N, typename... Args>
+        void kbrCmd(Args... args){
+            std::array<T,N> val{args...};
+            for(const auto& element: val){
+                fmt::print("{}", element);
+            }
+        }
+
+
+// get position in text
 
     private:
         sf::RenderWindow* window; /**< refernce to window */
+        // Document* doc;
         sf::Vector2f bounds; /**< store the bounded area */
         std::string tEntered; /**< the text entered  to main box*/
         std::string tDeleted; /**< the text deleted from main box*/

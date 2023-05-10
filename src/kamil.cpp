@@ -18,8 +18,7 @@ int main(int argc, char* argv[])
     if(argc == 2 ){
         dir = argv[1];
         fmt::print("{}\n", dir);
-        Document doc{dir};
-        doc.init();
+        doc.init(dir);
     }
     //else if(argc == 3){
        // dirInfo = getWorkingDirectory(argv[0]);
@@ -35,23 +34,23 @@ int main(int argc, char* argv[])
 
      sf::RenderWindow window(sf::VideoMode(640, 480), "SFML = <3");
      sf::Event event;
-     Editor edit{&window, &event};
+     Editor edit{&window, &event, &doc};
      edit.draw();
 
 
-    //  while(window.isOpen())
-    //  {
-    //      while(window.pollEvent(event)){
-    //          if(event.type == sf::Event::Closed)
-    //              window.close();
-    //          if(event.key.code == sf::Keyboard::S && sf::Keyboard::isKeyPressed(sf::Keyboard::LControl)){
-    //             doc.saveFile(saveFileName);
-    //             fmt::print("Saved file to: {}", saveFileName);
-    //          }
-    //          edit.handleEvent();
+   //  while(window.isOpen())
+   //  {
+   //      while(window.pollEvent(event)){
+   //          if(event.type == sf::Event::Closed)
+   //              window.close();
+   //          if(event.key.code == sf::Keyboard::S && sf::Keyboard::isKeyPressed(sf::Keyboard::LControl)){
+   //             doc.saveFile(saveFileName);
+   //             fmt::print("Saved file to: {}", saveFileName);
+   //          }
+   //          edit.handleEvent();
 
-    //      }
-    //  }
+   //      }
+   //  }
 
 
 

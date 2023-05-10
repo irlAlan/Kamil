@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Kamil.dir/src/Document.cpp.o.d"
   "CMakeFiles/Kamil.dir/src/Editor.cpp.o"
   "CMakeFiles/Kamil.dir/src/Editor.cpp.o.d"
+  "CMakeFiles/Kamil.dir/src/EditorCam.cpp.o"
+  "CMakeFiles/Kamil.dir/src/EditorCam.cpp.o.d"
   "CMakeFiles/Kamil.dir/src/Keyboard.cpp.o"
   "CMakeFiles/Kamil.dir/src/Keyboard.cpp.o.d"
   "CMakeFiles/Kamil.dir/src/MyRect.cpp.o"

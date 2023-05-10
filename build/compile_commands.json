@@ -1,44 +1,50 @@
 [
 {
   "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
-  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/kamil.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -isystem /usr/include/python3.11 -g -std=c++17 -o CMakeFiles/Kamil.dir/src/kamil.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp",
   "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp",
   "output": "CMakeFiles/Kamil.dir/src/kamil.cpp.o"
 },
 {
   "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
-  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/TextBox.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/TextBox.cpp",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -isystem /usr/include/python3.11 -g -std=c++17 -o CMakeFiles/Kamil.dir/src/TextBox.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/TextBox.cpp",
   "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/TextBox.cpp",
   "output": "CMakeFiles/Kamil.dir/src/TextBox.cpp.o"
 },
 {
   "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
-  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/Editor.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Editor.cpp",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -isystem /usr/include/python3.11 -g -std=c++17 -o CMakeFiles/Kamil.dir/src/Editor.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Editor.cpp",
   "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/Editor.cpp",
   "output": "CMakeFiles/Kamil.dir/src/Editor.cpp.o"
 },
 {
   "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
-  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/Utils/Stack.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Utils/Stack.cpp",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -isystem /usr/include/python3.11 -g -std=c++17 -o CMakeFiles/Kamil.dir/src/Utils/Stack.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Utils/Stack.cpp",
   "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/Utils/Stack.cpp",
   "output": "CMakeFiles/Kamil.dir/src/Utils/Stack.cpp.o"
 },
 {
   "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
-  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/Keyboard.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Keyboard.cpp",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -isystem /usr/include/python3.11 -g -std=c++17 -o CMakeFiles/Kamil.dir/src/Keyboard.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Keyboard.cpp",
   "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/Keyboard.cpp",
   "output": "CMakeFiles/Kamil.dir/src/Keyboard.cpp.o"
 },
 {
   "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
-  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/MyRect.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/MyRect.cpp",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -isystem /usr/include/python3.11 -g -std=c++17 -o CMakeFiles/Kamil.dir/src/MyRect.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/MyRect.cpp",
   "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/MyRect.cpp",
   "output": "CMakeFiles/Kamil.dir/src/MyRect.cpp.o"
 },
 {
   "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
-  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -g -std=c++17 -o CMakeFiles/Kamil.dir/src/Document.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Document.cpp",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -isystem /usr/include/python3.11 -g -std=c++17 -o CMakeFiles/Kamil.dir/src/Document.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/Document.cpp",
   "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/Document.cpp",
   "output": "CMakeFiles/Kamil.dir/src/Document.cpp.o"
+},
+{
+  "directory": "/home/alan/top_secret/cpp/NEA/Kamil/build",
+  "command": "/usr/bin/c++  -I/home/alan/top_secret/cpp/NEA/Kamil/include -I/home/alan/top_secret/cpp/NEA/Kamil/resource -I/home/alan/top_secret/cpp/NEA/Kamil/build -isystem /usr/include/python3.11 -g -std=c++17 -o CMakeFiles/Kamil.dir/src/EditorCam.cpp.o -c /home/alan/top_secret/cpp/NEA/Kamil/src/EditorCam.cpp",
+  "file": "/home/alan/top_secret/cpp/NEA/Kamil/src/EditorCam.cpp",
+  "output": "CMakeFiles/Kamil.dir/src/EditorCam.cpp.o"
 }
 ]

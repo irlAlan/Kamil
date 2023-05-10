@@ -422,6 +422,8 @@ DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound components: doxygen dot ][v1.9.6()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/libOpenGL.so][/usr/lib/libGLX.so][/usr/include][c ][v()]
+//Details about finding Python
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/include/python3.11][/usr/lib/libpython3.11.so][cfound components: Development Development.Module Development.Embed ][v3.11.3()]
 //ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
 OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLX_INCLUDE_DIR
@@ -442,4 +444,20 @@ OPENGL_opengl_LIBRARY-ADVANCED:INTERNAL=1
 OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+//Path to a program.
+_Python_CONFIG:INTERNAL=/usr/bin/python3.11-config
+//Compiler reason failure
+_Python_Compiler_REASON_FAILURE:INTERNAL=
+_Python_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=cd187341980210f8c9d45764118628b7
+_Python_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=5cfb69aa044db11e10ae2019970ae537
+//Development reason failure
+_Python_Development_REASON_FAILURE:INTERNAL=
+//Path to a file.
+_Python_INCLUDE_DIR:INTERNAL=/usr/include/python3.11
+//Interpreter reason failure
+_Python_Interpreter_REASON_FAILURE:INTERNAL=
+//Path to a library.
+_Python_LIBRARY_RELEASE:INTERNAL=/usr/lib/libpython3.11.so
+//NumPy reason failure
+_Python_NumPy_REASON_FAILURE:INTERNAL=
 

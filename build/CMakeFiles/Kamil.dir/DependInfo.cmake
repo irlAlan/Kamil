@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alan/top_secret/cpp/NEA/Kamil/src/Document.cpp" "CMakeFiles/Kamil.dir/src/Document.cpp.o" "gcc" "CMakeFiles/Kamil.dir/src/Document.cpp.o.d"
   "/home/alan/top_secret/cpp/NEA/Kamil/src/Editor.cpp" "CMakeFiles/Kamil.dir/src/Editor.cpp.o" "gcc" "CMakeFiles/Kamil.dir/src/Editor.cpp.o.d"
+  "/home/alan/top_secret/cpp/NEA/Kamil/src/EditorCam.cpp" "CMakeFiles/Kamil.dir/src/EditorCam.cpp.o" "gcc" "CMakeFiles/Kamil.dir/src/EditorCam.cpp.o.d"
   "/home/alan/top_secret/cpp/NEA/Kamil/src/Keyboard.cpp" "CMakeFiles/Kamil.dir/src/Keyboard.cpp.o" "gcc" "CMakeFiles/Kamil.dir/src/Keyboard.cpp.o.d"
   "/home/alan/top_secret/cpp/NEA/Kamil/src/MyRect.cpp" "CMakeFiles/Kamil.dir/src/MyRect.cpp.o" "gcc" "CMakeFiles/Kamil.dir/src/MyRect.cpp.o.d"
   "/home/alan/top_secret/cpp/NEA/Kamil/src/TextBox.cpp" "CMakeFiles/Kamil.dir/src/TextBox.cpp.o" "gcc" "CMakeFiles/Kamil.dir/src/TextBox.cpp.o.d"

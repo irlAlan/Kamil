@@ -16,11 +16,14 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Graphics/View.hpp>
 #include <SFML/Window.hpp>
 
 #include "TextBox.h"
 #include "Keyboard.h"
 #include "CmdBox.h"
+#include "Document.h"
+#include "EditorCam.h"
 
 
 /**
@@ -30,10 +33,11 @@ class Editor{
     public:
         /**
          * @brief Constructor for Editor
-         * @param window - reference to main RenderWindow
-         * @param event - reference to main event
+         * @param window - pointer to main RenderWindow
+         * @param event - pointer to main event
+         * @param doc - pointer to document
          */
-        Editor(sf::RenderWindow*, sf::Event*);
+        Editor(sf::RenderWindow* window, sf::Event* event, Document* doc);
 
         /**
          * @brief Destructor for Editor class
@@ -42,10 +46,12 @@ class Editor{
 
         /**
          *
-         * DEPRECATED
+         * SOON DEPRECATED
          * @brief function that draws everything to RenderWindow
          */
         void draw();
+
+        void makeLineNum();
 
         /**
          * @brief handle the events for the Editor
@@ -54,12 +60,18 @@ class Editor{
          * e.g. kb.handleEvent(); kb.handleMouseEvents();
          */
         void handleEvent();
+
     private:
+        Document* doc; /**< pointer to the working document */
         TextBox* textBox; /**< reference to textbox that we draw */
         CmdBox* cbox; /**< reference to command box that we draw */
         sf::RenderWindow* window; /**< refernce to RenderWindow */
         sf::Event* event; /**< refernce to event */
+        TextBox lineBox;
+        EditorCam camera;
         Keyboard kb; /**< handles keyboard events */
+        bool loadFromFile;
+
 };
 
 #endif // KAMIL_EDITOR_WINDOW_HPP

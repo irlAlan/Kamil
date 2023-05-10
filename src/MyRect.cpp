@@ -4,6 +4,10 @@
 #include <SFML/Graphics/RenderStates.hpp>
 #include <SFML/System/Vector2.hpp>
 
+        
+MyRect::MyRect(){
+
+}
 
 MyRect::MyRect(sf::Vector2f pos, sf::Vector2f size, sf::Color fill, sf::Color outLine, float thicc)
     : fRect{pos.x, pos.y, size.x, size.y}
