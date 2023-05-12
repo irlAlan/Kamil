@@ -1,6 +1,0 @@
-<map id="Keyboard::backSpace" name="Keyboard::backSpace">
-<area shape="rect" id="node1" title="when we backspace on teh text" alt="" coords="416,31,565,57"/>
-<area shape="rect" id="node2" href="$dc/dd2/classKeyboard.html#a47cd1af5705b6d5c24217744a6feb84a" title="handle keyboard events" alt="" coords="189,31,368,57"/>
-<area shape="rect" id="node3" href="$dd/dc3/classEditor.html#a560909c31ad3cd0035c8d050f1042377" title="function that draws everything to RenderWindow" alt="" coords="27,5,119,32"/>
-<area shape="rect" id="node4" href="$dd/dc3/classEditor.html#aad337f55ba36e46406a31a4879d1f19f" title="handle the events for the Editor" alt="" coords="5,56,141,83"/>
-</map>

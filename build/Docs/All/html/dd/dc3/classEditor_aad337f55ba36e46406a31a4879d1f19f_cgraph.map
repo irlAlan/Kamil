@@ -1,7 +1,0 @@
-<map id="Editor::handleEvent" name="Editor::handleEvent">
-<area shape="rect" id="node1" title="handle the events for the Editor" alt="" coords="5,56,141,83"/>
-<area shape="rect" id="node2" href="$dc/dd2/classKeyboard.html#a47cd1af5705b6d5c24217744a6feb84a" title="handle keyboard events" alt="" coords="197,31,376,57"/>
-<area shape="rect" id="node5" href="$dc/dd2/classKeyboard.html#a9b9ae75efb558cd0313d30b6a5573979" title="mouse keyboard events" alt="" coords="189,81,384,108"/>
-<area shape="rect" id="node3" href="$dc/dd2/classKeyboard.html#aa1a7684a8cdd57383590ca287b251e7d" title="when we backspace on teh text" alt="" coords="432,5,581,32"/>
-<area shape="rect" id="node4" href="$dc/dd2/classKeyboard.html#af30d4f01cf85e3511c5aac5d60862632" title="get the bounds of the area we are in" alt="" coords="434,56,580,83"/>
-</map>
