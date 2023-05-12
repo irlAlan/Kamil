@@ -1,19 +1,2 @@
 BasedOnStyle: LLVM
 Language: Cpp
-DerivePointerAlignment: false
-PointerAlignment: Left
-AlignTrailingComments: false
-AllowShortFunctionsOnASingleLine: Empty
-AllowShortBlocksOnASingleLine: Never
-IndentCaseLabels: false
-ColumnLimit: 80
-BreakBeforeBraces: Attach
-NamespaceIndentation: None
-BraceWrapping:
-  AfterControlStatement: true
-  BeforeElse: true
-  BeforeCatch: true
-  BeforeWhile: true
-  AfterFunction: false
-  SplitEmptyFunction: true
-  AfterNamespace: true

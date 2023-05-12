@@ -1,5 +1,4 @@
 <map id="Editor::makeLineNum" name="Editor::makeLineNum">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,153,57"/>
-<area shape="rect" id="node2" href="$dc/dd2/classKeyboard.html#a3ee843fd37b4825d1b7feb89f8c72e49" title=" " alt="" coords="201,5,373,32"/>
-<area shape="rect" id="node3" href="$d2/d68/classTextBox.html#afe605dd74dd6f90181038115f8b5283e" title="Sets the string." alt="" coords="222,56,352,83"/>
+<area shape="rect" id="node1" title="making the line numbers" alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node2" href="$d1/d67/classDocument.html#a7cb5f514ae69e4519920ec7ae20f2b44" title=" " alt="" coords="201,5,367,32"/>
 </map>

@@ -5,42 +5,40 @@
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KAMIL\_EDITOR\_WINDOW\_HPP}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KAMIL\_EDITOR\_WINDOW\_HPP}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
-\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RectangleShape.hpp>}}
-\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderWindow.hpp>}}
-\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/View.hpp>}}
-\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <SFML/Window.hpp>}}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextBox_8h}{TextBox.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RectangleShape.hpp>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderWindow.hpp>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/View.hpp>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <SFML/Window.hpp>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{CmdBox_8h}{CmdBox.h}}"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Document_8h}{Document.h}}"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{EditorCam_8h}{EditorCam.h}}"{}}}
 \DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Keyboard_8h}{Keyboard.h}}"{}}}
-\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{CmdBox_8h}{CmdBox.h}}"{}}}
-\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Document_8h}{Document.h}}"{}}}
-\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{EditorCam_8h}{EditorCam.h}}"{}}}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEditor}{Editor}}\{}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEditor}{Editor}}(sf::RenderWindow*\ \mbox{\hyperlink{classEditor_ac983684eb74cd21d181c813eab5b82e3}{window}},\ sf::Event*\ \mbox{\hyperlink{classEditor_acb4234d552a8fd36b0e53131b954dab0}{event}},\ \mbox{\hyperlink{classDocument}{Document}}*\ \mbox{\hyperlink{classEditor_af04df64e8c1399ac62d8a302cf0ceb2c}{doc}});}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEditor_ad465abc9575af92b4fa61525085172d6}{\string~Editor}}();}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEditor_a560909c31ad3cd0035c8d050f1042377}{draw}}();}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEditor_a7ee5557bfdd95603ba485f16a822d0c6}{makeLineNum}}();}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEditor_aad337f55ba36e46406a31a4879d1f19f}{handleEvent}}();}
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDocument}{Document}}*\ \mbox{\hyperlink{classEditor_af04df64e8c1399ac62d8a302cf0ceb2c}{doc}};\ }
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextBox}{TextBox}}*\ \mbox{\hyperlink{classEditor_a78a7460d9de2e9a108f4c4e38203b160}{textBox}};\ }
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCmdBox}{CmdBox}}*\ \mbox{\hyperlink{classEditor_a070263877941d980adb2dfe1697e89dd}{cbox}};\ }
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ sf::RenderWindow*\ \mbox{\hyperlink{classEditor_ac983684eb74cd21d181c813eab5b82e3}{window}};\ }
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ sf::Event*\ \mbox{\hyperlink{classEditor_acb4234d552a8fd36b0e53131b954dab0}{event}};\ }
-\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextBox}{TextBox}}\ \mbox{\hyperlink{classEditor_aab14475bb14fab57223df8f7960f505f}{lineBox}};}
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEditorCam}{EditorCam}}\ \mbox{\hyperlink{classEditor_a59e8884fd2bc3946f9a5f086da70488f}{camera}};}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classKeyboard}{Keyboard}}\ \mbox{\hyperlink{classEditor_aa13a10118305b120ace8e5ce5b2ccca3}{kb}};\ }
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEditor_ab3b76da73ddf67ab102e59fb80820086}{loadFromFile}};}
-\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextBox_8h}{TextBox.h}}"{}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEditor}{Editor}}\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{classEditor}{Editor}}(sf::RenderWindow\ *\mbox{\hyperlink{classEditor_ac983684eb74cd21d181c813eab5b82e3}{window}},\ sf::Event\ *\mbox{\hyperlink{classEditor_acb4234d552a8fd36b0e53131b954dab0}{event}},\ \mbox{\hyperlink{classDocument}{Document}}\ *\mbox{\hyperlink{classEditor_af04df64e8c1399ac62d8a302cf0ceb2c}{doc}});}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00042\ \ \ \mbox{\hyperlink{classEditor_ad465abc9575af92b4fa61525085172d6}{\string~Editor}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEditor_a560909c31ad3cd0035c8d050f1042377}{draw}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEditor_a7ee5557bfdd95603ba485f16a822d0c6}{makeLineNum}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEditor_aad337f55ba36e46406a31a4879d1f19f}{handleEvent}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00066\ \ \ \mbox{\hyperlink{classDocument}{Document}}\ *\mbox{\hyperlink{classEditor_af04df64e8c1399ac62d8a302cf0ceb2c}{doc}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \mbox{\hyperlink{classTextBox}{TextBox}}\ *\mbox{\hyperlink{classEditor_a78a7460d9de2e9a108f4c4e38203b160}{textBox}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \mbox{\hyperlink{classCmdBox}{CmdBox}}\ *\mbox{\hyperlink{classEditor_a070263877941d980adb2dfe1697e89dd}{cbox}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ sf::RenderWindow\ *\mbox{\hyperlink{classEditor_ac983684eb74cd21d181c813eab5b82e3}{window}};\ }
+\DoxyCodeLine{00070\ \ \ sf::Event\ *\mbox{\hyperlink{classEditor_acb4234d552a8fd36b0e53131b954dab0}{event}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \mbox{\hyperlink{classTextBox}{TextBox}}\ \mbox{\hyperlink{classEditor_aab14475bb14fab57223df8f7960f505f}{lineBox}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00072\ \ \ \mbox{\hyperlink{classEditorCam}{EditorCam}}\ \mbox{\hyperlink{classEditor_a59e8884fd2bc3946f9a5f086da70488f}{camera}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00073\ \ \ \mbox{\hyperlink{classKeyboard}{Keyboard}}\ \mbox{\hyperlink{classEditor_aa13a10118305b120ace8e5ce5b2ccca3}{kb}};\ }
+\DoxyCodeLine{00074\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEditor_ab3b76da73ddf67ab102e59fb80820086}{loadFromFile}};\ }
 \DoxyCodeLine{00075\ \};}
 \DoxyCodeLine{00076\ }
 \DoxyCodeLine{00077\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KAMIL\_EDITOR\_WINDOW\_HPP}}

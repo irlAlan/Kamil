@@ -11,7 +11,8 @@
 
 
 
-Collaboration diagram for Document\+:\nopagebreak
+Collaboration diagram for Document\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -26,9 +27,9 @@ Collaboration diagram for Document\+:\nopagebreak
 \mbox{\hyperlink{classDocument_a80a43b24529f3eed449847823bb6ab47}{Document}} (std\+::string fileP)
 \begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classDocument}{Document}} class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}{init}} ()
-\begin{DoxyCompactList}\small\item\em initialise the file TODO\+: overload this with file path \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em initialise the file \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDocument_a8fa947b8d6e69036ac53769f29d2a9fa}{init}} (std\+::string inF)
-\item 
+\begin{DoxyCompactList}\small\item\em initialise the file \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classDocument_a7cb5f514ae69e4519920ec7ae20f2b44}{get\+Line\+Count}} ()
 \item 
 std\+::string \mbox{\hyperlink{classDocument_aca32ae3080ab09048e7522281b4d7ba6}{read\+File}} ()
@@ -44,15 +45,15 @@ void \mbox{\hyperlink{classDocument_ab463a291d80c8538a246edbcde0aa50d}{create\+D
 bool \mbox{\hyperlink{classDocument_a0ee9d0dc188296e457eb28202c45ffa6}{save\+File}} (const std\+::string \&filename)
 \begin{DoxyCompactList}\small\item\em save to a file \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classDocument_aa076e1fbc11e56c32d2fc88cfa8ef15b}{save\+File}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em save to a file \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDocument_a47e3f3a9121cc4a3b69ed12433813519}{set\+Buff\+Info}} (std\+::string info)
-\item 
+\begin{DoxyCompactList}\small\item\em save file infor to buffer \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classDocument_a01fab747cf4573078e23bbd49db21def}{has\+Changed}} ()
 \begin{DoxyCompactList}\small\item\em if the file has changed \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classDocument_aae277e7b5923c465f5816b26c698881b}{has\+Changed}} (bool val)
-\item 
+void \mbox{\hyperlink{classDocument_a473c0998c1c14411f6728b070cc78b05}{set\+Change}} ()
+\begin{DoxyCompactList}\small\item\em set file has changed \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classDocument_a6abe6b7ce9466e0da6eb0fe6496eac48}{doc\+Has\+Text}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em check if theres text in the file \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -108,6 +109,14 @@ Constructor for \mbox{\hyperlink{classDocument}{Document}} class.
 
 create a directory 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classDocument_aeab361d3adbecbc696fd339d7158b71d}\label{classDocument_aeab361d3adbecbc696fd339d7158b71d}} 
 \index{Document@{Document}!createFile@{createFile}}
 \index{createFile@{createFile}!Document@{Document}}
@@ -118,12 +127,32 @@ create a directory
 
 create the file 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classDocument_a6abe6b7ce9466e0da6eb0fe6496eac48}\label{classDocument_a6abe6b7ce9466e0da6eb0fe6496eac48}} 
 \index{Document@{Document}!docHasText@{docHasText}}
 \index{docHasText@{docHasText}!Document@{Document}}
 \doxysubsubsection{\texorpdfstring{docHasText()}{docHasText()}}
 {\footnotesize\ttfamily bool Document\+::doc\+Has\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+check if theres text in the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ true if contains text 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classDocument_a7aa7f956d6fd898fb4ec61aceb45158e}\label{classDocument_a7aa7f956d6fd898fb4ec61aceb45158e}} 
 \index{Document@{Document}!getAbsPath@{getAbsPath}}
 \index{getAbsPath@{getAbsPath}!Document@{Document}}
@@ -134,12 +163,36 @@ create the file
 
 get the relative path 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string for absolute path 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classDocument_a7cb5f514ae69e4519920ec7ae20f2b44}\label{classDocument_a7cb5f514ae69e4519920ec7ae20f2b44}} 
 \index{Document@{Document}!getLineCount@{getLineCount}}
 \index{getLineCount@{getLineCount}!Document@{Document}}
 \doxysubsubsection{\texorpdfstring{getLineCount()}{getLineCount()}}
 {\footnotesize\ttfamily int Document\+::get\+Line\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+@breif get the count of lines 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ line count 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d67/classDocument_a7cb5f514ae69e4519920ec7ae20f2b44_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classDocument_ae7c19c8c497d76f99c3c3ab59e7fcd75}\label{classDocument_ae7c19c8c497d76f99c3c3ab59e7fcd75}} 
 \index{Document@{Document}!getRelPath@{getRelPath}}
 \index{getRelPath@{getRelPath}!Document@{Document}}
@@ -150,32 +203,32 @@ get the relative path
 
 get the relative path 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string for relative path 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classDocument_a01fab747cf4573078e23bbd49db21def}\label{classDocument_a01fab747cf4573078e23bbd49db21def}} 
 \index{Document@{Document}!hasChanged@{hasChanged}}
 \index{hasChanged@{hasChanged}!Document@{Document}}
-\doxysubsubsection{\texorpdfstring{hasChanged()}{hasChanged()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{hasChanged()}{hasChanged()}}
 {\footnotesize\ttfamily bool Document\+::has\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 if the file has changed 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 bool -\/ true if file has changed 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=306pt]{d1/d67/classDocument_a01fab747cf4573078e23bbd49db21def_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{classDocument_aae277e7b5923c465f5816b26c698881b}\label{classDocument_aae277e7b5923c465f5816b26c698881b}} 
-\index{Document@{Document}!hasChanged@{hasChanged}}
-\index{hasChanged@{hasChanged}!Document@{Document}}
-\doxysubsubsection{\texorpdfstring{hasChanged()}{hasChanged()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool Document\+::has\+Changed (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})}
-
 \mbox{\Hypertarget{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}\label{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}} 
 \index{Document@{Document}!init@{init}}
 \index{init@{init}!Document@{Document}}
@@ -184,8 +237,16 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-initialise the file TODO\+: overload this with file path 
+initialise the file 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -199,6 +260,18 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Document\+::init (\begin{DoxyParamCaption}\item[{std\+::string}]{inF }\end{DoxyParamCaption})}
 
+
+
+initialise the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inF} & -\/ file location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classDocument_aca32ae3080ab09048e7522281b4d7ba6}\label{classDocument_aca32ae3080ab09048e7522281b4d7ba6}} 
 \index{Document@{Document}!readFile@{readFile}}
 \index{readFile@{readFile}!Document@{Document}}
@@ -209,8 +282,13 @@ Here is the caller graph for this function\+:\nopagebreak
 
 read the file 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-std\+::string to the buffer info 
+string containing the file info 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -225,6 +303,18 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{saveFile()}{saveFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily bool Document\+::save\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+save to a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ true if saved 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classDocument_a0ee9d0dc188296e457eb28202c45ffa6}\label{classDocument_a0ee9d0dc188296e457eb28202c45ffa6}} 
 \index{Document@{Document}!saveFile@{saveFile}}
 \index{saveFile@{saveFile}!Document@{Document}}
@@ -235,6 +325,14 @@ Here is the caller graph for this function\+:\nopagebreak
 
 save to a file 
 
+
+\begin{DoxyParams}{Parameters}
+{\em string} & -\/ filename to save to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ true if saved 
+\end{DoxyReturn}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -248,11 +346,49 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{setBuffInfo()}{setBuffInfo()}}
 {\footnotesize\ttfamily void Document\+::set\+Buff\+Info (\begin{DoxyParamCaption}\item[{std\+::string}]{info }\end{DoxyParamCaption})}
 
+
+
+save file infor to buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & buffer info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=300pt]{d1/d67/classDocument_a47e3f3a9121cc4a3b69ed12433813519_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDocument_a473c0998c1c14411f6728b070cc78b05}\label{classDocument_a473c0998c1c14411f6728b070cc78b05}} 
+\index{Document@{Document}!setChange@{setChange}}
+\index{setChange@{setChange}!Document@{Document}}
+\doxysubsubsection{\texorpdfstring{setChange()}{setChange()}}
+{\footnotesize\ttfamily void Document\+::set\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set file has changed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{d1/d67/classDocument_a473c0998c1c14411f6728b070cc78b05_icgraph}
 \end{center}
 \end{figure}
 

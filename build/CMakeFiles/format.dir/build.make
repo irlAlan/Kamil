@@ -67,7 +67,7 @@ include CMakeFiles/format.dir/compiler_depend.make
 include CMakeFiles/format.dir/progress.make
 
 CMakeFiles/format:
-	clang-format --style=file -i /home/alan/top_secret/cpp/NEA/Kamil/src/*.cpp /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/*.h
+	clang-format --style=LLVM -i /home/alan/top_secret/cpp/NEA/Kamil/src/*.cpp /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/*.h
 
 format: CMakeFiles/format
 format: CMakeFiles/format.dir/build.make

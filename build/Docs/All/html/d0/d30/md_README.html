@@ -78,10 +78,10 @@ Analysis</h1>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Background and Identifying the problem</h2>
 <p>The Project I will be developing will be in answer to the challenge set out by the end user and friend of mine, Kamil. He challenged me to make a light weight editor that he can use in his day to day life and when doing python projects.</p>
-<p>This leads me on to identifying the base problems at hand and summing them into 3 questions: </p><pre class="fragment">1) What is a text editor and how does it differ from an IDE?
-2) How do I make a text editor or IDE for kamil
-3) How do I make it efficient enough to meet his standards?
-</pre><p> To kick things along I began to do research on Text editors and IDE's and found out that the difference between isnt limited to Operating System platforms or by how much better one is at a specific task but by the features each can do. Text Editors, as the name suggest are specifically desinged for manipulting any form of text that it can open. While an IDE (Integrated Development Environment) is specifically desinged for software development and comes with a multitude of features that engineers can make use of to streemline their workflow.</p>
+<p>The challenge started when he commented on my use of neovim and how it would be better if i used an actual IDE. I told him that ive used IDE's in the past and overall prefer the look and feel of a customised neovim. I then suggested him to learn vim himself and that he wouldnt regret it, but he declined. Kamil then told me that I should create something easier for him to use and that could potentially change his use of IDE's.</p>
+<p>Upon being issues this challenge I had a few initial questions that I needed answering:</p>
+<p>1) What is a text editor and how does it differ from an IDE? 2) How do I make a text editor for kamil 3) How do I make it efficient enough to meet his standards?</p>
+<p>To kick things along I began to do research on Text editors and IDE's and found out that the difference between isnt limited to Operating System platforms or by how much better one is at a specific task but by the features each can do. Text Editors, as the name suggest are specifically desinged for manipulting any form of text that it can open. While an IDE (Integrated Development Environment) is specifically desinged for software development and comes with a multitude of features that engineers can make use of to streemline their workflow.</p>
 <p>A table of pros and cons:</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -91,7 +91,7 @@ Background and Identifying the problem</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Fast,   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Resource efficient,   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Resource efficient   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Very Modular   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
@@ -99,11 +99,11 @@ Background and Identifying the problem</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">IDE   </td><td class="markdownTableBodyNone">Has everything out   </td><td class="markdownTableBodyNone">Slow    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">the box,   </td><td class="markdownTableBodyNone">Not very Resource efficient    </td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">the box   </td><td class="markdownTableBodyNone">Not very Resource efficient    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Modular   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Modular   </td><td class="markdownTableBodyNone">Too many menus    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Limited in compatability   </td></tr>
 </table>
 <p>Here are pictures of some text editors and IDE's:</p>
 <div class="image">
@@ -112,13 +112,18 @@ Background and Identifying the problem</h2>
  <div class="image">
 <img src="../../baseVimLook.png" alt=""/>
 </div>
- <h2><a class="anchor" id="autotoc_md3"></a>
+ <p>(annotate hte image)</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
 End User needs</h2>
 <p>When talking to Kamil about his needs it was apparant that he wanted something modular in the sense that it comes with what he needs so its not a hassle to work with and it works with multiple different file types.</p>
 <div class="image">
 <img src="../../Kamil_info.png" alt=""/>
 </div>
- <p>To conclude the User needs: Kamil would like:</p>
+ <p>Since this is a project that could quickly grow in scale due to all the different parts of handling the editor, text and documents etc. I am willing to set a few minimum requirements my program can achieve to be usable to Kamil. The requirements are: the prgram can load and save files, change text and background colour, change font and font size.</p>
+<p>To conclude, the objectives of the projet:</p>
+<p>We need a program that is not laggy and has minimal delay between text being pressed and it being displayed on the screen. This can be measured by taking the time taken between a key press and the setString function by SFML.</p>
+<p>We also need the ability to load and use multiple fonts and for it to load dynamically and save when we close the program. This is easier to check since all we need is to check the font save folder and make sure it is there when saved and loaded.</p>
+<p>All the dynamic editor features like zooming in/out; changing the text colour and size moving around the text and text selection can be checked at runtime and can be benched mark to ensure it is still decently fast so it is not laggy and meets Kamil's preferences.</p>
 <ul>
 <li>Not laggy</li>
 <li>multple fonts</li>
@@ -144,19 +149,71 @@ End User needs</h2>
 <li>traverse directory</li>
 <li>handled in .txt format</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md4"></a>
-Structure</h1>
-<p>Kamil.cpp - Main window (text window is used) -Window (has the text box window and the line number) -inupts (handles events like keyboard clicks and mouse events, state changes happen here) -textdoc (handles the file like saving it)</p>
-<p>window</p><ul>
-<li>Main Window <a class="el" href="../../dd/dc3/classEditor.html" title="Class that handles and draws everything in the Editor.">Editor</a></li>
-<li>Where text is handled (same size as window)</li>
-<li>Rectangle on left for margin</li>
-<li>font</li>
-<li>line info</li>
-<li>drawn on main window Input</li>
-<li>mouse and keyboard window TextDocument</li>
+<p>Minimum Requirements:</p><ul>
+<li>Load/Save files</li>
+<li>Change txt and background colours</li>
+<li>Change font and font size</li>
 </ul>
-<p>&ndash; Disliked buttons no button in mine &ndash; Dislike having to hunt for library to get stuff done &ndash; doesnt like writing code - no response &ndash; maybe, stong yes </p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Limitations</h2>
+<p>The Limitations of my program are what give it a general architecure to work with. The Limits include: Time, Programming Language, formating standards, Operating System, Libraries</p>
+<p>The project is due on 16th May 2023 leaving me only 1month and 2weeks to get everything together.</p>
+<p>When it comes to the Programming Language I wrote my project in C++ (Cpp, Cxx, cc) with access to the C++17 language standard. I chose this language becauase I am most familiar with it and prefer it over python for larger projects like this. It is fast, efficient and allows the use of pointers for memory and data management. An example of this can be shown when passing Classes to other Classes via pointer.</p>
+<p>The formatting standard im using is own defined by LLVM in a .clang-format file, it essentially dictates the formatting of files from how many spaces are used in a tab to length of lines and how many parameters apear on one line.</p>
+<p>By having a seperate program keep track of all code formatting and making sure its all standardised it makes the code more modular and easy to work with since any new programmers will have an easier time understanding code if its all similar.</p>
+<p>(include the clang-format file here)</p>
+<p>An example being:</p>
+<div class="fragment"><div class="line"><span class="comment">//without a formatting standard</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> printAninttoOutput</div>
+<div class="line">    (<span class="keywordtype">int</span> val) {<span class="keywordflow">return</span> val;}</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> setintTooutPut</div>
+<div class="line">(<span class="keywordtype">int</span> val){</div>
+<div class="line">    reutrn val</div>
+<div class="line">}</div>
+</div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">// with a formatting standard</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> Print_Int_To_Out(<span class="keywordtype">int</span> val){</div>
+<div class="line">    <span class="keywordflow">return</span> val;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> Set_Int_To_Out(<span class="keywordtype">int</span> val){</div>
+<div class="line">    <span class="keywordflow">return</span> val</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>From the examples shown above its clear that with the formatting the code is easier to read without any weird (but legal) C++ syntax, it also allows programmers to see a pattern and predict what the function they want to call is called without checking documentation.</p>
+<p>The operating System is a default limiter and denotes how everything comes together. By default I use Linux. This has the benefit of having more support for C++ coding and development in general with the caveat of programs not being very portable to other devices like windows machines. This means that I will either need to cross-compile my program or convert Kamil, who is a windows user, over to Linux.</p>
+<p>In addition to the operating system, Libraries, specifically graphical Libraries in conjuction with config files can decide wheather a program is cross-platform or not. Some libraries make use of Os specific functionality and function calls that arent available elsewhere.</p>
+<p>The issue for me here is that I use Linux and Kamil uses Windows, so how do I get my program to him on windows? Well the answer is by choosing libraries that are cross-compatible and using configuration files.</p>
+<p>For the Libraries ill be using SFML to handle the events and graphics and fmt for normal printing to standard out. Both are cross platform and are built using a cmake file.</p>
+<p>The cmake file I use to compile and build my project is: (link to cmake file)</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Design</h2>
+<p>Throught the creation of the project I utilised an iterative deseign procedure where I would develop a basic version of the code, test it then improve on it.This form of design procedure requires a very modular and heavily commented code base so we dont get lost when adding new features and testing and checking old ones.</p>
+<p>(show pics of the program before and after for iterative)</p>
+<p>My workflow is as:</p>
+<ul>
+<li>Identify feature I want to add</li>
+<li>Write out features it should be able to do</li>
+<li>Create the class in a seperate file around a template SFML project i.e. similar style to main project but not 1-1 copy</li>
+<li>Make sure the class follows DRY (Dont Repeat Yourself)</li>
+<li>Test the code against what-if cases</li>
+<li>Implement the code to the main project and check if it runs</li>
+<li>Test program</li>
+<li>Repeat</li>
+</ul>
+<p>(example of written work for <a class="el" href="../../d2/d68/classTextBox.html" title="A class that makes a Textbox in SFML.">TextBox</a> class)</p>
+<p>Moreover, when designing the project I made use of OOP and Geneic programming using templates. Each section of my code is modular so that if someone where to take parts of it like the <a class="el" href="../../d2/d68/classTextBox.html" title="A class that makes a Textbox in SFML.">TextBox</a> class, It would be similar in style to a normal SFML class with little to no difference.</p>
+<p>(<a class="el" href="../../d2/d68/classTextBox.html" title="A class that makes a Textbox in SFML.">TextBox</a>)</p>
+<h3><a class="anchor" id="autotoc_md6"></a>
+Design Choices</h3>
+<p>When developing the project I made a series of design choices that I thought would be best for the project.</p>
+<p>In SFML when writing text to a screen it takes a, const sf::String&amp; string, which devolves into std::string types and char[] arrays. Due to this and a need to be efficient I made the choice to manipulate all text input and output in a dynamic one dimensional character array (std::string), By doing this any changes that can be made I just need to loop through the string checking each character for what im looking for. They take up minimal space since it is stored as a single string which is by default 24 bytes.</p>
+<p>This also has the added benefit of always knowing its length and size as well as being able to convert into other types when needed.</p>
+<p>Furthermore, I also made some optimisation decisions like, passing classes used through by pointer and dynamically allocating them on the heap when created. I did this because when they are passed through by pointer the program is only accessing one instance of it and not copying the class, manipulating it and then passing the values back to it when its done like what happens by default when passing a class through parameters. This choice speeds up the program since it doesnt need to copy and directly access the class.</p>
+<p>finish commenting the header file</p>
+<p>include teh cmake file show python thing </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

@@ -4,8 +4,7 @@
 CMakeFiles/Kamil.dir/src/Document.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/Document.cpp \
   /usr/include/stdc-predef.h \
   /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Document.h \
-  /usr/include/c++/13.1.1/filesystem \
-  /usr/include/c++/13.1.1/bits/requires_hosted.h \
+  /usr/include/c++/13.1.1/cstdlib \
   /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/features.h \
@@ -18,6 +17,46 @@ CMakeFiles/Kamil.dir/src/Document.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/gnu/stubs-64.h \
   /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/13.1.1/pstl/pstl_config.h \
+  /usr/include/stdlib.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stddef.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/sys/types.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/sys/select.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/c++/13.1.1/bits/std_abs.h \
+  /usr/include/c++/13.1.1/filesystem \
+  /usr/include/c++/13.1.1/bits/requires_hosted.h \
   /usr/include/c++/13.1.1/bits/fs_fwd.h \
   /usr/include/c++/13.1.1/system_error \
   /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/error_constants.h \
@@ -35,10 +74,6 @@ CMakeFiles/Kamil.dir/src/Document.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/c++/13.1.1/bits/postypes.h \
   /usr/include/c++/13.1.1/cwchar \
   /usr/include/wchar.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdarg.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/types/wint_t.h \
@@ -46,8 +81,6 @@ CMakeFiles/Kamil.dir/src/Document.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__FILE.h \
   /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/__locale_t.h \
   /usr/include/c++/13.1.1/stdexcept \
   /usr/include/c++/13.1.1/exception \
   /usr/include/c++/13.1.1/bits/exception.h \
@@ -74,11 +107,6 @@ CMakeFiles/Kamil.dir/src/Document.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/bits/locale.h \
   /usr/include/c++/13.1.1/cctype \
   /usr/include/ctype.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
   /usr/include/c++/13.1.1/bits/ostream_insert.h \
   /usr/include/c++/13.1.1/bits/cxxabi_forced.h \
   /usr/include/c++/13.1.1/bits/stl_iterator_base_funcs.h \
@@ -109,34 +137,6 @@ CMakeFiles/Kamil.dir/src/Document.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/c++/13.1.1/bits/functional_hash.h \
   /usr/include/c++/13.1.1/bits/string_view.tcc \
   /usr/include/c++/13.1.1/ext/string_conversions.h \
-  /usr/include/c++/13.1.1/cstdlib \
-  /usr/include/stdlib.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/sys/types.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/sys/select.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/c++/13.1.1/bits/std_abs.h \
   /usr/include/c++/13.1.1/cstdio \
   /usr/include/stdio.h \
   /usr/include/bits/types/__fpos_t.h \
@@ -234,7 +234,7 @@ CMakeFiles/Kamil.dir/src/Document.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
 
 CMakeFiles/Kamil.dir/src/Editor.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/Editor.cpp \
   /usr/include/stdc-predef.h \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Window.hpp \
   /usr/local/include/SFML/System.hpp \
@@ -521,6 +521,8 @@ CMakeFiles/Kamil.dir/src/Editor.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/E
   /usr/local/include/SFML/Graphics/Sprite.hpp \
   /usr/local/include/SFML/Graphics/Text.hpp \
   /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
   /usr/include/c++/13.1.1/iostream \
   /usr/include/c++/13.1.1/istream \
   /usr/include/c++/13.1.1/bits/istream.tcc \
@@ -560,10 +562,8 @@ CMakeFiles/Kamil.dir/src/Editor.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/E
   /usr/include/c++/13.1.1/array \
   /usr/include/c++/13.1.1/compare \
   /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/MyRect.h \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorCam.h
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorCam.h \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h
 
 CMakeFiles/Kamil.dir/src/EditorCam.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/EditorCam.cpp \
   /usr/include/stdc-predef.h \
@@ -805,8 +805,7 @@ CMakeFiles/Kamil.dir/src/EditorCam.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/sr
 CMakeFiles/Kamil.dir/src/Keyboard.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/Keyboard.cpp \
   /usr/include/stdc-predef.h \
   /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Document.h \
-  /usr/include/c++/13.1.1/filesystem \
-  /usr/include/c++/13.1.1/bits/requires_hosted.h \
+  /usr/include/c++/13.1.1/cstdlib \
   /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/features.h \
@@ -819,6 +818,46 @@ CMakeFiles/Kamil.dir/src/Keyboard.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/gnu/stubs-64.h \
   /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/13.1.1/pstl/pstl_config.h \
+  /usr/include/stdlib.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stddef.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/sys/types.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/sys/select.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/c++/13.1.1/bits/std_abs.h \
+  /usr/include/c++/13.1.1/filesystem \
+  /usr/include/c++/13.1.1/bits/requires_hosted.h \
   /usr/include/c++/13.1.1/bits/fs_fwd.h \
   /usr/include/c++/13.1.1/system_error \
   /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/error_constants.h \
@@ -836,10 +875,6 @@ CMakeFiles/Kamil.dir/src/Keyboard.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/c++/13.1.1/bits/postypes.h \
   /usr/include/c++/13.1.1/cwchar \
   /usr/include/wchar.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdarg.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/types/wint_t.h \
@@ -847,8 +882,6 @@ CMakeFiles/Kamil.dir/src/Keyboard.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__FILE.h \
   /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/__locale_t.h \
   /usr/include/c++/13.1.1/stdexcept \
   /usr/include/c++/13.1.1/exception \
   /usr/include/c++/13.1.1/bits/exception.h \
@@ -875,11 +908,6 @@ CMakeFiles/Kamil.dir/src/Keyboard.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/bits/locale.h \
   /usr/include/c++/13.1.1/cctype \
   /usr/include/ctype.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
   /usr/include/c++/13.1.1/bits/ostream_insert.h \
   /usr/include/c++/13.1.1/bits/cxxabi_forced.h \
   /usr/include/c++/13.1.1/bits/stl_iterator_base_funcs.h \
@@ -910,34 +938,6 @@ CMakeFiles/Kamil.dir/src/Keyboard.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/c++/13.1.1/bits/functional_hash.h \
   /usr/include/c++/13.1.1/bits/string_view.tcc \
   /usr/include/c++/13.1.1/ext/string_conversions.h \
-  /usr/include/c++/13.1.1/cstdlib \
-  /usr/include/stdlib.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/sys/types.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/sys/select.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/c++/13.1.1/bits/std_abs.h \
   /usr/include/c++/13.1.1/cstdio \
   /usr/include/stdio.h \
   /usr/include/bits/types/__fpos_t.h \
@@ -1025,7 +1025,7 @@ CMakeFiles/Kamil.dir/src/Keyboard.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/13.1.1/bits/fstream.tcc \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Keyboard.h \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Window.hpp \
   /usr/local/include/SFML/System.hpp \
@@ -1121,6 +1121,10 @@ CMakeFiles/Kamil.dir/src/Keyboard.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/local/include/SFML/Graphics/Sprite.hpp \
   /usr/local/include/SFML/Graphics/Text.hpp \
   /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
+  /usr/include/c++/13.1.1/iostream \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Keyboard.h \
   /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Document.h \
   /usr/local/include/fmt/core.h \
   /usr/include/c++/13.1.1/cstring \
@@ -1128,13 +1132,10 @@ CMakeFiles/Kamil.dir/src/Keyboard.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src
   /usr/include/strings.h \
   /usr/include/c++/13.1.1/array \
   /usr/include/c++/13.1.1/compare \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
-  /usr/include/c++/13.1.1/iostream \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Keyboard.h \
   /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/MyRect.h \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorCam.h
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorCam.h \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Keyboard.h \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h
 
 CMakeFiles/Kamil.dir/src/MyRect.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/MyRect.cpp \
   /usr/include/stdc-predef.h \
@@ -2114,8 +2115,8 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
   /usr/include/c++/13.1.1/compare \
   /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/MyRect.h \
   /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h \
-  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
   /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h \
+  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
   /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorCam.h \
   /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Document.h
 
@@ -2130,11 +2131,13 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorCam.h:
 
-/home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h:
-
 /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/MyRect.h:
 
 /usr/include/c++/13.1.1/array:
+
+/home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h:
+
+/home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h:
 
 /usr/local/include/SFML/Graphics/Sprite.hpp:
 
@@ -2226,57 +2229,15 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/local/include/SFML/System/String.inl:
 
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/c++/13.1.1/limits:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/c++/13.1.1/bits/node_handle.h:
-
-/usr/include/sys/types.h:
-
-/usr/include/bits/wctype-wchar.h:
-
-/usr/local/include/SFML/Graphics/RectangleShape.hpp:
-
-/usr/local/include/SFML/System/Clock.hpp:
-
-/usr/local/include/SFML/System/Utf.hpp:
+/usr/include/c++/13.1.1/bits/range_access.h:
 
 /usr/include/c++/13.1.1/bits/utility.h:
-
-/usr/include/c++/13.1.1/bit:
 
 /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Keyboard.h:
 
 /usr/include/bits/timesize.h:
 
-/usr/include/bits/waitflags.h:
-
-/usr/include/ctype.h:
-
-/usr/local/include/SFML/Graphics/Text.hpp:
-
-/usr/local/include/SFML/System/Vector2.hpp:
-
-/usr/include/c++/13.1.1/ext/string_conversions.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/c++/13.1.1/bits/functional_hash.h:
-
-/usr/include/c++/13.1.1/ext/alloc_traits.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13.1.1/bits/basic_string.h:
-
-/usr/include/c++/13.1.1/initializer_list:
-
-/usr/include/c++/13.1.1/cctype:
-
-/usr/include/c++/13.1.1/bits/range_access.h:
+/usr/include/c++/13.1.1/bit:
 
 /usr/include/c++/13.1.1/string:
 
@@ -2290,8 +2251,6 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /home/alan/top_secret/cpp/NEA/Kamil/src/Editor.cpp:
 
-/usr/include/c++/13.1.1/ext/type_traits.h:
-
 /usr/include/c++/13.1.1/bits/stl_function.h:
 
 /usr/include/c++/13.1.1/compare:
@@ -2304,35 +2263,9 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
-/usr/local/include/SFML/Window/GlResource.hpp:
+/usr/include/ctype.h:
 
-/usr/local/include/SFML/System/Utf.inl:
-
-/usr/include/sys/select.h:
-
-/usr/include/c++/13.1.1/bits/concept_check.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/local/include/SFML/System/Thread.inl:
-
-/usr/include/c++/13.1.1/cstdint:
-
-/usr/include/c++/13.1.1/bits/ostream_insert.h:
-
-/usr/include/c++/13.1.1/pstl/pstl_config.h:
-
-/usr/local/include/SFML/Graphics.hpp:
-
-/usr/include/bits/time64.h:
-
-/home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Document.h:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/c++/13.1.1/cerrno:
-
-/usr/include/bits/typesizes.h:
+/usr/include/bits/waitflags.h:
 
 /usr/include/bits/locale.h:
 
@@ -2342,69 +2275,67 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/include/c++/13.1.1/bits/new_allocator.h:
 
-/usr/include/bits/floatn-common.h:
+/home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdint.h:
+/usr/include/c++/13.1.1/bits/stl_iterator.h:
 
-/usr/local/include/SFML/Graphics/Transformable.hpp:
+/usr/include/time.h:
 
-/usr/include/bits/types/mbstate_t.h:
+/usr/include/c++/13.1.1/type_traits:
 
-/usr/include/linux/errno.h:
+/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
 
-/usr/include/c++/13.1.1/bits/uniform_int_dist.h:
+/usr/include/c++/13.1.1/bits/locale_conv.h:
 
-/usr/include/c++/13.1.1/iosfwd:
+/usr/include/c++/13.1.1/bits/cxxabi_init_exception.h:
 
-/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
-
-/usr/include/errno.h:
-
-/home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h:
-
-/usr/include/c++/13.1.1/bits/predefined_ops.h:
-
-/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/bits/types/error_t.h:
-
-/usr/include/c++/13.1.1/bits/exception_defines.h:
-
-/usr/include/bits/types/__fpos_t.h:
+/usr/include/bits/typesizes.h:
 
 /usr/include/c++/13.1.1/iostream:
 
 /usr/local/include/SFML/System/Export.hpp:
 
-/usr/include/c++/13.1.1/exception:
+/usr/include/bits/stdio_lim.h:
 
-/usr/include/c++/13.1.1/bits/requires_hosted.h:
+/usr/include/c++/13.1.1/bits/node_handle.h:
 
-/usr/include/c++/13.1.1/bits/exception_ptr.h:
+/usr/include/sys/types.h:
 
-/usr/include/c++/13.1.1/bits/nested_exception.h:
+/usr/include/bits/wctype-wchar.h:
 
-/usr/local/include/SFML/Window/Mouse.hpp:
+/usr/local/include/SFML/Graphics/RectangleShape.hpp:
 
-/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++io.h:
+/usr/local/include/SFML/System/Clock.hpp:
 
-/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+/usr/local/include/SFML/System/Utf.hpp:
 
-/usr/include/features-time64.h:
+/usr/local/include/SFML/Graphics/Transformable.hpp:
 
-/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+/usr/include/bits/types/mbstate_t.h:
 
-/home/alan/top_secret/cpp/NEA/Kamil/src/Document.cpp:
+/usr/include/locale.h:
 
-/usr/include/bits/atomic_wide_counter.h:
+/usr/include/bits/types/wint_t.h:
 
-/usr/include/c++/13.1.1/bits/fstream.tcc:
+/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/13.1.1/bits/stringfwd.h:
+
+/usr/include/c++/13.1.1/codecvt:
+
+/usr/include/c++/13.1.1/cctype:
+
+/usr/include/c++/13.1.1/initializer_list:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13.1.1/ext/alloc_traits.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/13.1.1/bits/uniform_int_dist.h:
 
 /usr/include/c++/13.1.1/debug/debug.h:
 
@@ -2420,109 +2351,51 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/include/bits/timex.h:
 
-/usr/include/c++/13.1.1/system_error:
+/usr/include/c++/13.1.1/cerrno:
 
-/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
+/usr/include/bits/uintn-identity.h:
 
-/usr/include/c++/13.1.1/ratio:
+/usr/include/c++/13.1.1/iosfwd:
 
-/usr/include/c++/13.1.1/bits/fs_fwd.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/local/include/SFML/Graphics/PrimitiveType.hpp:
-
-/usr/include/c++/13.1.1/bits/exception.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/wchar.h:
-
-/usr/include/c++/13.1.1/bits/stringfwd.h:
-
-/usr/include/c++/13.1.1/codecvt:
-
-/usr/local/include/SFML/System.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stddef.h:
+/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
 
 /usr/include/bits/types/__locale_t.h:
 
 /usr/include/c++/13.1.1/ctime:
 
-/usr/include/c++/13.1.1/bits/memoryfwd.h:
+/usr/local/include/SFML/Graphics.hpp:
 
-/usr/include/c++/13.1.1/ostream:
+/usr/include/bits/time64.h:
 
-/usr/include/bits/floatn.h:
+/home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Document.h:
 
-/usr/include/c++/13.1.1/cstdlib:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stddef.h:
 
-/usr/include/c++/13.1.1/iomanip:
-
-/usr/include/stdlib.h:
-
-/usr/include/c++/13.1.1/bits/locale_conv.h:
-
-/usr/include/c++/13.1.1/bits/cxxabi_init_exception.h:
-
-/usr/include/c++/13.1.1/filesystem:
-
-/usr/include/c++/13.1.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/c++/13.1.1/bits/string_view.tcc:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/local/include/SFML/Graphics/Export.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdarg.h:
-
-/usr/include/c++/13.1.1/bits/stream_iterator.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/13.1.1/cstddef:
-
-/usr/include/c++/13.1.1/bits/locale_classes.tcc:
-
-/usr/include/c++/13.1.1/stdexcept:
-
-/usr/include/locale.h:
-
-/usr/include/bits/types/wint_t.h:
-
-/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+/usr/local/include/SFML/System.hpp:
 
 /usr/include/bits/types/locale_t.h:
 
-/usr/include/bits/stdio_lim.h:
+/usr/include/bits/floatn-common.h:
 
-/usr/include/c++/13.1.1/pstl/glue_algorithm_defs.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdint.h:
 
-/usr/include/bits/time.h:
+/usr/include/bits/floatn.h:
 
-/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+/usr/include/bits/types/__sigset_t.h:
 
-/usr/include/bits/types/clock_t.h:
+/usr/include/c++/13.1.1/bits/exception_ptr.h:
 
-/usr/local/include/SFML/System/MemoryInputStream.hpp:
+/usr/include/c++/13.1.1/bits/nested_exception.h:
 
-/usr/include/c++/13.1.1/bits/allocator.h:
+/usr/include/c++/13.1.1/bits/requires_hosted.h:
 
-/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
+/usr/local/include/SFML/Window/Mouse.hpp:
 
-/usr/local/include/SFML/Graphics/ConvexShape.hpp:
+/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++io.h:
 
-/usr/include/c++/13.1.1/bits/basic_string.tcc:
+/usr/include/c++/13.1.1/typeinfo:
 
-/usr/include/c++/13.1.1/bits/hash_bytes.h:
-
-/usr/include/c++/13.1.1/bits/basic_ios.tcc:
-
-/usr/include/bits/endian.h:
+/usr/include/bits/long-double.h:
 
 /usr/local/include/SFML/Window/Window.hpp:
 
@@ -2530,25 +2403,113 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/include/c++/13.1.1/new:
 
-/home/alan/top_secret/cpp/NEA/Kamil/src/kamil.cpp:
+/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
-/usr/include/c++/13.1.1/bits/stl_iterator.h:
+/usr/include/c++/13.1.1/bits/basic_ios.tcc:
 
-/usr/include/time.h:
+/usr/include/bits/endian.h:
 
-/usr/include/c++/13.1.1/type_traits:
+/usr/include/c++/13.1.1/bits/stl_iterator_base_funcs.h:
 
-/usr/include/c++/13.1.1/typeinfo:
+/usr/include/bits/types/time_t.h:
 
-/usr/include/bits/long-double.h:
+/usr/include/c++/13.1.1/filesystem:
+
+/usr/include/c++/13.1.1/pstl/pstl_config.h:
+
+/usr/include/c++/13.1.1/bits/ostream_insert.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/13.1.1/ratio:
+
+/usr/include/bits/time.h:
+
+/usr/include/c++/13.1.1/pstl/glue_algorithm_defs.h:
+
+/usr/include/c++/13.1.1/system_error:
+
+/usr/include/c++/13.1.1/exception:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/c++/13.1.1/bits/stl_map.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/home/alan/top_secret/cpp/NEA/Kamil/src/Document.cpp:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/13.1.1/bits/fstream.tcc:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/c++/13.1.1/limits:
+
+/usr/include/c++/13.1.1/bits/exception_defines.h:
+
+/usr/local/include/SFML/System/MemoryInputStream.hpp:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/c++/13.1.1/bits/fs_fwd.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/local/include/SFML/System/Thread.inl:
+
+/usr/include/c++/13.1.1/cstdint:
+
+/usr/include/bits/types/error_t.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/c++/13.1.1/bits/concept_check.h:
+
+/usr/local/include/SFML/Window/GlResource.hpp:
+
+/usr/local/include/SFML/System/Utf.inl:
+
+/usr/include/sys/select.h:
+
+/usr/include/c++/13.1.1/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/c++/13.1.1/iomanip:
+
+/usr/include/c++/13.1.1/bits/memoryfwd.h:
+
+/usr/include/c++/13.1.1/ostream:
+
+/usr/local/include/SFML/Graphics/PrimitiveType.hpp:
+
+/usr/include/c++/13.1.1/bits/exception.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/13.1.1/ext/type_traits.h:
 
 /usr/local/include/SFML/System/Thread.hpp:
 
 /usr/include/bits/pthreadtypes.h:
 
-/usr/include/asm/errno.h:
-
 /usr/include/bits/stdint-uintn.h:
+
+/usr/include/asm/errno.h:
 
 /usr/include/c++/13.1.1/bits/parse_numbers.h:
 
@@ -2560,9 +2521,17 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/include/c++/13.1.1/bits/streambuf_iterator.h:
 
-/usr/include/c++/13.1.1/bits/stl_map.h:
+/usr/include/c++/13.1.1/bits/locale_classes.tcc:
 
-/usr/include/bits/struct_mutex.h:
+/usr/include/c++/13.1.1/stdexcept:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/13.1.1/cstddef:
+
+/usr/include/c++/13.1.1/bits/allocator.h:
+
+/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
 /usr/include/bits/struct_rwlock.h:
 
@@ -2580,19 +2549,49 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/include/c++/13.1.1/cwctype:
 
+/usr/local/include/SFML/Graphics/Export.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdarg.h:
+
+/usr/local/include/SFML/Graphics/ConvexShape.hpp:
+
+/usr/include/c++/13.1.1/bits/hash_bytes.h:
+
+/usr/include/c++/13.1.1/bits/basic_string.tcc:
+
+/usr/include/c++/13.1.1/bits/stream_iterator.h:
+
 /usr/include/c++/13.1.1/bits/std_abs.h:
 
 /home/alan/top_secret/cpp/NEA/Kamil/src/EditorCam.cpp:
 
 /usr/local/include/SFML/Window.hpp:
 
+/usr/include/features-time64.h:
+
+/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/include/c++/13.1.1/bits/basic_string.h:
+
+/usr/include/c++/13.1.1/bits/functional_hash.h:
+
+/usr/include/c++/13.1.1/bits/string_view.tcc:
+
+/usr/local/include/SFML/Graphics/Text.hpp:
+
+/usr/local/include/SFML/System/Vector2.hpp:
+
+/usr/include/c++/13.1.1/ext/string_conversions.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
 /usr/include/bits/select.h:
 
 /usr/include/c++/13.1.1/bits/fs_ops.h:
 
-/usr/include/c++/13.1.1/bits/alloc_traits.h:
-
 /usr/include/bits/wordsize.h:
+
+/usr/include/c++/13.1.1/bits/alloc_traits.h:
 
 /usr/include/stdio.h:
 
@@ -2612,9 +2611,9 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/local/include/SFML/System/Sleep.hpp:
 
-/usr/include/c++/13.1.1/ext/numeric_traits.h:
-
 /usr/include/strings.h:
+
+/usr/include/c++/13.1.1/ext/numeric_traits.h:
 
 /usr/include/c++/13.1.1/bits/memory_resource.h:
 
@@ -2630,23 +2629,23 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/include/c++/13.1.1/map:
 
-/usr/include/endian.h:
-
 /usr/include/c++/13.1.1/bits/localefwd.h:
+
+/usr/include/endian.h:
 
 /usr/include/stdint.h:
 
 /usr/include/c++/13.1.1/bits/chrono.h:
 
-/usr/include/c++/13.1.1/string_view:
-
 /usr/include/gnu/stubs.h:
+
+/usr/include/c++/13.1.1/string_view:
 
 /usr/include/c++/13.1.1/bits/locale_facets.tcc:
 
-/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
 /usr/include/c++/13.1.1/cwchar:
+
+/usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
 /usr/include/bits/types/struct_tm.h:
 
@@ -2754,9 +2753,9 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/include/c++/13.1.1/algorithm:
 
-/usr/include/c++/13.1.1/bits/basic_ios.h:
-
 /usr/include/c++/13.1.1/bits/cpp_type_traits.h:
+
+/usr/include/c++/13.1.1/bits/basic_ios.h:
 
 /usr/include/c++/13.1.1/fstream:
 
@@ -2768,7 +2767,9 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: /home/alan/top_secret/cpp/NEA/Kamil/src/ka
 
 /usr/include/c++/13.1.1/bits/stl_heap.h:
 
-/home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h:
+/usr/include/c++/13.1.1/bits/predefined_ops.h:
+
+/home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h:
 
 /usr/include/bits/types/sigset_t.h:
 

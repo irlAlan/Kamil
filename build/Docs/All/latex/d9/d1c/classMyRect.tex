@@ -113,7 +113,7 @@ virutal method to draw to window
 
 Inherited from sf\+::\+Drawable it is what allows us to draw to the screen using window.\+draw(\+My\+Rect); instead of My\+Rect.\+draw(window) keeping similar drawing standard to base SFML code making our class more modular and familiar to those who use SFML
 
-Example of polymorphism \mbox{\Hypertarget{classMyRect_aba57079a7eb2337d8bab558899fb67c6}\label{classMyRect_aba57079a7eb2337d8bab558899fb67c6}} 
+Example of polymorphism by overriding a virtual method \mbox{\Hypertarget{classMyRect_aba57079a7eb2337d8bab558899fb67c6}\label{classMyRect_aba57079a7eb2337d8bab558899fb67c6}} 
 \index{MyRect@{MyRect}!getPos@{getPos}}
 \index{getPos@{getPos}!MyRect@{MyRect}}
 \doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
@@ -123,6 +123,11 @@ Example of polymorphism \mbox{\Hypertarget{classMyRect_aba57079a7eb2337d8bab5588
 
 get the position of rect 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 sf\+::\+Vector2f pos 
 \end{DoxyReturn}
@@ -143,6 +148,11 @@ Here is the caller graph for this function\+:\nopagebreak
 
 get the size of the rect 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 sf\+::\+Vector2f size 
 \end{DoxyReturn}
@@ -168,6 +178,9 @@ set the fill colour of the rect
 {\em sf\+::\+Color} & colour \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classMyRect_a8d82606eca0c71f19e4e51ec047e37f4}\label{classMyRect_a8d82606eca0c71f19e4e51ec047e37f4}} 
 \index{MyRect@{MyRect}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!MyRect@{MyRect}}
@@ -198,6 +211,9 @@ set the size of the rect
 {\em sf\+::\+Vector2f} & size \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 \doxysubsection{Member Data Documentation}

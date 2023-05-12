@@ -1,7 +1,7 @@
 CMakeFiles/Kamil.dir/src/Editor.cpp.o: \
  /home/alan/top_secret/cpp/NEA/Kamil/src/Editor.cpp \
  /usr/include/stdc-predef.h \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h \
  /usr/local/include/SFML/Graphics.hpp /usr/local/include/SFML/Window.hpp \
  /usr/local/include/SFML/System.hpp /usr/local/include/SFML/Config.hpp \
  /usr/local/include/SFML/System/Clock.hpp \
@@ -234,6 +234,8 @@ CMakeFiles/Kamil.dir/src/Editor.cpp.o: \
  /usr/local/include/SFML/Graphics/Sprite.hpp \
  /usr/local/include/SFML/Graphics/Text.hpp \
  /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
  /usr/include/c++/13.1.1/iostream /usr/include/c++/13.1.1/istream \
  /usr/include/c++/13.1.1/bits/istream.tcc \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Keyboard.h \
@@ -263,7 +265,5 @@ CMakeFiles/Kamil.dir/src/Editor.cpp.o: \
  /usr/include/strings.h /usr/include/c++/13.1.1/array \
  /usr/include/c++/13.1.1/compare \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/MyRect.h \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorCam.h
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorCam.h \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h

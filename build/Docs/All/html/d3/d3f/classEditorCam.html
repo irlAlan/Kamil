@@ -104,6 +104,7 @@ Collaboration diagram for EditorCam:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a84ca101e09b277475789003c7b971aad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3f/classEditorCam.html#a84ca101e09b277475789003c7b971aad">EditorCam</a> (sf::RenderWindow *<a class="el" href="../../d3/d3f/classEditorCam.html#a2a66adb219e21a7b0cfb97be161c6e01">window</a>, float <a class="el" href="../../d3/d3f/classEditorCam.html#a76a3c72d107a3380be474db8eaece662">deltaScroll</a>, float <a class="el" href="../../d3/d3f/classEditorCam.html#aceb027934e805e08734dd26ec78c769d">deltaRotation</a>, float <a class="el" href="../../d3/d3f/classEditorCam.html#a6f341d7d3786ac925e34bfece333f530">deltaZoomIn</a>, float <a class="el" href="../../d3/d3f/classEditorCam.html#a33ab6ce7a12d5218e292bdda67a74c53">deltaZoomOut</a>)</td></tr>
+<tr class="memdesc:a84ca101e09b277475789003c7b971aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="../../d3/d3f/classEditorCam.html">EditorCam</a>.  <br /></td></tr>
 <tr class="separator:a84ca101e09b277475789003c7b971aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23889d538d84074e8582217235792520"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3f/classEditorCam.html#a23889d538d84074e8582217235792520">scrollUp</a> ()</td></tr>
 <tr class="separator:a23889d538d84074e8582217235792520"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,8 +131,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad7bc555073c22d1764c040d17a089a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3f/classEditorCam.html#aad7bc555073c22d1764c040d17a089a7">getLineHeight</a> ()</td></tr>
 <tr class="separator:aad7bc555073c22d1764c040d17a089a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0c7da9f7f7b31352142a5d2bca272c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3f/classEditorCam.html#ad0c7da9f7f7b31352142a5d2bca272c7">setCameraBounds</a> (int width, int height)</td></tr>
+<tr class="memdesc:ad0c7da9f7f7b31352142a5d2bca272c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set camera bounds  <br /></td></tr>
 <tr class="separator:ad0c7da9f7f7b31352142a5d2bca272c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe9dd73f20f94961db48a2f81e72e227"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3f/classEditorCam.html#abe9dd73f20f94961db48a2f81e72e227">draw</a> (sf::RenderTarget &amp;target, sf::RenderStates states) const override</td></tr>
+<tr class="memdesc:abe9dd73f20f94961db48a2f81e72e227"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw to window  <br /></td></tr>
 <tr class="separator:abe9dd73f20f94961db48a2f81e72e227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -202,6 +205,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor for <a class="el" href="../../d3/d3f/classEditorCam.html">EditorCam</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sf::RenderWindow*</td><td>- pointer to main window </td></tr>
+    <tr><td class="paramname">float</td><td>- scrolling delta value </td></tr>
+    <tr><td class="paramname">float</td><td>- rotation delta value </td></tr>
+    <tr><td class="paramname">float</td><td>- zoom in delta value </td></tr>
+    <tr><td class="paramname">float</td><td>- zoom out delta value </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -239,6 +254,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>draw to window </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sf::RenderTarget&amp;</td><td>- render target reference </td></tr>
+    <tr><td class="paramname">sf::RenderStates</td><td>- rendr states </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
 </div>
 </div>
 <a id="ad0e3f7dcfbfa6f2737e35bcea8ada830" name="ad0e3f7dcfbfa6f2737e35bcea8ada830"></a>
@@ -255,6 +280,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif get bottom pixel limit </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>float - pixel limit </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -281,6 +313,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif get line height </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int - line height </dd></dl>
 
 </div>
 </div>
@@ -298,6 +337,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif get right pixel limit </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>float - pixel limit </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -324,6 +370,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif rotate camera left </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -341,6 +394,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif rotate camera right </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -358,6 +418,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif move camera down </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -384,6 +451,13 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif move camera left </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -401,6 +475,13 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif move camera right </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -438,6 +519,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif move camera to position </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">float</td><td>- x value </td></tr>
+    <tr><td class="paramname">float</td><td>- y value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -455,6 +544,13 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif move camera up </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -483,12 +579,22 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>set camera bounds </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td>- width </td></tr>
+    <tr><td class="paramname">int</td><td>- height </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d3f/classEditorCam_ad0c7da9f7f7b31352142a5d2bca272c7_icgraph.png" border="0" usemap="#ad3/d3f/classEditorCam_ad0c7da9f7f7b31352142a5d2bca272c7_icgraph" alt=""/></div>
 <map name="ad3/d3f/classEditorCam_ad0c7da9f7f7b31352142a5d2bca272c7_icgraph" id="ad3/d3f/classEditorCam_ad0c7da9f7f7b31352142a5d2bca272c7_icgraph">
-<area shape="rect" title=" " alt="" coords="145,5,344,32"/>
+<area shape="rect" title="set camera bounds" alt="" coords="145,5,344,32"/>
 <area shape="rect" href="../../dd/dc3/classEditor.html#a560909c31ad3cd0035c8d050f1042377" title="function that draws everything to RenderWindow" alt="" coords="5,5,97,32"/>
 </map>
 </div>
@@ -509,6 +615,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif zoom camera in </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -526,6 +639,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif zoom camera out </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -549,6 +669,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>bottom pixel limit </p>
 
 </div>
 </div>
@@ -684,6 +805,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>line height </p>
 
 </div>
 </div>
@@ -706,6 +828,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>margin offset </p>
 
 </div>
 </div>
@@ -728,7 +851,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>delta time for zoomin/out </p>
+<p>delta time for zoomin/out right pixel limit </p>
 
 </div>
 </div>
@@ -751,6 +874,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>refernce to window </p>
 
 </div>
 </div>

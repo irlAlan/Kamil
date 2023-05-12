@@ -1,458 +1,461 @@
 \begin{theindex}
 
   \item {$\sim$Editor}
-    \subitem {Editor}, \hyperpage{27}
+    \subitem {Editor}, \hyperpage{32}
 
   \indexspace
 
   \item {absPath}
-    \subitem {Document}, \hyperpage{25}
+    \subitem {Document}, \hyperpage{30}
 
   \indexspace
 
   \item {backSpace}
-    \subitem {Keyboard}, \hyperpage{40}
+    \subitem {Keyboard}, \hyperpage{49}
   \item {bottomLimitPx}
-    \subitem {EditorCam}, \hyperpage{36}
+    \subitem {EditorCam}, \hyperpage{45}
   \item {bounds}
-    \subitem {Keyboard}, \hyperpage{48}
+    \subitem {Keyboard}, \hyperpage{57}
   \item {BS}
-    \subitem {KEYS}, \hyperpage{14}
+    \subitem {KEYS}, \hyperpage{16}
   \item {buffInfo}
-    \subitem {Document}, \hyperpage{25}
+    \subitem {Document}, \hyperpage{30}
 
   \indexspace
 
   \item {camera}
-    \subitem {Editor}, \hyperpage{29}
-    \subitem {EditorCam}, \hyperpage{36}
+    \subitem {Editor}, \hyperpage{35}
+    \subitem {EditorCam}, \hyperpage{45}
   \item {cbox}
-    \subitem {Editor}, \hyperpage{29}
-  \item {CmdBox}, \hyperpage{15}
-    \subitem {TextBox}, \hyperpage{19}
-  \item {Command}, \hyperpage{13}
-  \item {Command::Stack$<$ T $>$}, \hyperpage{55}
-    \subitem {extend}, \hyperpage{57}
-    \subitem {getMax}, \hyperpage{57}
-    \subitem {max\_size}, \hyperpage{58}
-    \subitem {pop}, \hyperpage{57}
-    \subitem {printStack}, \hyperpage{57}
-    \subitem {push}, \hyperpage{57}
-    \subitem {SP}, \hyperpage{58}
-    \subitem {SP\_pos}, \hyperpage{58}
-    \subitem {Stack}, \hyperpage{56}
-    \subitem {stack\_array}, \hyperpage{58}
+    \subitem {Editor}, \hyperpage{35}
+  \item {CmdBox}, \hyperpage{17}
+    \subitem {TextBox}, \hyperpage{21}
+  \item {Command}, \hyperpage{15}
+  \item {Command::Stack$<$ T $>$}, \hyperpage{65}
+    \subitem {extend}, \hyperpage{66}
+    \subitem {getMax}, \hyperpage{66}
+    \subitem {max\_size}, \hyperpage{67}
+    \subitem {pop}, \hyperpage{66}
+    \subitem {printStack}, \hyperpage{66}
+    \subitem {push}, \hyperpage{67}
+    \subitem {SP}, \hyperpage{67}
+    \subitem {SP\_pos}, \hyperpage{67}
+    \subitem {Stack}, \hyperpage{66}
+    \subitem {stack\_array}, \hyperpage{68}
   \item {createDir}
-    \subitem {Document}, \hyperpage{22}
+    \subitem {Document}, \hyperpage{24}
   \item {createFile}
-    \subitem {Document}, \hyperpage{22}
+    \subitem {Document}, \hyperpage{24}
   \item {ctDeleted}
-    \subitem {Keyboard}, \hyperpage{48}
+    \subitem {Keyboard}, \hyperpage{57}
   \item {ctEntered}
-    \subitem {Keyboard}, \hyperpage{48}
+    \subitem {Keyboard}, \hyperpage{57}
   \item {CTRL}
-    \subitem {KEYS}, \hyperpage{14}
+    \subitem {KEYS}, \hyperpage{16}
 
   \indexspace
 
   \item {DELETE}
-    \subitem {KEYS}, \hyperpage{14}
+    \subitem {KEYS}, \hyperpage{16}
   \item {deleteChar}
-    \subitem {TextBox}, \hyperpage{63}
+    \subitem {TextBox}, \hyperpage{73}
   \item {deltaRotation}
-    \subitem {EditorCam}, \hyperpage{36}
+    \subitem {EditorCam}, \hyperpage{45}
   \item {deltaScroll}
-    \subitem {EditorCam}, \hyperpage{36}
+    \subitem {EditorCam}, \hyperpage{46}
   \item {deltaZoomIn}
-    \subitem {EditorCam}, \hyperpage{36}
+    \subitem {EditorCam}, \hyperpage{46}
   \item {deltaZoomOut}
-    \subitem {EditorCam}, \hyperpage{36}
+    \subitem {EditorCam}, \hyperpage{46}
   \item {doc}
-    \subitem {Editor}, \hyperpage{29}
+    \subitem {Editor}, \hyperpage{35}
   \item {docChanged}
-    \subitem {Document}, \hyperpage{25}
+    \subitem {Document}, \hyperpage{30}
   \item {docHasText}
-    \subitem {Document}, \hyperpage{22}
-  \item {Document}, \hyperpage{19}
-    \subitem {absPath}, \hyperpage{25}
-    \subitem {buffInfo}, \hyperpage{25}
-    \subitem {createDir}, \hyperpage{22}
-    \subitem {createFile}, \hyperpage{22}
-    \subitem {docChanged}, \hyperpage{25}
-    \subitem {docHasText}, \hyperpage{22}
-    \subitem {Document}, \hyperpage{21}
-    \subitem {getAbsPath}, \hyperpage{22}
-    \subitem {getLineCount}, \hyperpage{22}
-    \subitem {getRelPath}, \hyperpage{22}
-    \subitem {hasChanged}, \hyperpage{23}
-    \subitem {init}, \hyperpage{23}
-    \subitem {readFile}, \hyperpage{24}
-    \subitem {relPath}, \hyperpage{25}
-    \subitem {saveFile}, \hyperpage{24}
-    \subitem {setBuffInfo}, \hyperpage{24}
+    \subitem {Document}, \hyperpage{24}
+  \item {Document}, \hyperpage{21}
+    \subitem {absPath}, \hyperpage{30}
+    \subitem {buffInfo}, \hyperpage{30}
+    \subitem {createDir}, \hyperpage{24}
+    \subitem {createFile}, \hyperpage{24}
+    \subitem {docChanged}, \hyperpage{30}
+    \subitem {docHasText}, \hyperpage{24}
+    \subitem {Document}, \hyperpage{23}
+    \subitem {getAbsPath}, \hyperpage{25}
+    \subitem {getLineCount}, \hyperpage{25}
+    \subitem {getRelPath}, \hyperpage{26}
+    \subitem {hasChanged}, \hyperpage{26}
+    \subitem {init}, \hyperpage{26, 27}
+    \subitem {readFile}, \hyperpage{27}
+    \subitem {relPath}, \hyperpage{30}
+    \subitem {saveFile}, \hyperpage{28}
+    \subitem {setBuffInfo}, \hyperpage{29}
+    \subitem {setChange}, \hyperpage{29}
   \item {draw}
-    \subitem {Editor}, \hyperpage{27}
-    \subitem {EditorCam}, \hyperpage{33}
-    \subitem {MyRect}, \hyperpage{52}
-    \subitem {TextBox}, \hyperpage{63}
+    \subitem {Editor}, \hyperpage{32}
+    \subitem {EditorCam}, \hyperpage{39}
+    \subitem {MyRect}, \hyperpage{61}
+    \subitem {TextBox}, \hyperpage{73}
 
   \indexspace
 
-  \item {Editor}, \hyperpage{26}
-    \subitem {$\sim$Editor}, \hyperpage{27}
-    \subitem {camera}, \hyperpage{29}
-    \subitem {cbox}, \hyperpage{29}
-    \subitem {doc}, \hyperpage{29}
-    \subitem {draw}, \hyperpage{27}
-    \subitem {Editor}, \hyperpage{27}
-    \subitem {event}, \hyperpage{30}
-    \subitem {handleEvent}, \hyperpage{28}
-    \subitem {kb}, \hyperpage{30}
-    \subitem {lineBox}, \hyperpage{30}
-    \subitem {loadFromFile}, \hyperpage{30}
-    \subitem {makeLineNum}, \hyperpage{29}
-    \subitem {textBox}, \hyperpage{30}
-    \subitem {window}, \hyperpage{30}
-  \item {EditorCam}, \hyperpage{31}
-    \subitem {bottomLimitPx}, \hyperpage{36}
-    \subitem {camera}, \hyperpage{36}
-    \subitem {deltaRotation}, \hyperpage{36}
-    \subitem {deltaScroll}, \hyperpage{36}
-    \subitem {deltaZoomIn}, \hyperpage{36}
-    \subitem {deltaZoomOut}, \hyperpage{36}
-    \subitem {draw}, \hyperpage{33}
-    \subitem {EditorCam}, \hyperpage{33}
-    \subitem {getBottomLimitPx}, \hyperpage{33}
-    \subitem {getLineHeight}, \hyperpage{33}
-    \subitem {getRightLimitPx}, \hyperpage{34}
-    \subitem {lineHeight}, \hyperpage{37}
-    \subitem {marginXOffset}, \hyperpage{37}
-    \subitem {rightLimitPx}, \hyperpage{37}
-    \subitem {rotateLeft}, \hyperpage{34}
-    \subitem {rotateRight}, \hyperpage{34}
-    \subitem {scrollDown}, \hyperpage{34}
-    \subitem {scrollLeft}, \hyperpage{34}
-    \subitem {scrollRight}, \hyperpage{35}
-    \subitem {scrollTo}, \hyperpage{35}
-    \subitem {scrollUp}, \hyperpage{35}
-    \subitem {setCameraBounds}, \hyperpage{35}
-    \subitem {window}, \hyperpage{37}
-    \subitem {zoomIn}, \hyperpage{35}
-    \subitem {zoomOut}, \hyperpage{36}
+  \item {Editor}, \hyperpage{31}
+    \subitem {$\sim$Editor}, \hyperpage{32}
+    \subitem {camera}, \hyperpage{35}
+    \subitem {cbox}, \hyperpage{35}
+    \subitem {doc}, \hyperpage{35}
+    \subitem {draw}, \hyperpage{32}
+    \subitem {Editor}, \hyperpage{32}
+    \subitem {event}, \hyperpage{35}
+    \subitem {handleEvent}, \hyperpage{33}
+    \subitem {kb}, \hyperpage{35}
+    \subitem {lineBox}, \hyperpage{35}
+    \subitem {loadFromFile}, \hyperpage{35}
+    \subitem {makeLineNum}, \hyperpage{34}
+    \subitem {textBox}, \hyperpage{35}
+    \subitem {window}, \hyperpage{36}
+  \item {EditorCam}, \hyperpage{36}
+    \subitem {bottomLimitPx}, \hyperpage{45}
+    \subitem {camera}, \hyperpage{45}
+    \subitem {deltaRotation}, \hyperpage{45}
+    \subitem {deltaScroll}, \hyperpage{46}
+    \subitem {deltaZoomIn}, \hyperpage{46}
+    \subitem {deltaZoomOut}, \hyperpage{46}
+    \subitem {draw}, \hyperpage{39}
+    \subitem {EditorCam}, \hyperpage{39}
+    \subitem {getBottomLimitPx}, \hyperpage{40}
+    \subitem {getLineHeight}, \hyperpage{40}
+    \subitem {getRightLimitPx}, \hyperpage{41}
+    \subitem {lineHeight}, \hyperpage{46}
+    \subitem {marginXOffset}, \hyperpage{46}
+    \subitem {rightLimitPx}, \hyperpage{46}
+    \subitem {rotateLeft}, \hyperpage{41}
+    \subitem {rotateRight}, \hyperpage{41}
+    \subitem {scrollDown}, \hyperpage{42}
+    \subitem {scrollLeft}, \hyperpage{42}
+    \subitem {scrollRight}, \hyperpage{43}
+    \subitem {scrollTo}, \hyperpage{43}
+    \subitem {scrollUp}, \hyperpage{44}
+    \subitem {setCameraBounds}, \hyperpage{44}
+    \subitem {window}, \hyperpage{46}
+    \subitem {zoomIn}, \hyperpage{44}
+    \subitem {zoomOut}, \hyperpage{45}
   \item {ENTER}
-    \subitem {KEYS}, \hyperpage{14}
+    \subitem {KEYS}, \hyperpage{16}
   \item {enterPress}
-    \subitem {TextBox}, \hyperpage{63}
+    \subitem {TextBox}, \hyperpage{73}
   \item {ESCAPE}
-    \subitem {KEYS}, \hyperpage{14}
+    \subitem {KEYS}, \hyperpage{16}
   \item {event}
-    \subitem {Editor}, \hyperpage{30}
+    \subitem {Editor}, \hyperpage{35}
   \item {extend}
-    \subitem {Command::Stack$<$ T $>$}, \hyperpage{57}
+    \subitem {Command::Stack$<$ T $>$}, \hyperpage{66}
 
   \indexspace
 
   \item {fcol}
-    \subitem {TextBox}, \hyperpage{66}
+    \subitem {TextBox}, \hyperpage{78}
   \item {fillColour}
-    \subitem {MyRect}, \hyperpage{54}
+    \subitem {MyRect}, \hyperpage{64}
   \item {fname}
-    \subitem {TextBox}, \hyperpage{66}
+    \subitem {TextBox}, \hyperpage{78}
   \item {font}
-    \subitem {TextBox}, \hyperpage{66}
+    \subitem {TextBox}, \hyperpage{78}
   \item {fRect}
-    \subitem {MyRect}, \hyperpage{54}
+    \subitem {MyRect}, \hyperpage{64}
   \item {fsize}
-    \subitem {TextBox}, \hyperpage{66}
+    \subitem {TextBox}, \hyperpage{78}
 
   \indexspace
 
   \item {getAbsPath}
-    \subitem {Document}, \hyperpage{22}
+    \subitem {Document}, \hyperpage{25}
   \item {getBottomLimitPx}
-    \subitem {EditorCam}, \hyperpage{33}
+    \subitem {EditorCam}, \hyperpage{40}
   \item {getBounds}
-    \subitem {Keyboard}, \hyperpage{40}
+    \subitem {Keyboard}, \hyperpage{49}
   \item {getCmdTextEntered}
-    \subitem {Keyboard}, \hyperpage{40}
+    \subitem {Keyboard}, \hyperpage{50}
   \item {getLineCount}
-    \subitem {Document}, \hyperpage{22}
+    \subitem {Document}, \hyperpage{25}
   \item {getLineHeight}
-    \subitem {EditorCam}, \hyperpage{33}
+    \subitem {EditorCam}, \hyperpage{40}
   \item {getLineNumber}
-    \subitem {Keyboard}, \hyperpage{41}
+    \subitem {Keyboard}, \hyperpage{51}
   \item {getMax}
-    \subitem {Command::Stack$<$ T $>$}, \hyperpage{57}
+    \subitem {Command::Stack$<$ T $>$}, \hyperpage{66}
   \item {getPos}
-    \subitem {MyRect}, \hyperpage{52}
+    \subitem {MyRect}, \hyperpage{61}
   \item {getRelPath}
-    \subitem {Document}, \hyperpage{22}
+    \subitem {Document}, \hyperpage{26}
   \item {getRightLimitPx}
-    \subitem {EditorCam}, \hyperpage{34}
+    \subitem {EditorCam}, \hyperpage{41}
   \item {getSize}
-    \subitem {MyRect}, \hyperpage{53}
+    \subitem {MyRect}, \hyperpage{62}
   \item {getString}
-    \subitem {TextBox}, \hyperpage{63}
+    \subitem {TextBox}, \hyperpage{73}
   \item {getTextBox}
-    \subitem {TextBox}, \hyperpage{63}
+    \subitem {TextBox}, \hyperpage{74}
   \item {getTextColour}
-    \subitem {TextBox}, \hyperpage{64}
+    \subitem {TextBox}, \hyperpage{74}
   \item {getTextEntered}
-    \subitem {Keyboard}, \hyperpage{41}
+    \subitem {Keyboard}, \hyperpage{51}
   \item {getTextSize}
-    \subitem {TextBox}, \hyperpage{64}
+    \subitem {TextBox}, \hyperpage{74}
 
   \indexspace
 
   \item {handleCmdKeyEvent}
-    \subitem {Keyboard}, \hyperpage{42}
+    \subitem {Keyboard}, \hyperpage{51}
   \item {handleEvent}
-    \subitem {Editor}, \hyperpage{28}
+    \subitem {Editor}, \hyperpage{33}
   \item {handleKeyEvent}
-    \subitem {Keyboard}, \hyperpage{42}
+    \subitem {Keyboard}, \hyperpage{52}
   \item {handleMouseEvent}
-    \subitem {Keyboard}, \hyperpage{43}
+    \subitem {Keyboard}, \hyperpage{53}
   \item {hasChanged}
-    \subitem {Document}, \hyperpage{23}
+    \subitem {Document}, \hyperpage{26}
 
   \indexspace
 
-  \item {include/Kamil/CmdBox.h}, \hyperpage{69, 70}
-  \item {include/Kamil/Commands.h}, \hyperpage{70}
-  \item {include/Kamil/Document.h}, \hyperpage{71, 72}
-  \item {include/Kamil/Editor.h}, \hyperpage{73, 74}
-  \item {include/Kamil/EditorCam.h}, \hyperpage{75, 76}
-  \item {include/Kamil/Keyboard.h}, \hyperpage{76}, \hyperpage{78}
-  \item {include/Kamil/MyRect.h}, \hyperpage{79, 80}
-  \item {include/Kamil/TextBox.h}, \hyperpage{80, 81}
-  \item {include/Kamil/Utils/Stack.h}, \hyperpage{82, 83}
+  \item {include/Kamil/CmdBox.h}, \hyperpage{79, 80}
+  \item {include/Kamil/Commands.h}, \hyperpage{80}
+  \item {include/Kamil/Document.h}, \hyperpage{81, 82}
+  \item {include/Kamil/Editor.h}, \hyperpage{83, 84}
+  \item {include/Kamil/EditorCam.h}, \hyperpage{84}, \hyperpage{86}
+  \item {include/Kamil/Keyboard.h}, \hyperpage{86}, \hyperpage{88}
+  \item {include/Kamil/MyRect.h}, \hyperpage{89, 90}
+  \item {include/Kamil/TextBox.h}, \hyperpage{90, 91}
+  \item {include/Kamil/Utils/Stack.h}, \hyperpage{92, 93}
   \item {init}
-    \subitem {Document}, \hyperpage{23}
+    \subitem {Document}, \hyperpage{26, 27}
   \item {isCmdTextEntered}
-    \subitem {Keyboard}, \hyperpage{44}
+    \subitem {Keyboard}, \hyperpage{54}
   \item {isKeyPressed}
-    \subitem {Keyboard}, \hyperpage{44}
+    \subitem {Keyboard}, \hyperpage{54}
   \item {isMouseHover}
-    \subitem {TextBox}, \hyperpage{64}
+    \subitem {TextBox}, \hyperpage{75}
   \item {isTextDeleted}
-    \subitem {Keyboard}, \hyperpage{45}
+    \subitem {Keyboard}, \hyperpage{55}
   \item {isTextEntered}
-    \subitem {Keyboard}, \hyperpage{45}
+    \subitem {Keyboard}, \hyperpage{55}
 
   \indexspace
 
   \item {kamil.cpp}
-    \subitem {main}, \hyperpage{86}
+    \subitem {main}, \hyperpage{96}
   \item {kb}
-    \subitem {Editor}, \hyperpage{30}
+    \subitem {Editor}, \hyperpage{35}
   \item {kbrCmd}
-    \subitem {Keyboard}, \hyperpage{46}
-  \item {Keyboard}, \hyperpage{38}
-    \subitem {backSpace}, \hyperpage{40}
-    \subitem {bounds}, \hyperpage{48}
-    \subitem {ctDeleted}, \hyperpage{48}
-    \subitem {ctEntered}, \hyperpage{48}
-    \subitem {getBounds}, \hyperpage{40}
-    \subitem {getCmdTextEntered}, \hyperpage{40}
-    \subitem {getLineNumber}, \hyperpage{41}
-    \subitem {getTextEntered}, \hyperpage{41}
-    \subitem {handleCmdKeyEvent}, \hyperpage{42}
-    \subitem {handleKeyEvent}, \hyperpage{42}
-    \subitem {handleMouseEvent}, \hyperpage{43}
-    \subitem {isCmdTextEntered}, \hyperpage{44}
-    \subitem {isKeyPressed}, \hyperpage{44}
-    \subitem {isTextDeleted}, \hyperpage{45}
-    \subitem {isTextEntered}, \hyperpage{45}
-    \subitem {kbrCmd}, \hyperpage{46}
-    \subitem {Keyboard}, \hyperpage{39}
-    \subitem {setCmdTextEntered}, \hyperpage{46}
-    \subitem {setTextEntered}, \hyperpage{46}
-    \subitem {tDeleted}, \hyperpage{48}
-    \subitem {tEntered}, \hyperpage{48}
-    \subitem {window}, \hyperpage{49}
-  \item {KEYS}, \hyperpage{13}
-    \subitem {BS}, \hyperpage{14}
-    \subitem {CTRL}, \hyperpage{14}
-    \subitem {DELETE}, \hyperpage{14}
-    \subitem {ENTER}, \hyperpage{14}
-    \subitem {ESCAPE}, \hyperpage{14}
-    \subitem {Shift\_A}, \hyperpage{14}
+    \subitem {Keyboard}, \hyperpage{56}
+  \item {Keyboard}, \hyperpage{47}
+    \subitem {backSpace}, \hyperpage{49}
+    \subitem {bounds}, \hyperpage{57}
+    \subitem {ctDeleted}, \hyperpage{57}
+    \subitem {ctEntered}, \hyperpage{57}
+    \subitem {getBounds}, \hyperpage{49}
+    \subitem {getCmdTextEntered}, \hyperpage{50}
+    \subitem {getLineNumber}, \hyperpage{51}
+    \subitem {getTextEntered}, \hyperpage{51}
+    \subitem {handleCmdKeyEvent}, \hyperpage{51}
+    \subitem {handleKeyEvent}, \hyperpage{52}
+    \subitem {handleMouseEvent}, \hyperpage{53}
+    \subitem {isCmdTextEntered}, \hyperpage{54}
+    \subitem {isKeyPressed}, \hyperpage{54}
+    \subitem {isTextDeleted}, \hyperpage{55}
+    \subitem {isTextEntered}, \hyperpage{55}
+    \subitem {kbrCmd}, \hyperpage{56}
+    \subitem {Keyboard}, \hyperpage{49}
+    \subitem {setCmdTextEntered}, \hyperpage{56}
+    \subitem {setTextEntered}, \hyperpage{56}
+    \subitem {tDeleted}, \hyperpage{57}
+    \subitem {tEntered}, \hyperpage{58}
+    \subitem {window}, \hyperpage{58}
+  \item {KEYS}, \hyperpage{15}
+    \subitem {BS}, \hyperpage{16}
+    \subitem {CTRL}, \hyperpage{16}
+    \subitem {DELETE}, \hyperpage{16}
+    \subitem {ENTER}, \hyperpage{16}
+    \subitem {ESCAPE}, \hyperpage{16}
+    \subitem {Shift\_A}, \hyperpage{16}
 
   \indexspace
 
   \item {lineBox}
-    \subitem {Editor}, \hyperpage{30}
+    \subitem {Editor}, \hyperpage{35}
   \item {lineHeight}
-    \subitem {EditorCam}, \hyperpage{37}
+    \subitem {EditorCam}, \hyperpage{46}
   \item {loadFromFile}
-    \subitem {Editor}, \hyperpage{30}
+    \subitem {Editor}, \hyperpage{35}
 
   \indexspace
 
   \item {main}
-    \subitem {kamil.cpp}, \hyperpage{86}
-    \subitem {tet.cpp}, \hyperpage{89}
+    \subitem {kamil.cpp}, \hyperpage{96}
+    \subitem {tet.cpp}, \hyperpage{99}
   \item {makeLineNum}
-    \subitem {Editor}, \hyperpage{29}
+    \subitem {Editor}, \hyperpage{34}
   \item {marginXOffset}
-    \subitem {EditorCam}, \hyperpage{37}
+    \subitem {EditorCam}, \hyperpage{46}
   \item {max\_size}
-    \subitem {Command::Stack$<$ T $>$}, \hyperpage{58}
+    \subitem {Command::Stack$<$ T $>$}, \hyperpage{67}
   \item {mouseHover}
-    \subitem {TextBox}, \hyperpage{66}
-  \item {MyRect}, \hyperpage{49}
-    \subitem {draw}, \hyperpage{52}
-    \subitem {fillColour}, \hyperpage{54}
-    \subitem {fRect}, \hyperpage{54}
-    \subitem {getPos}, \hyperpage{52}
-    \subitem {getSize}, \hyperpage{53}
-    \subitem {MyRect}, \hyperpage{52}
-    \subitem {outlineColour}, \hyperpage{54}
-    \subitem {outlineThicknes}, \hyperpage{55}
-    \subitem {pos}, \hyperpage{55}
-    \subitem {setFillColour}, \hyperpage{53}
-    \subitem {setPosition}, \hyperpage{54}
-    \subitem {setSize}, \hyperpage{54}
-    \subitem {size}, \hyperpage{55}
+    \subitem {TextBox}, \hyperpage{78}
+  \item {MyRect}, \hyperpage{58}
+    \subitem {draw}, \hyperpage{61}
+    \subitem {fillColour}, \hyperpage{64}
+    \subitem {fRect}, \hyperpage{64}
+    \subitem {getPos}, \hyperpage{61}
+    \subitem {getSize}, \hyperpage{62}
+    \subitem {MyRect}, \hyperpage{61}
+    \subitem {outlineColour}, \hyperpage{64}
+    \subitem {outlineThicknes}, \hyperpage{64}
+    \subitem {pos}, \hyperpage{64}
+    \subitem {setFillColour}, \hyperpage{63}
+    \subitem {setPosition}, \hyperpage{63}
+    \subitem {setSize}, \hyperpage{63}
+    \subitem {size}, \hyperpage{64}
 
   \indexspace
 
   \item {outlineColour}
-    \subitem {MyRect}, \hyperpage{54}
+    \subitem {MyRect}, \hyperpage{64}
   \item {outlineThicknes}
-    \subitem {MyRect}, \hyperpage{55}
+    \subitem {MyRect}, \hyperpage{64}
 
   \indexspace
 
   \item {pop}
-    \subitem {Command::Stack$<$ T $>$}, \hyperpage{57}
+    \subitem {Command::Stack$<$ T $>$}, \hyperpage{66}
   \item {pos}
-    \subitem {MyRect}, \hyperpage{55}
+    \subitem {MyRect}, \hyperpage{64}
   \item {printStack}
-    \subitem {Command::Stack$<$ T $>$}, \hyperpage{57}
+    \subitem {Command::Stack$<$ T $>$}, \hyperpage{66}
   \item {push}
-    \subitem {Command::Stack$<$ T $>$}, \hyperpage{57}
+    \subitem {Command::Stack$<$ T $>$}, \hyperpage{67}
 
   \indexspace
 
   \item {readFile}
-    \subitem {Document}, \hyperpage{24}
-  \item {README.md}, \hyperpage{84}
+    \subitem {Document}, \hyperpage{27}
+  \item {README.md}, \hyperpage{94}
   \item {relPath}
-    \subitem {Document}, \hyperpage{25}
+    \subitem {Document}, \hyperpage{30}
   \item {rightLimitPx}
-    \subitem {EditorCam}, \hyperpage{37}
+    \subitem {EditorCam}, \hyperpage{46}
   \item {rotateLeft}
-    \subitem {EditorCam}, \hyperpage{34}
+    \subitem {EditorCam}, \hyperpage{41}
   \item {rotateRight}
-    \subitem {EditorCam}, \hyperpage{34}
+    \subitem {EditorCam}, \hyperpage{41}
 
   \indexspace
 
   \item {saveFile}
-    \subitem {Document}, \hyperpage{24}
+    \subitem {Document}, \hyperpage{28}
   \item {scrollDown}
-    \subitem {EditorCam}, \hyperpage{34}
+    \subitem {EditorCam}, \hyperpage{42}
   \item {scrollLeft}
-    \subitem {EditorCam}, \hyperpage{34}
+    \subitem {EditorCam}, \hyperpage{42}
   \item {scrollRight}
-    \subitem {EditorCam}, \hyperpage{35}
+    \subitem {EditorCam}, \hyperpage{43}
   \item {scrollTo}
-    \subitem {EditorCam}, \hyperpage{35}
+    \subitem {EditorCam}, \hyperpage{43}
   \item {scrollUp}
-    \subitem {EditorCam}, \hyperpage{35}
+    \subitem {EditorCam}, \hyperpage{44}
   \item {setBuffInfo}
-    \subitem {Document}, \hyperpage{24}
+    \subitem {Document}, \hyperpage{29}
   \item {setCameraBounds}
-    \subitem {EditorCam}, \hyperpage{35}
+    \subitem {EditorCam}, \hyperpage{44}
+  \item {setChange}
+    \subitem {Document}, \hyperpage{29}
   \item {setCmdTextEntered}
-    \subitem {Keyboard}, \hyperpage{46}
+    \subitem {Keyboard}, \hyperpage{56}
   \item {setFillColour}
-    \subitem {MyRect}, \hyperpage{53}
+    \subitem {MyRect}, \hyperpage{63}
   \item {setFont}
-    \subitem {TextBox}, \hyperpage{64}
+    \subitem {TextBox}, \hyperpage{75}
   \item {setPosition}
-    \subitem {MyRect}, \hyperpage{54}
+    \subitem {MyRect}, \hyperpage{63}
   \item {setSize}
-    \subitem {MyRect}, \hyperpage{54}
+    \subitem {MyRect}, \hyperpage{63}
   \item {setString}
-    \subitem {TextBox}, \hyperpage{65}
+    \subitem {TextBox}, \hyperpage{75}
   \item {setTextColour}
-    \subitem {TextBox}, \hyperpage{65}
+    \subitem {TextBox}, \hyperpage{77}
   \item {setTextEntered}
-    \subitem {Keyboard}, \hyperpage{46}
+    \subitem {Keyboard}, \hyperpage{56}
   \item {setTextSize}
-    \subitem {TextBox}, \hyperpage{65}
+    \subitem {TextBox}, \hyperpage{77}
   \item {Shift\_A}
-    \subitem {KEYS}, \hyperpage{14}
+    \subitem {KEYS}, \hyperpage{16}
   \item {size}
-    \subitem {MyRect}, \hyperpage{55}
+    \subitem {MyRect}, \hyperpage{64}
   \item {SP}
-    \subitem {Command::Stack$<$ T $>$}, \hyperpage{58}
+    \subitem {Command::Stack$<$ T $>$}, \hyperpage{67}
   \item {SP\_pos}
-    \subitem {Command::Stack$<$ T $>$}, \hyperpage{58}
-  \item {src/Document.cpp}, \hyperpage{84}
-  \item {src/Editor.cpp}, \hyperpage{84}
-  \item {src/EditorCam.cpp}, \hyperpage{85}
-  \item {src/kamil.cpp}, \hyperpage{85}
-  \item {src/Keyboard.cpp}, \hyperpage{86}
-  \item {src/MyRect.cpp}, \hyperpage{87}
-  \item {src/TextBox.cpp}, \hyperpage{87}
-  \item {src/Utils/Stack.cpp}, \hyperpage{87}
-  \item {src/Utils/tet.cpp}, \hyperpage{88}
+    \subitem {Command::Stack$<$ T $>$}, \hyperpage{67}
+  \item {src/Document.cpp}, \hyperpage{94}
+  \item {src/Editor.cpp}, \hyperpage{94}
+  \item {src/EditorCam.cpp}, \hyperpage{95}
+  \item {src/kamil.cpp}, \hyperpage{95}
+  \item {src/Keyboard.cpp}, \hyperpage{96}
+  \item {src/MyRect.cpp}, \hyperpage{97}
+  \item {src/TextBox.cpp}, \hyperpage{97}
+  \item {src/Utils/Stack.cpp}, \hyperpage{97}
+  \item {src/Utils/tet.cpp}, \hyperpage{98}
   \item {Stack}
-    \subitem {Command::Stack$<$ T $>$}, \hyperpage{56}
+    \subitem {Command::Stack$<$ T $>$}, \hyperpage{66}
   \item {stack\_array}
-    \subitem {Command::Stack$<$ T $>$}, \hyperpage{58}
+    \subitem {Command::Stack$<$ T $>$}, \hyperpage{68}
 
   \indexspace
 
   \item {tbox}
-    \subitem {TextBox}, \hyperpage{66}
+    \subitem {TextBox}, \hyperpage{78}
   \item {tDeleted}
-    \subitem {Keyboard}, \hyperpage{48}
+    \subitem {Keyboard}, \hyperpage{57}
   \item {tEntered}
-    \subitem {Keyboard}, \hyperpage{48}
+    \subitem {Keyboard}, \hyperpage{58}
   \item {tet.cpp}
-    \subitem {main}, \hyperpage{89}
-  \item {TextBox}, \hyperpage{59}
-    \subitem {CmdBox}, \hyperpage{19}
-    \subitem {deleteChar}, \hyperpage{63}
-    \subitem {draw}, \hyperpage{63}
-    \subitem {enterPress}, \hyperpage{63}
-    \subitem {fcol}, \hyperpage{66}
-    \subitem {fname}, \hyperpage{66}
-    \subitem {font}, \hyperpage{66}
-    \subitem {fsize}, \hyperpage{66}
-    \subitem {getString}, \hyperpage{63}
-    \subitem {getTextBox}, \hyperpage{63}
-    \subitem {getTextColour}, \hyperpage{64}
-    \subitem {getTextSize}, \hyperpage{64}
-    \subitem {isMouseHover}, \hyperpage{64}
-    \subitem {mouseHover}, \hyperpage{66}
-    \subitem {setFont}, \hyperpage{64}
-    \subitem {setString}, \hyperpage{65}
-    \subitem {setTextColour}, \hyperpage{65}
-    \subitem {setTextSize}, \hyperpage{65}
-    \subitem {tbox}, \hyperpage{66}
-    \subitem {TextBox}, \hyperpage{61, 62}
-    \subitem {window}, \hyperpage{67}
+    \subitem {main}, \hyperpage{99}
+  \item {TextBox}, \hyperpage{68}
+    \subitem {CmdBox}, \hyperpage{21}
+    \subitem {deleteChar}, \hyperpage{73}
+    \subitem {draw}, \hyperpage{73}
+    \subitem {enterPress}, \hyperpage{73}
+    \subitem {fcol}, \hyperpage{78}
+    \subitem {fname}, \hyperpage{78}
+    \subitem {font}, \hyperpage{78}
+    \subitem {fsize}, \hyperpage{78}
+    \subitem {getString}, \hyperpage{73}
+    \subitem {getTextBox}, \hyperpage{74}
+    \subitem {getTextColour}, \hyperpage{74}
+    \subitem {getTextSize}, \hyperpage{74}
+    \subitem {isMouseHover}, \hyperpage{75}
+    \subitem {mouseHover}, \hyperpage{78}
+    \subitem {setFont}, \hyperpage{75}
+    \subitem {setString}, \hyperpage{75}
+    \subitem {setTextColour}, \hyperpage{77}
+    \subitem {setTextSize}, \hyperpage{77}
+    \subitem {tbox}, \hyperpage{78}
+    \subitem {TextBox}, \hyperpage{71, 72}
+    \subitem {window}, \hyperpage{78}
   \item {textBox}
-    \subitem {Editor}, \hyperpage{30}
+    \subitem {Editor}, \hyperpage{35}
 
   \indexspace
 
   \item {window}
-    \subitem {Editor}, \hyperpage{30}
-    \subitem {EditorCam}, \hyperpage{37}
-    \subitem {Keyboard}, \hyperpage{49}
-    \subitem {TextBox}, \hyperpage{67}
+    \subitem {Editor}, \hyperpage{36}
+    \subitem {EditorCam}, \hyperpage{46}
+    \subitem {Keyboard}, \hyperpage{58}
+    \subitem {TextBox}, \hyperpage{78}
 
   \indexspace
 
   \item {zoomIn}
-    \subitem {EditorCam}, \hyperpage{35}
+    \subitem {EditorCam}, \hyperpage{44}
   \item {zoomOut}
-    \subitem {EditorCam}, \hyperpage{36}
+    \subitem {EditorCam}, \hyperpage{45}
 
 \end{theindex}

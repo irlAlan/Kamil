@@ -45,7 +45,7 @@ sf\+::\+Color \mbox{\hyperlink{classTextBox_aca392ca5ef3966761e6279f2239f23fe}{g
 void \mbox{\hyperlink{classTextBox_a4225c5a37dfa286b0ad2f2e09fb4b335}{set\+Font}} (sf\+::\+Font \&\mbox{\hyperlink{classTextBox_a2ab6b534d788191784115d891a4bc2f7}{font}})
 \begin{DoxyCompactList}\small\item\em set what font you use \end{DoxyCompactList}\item 
 sf\+::\+Text \mbox{\hyperlink{classTextBox_a78c37f8453105f1c044ecd2c03bf7ae6}{get\+Text\+Box}} () const
-\begin{DoxyCompactList}\small\item\em Get both the main textbox and the cmd textbox in a vector. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get both the Text. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classTextBox_ab09dbec80385d180c43c14e11d24ef1c}{delete\+Char}} ()
 \begin{DoxyCompactList}\small\item\em Delete last character entered. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classTextBox_a1fde06b82de152b1555e36a8d285a88d}{enter\+Press}} ()
@@ -190,6 +190,14 @@ setting up the text and font\mbox{\Hypertarget{classTextBox_a25b67e5ff6788c60b8a
 
 Delete last character entered. 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classTextBox_a9b58260a30644338453856b8e8652d62}\label{classTextBox_a9b58260a30644338453856b8e8652d62}} 
 \index{TextBox@{TextBox}!draw@{draw}}
 \index{draw@{draw}!TextBox@{TextBox}}
@@ -210,6 +218,14 @@ Example of polymorphism \mbox{\Hypertarget{classTextBox_a1fde06b82de152b1555e36a
 
 Handles Enter key press. 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classTextBox_a3cf46750f94b668e6c338334c9deefbb}\label{classTextBox_a3cf46750f94b668e6c338334c9deefbb}} 
 \index{TextBox@{TextBox}!getString@{getString}}
 \index{getString@{getString}!TextBox@{TextBox}}
@@ -220,6 +236,11 @@ Handles Enter key press.
 
 returns the text in tbox 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 type std\+::string 
 \end{DoxyReturn}
@@ -231,8 +252,13 @@ type std\+::string
 
 
 
-Get both the main textbox and the cmd textbox in a vector. 
+Get both the Text. 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 type Boxv2 that contains textbox and cmdbox 
 \end{DoxyReturn}
@@ -246,6 +272,11 @@ type Boxv2 that contains textbox and cmdbox
 
 Get the colour of the text. 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 sf\+::\+Colour text\+Colour 
 \end{DoxyReturn}
@@ -259,6 +290,11 @@ sf\+::\+Colour text\+Colour
 
 Get the size of the text. 
 
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 an int of the text size 
 \end{DoxyReturn}
@@ -290,6 +326,9 @@ set what font you use
 {\em font} & file dir of font \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classTextBox_afe605dd74dd6f90181038115f8b5283e}\label{classTextBox_afe605dd74dd6f90181038115f8b5283e}} 
 \index{TextBox@{TextBox}!setString@{setString}}
 \index{setString@{setString}!TextBox@{TextBox}}
@@ -305,11 +344,15 @@ Sets the string.
 {\em nstring} & -\/ new string placed on tbox \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=324pt]{d2/d68/classTextBox_afe605dd74dd6f90181038115f8b5283e_icgraph}
+\includegraphics[width=282pt]{d2/d68/classTextBox_afe605dd74dd6f90181038115f8b5283e_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{classTextBox_a560aa18bf1233da966bd179511ddf2c2}\label{classTextBox_a560aa18bf1233da966bd179511ddf2c2}} 
@@ -327,6 +370,9 @@ Set the colour of the text.
 {\em fill} & font colour \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classTextBox_afaa6baa0b251f0516e4d48b5eed8ca02}\label{classTextBox_afaa6baa0b251f0516e4d48b5eed8ca02}} 
 \index{TextBox@{TextBox}!setTextSize@{setTextSize}}
 \index{setTextSize@{setTextSize}!TextBox@{TextBox}}
@@ -342,6 +388,9 @@ Set the size of the text.
 {\em size} & text size \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 \doxysubsection{Member Data Documentation}

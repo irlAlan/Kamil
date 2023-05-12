@@ -1,3 +1,9 @@
+
+##
+# @file CMakeLists.txt
+# @brief Configuration file for Cpp and the different libraries
+##
+
 cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 project(Kamil)
 
@@ -38,7 +44,7 @@ endif()
 
 
 
-# find the sfml 2.5 package that we locally installed
+# @brief find the sfml 2.5 package that we locally installed
 find_package(SFML 2.5
         COMPONENTS
             system window graphics network audio
@@ -64,22 +70,26 @@ find_package(SFML 2.5
 
 
 
-
+# @brief find the fmt package
 find_package(fmt)
+
+# @brief find the python package
 find_package(Python REQUIRED Development)
 
-#for formatting
+# @brief for formatting the code
 add_custom_target(format
     COMMAND clang-format
-    --style=file
+    --style=LLVM
     -i
     ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/include/Kamil/*.h
     )
 
+# @brief find OpenGL
 # opengl is required by sfml so we need to find it too
 find_package(OpenGL REQUIRED)
 
+# @brief add all cpp files to the project
 add_executable(${PROJECT_NAME}
         ./src/kamil.cpp
         ./src/TextBox.cpp
@@ -91,13 +101,15 @@ add_executable(${PROJECT_NAME}
         ./src/EditorCam.cpp
     )
 
-# Allows us to use <> when including files
+# @brief Allows us to use <> when including files
 target_include_directories(${PROJECT_NAME}
     PUBLIC "include/" 
     PUBLIC "resource/"
     PRIVATE "${PROJECT_BINARY_DIR}"
     )
 
+# @breif Linking all libraries to the project
 target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} Python::Python fmt::fmt sfml-window sfml-graphics)
 
+# @breif installng the program
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)

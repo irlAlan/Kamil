@@ -264,7 +264,7 @@ CMakeFiles/Kamil.dir/src/kamil.cpp.o: \
  /usr/include/c++/13.1.1/compare \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/MyRect.h \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Editor.h \
- /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/CmdBox.h \
+ /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/TextBox.h \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/EditorCam.h \
  /home/alan/top_secret/cpp/NEA/Kamil/include/Kamil/Document.h

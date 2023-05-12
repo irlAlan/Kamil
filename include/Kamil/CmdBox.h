@@ -5,8 +5,9 @@
  * @file Implementation file for the Command Box
  *
  * A Class that inherets from TextBox class and uses its constructor.
- * Meant to be sepereate to keep all Command Box related code away from the TextBox
- * since they only share similar function calls but handle events and text differently
+ * Meant to be sepereate to keep all Command Box related code away from the
+ * TextBox since they only share similar function calls but handle events and
+ * text differently
  *
  */
 
@@ -15,12 +16,11 @@
 /**
  * @brief Class to handle the command TextBox
  */
-class CmdBox : public TextBox
-{
+class CmdBox : public TextBox {
 public:
-    /**
-     * @brief Using teh Parent class constructor
-     */
-    using TextBox::TextBox;
+  /**
+   * @brief Using teh Parent class constructor
+   */
+  using TextBox::TextBox;
 };
 #endif // KAMIL_CMDBOX_H

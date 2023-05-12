@@ -6,12 +6,10 @@
  *
  * @brief Interface file for the Editor class
  *
- * The Editor class is responsible for the interaction between the different classes.
- * All things outside the main while loop will be checked or initialise.
- * Anything to do with the Editor Window will happen here
+ * The Editor class is responsible for the interaction between the different
+ * classes. All things outside the main while loop will be checked or
+ * initialise. Anything to do with the Editor Window will happen here
  */
-
-
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Graphics/RectangleShape.hpp>
@@ -19,59 +17,61 @@
 #include <SFML/Graphics/View.hpp>
 #include <SFML/Window.hpp>
 
-#include "TextBox.h"
-#include "Keyboard.h"
 #include "CmdBox.h"
 #include "Document.h"
 #include "EditorCam.h"
-
+#include "Keyboard.h"
+#include "TextBox.h"
 
 /**
  * @brief Class that handles and draws everything in the Editor
  */
-class Editor{
-    public:
-        /**
-         * @brief Constructor for Editor
-         * @param window - pointer to main RenderWindow
-         * @param event - pointer to main event
-         * @param doc - pointer to document
-         */
-        Editor(sf::RenderWindow* window, sf::Event* event, Document* doc);
+class Editor {
+public:
+  /**
+   * @brief Constructor for Editor
+   * @param window - pointer to main RenderWindow
+   * @param event - pointer to main event
+   * @param doc - pointer to document
+   */
+  Editor(sf::RenderWindow *window, sf::Event *event, Document *doc);
 
-        /**
-         * @brief Destructor for Editor class
-         */
-        ~Editor();
+  /**
+   * @brief Destructor for Editor class
+   */
+  ~Editor();
 
-        /**
-         *
-         * SOON DEPRECATED
-         * @brief function that draws everything to RenderWindow
-         */
-        void draw();
+  /**
+   *
+   * SOON DEPRECATED
+   * @brief function that draws everything to RenderWindow
+   */
+  void draw();
 
-        void makeLineNum();
+  /**
+   * @brief making the line numbers
+   * @return void
+   */
+  void makeLineNum();
 
-        /**
-         * @brief handle the events for the Editor
-         *
-         * where all event handles are called when interacting with other classes
-         * e.g. kb.handleEvent(); kb.handleMouseEvents();
-         */
-        void handleEvent();
+  /**
+   * @brief handle the events for the Editor
+   *
+   * where all event handles are called when interacting with other classes
+   * e.g. kb.handleEvent(); kb.handleMouseEvents();
+   */
+  void handleEvent();
 
-    private:
-        Document* doc; /**< pointer to the working document */
-        TextBox* textBox; /**< reference to textbox that we draw */
-        CmdBox* cbox; /**< reference to command box that we draw */
-        sf::RenderWindow* window; /**< refernce to RenderWindow */
-        sf::Event* event; /**< refernce to event */
-        TextBox lineBox;
-        EditorCam camera;
-        Keyboard kb; /**< handles keyboard events */
-        bool loadFromFile;
-
+private:
+  Document *doc;            /**< pointer to the working document */
+  TextBox *textBox;         /**< reference to textbox that we draw */
+  CmdBox *cbox;             /**< reference to command box that we draw */
+  sf::RenderWindow *window; /**< refernce to RenderWindow */
+  sf::Event *event;         /**< refernce to event */
+  TextBox lineBox;          /**< for the line number */
+  EditorCam camera;         /**< for the camera */
+  Keyboard kb; /**< handles keyboard events */
+  bool loadFromFile; /**< check if we are loading from file */
 };
 
 #endif // KAMIL_EDITOR_WINDOW_HPP
