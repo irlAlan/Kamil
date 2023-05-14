@@ -94,6 +94,8 @@ public:
    * @return void
    */
   void setFont(sf::Font &font);
+  
+  void setFont(std::string font);
 
   /**
    * @brief Get both the Text

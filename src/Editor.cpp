@@ -1,4 +1,4 @@
-#include "Kamil/EditorCam.h"
+#include <Kamil/EditorCam.h>
 #include <Kamil/Editor.h>
 #include <Kamil/TextBox.h>
 #include <SFML/Config.hpp>
@@ -84,6 +84,16 @@ void Editor::handleEvent() {
 //         i++;
 //     }
 // }
+
+
+
+void Editor::useConfig(const Document::Config& conf){
+    textBox->setFont(conf.font);
+    textBox->setTextColour(conf.theme.fcol);
+    textBox->setFillColour(conf.theme.bcol);
+}
+
+
 
 void Editor::draw() {
   int charTyped;

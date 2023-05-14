@@ -1,4 +1,4 @@
-#include "Kamil/TextBox.h"
+#include <Kamil/TextBox.h>
 #include <Kamil/Editor.h>
 #include <SFML/Window/Event.hpp>
 #include <SFML/Window/Keyboard.hpp>
@@ -19,23 +19,21 @@ int main(int argc, char *argv[]) {
   };
 
   Document doc;
-  TomlC toml;
 
   if (argc == 2) {
     dir = argv[1];
     fmt::print("{}\n", dir);
     doc.init(dir);
   }
-  else if(argc == 3){
-      if(argv[1] == commands[0]){
-        loadFileName = argv[2];
-        doc.init(loadFileName);
-        toml.genPy();
-      }
+  // else if(argc == 3){
+  //     if(argv[1] == commands[0]){
+  //       loadFileName = argv[2];
+  //       doc.init(loadFileName);
+  //     }
    //dirInfo = getWorkingDirectory(argv[0]);
    //cmd = argv[1];
    //fileName = dirInfo + argv[2];
-  }
+  // }
   else if (argc > 3) {
     std::cout << "NO MORE COMMANDS AND OR FILES {:(\n";
     return -1;
@@ -44,6 +42,12 @@ int main(int argc, char *argv[]) {
   sf::RenderWindow window(sf::VideoMode(640, 480), "SFML = <3");
   sf::Event event;
   Editor edit{&window, &event, &doc};
+  if(doc.findConfig()){
+      fmt::print("config.toml exists\n");
+      edit.useConfig(doc.getConfig());
+  }else {
+    fmt::print("config.toml does not exist\n");
+  }
   edit.draw();
 
   //  while(window.isOpen())

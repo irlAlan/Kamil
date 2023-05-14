@@ -78,6 +78,9 @@ void TextBox::setString(std::string nstring) {
 std::string TextBox::getString() const { return tbox.getString(); }
 
 void TextBox::setFont(sf::Font &font) { font = font; }
+void TextBox::setFont(std::string fnt) {
+    font.loadFromFile(fnt);
+}
 
 
 void TextBox::setTextSize(int size) { fsize = size; }

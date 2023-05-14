@@ -11,16 +11,26 @@
  * python scripts to handle config files
  */
 
+#include "SFML/Graphics/Color.hpp"
 #include <cstdlib>
 #include <filesystem>
 #include <fstream>
 #include <sstream>
+
 
 /**
  * @brief Document class
  */
 class Document {
 public:
+    struct Theme{
+        sf::Color bcol;
+        sf::Color fcol;
+    };
+    struct Config{
+        std::string font;
+        Theme theme;
+    };
   /**
    * @brief Constructor for Document class
    */
@@ -73,6 +83,10 @@ public:
    * @return string for absolute path
    */
   std::string getAbsPath();
+
+
+  bool findConfig();
+
 
   /**
    * @brief create the file
@@ -131,6 +145,9 @@ public:
   bool docHasText();
 
   // void addTextToPos(std::string txt, int pos);
+  //
+  Config getConfig();
+
 
 private:
   std::string relPath; /**< relative path */
