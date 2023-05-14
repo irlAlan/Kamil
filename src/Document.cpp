@@ -6,7 +6,9 @@
 #include <iostream>
 #include <sstream>
 
-Document::Document() {}
+Document::Document()
+    : relPath{"Document.txt"}
+{}
 
 Document::Document(std::string fileP) : relPath{fileP} {
   std::ifstream getFromFile;

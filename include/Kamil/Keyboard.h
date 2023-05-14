@@ -20,6 +20,7 @@
 #include <fmt/core.h>
 
 #include <array>
+#include <sstream>
 
 /**
  * @brief An enum for Keyboard characters in hex form
@@ -32,7 +33,11 @@ enum {
   Shift_A = 0x41,
   CTRL = 0x11,
   DELETE = 0x7f,
-  CR = 0x13
+  CR = 0x13,
+  UP_ARROW = 0x48,
+  DOWN_ARROW = 0x50,
+  RIGHT_ARROW = 0x4D,
+  LEFT_ARROW = 0x4B,
 };
 }
 
@@ -53,6 +58,7 @@ public:
    * @param bounds - bounds of the window we are working in
    */
   Keyboard(sf::RenderWindow *win, Document *doc, sf::Vector2f bounds);
+
 
   /**
    * @brief checks if a key is pressed
@@ -151,6 +157,7 @@ public:
    */
   int getLineNumber();
 
+
   template <typename T, size_t N, typename... Args> void kbrCmd(Args... args) {
     std::array<T, N> val{args...};
     for (const auto &element : val) {
@@ -164,8 +171,9 @@ private:
   sf::RenderWindow *window; /**< refernce to window */
   // Document* doc;
   sf::Vector2f bounds;  /**< store the bounded area */
-  std::string tEntered; /**< the text entered  to main box*/
-  std::string tDeleted; /**< the text deleted from main box*/
+  std::stringstream tEntered; /**< the text entered  to main box*/
+  std::stringstream tDeleted; /**< the text deleted from main box*/
+
 
   std::string ctEntered; /**< tmp for text enterd to cmd */
   std::string ctDeleted; /**< tmp for text deleted to cmd */

@@ -6,25 +6,37 @@
 #include <iostream>
 
 #include <Kamil/Document.h>
+#include <Kamil/TomlC.h>
 
 int main(int argc, char *argv[]) {
   std::string dir;
   std::string saveFileName;
   std::string loadFileName;
 
+  std::string commands[] {
+        "-gpy",
+        "-gcpp"
+  };
+
   Document doc;
+  TomlC toml;
 
   if (argc == 2) {
     dir = argv[1];
     fmt::print("{}\n", dir);
     doc.init(dir);
   }
-  // else if(argc == 3){
-  //  dirInfo = getWorkingDirectory(argv[0]);
-  //  cmd = argv[1];
-  //  fileName = dirInfo + argv[2];
-  // }
-  else if (argc > 2) {
+  else if(argc == 3){
+      if(argv[1] == commands[0]){
+        loadFileName = argv[2];
+        doc.init(loadFileName);
+        toml.genPy();
+      }
+   //dirInfo = getWorkingDirectory(argv[0]);
+   //cmd = argv[1];
+   //fileName = dirInfo + argv[2];
+  }
+  else if (argc > 3) {
     std::cout << "NO MORE COMMANDS AND OR FILES {:(\n";
     return -1;
   }

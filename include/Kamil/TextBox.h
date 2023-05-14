@@ -59,6 +59,7 @@ public:
           float thicc);
   TextBox();
 
+
   /**
    * @brief Set the size of the text
    * @param size text size
@@ -137,6 +138,10 @@ public:
    * Example of polymorphism
    */
   void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
+
+
+
+    void update();
 
   /**
    * @brief check if mouse is hovering over current textbox

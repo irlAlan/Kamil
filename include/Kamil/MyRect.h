@@ -27,6 +27,7 @@
 #include <SFML/Graphics/Color.hpp>
 #include <SFML/Graphics/Drawable.hpp>
 #include <SFML/Graphics/Rect.hpp>
+#include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderStates.hpp>
 #include <SFML/Graphics/RenderTarget.hpp>
 #include <SFML/System/Vector2.hpp>
@@ -99,7 +100,8 @@ public:
   void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 
 protected:
-  sf::FloatRect fRect;     /**< for collision checking */
+  // sf::FloatRect fRect;     /**< for collision checking */
+  sf::RectangleShape rect;
   sf::Vector2f pos;        /**< position of rect */
   sf::Vector2f size;       /**< size of rect */
   sf::Color fillColour;    /**< colour of rect */

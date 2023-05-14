@@ -45,11 +45,27 @@ endif()
 
 
 # @brief find the sfml 2.5 package that we locally installed
-find_package(SFML 2.5
-        COMPONENTS
-            system window graphics network audio
-        REQUIRED)
+# find_package(SFML 2.5
+#         COMPONENTS
+#             system window graphics network audio
+#         REQUIRED)
 
+include(FetchContent)
+set(BUILD_SHARED_LIBS OFF)
+FetchContent_Declare(
+ SFML
+ GIT_REPOSITORY https://github.com/SFML/SFML.git
+ GIT_TAG 2.5.1
+)
+FetchContent_MakeAvailable(SFML)
+
+
+FetchContent_Declare(
+ fmt 
+ GIT_REPOSITORY https://github.com/fmtlib/fmt.git
+ GIT_TAG 10.0.0 
+)
+FetchContent_MakeAvailable(fmt)
     # if(NOT SFML_FOUND)
     #     message("SFML has not been found, building SFML first...")
     #     add_dependencies(${PROJECT_NAME} SFML)
@@ -71,10 +87,10 @@ find_package(SFML 2.5
 
 
 # @brief find the fmt package
-find_package(fmt)
+# find_package(fmt)
 
 # @brief find the python package
-find_package(Python REQUIRED Development)
+# find_package(Python REQUIRED Development)
 
 # @brief for formatting the code
 add_custom_target(format
@@ -99,6 +115,7 @@ add_executable(${PROJECT_NAME}
         ./src/MyRect.cpp
         ./src/Document.cpp
         ./src/EditorCam.cpp
+        ./src/TomlC.cpp
     )
 
 # @brief Allows us to use <> when including files
@@ -109,7 +126,7 @@ target_include_directories(${PROJECT_NAME}
     )
 
 # @breif Linking all libraries to the project
-target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} Python::Python fmt::fmt sfml-window sfml-graphics)
+target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} fmt::fmt sfml-window sfml-graphics)
 
 # @breif installng the program
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)

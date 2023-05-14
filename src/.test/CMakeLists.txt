@@ -22,14 +22,15 @@ find_package(OpenGL REQUIRED)
 
 add_executable(${PROJECT_NAME}
     ./main.cpp
+    ../TextBox.cpp
     )
 
 # Allows us to use <> when including files
-# target_include_directories(${PROJECT_NAME}
-    # PUBLIC "include/" 
-    # PUBLIC "resource/"
-    # PRIVATE "${PROJECT_BINARY_DIR}"
-    #    )
+target_include_directories(${PROJECT_NAME}
+    PUBLIC "include/" 
+    #PUBLIC "resource/"
+    PRIVATE "${PROJECT_BINARY_DIR}"
+       )
 
 target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} sfml-window sfml-graphics)
 

@@ -1,10 +1,13 @@
 #include <Kamil/MyRect.h>
 #include <Kamil/TextBox.h>
+#include <SFML/Graphics/Rect.hpp>
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderStates.hpp>
+#include <SFML/Graphics/Text.hpp>
 #include <SFML/System/String.hpp>
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Window/Keyboard.hpp>
+#include <algorithm>
 
 /**
  * Implementation of the TextBox class
@@ -42,31 +45,40 @@ TextBox::TextBox(sf::RenderWindow *win, sf::Vector2f pos, sf::Vector2f size,
 }
 
 void TextBox::draw(sf::RenderTarget &target, sf::RenderStates states) const {
-  sf::RectangleShape rec;
-  rec.setSize(size);
-  rec.setPosition(pos);
-  rec.setFillColor(fillColour);
-  window->draw(rec);
-  window->draw(tbox);
+    target.draw(rect);
+    target.draw(tbox);
+//      rect.setFillColor(fillColour);
+//      rect.setSize(size);
+//      target.draw(rect);
+// //   sf::RectangleShape rec;
+// //   rec.setSize(size);
+// //   rec.setPosition(pos);
+// //   rec.setFillColor(fillColour);
+  // window->draw(rect);
+  // window->draw(tbox);
 }
 
 bool TextBox::isMouseHover() {
   sf::Vector2i mousePos{sf::Mouse::getPosition(*window)};
   sf::Vector2f worldPos{window->mapPixelToCoords(mousePos)};
-  if (fRect.contains(worldPos))
+  if (sf::FloatRect::contains(worldPos))
     return true;
   return false;
 }
 
 void TextBox::setString(std::string nstring) { 
-    // sf::String val{nstring};
+    sf::String val{nstring};
     // std::string s = val.toUtf16();
-    tbox.setString(nstring); 
+    tbox.setString(val.toWideString()); 
 }
+
+
+
 
 std::string TextBox::getString() const { return tbox.getString(); }
 
 void TextBox::setFont(sf::Font &font) { font = font; }
+
 
 void TextBox::setTextSize(int size) { fsize = size; }
 int TextBox::getTextSize() const { return fsize; }

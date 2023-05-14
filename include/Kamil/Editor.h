@@ -68,8 +68,9 @@ private:
   CmdBox *cbox;             /**< reference to command box that we draw */
   sf::RenderWindow *window; /**< refernce to RenderWindow */
   sf::Event *event;         /**< refernce to event */
-  TextBox lineBox;          /**< for the line number */
-  EditorCam camera;         /**< for the camera */
+  // TextBox lineBox;          /**< for the line number */
+  //EditorCam camera;         /**< for the camera */
+  sf::View camera;
   Keyboard kb; /**< handles keyboard events */
   bool loadFromFile; /**< check if we are loading from file */
 };
