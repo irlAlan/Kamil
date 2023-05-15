@@ -35,7 +35,7 @@ TextBox::TextBox(sf::RenderWindow *win, sf::Vector2f pos, sf::Vector2f size,
       fname{sfont}, fsize{fsize}, fcol{fcol} {
 
   /**
-   * @brief setting  up the text and font
+   *  setting  up the text and font
    */
   font.loadFromFile(fname);
   tbox.setFont(font);
@@ -45,22 +45,18 @@ TextBox::TextBox(sf::RenderWindow *win, sf::Vector2f pos, sf::Vector2f size,
 }
 
 void TextBox::draw(sf::RenderTarget &target, sf::RenderStates states) const {
+    /**
+     * An example of polymorphism, we are inheriting a virtual method from sf::Drawable
+     * and overriding its behaviour here
+     */
     target.draw(rect);
     target.draw(tbox);
-//      rect.setFillColor(fillColour);
-//      rect.setSize(size);
-//      target.draw(rect);
-// //   sf::RectangleShape rec;
-// //   rec.setSize(size);
-// //   rec.setPosition(pos);
-// //   rec.setFillColor(fillColour);
-  // window->draw(rect);
-  // window->draw(tbox);
 }
 
 bool TextBox::isMouseHover() {
+    // checking if the mouse position is in the textbox rectangle
   sf::Vector2i mousePos{sf::Mouse::getPosition(*window)};
-  sf::Vector2f worldPos{window->mapPixelToCoords(mousePos)};
+  sf::Vector2f worldPos{window->mapPixelToCoords(mousePos)}; // turning the pixels into coordinates
   if (sf::FloatRect::contains(worldPos))
     return true;
   return false;
@@ -68,25 +64,32 @@ bool TextBox::isMouseHover() {
 
 void TextBox::setString(std::string nstring) { 
     sf::String val{nstring};
-    // std::string s = val.toUtf16();
-    tbox.setString(val.toWideString()); 
+    tbox.setString(val.toWideString());  // allow wider characters like japanese characters
+                                         // for future language expansion
 }
-
-
-
 
 std::string TextBox::getString() const { return tbox.getString(); }
 
 void TextBox::setFont(sf::Font &font) { font = font; }
+
 void TextBox::setFont(std::string fnt) {
-    font.loadFromFile(fnt);
+    // overload function for setFont
+    try{
+        font.loadFromFile(fnt); // see if we can load the file
+    }
+    catch(...){
+        std::cerr << "Cannot load font from file\n"; // if we arent able to load it
+    }
 }
 
 
 void TextBox::setTextSize(int size) { fsize = size; }
+
 int TextBox::getTextSize() const { return fsize; }
 
 void TextBox::setTextColour(sf::Color fill) { fcol = fill; }
+
 sf::Color TextBox::getTextColour() const { return fcol; }
 
 sf::Text TextBox::getTextBox() const { return tbox; }
+// get the sf::Text that draws text to teh screen

@@ -1,0 +1,41 @@
+\hypertarget{MyRect_8h}{}\doxysubsection{include/\+Kamil/\+My\+Rect.h File Reference}
+\label{MyRect_8h}\index{include/Kamil/MyRect.h@{include/Kamil/MyRect.h}}
+
+
+Interface file for the \mbox{\hyperlink{classMyRect}{My\+Rect}} class.  
+
+
+{\ttfamily \#include $<$SFML/\+Graphics/\+Color.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Graphics/\+Drawable.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Graphics/\+Rect.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Graphics/\+Rectangle\+Shape.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Graphics/\+Render\+States.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Graphics/\+Render\+Target.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+System/\+Vector2.\+hpp$>$}\newline
+Include dependency graph for My\+Rect.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dab/MyRect_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/df5/MyRect_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMyRect}{My\+Rect}}
+\begin{DoxyCompactList}\small\item\em gives extra functionality to Float\+Rect \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Interface file for the \mbox{\hyperlink{classMyRect}{My\+Rect}} class. 
+
+Inherits from sf\+::\+Float\+Rect and sf\+::\+Drawable. sf\+::\+Float\+Rect is a templated class of sf\+::\+Rect$<$float$>$ and its primary use is for defining the border and creating a hollow rectangle, as such it only has methods for collision detection and intersections. The normal Rectangle\+Shape class creates a basic rectangle without the collision and intersections checking so we inherit this functionality from Float\+Rect and in effect add it to the instantiated Rectangle\+Shape in the \mbox{\hyperlink{classMyRect}{My\+Rect}} class.
+
+The sf\+::\+Drawable is only here to add a draw property to our class so when we draw to the Render\+Target, in this case Render\+Window, we can use the same code of window.\+draw(our\+\_\+own\+\_\+object) instead of the general our\+\_\+own\+\_\+object.\+draw(window). This is done so when others use this code it makes it easier for them to follow a standard way of drawing to the Render\+Target and not having to worry about passing parameters into the objects. 

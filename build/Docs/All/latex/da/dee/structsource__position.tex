@@ -1,0 +1,198 @@
+\hypertarget{structsource__position}{}\doxysection{source\+\_\+position Struct Reference}
+\label{structsource__position}\index{source\_position@{source\_position}}
+
+
+A source document line-\/and-\/column pair.  
+
+
+
+
+{\ttfamily \#include $<$source\+\_\+region.\+h$>$}
+
+
+
+Collaboration diagram for source\+\_\+position\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{d6/d42/structsource__position__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} constexpr \mbox{\hyperlink{structsource__position_ad57d7636a7795a792999ae202ed34ea9}{operator bool}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns true if both line and column numbers are non-\/zero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+source\+\_\+index \mbox{\hyperlink{structsource__position_a4b07caf7db950b97a6f09be1572ba15d}{line}}
+\begin{DoxyCompactList}\small\item\em The line number. \end{DoxyCompactList}\item 
+source\+\_\+index \mbox{\hyperlink{structsource__position_a5e87746bbf1a06bcf8b6ba7f566730b9}{column}}
+\begin{DoxyCompactList}\small\item\em The column number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} friend constexpr bool \mbox{\hyperlink{structsource__position_a5f01f89fd02f2cd6b1e8fb7760c3a5d7}{operator==}} (const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&lhs, const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{preprocessor_8h_ab8168e9569e1eb2294b344fbb81983b5}{TOML\+\_\+\+PURE\+\_\+\+INLINE\+\_\+\+GETTER}} friend constexpr bool \mbox{\hyperlink{structsource__position_a2112294fcdbb8df8b14ded867b99ef24}{operator!=}} (const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&lhs, const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} friend constexpr bool \mbox{\hyperlink{structsource__position_a844dfdf3b73149879070142eeb69712b}{operator$<$}} (const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&lhs, const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Less-\/than operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} friend constexpr bool \mbox{\hyperlink{structsource__position_ac0c0e656e17c7fd26cef0170cdd41bc9}{operator$<$=}} (const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&lhs, const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Less-\/than-\/or-\/equal-\/to operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} friend constexpr bool \mbox{\hyperlink{structsource__position_a68a1326c76ec10ce456a66bd64b7cf93}{operator$>$}} (const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&lhs, const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Greater-\/than operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} friend constexpr bool \mbox{\hyperlink{structsource__position_a1b19b7e0e6f3d5d7e8f7682b7dcf2b31}{operator$>$=}} (const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&lhs, const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Greater-\/than-\/or-\/equal-\/to operator. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{structsource__position_adff6ba2a042bbaa4be4eaf88c4b58062}{operator$<$$<$}} (std\+::ostream \&lhs, const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Prints a \mbox{\hyperlink{structsource__position}{source\+\_\+position}} to a stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A source document line-\/and-\/column pair. 
+
+\textbackslash{}detail \textbackslash{}cpp auto table = toml\+::parse\+\_\+file(\char`\"{}config.\+toml\char`\"{}sv); std\+::cout \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} \char`\"{}\+The node \textquotesingle{}description\textquotesingle{} was defined at \char`\"{}sv \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} \mbox{\hyperlink{classtable_a3a338dc69074b9f155ca52f044ef0b07}{table.\+get}}(\char`\"{}description\char`\"{})-\/\texorpdfstring{$>$}{>}source().begin() \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} \char`\"{}\textbackslash{}n\char`\"{}; \textbackslash{}ecpp
+
+\textbackslash{}out The value \textquotesingle{}description\textquotesingle{} was defined at line 7, column 15 \textbackslash{}eout
+
+\begin{DoxyRemark}{Remarks}
+toml++\textquotesingle{}s parser is unicode-\/aware insofar as it knows how to handle non-\/\+ASCII whitespace and newline characters, but it doesn\textquotesingle{}t give much thought to combining marks, grapheme clusters vs. characters, et cetera. If a TOML document contains lots of codepoints outside of the ASCII range you may find that your source\+\_\+positions don\textquotesingle{}t match those given by a text editor (typically the line numbers will be accurate but column numbers will be too high). {\bfseries{This is not an error.}} I\textquotesingle{}ve chosen this behaviour as a deliberate trade-\/off between parser complexity and correctness. 
+\end{DoxyRemark}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structsource__position_ad57d7636a7795a792999ae202ed34ea9}\label{structsource__position_ad57d7636a7795a792999ae202ed34ea9}} 
+\index{source\_position@{source\_position}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!source\_position@{source\_position}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} constexpr source\+\_\+position\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Returns true if both line and column numbers are non-\/zero. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structsource__position_a2112294fcdbb8df8b14ded867b99ef24}\label{structsource__position_a2112294fcdbb8df8b14ded867b99ef24}} 
+\index{source\_position@{source\_position}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!source\_position@{source\_position}}
+\doxysubsubsection{\texorpdfstring{operator"!=}{operator!=}}
+{\footnotesize\ttfamily \mbox{\hyperlink{preprocessor_8h_ab8168e9569e1eb2294b344fbb81983b5}{TOML\+\_\+\+PURE\+\_\+\+INLINE\+\_\+\+GETTER}} friend constexpr bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Inequality operator. 
+
+\mbox{\Hypertarget{structsource__position_a844dfdf3b73149879070142eeb69712b}\label{structsource__position_a844dfdf3b73149879070142eeb69712b}} 
+\index{source\_position@{source\_position}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!source\_position@{source\_position}}
+\doxysubsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily \mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} friend constexpr bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Less-\/than operator. 
+
+\mbox{\Hypertarget{structsource__position_adff6ba2a042bbaa4be4eaf88c4b58062}\label{structsource__position_adff6ba2a042bbaa4be4eaf88c4b58062}} 
+\index{source\_position@{source\_position}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!source\_position@{source\_position}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{lhs,  }\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Prints a \mbox{\hyperlink{structsource__position}{source\+\_\+position}} to a stream. 
+
+\textbackslash{}detail \textbackslash{}cpp auto tbl = toml\+::parse(\char`\"{}bar = 42\char`\"{}sv);
+
+std\+::cout \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} \char`\"{}\+The value for \textquotesingle{}bar\textquotesingle{} was found on \char`\"{}sv \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} tbl.\+get(\char`\"{}bar\char`\"{})-\/\texorpdfstring{$>$}{>}source().begin() \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} \char`\"{}\textbackslash{}n\char`\"{}; \textbackslash{}ecpp
+
+\textbackslash{}out The value for \textquotesingle{}bar\textquotesingle{} was found on line 1, column 7 \textbackslash{}eout
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The stream. \\
+\hline
+{\em rhs} & The \mbox{\hyperlink{structsource__position}{source\+\_\+position}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input stream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structsource__position_ac0c0e656e17c7fd26cef0170cdd41bc9}\label{structsource__position_ac0c0e656e17c7fd26cef0170cdd41bc9}} 
+\index{source\_position@{source\_position}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!source\_position@{source\_position}}
+\doxysubsubsection{\texorpdfstring{operator$<$=}{operator<=}}
+{\footnotesize\ttfamily \mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} friend constexpr bool operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Less-\/than-\/or-\/equal-\/to operator. 
+
+\mbox{\Hypertarget{structsource__position_a5f01f89fd02f2cd6b1e8fb7760c3a5d7}\label{structsource__position_a5f01f89fd02f2cd6b1e8fb7760c3a5d7}} 
+\index{source\_position@{source\_position}!operator==@{operator==}}
+\index{operator==@{operator==}!source\_position@{source\_position}}
+\doxysubsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily \mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} friend constexpr bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Equality operator. 
+
+\mbox{\Hypertarget{structsource__position_a68a1326c76ec10ce456a66bd64b7cf93}\label{structsource__position_a68a1326c76ec10ce456a66bd64b7cf93}} 
+\index{source\_position@{source\_position}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!source\_position@{source\_position}}
+\doxysubsubsection{\texorpdfstring{operator$>$}{operator>}}
+{\footnotesize\ttfamily \mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} friend constexpr bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Greater-\/than operator. 
+
+\mbox{\Hypertarget{structsource__position_a1b19b7e0e6f3d5d7e8f7682b7dcf2b31}\label{structsource__position_a1b19b7e0e6f3d5d7e8f7682b7dcf2b31}} 
+\index{source\_position@{source\_position}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!source\_position@{source\_position}}
+\doxysubsubsection{\texorpdfstring{operator$>$=}{operator>=}}
+{\footnotesize\ttfamily \mbox{\hyperlink{preprocessor_8h_a930d63cd08b8db4f5d7be9f8ef861c17}{TOML\+\_\+\+PURE\+\_\+\+GETTER}} friend constexpr bool operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{structsource__position}{source\+\_\+position}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Greater-\/than-\/or-\/equal-\/to operator. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structsource__position_a5e87746bbf1a06bcf8b6ba7f566730b9}\label{structsource__position_a5e87746bbf1a06bcf8b6ba7f566730b9}} 
+\index{source\_position@{source\_position}!column@{column}}
+\index{column@{column}!source\_position@{source\_position}}
+\doxysubsubsection{\texorpdfstring{column}{column}}
+{\footnotesize\ttfamily source\+\_\+index source\+\_\+position\+::column}
+
+
+
+The column number. 
+
+\begin{DoxyRemark}{Remarks}
+Valid column numbers start at 1. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{structsource__position_a4b07caf7db950b97a6f09be1572ba15d}\label{structsource__position_a4b07caf7db950b97a6f09be1572ba15d}} 
+\index{source\_position@{source\_position}!line@{line}}
+\index{line@{line}!source\_position@{source\_position}}
+\doxysubsubsection{\texorpdfstring{line}{line}}
+{\footnotesize\ttfamily source\+\_\+index source\+\_\+position\+::line}
+
+
+
+The line number. 
+
+\begin{DoxyRemark}{Remarks}
+Valid line numbers start at 1. 
+\end{DoxyRemark}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/toml++/impl/\mbox{\hyperlink{source__region_8h}{source\+\_\+region.\+h}}\end{DoxyCompactItemize}

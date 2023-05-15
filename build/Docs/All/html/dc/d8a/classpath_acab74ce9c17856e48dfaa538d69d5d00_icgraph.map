@@ -1,0 +1,4 @@
+<map id="path::empty" name="path::empty">
+<area shape="rect" id="node1" title="Whether (true) or not (false) the path is empty." alt="" coords="223,5,313,32"/>
+<area shape="rect" id="node2" href="$dd/d17/structsource__region.html#a3d8e8e28645ba3d917605622e452047e" title="The path to the corresponding source document as a wide&#45;string." alt="" coords="5,5,175,32"/>
+</map>

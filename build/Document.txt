@@ -1,0 +1,6 @@
+print("Hello world")
+import random
+
+val = random.randint(0,900)
+
+print(val)

@@ -1,0 +1,4 @@
+<map id="Keyboard::isTextDeleted" name="Keyboard::isTextDeleted">
+<area shape="rect" id="node1" title="check if text is being deleted" alt="" coords="5,5,170,32"/>
+<area shape="rect" id="node2" href="$dc/dd2/classKeyboard.html#adeefc0fbd6da98d1ce45f3ebdff58af5" title="checks if a key is pressed" alt="" coords="218,5,383,32"/>
+</map>

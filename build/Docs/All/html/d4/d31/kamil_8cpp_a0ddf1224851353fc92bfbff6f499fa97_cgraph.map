@@ -1,0 +1,6 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,55,83"/>
+<area shape="rect" id="node2" href="$d1/d67/classDocument.html#a30a0627844cc96d37271184f7a6acc2c" title="check if the config.toml exist" alt="" coords="103,5,251,32"/>
+<area shape="rect" id="node3" href="$d1/d67/classDocument.html#a047c15f0de308f773b7023e26eaae845" title="retrieves information from config.toml" alt="" coords="104,56,250,83"/>
+<area shape="rect" id="node4" href="$d1/d67/classDocument.html#a67e7f9b8c668a723b6f7173ae52e5c99" title="initialise the file" alt="" coords="124,107,230,133"/>
+</map>

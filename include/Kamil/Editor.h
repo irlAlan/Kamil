@@ -19,12 +19,12 @@
 
 #include "CmdBox.h"
 #include "Document.h"
-#include "EditorCam.h"
 #include "Keyboard.h"
 #include "TextBox.h"
 
 /**
- * @brief Class that handles and draws everything in the Editor
+ * @brief Class that is a centre for how the other classes interact with each other
+ * and draws everything in the Editor to the screen
  */
 class Editor {
 public:
@@ -33,36 +33,69 @@ public:
    * @param window - pointer to main RenderWindow
    * @param event - pointer to main event
    * @param doc - pointer to document
+   *
+   * png/Editor/editorConstructor.png
+   *  eps/Editor/editorConstructor.eps
    */
   Editor(sf::RenderWindow *window, sf::Event *event, Document *doc);
 
   /**
    * @brief Destructor for Editor class
+   * png/Editor/editorDestructor.png
+   *  eps/Editor/editorDestructor.eps
    */
   ~Editor();
 
   /**
-   *
-   * SOON DEPRECATED
    * @brief function that draws everything to RenderWindow
+   * @param void
+   * @return void
+   *
+   * png/Editor/editorDraw.png
+   *  eps/Editor/editorDraw.eps
    */
   void draw();
 
+
+  /**
+   * @brief changes the editor looks and workings
+   *
+   * uses the information of the config.toml
+   * to change how the editor looks and how it can work
+   *
+   * @param const Document::Config& - the config.toml information
+   * @reutrn void
+   *
+   * png/Editor/editorUseConfig.png
+   *  eps/Editor/editorUseConfig.eps
+   */
   void useConfig(const Document::Config& conf);
 
   /**
-   * @brief making the line numbers
-   * @return void
-   */
-  void makeLineNum();
-
-  /**
-   * @brief handle the events for the Editor
+   * @brief match patterns in the string
    *
-   * where all event handles are called when interacting with other classes
-   * e.g. kb.handleEvent(); kb.handleMouseEvents();
+   * A method that is used to match and extract any math expressions in the text on the screen.
+   *
+   * Kamil enjoys maths alot and is even doing further maths at A-level. However,
+   * he finds the small maths questions like 782*7 tedius to type into the calculator.
+   * So to make sure he can focus only on the problem at hand and not any side questions I developed this 
+   * regex method.
+   *
+   * It extracts the text on the screen and stores it as a string.
+   * It then calls the regex_search() function passing in the string to search,  an smatch type that contains the matchedsubstr 
+   * and the regex to use.
+   * if the match is found then we extract it in the smatch type and preform the calculations on the substr.
+   * we then recursivly search the string by calling the smatch::suffix() method checking the rest of the string after the last match
+   * by doing this we ensure that any and all potential matches have been made
+   *
+   *
+   * @param void
+   * @return void
+   *
+   * png/Editor/editorRegex.png
+   *  eps/Editor/editorRegex.eps
    */
-  void handleEvent();
+  void regexPatternMatchin();
 
 private:
   Document *doc;            /**< pointer to the working document */
@@ -72,6 +105,7 @@ private:
   sf::Event *event;         /**< refernce to event */
   sf::View camera; /**< for the camera */
   Keyboard kb; /**< handles keyboard events */
+  std::string cmd;
   bool loadFromFile; /**< check if we are loading from file */
 };
 

@@ -1,0 +1,7 @@
+<map id="parse_result::error" name="parse_result::error">
+<area shape="rect" id="node1" title="Returns the internal toml::parse_error." alt="" coords="209,113,335,140"/>
+<area shape="rect" id="node2" href="$da/de8/classparse__result.html#a5a7d12ad18e4427e1052dfaa1385ef45" title="Returns the internal toml::parse_error (const lvalue overload)." alt="" coords="9,5,157,48"/>
+<area shape="rect" id="node3" href="$da/de8/classparse__result.html#ab9f1b2ac30245b895f8ae556af6da55a" title="Returns the internal toml::parse_error." alt="" coords="9,72,157,115"/>
+<area shape="rect" id="node4" href="$da/de8/classparse__result.html#a2e93940a3143d9ba5cfea1dcd59d7fcd" title="Returns the internal toml::parse_error (rvalue overload)." alt="" coords="9,139,157,181"/>
+<area shape="rect" id="node5" href="$da/de8/classparse__result.html#a749c0c01921e831bb836c5713f0c22b6" title="Move&#45;assignment operator." alt="" coords="5,205,161,232"/>
+</map>

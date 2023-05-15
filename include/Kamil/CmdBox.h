@@ -7,7 +7,13 @@
  * A Class that inherets from TextBox class and uses its constructor.
  * Meant to be sepereate to keep all Command Box related code away from the
  * TextBox since they only share similar function calls but handle events and
- * text differently
+ * text differently.
+ *
+ * @bug event system issue
+ *
+ * The sfml event system acts as one and stores all text related events together.
+ * When I get the text of the event into seperate strings it gives me the same text
+ * not sure how to get around this for now.
  *
  */
 
@@ -19,7 +25,9 @@
 class CmdBox : public TextBox {
 public:
   /**
-   * @brief Using teh Parent class constructor
+   * @brief Using the Parent class constructor
+   * html png/CmdBox/CmdBox.png
+   * latex png/CmdBox/CmdBox.eps
    */
   using TextBox::TextBox;
 };

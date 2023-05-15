@@ -1,0 +1,66 @@
+\hypertarget{TextBox_8h_source}{}\doxysubsection{Text\+Box.\+h}
+\label{TextBox_8h_source}\index{include/Kamil/TextBox.h@{include/Kamil/TextBox.h}}
+\mbox{\hyperlink{TextBox_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KAMIL\_TEXTBOX\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KAMIL\_TEXTBOX\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Color.hpp>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Drawable.hpp>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Font.hpp>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RectangleShape.hpp>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderStates.hpp>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderTarget.hpp>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderWindow.hpp>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Text.hpp>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <SFML/Window/Keyboard.hpp>}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Keyboard_8h}{Keyboard.h}}"{}}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MyRect_8h}{MyRect.h}}"{}}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTextBox}{TextBox}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classMyRect}{MyRect}}\ \{}
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00058\ \ \ \mbox{\hyperlink{classTextBox_a25b67e5ff6788c60b8aef3f3540879d0}{TextBox}}(sf::RenderWindow\ *win,\ sf::Vector2f\ \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}},\ sf::Vector2f\ \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}},}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ std::string\ sfont,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTextBox_a29d2a814bf7d164b61a387cf078a56e8}{fsize}},\ sf::Color\ \mbox{\hyperlink{classTextBox_a75f6b5783e47dcd456fbdba2da186373}{fcol}},\ sf::Color\ background,}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ thicc);}
+\DoxyCodeLine{00061\ \ \ \mbox{\hyperlink{classTextBox_a25b67e5ff6788c60b8aef3f3540879d0}{TextBox}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00075\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_afaa6baa0b251f0516e4d48b5eed8ca02}{setTextSize}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}});}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTextBox_aeb94b749199642bb10b168dce2560502}{getTextSize}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00104\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_a560aa18bf1233da966bd179511ddf2c2}{setTextColour}}(sf::Color\ colour);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00117\ \ \ sf::Color\ \mbox{\hyperlink{classTextBox_aca392ca5ef3966761e6279f2239f23fe}{getTextColour}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00132\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_a4225c5a37dfa286b0ad2f2e09fb4b335}{setFont}}(sf::Font\ \&\mbox{\hyperlink{classTextBox_a2ab6b534d788191784115d891a4bc2f7}{font}});}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ }
+\DoxyCodeLine{00147\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_a4225c5a37dfa286b0ad2f2e09fb4b335}{setFont}}(std::string\ \mbox{\hyperlink{classTextBox_a2ab6b534d788191784115d891a4bc2f7}{font}});}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00162\ \ \ sf::Text\ \mbox{\hyperlink{classTextBox_a78c37f8453105f1c044ecd2c03bf7ae6}{getTextBox}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00177\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_afe605dd74dd6f90181038115f8b5283e}{setString}}(std::string\ nstring);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00191\ \ \ std::string\ \mbox{\hyperlink{classTextBox_a3cf46750f94b668e6c338334c9deefbb}{getString}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00207\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextBox_a9b58260a30644338453856b8e8652d62}{draw}}(sf::RenderTarget\ \&target,\ sf::RenderStates\ states)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00224\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classTextBox_a2b8a490293ae7f522091b2b690d5bf13}{isMouseHover}}();}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00226\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00227\ \ \ sf::RenderWindow\ *\mbox{\hyperlink{classTextBox_a742324ac5a95df153f2df064cd06df75}{window}};\ }
+\DoxyCodeLine{00228\ \ \ sf::Text\ \mbox{\hyperlink{classTextBox_a2406f7db801cda6fd44875062a5f3d4e}{tbox}}\{\};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00229\ \ \ sf::Font\ \mbox{\hyperlink{classTextBox_a2ab6b534d788191784115d891a4bc2f7}{font}}\{\};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00230\ \ \ std::string\ \mbox{\hyperlink{classTextBox_aba3bb93bd63568f63bcdec6c1c79d28c}{fname}}\{\};\ \ \ \ \ \ }
+\DoxyCodeLine{00231\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTextBox_a29d2a814bf7d164b61a387cf078a56e8}{fsize}}\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00232\ \ \ sf::Color\ \mbox{\hyperlink{classTextBox_a75f6b5783e47dcd456fbdba2da186373}{fcol}}\{\};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00233\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classTextBox_abd72a5930ce6ccc08a88a635f564e68e}{mouseHover}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00234\ \};}
+\DoxyCodeLine{00235\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KAMIL\_TEXTBOX\_HPP}}
+
+\end{DoxyCode}

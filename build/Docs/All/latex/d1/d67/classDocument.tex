@@ -1,0 +1,478 @@
+\hypertarget{classDocument}{}\doxysubsection{Document Class Reference}
+\label{classDocument}\index{Document@{Document}}
+
+
+\mbox{\hyperlink{classDocument}{Document}} class.  
+
+
+
+
+{\ttfamily \#include $<$Document.\+h$>$}
+
+
+
+Collaboration diagram for Document\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{da/d5f/classDocument__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structDocument_1_1Config}{Config}}
+\begin{DoxyCompactList}\small\item\em A struct for the configuration. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structDocument_1_1Theme}{Theme}}
+\begin{DoxyCompactList}\small\item\em a struct for the \mbox{\hyperlink{structDocument_1_1Theme}{Theme}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}{Document}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classDocument}{Document}} class png/\+Document/doc\+Const1.\+png eps/\+Document/doc\+Const1.\+eps Constructor for \mbox{\hyperlink{classDocument}{Document}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDocument_a80a43b24529f3eed449847823bb6ab47}{Document}} (std\+::string fileP)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classDocument}{Document}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}{init}} ()
+\begin{DoxyCompactList}\small\item\em initialise the file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocument_a8fa947b8d6e69036ac53769f29d2a9fa}{init}} (std\+::string inF)
+\begin{DoxyCompactList}\small\item\em initialise the file \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classDocument_aca32ae3080ab09048e7522281b4d7ba6}{read\+File}} ()
+\begin{DoxyCompactList}\small\item\em read the file \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classDocument_ae7c19c8c497d76f99c3c3ab59e7fcd75}{get\+Rel\+Path}} ()
+\begin{DoxyCompactList}\small\item\em get the relative path \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classDocument_a7aa7f956d6fd898fb4ec61aceb45158e}{get\+Abs\+Path}} ()
+\begin{DoxyCompactList}\small\item\em get the relative path \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDocument_a30a0627844cc96d37271184f7a6acc2c}{find\+Config}} ()
+\begin{DoxyCompactList}\small\item\em check if the config.\+toml exist \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocument_ab9693ac587427e6f6dccdf5cc4c6cc6e}{create\+File}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em create the file \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDocument_a0ee9d0dc188296e457eb28202c45ffa6}{save\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em save to a file \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDocument_aa076e1fbc11e56c32d2fc88cfa8ef15b}{save\+File}} ()
+\begin{DoxyCompactList}\small\item\em save to a file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocument_a47e3f3a9121cc4a3b69ed12433813519}{set\+Buff\+Info}} (std\+::string info)
+\begin{DoxyCompactList}\small\item\em save file infor to buffer \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDocument_a01fab747cf4573078e23bbd49db21def}{has\+Changed}} ()
+\begin{DoxyCompactList}\small\item\em if the file has changed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocument_a473c0998c1c14411f6728b070cc78b05}{set\+Change}} ()
+\begin{DoxyCompactList}\small\item\em set file has changed \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structDocument_1_1Config}{Config}} \mbox{\hyperlink{classDocument_a047c15f0de308f773b7023e26eaae845}{get\+Config}} ()
+\begin{DoxyCompactList}\small\item\em retrieves information from config.\+toml \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classDocument_a439e52a616c80fd6de04aee141224f3f}{rel\+Path}}
+\item 
+std\+::string \mbox{\hyperlink{classDocument_afc0689ac2a0253d3682072f60d78a9b0}{abs\+Path}}
+\item 
+std\+::string \mbox{\hyperlink{classDocument_a5e14b182439e8c8fcfaf12b00425011c}{buff\+Info}}
+\item 
+bool \mbox{\hyperlink{classDocument_a99777bedaef459f015d134396b0dd003}{doc\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+\mbox{\hyperlink{classDocument}{Document}} class. 
+
+\doxysubsubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}\label{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}} 
+\index{Document@{Document}!Document@{Document}}
+\index{Document@{Document}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{Document()}{Document()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Document\+::\+Document (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classDocument}{Document}} class png/\+Document/doc\+Const1.\+png eps/\+Document/doc\+Const1.\+eps Constructor for \mbox{\hyperlink{classDocument}{Document}}. 
+
+Constructor for \mbox{\hyperlink{classDocument}{Document}} class.
+
+Initialises the rel\+Path by default \mbox{\Hypertarget{classDocument_a80a43b24529f3eed449847823bb6ab47}\label{classDocument_a80a43b24529f3eed449847823bb6ab47}} 
+\index{Document@{Document}!Document@{Document}}
+\index{Document@{Document}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{Document()}{Document()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Document\+::\+Document (\begin{DoxyParamCaption}\item[{std\+::string}]{fileP }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classDocument}{Document}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fileP} & -\/ file path\\
+\hline
+\end{DoxyParams}
+png/\+Document/doc\+Const2.\+png eps/\+Document/doc\+Const2.\+eps Constructor for \mbox{\hyperlink{classDocument}{Document}}
+
+Creates / Opens the file passed through depending on if the file exists
+
+
+\begin{DoxyParams}{Parameters}
+{\em fileP} & -\/ file path \\
+\hline
+\end{DoxyParams}
+checks if the file can be opened
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDocument_ab9693ac587427e6f6dccdf5cc4c6cc6e}\label{classDocument_ab9693ac587427e6f6dccdf5cc4c6cc6e}} 
+\index{Document@{Document}!createFile@{createFile}}
+\index{createFile@{createFile}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{createFile()}{createFile()}}
+{\footnotesize\ttfamily void Document\+::create\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+create the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & -\/ file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+html png/\+Document/doc\+Create\+File.\+png latex eps/\+Document/doc\+Create\+File.\+eps Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{d1/d67/classDocument_ab9693ac587427e6f6dccdf5cc4c6cc6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDocument_a30a0627844cc96d37271184f7a6acc2c}\label{classDocument_a30a0627844cc96d37271184f7a6acc2c}} 
+\index{Document@{Document}!findConfig@{findConfig}}
+\index{findConfig@{findConfig}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{findConfig()}{findConfig()}}
+{\footnotesize\ttfamily bool Document\+::find\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if the config.\+toml exist 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ true if config.\+toml exists
+\end{DoxyReturn}
+html png/\+Document/find\+Config.\+png latex eps/\+Document/find\+Config.\+eps
+
+find the configuration file config.\+toml Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{d1/d67/classDocument_a30a0627844cc96d37271184f7a6acc2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDocument_a7aa7f956d6fd898fb4ec61aceb45158e}\label{classDocument_a7aa7f956d6fd898fb4ec61aceb45158e}} 
+\index{Document@{Document}!getAbsPath@{getAbsPath}}
+\index{getAbsPath@{getAbsPath}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{getAbsPath()}{getAbsPath()}}
+{\footnotesize\ttfamily std\+::string Document\+::get\+Abs\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the relative path 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string for absolute path
+\end{DoxyReturn}
+html png/\+Document/docg\+Abs\+Path.\+png latex eps/\+Document/docg\+Abs\+Path.\+eps \mbox{\Hypertarget{classDocument_a047c15f0de308f773b7023e26eaae845}\label{classDocument_a047c15f0de308f773b7023e26eaae845}} 
+\index{Document@{Document}!getConfig@{getConfig}}
+\index{getConfig@{getConfig}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{getConfig()}{getConfig()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDocument_1_1Config}{Document\+::\+Config}} Document\+::get\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retrieves information from config.\+toml 
+
+searches through the config.\+toml files for the necessary information and extracts it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structDocument_1_1Config}{Config}} -\/ config.\+toml information
+\end{DoxyReturn}
+html png/\+Document/docg\+Conf.\+png latex eps/\+Document/docg\+Conf.\+eps
+
+get the config file and parse it for the necessary information Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{d1/d67/classDocument_a047c15f0de308f773b7023e26eaae845_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDocument_ae7c19c8c497d76f99c3c3ab59e7fcd75}\label{classDocument_ae7c19c8c497d76f99c3c3ab59e7fcd75}} 
+\index{Document@{Document}!getRelPath@{getRelPath}}
+\index{getRelPath@{getRelPath}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{getRelPath()}{getRelPath()}}
+{\footnotesize\ttfamily std\+::string Document\+::get\+Rel\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the relative path 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string for relative path 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{d1/d67/classDocument_ae7c19c8c497d76f99c3c3ab59e7fcd75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDocument_a01fab747cf4573078e23bbd49db21def}\label{classDocument_a01fab747cf4573078e23bbd49db21def}} 
+\index{Document@{Document}!hasChanged@{hasChanged}}
+\index{hasChanged@{hasChanged}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{hasChanged()}{hasChanged()}}
+{\footnotesize\ttfamily bool Document\+::has\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+if the file has changed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ true if file has changed
+\end{DoxyReturn}
+html png/\+Document/doch\+Change.\+png latex eps/\+Document/doch\+Change.\+eps \mbox{\Hypertarget{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}\label{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}} 
+\index{Document@{Document}!init@{init}}
+\index{init@{init}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Document\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initialise the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+png/\+Document/doc\+Init1.\+png eps/\+Document/doc\+Init1.\+eps init method for \mbox{\hyperlink{classDocument}{Document}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+We get all the contents of the file into the string buff\+Info using the std\+::getline Each time we read a line from getline the previous line in the string gets overwritten so we store it in a large string buffer (stringstream). Once all the data is read we then put it back into the string, buff\+Info, for the rest of the program to use.Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{d1/d67/classDocument_a67e7f9b8c668a723b6f7173ae52e5c99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDocument_a8fa947b8d6e69036ac53769f29d2a9fa}\label{classDocument_a8fa947b8d6e69036ac53769f29d2a9fa}} 
+\index{Document@{Document}!init@{init}}
+\index{init@{init}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Document\+::init (\begin{DoxyParamCaption}\item[{std\+::string}]{inF }\end{DoxyParamCaption})}
+
+
+
+initialise the file 
+
+initialise the file An example of function overloading in cpp. It does the same job as the normal \mbox{\hyperlink{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}{init()}} function. We can keep the name the same but have to make sure the parameters are different. where we change the signature of a function by changing its parameters essentially creating a new function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inF} & -\/ file location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+png/\+Document/doc\+Init2.\+png eps/\+Document/doc\+Init2.\+eps init method for \mbox{\hyperlink{classDocument}{Document}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & -\/ file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+We get all the contents of the file into the string buff\+Info using the std\+::getline Each time we read a line from getline the previous line in the string gets overwritten so we store it in a large string buffer (stringstream). Once all the data is read we then put it back into the string, buff\+Info, for the rest of the program to use.\mbox{\Hypertarget{classDocument_aca32ae3080ab09048e7522281b4d7ba6}\label{classDocument_aca32ae3080ab09048e7522281b4d7ba6}} 
+\index{Document@{Document}!readFile@{readFile}}
+\index{readFile@{readFile}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily std\+::string Document\+::read\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+read the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing the file info
+\end{DoxyReturn}
+html png/\+Document/docr\+File.\+png latex eps/\+Document/docr\+File.\+eps read\+File method for \mbox{\hyperlink{classDocument}{Document}} Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{d1/d67/classDocument_aca32ae3080ab09048e7522281b4d7ba6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDocument_aa076e1fbc11e56c32d2fc88cfa8ef15b}\label{classDocument_aa076e1fbc11e56c32d2fc88cfa8ef15b}} 
+\index{Document@{Document}!saveFile@{saveFile}}
+\index{saveFile@{saveFile}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{saveFile()}{saveFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Document\+::save\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+save to a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ true if saved
+\end{DoxyReturn}
+html png/\+Document/doc\+Save\+File2.\+png latex eps/\+Document/doc\+Save\+File2.\+eps
+
+save the file when a filename is passed through \mbox{\Hypertarget{classDocument_a0ee9d0dc188296e457eb28202c45ffa6}\label{classDocument_a0ee9d0dc188296e457eb28202c45ffa6}} 
+\index{Document@{Document}!saveFile@{saveFile}}
+\index{saveFile@{saveFile}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{saveFile()}{saveFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Document\+::save\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+save to a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & -\/ filename to save to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ true if saved
+\end{DoxyReturn}
+html png/\+Document/doc\+Save\+File1.\+png latex eps/\+Document/doc\+Save\+File1.\+eps
+
+save the file when a filename is passed through Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{d1/d67/classDocument_a0ee9d0dc188296e457eb28202c45ffa6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDocument_a47e3f3a9121cc4a3b69ed12433813519}\label{classDocument_a47e3f3a9121cc4a3b69ed12433813519}} 
+\index{Document@{Document}!setBuffInfo@{setBuffInfo}}
+\index{setBuffInfo@{setBuffInfo}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{setBuffInfo()}{setBuffInfo()}}
+{\footnotesize\ttfamily void Document\+::set\+Buff\+Info (\begin{DoxyParamCaption}\item[{std\+::string}]{info }\end{DoxyParamCaption})}
+
+
+
+save file infor to buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & buffer info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+html png/\+Document/doc\+Set\+Buff\+Info.\+png latex eps/\+Document/doc\+Set\+Buff\+Info.\+eps Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{d1/d67/classDocument_a47e3f3a9121cc4a3b69ed12433813519_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDocument_a473c0998c1c14411f6728b070cc78b05}\label{classDocument_a473c0998c1c14411f6728b070cc78b05}} 
+\index{Document@{Document}!setChange@{setChange}}
+\index{setChange@{setChange}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{setChange()}{setChange()}}
+{\footnotesize\ttfamily void Document\+::set\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set file has changed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+html png/\+Document/docset\+Change.\+png latex eps/\+Document/docset\+Change.\+eps Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{d1/d67/classDocument_a473c0998c1c14411f6728b070cc78b05_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDocument_afc0689ac2a0253d3682072f60d78a9b0}\label{classDocument_afc0689ac2a0253d3682072f60d78a9b0}} 
+\index{Document@{Document}!absPath@{absPath}}
+\index{absPath@{absPath}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{absPath}{absPath}}
+{\footnotesize\ttfamily std\+::string Document\+::abs\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+absolute path \mbox{\Hypertarget{classDocument_a5e14b182439e8c8fcfaf12b00425011c}\label{classDocument_a5e14b182439e8c8fcfaf12b00425011c}} 
+\index{Document@{Document}!buffInfo@{buffInfo}}
+\index{buffInfo@{buffInfo}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{buffInfo}{buffInfo}}
+{\footnotesize\ttfamily std\+::string Document\+::buff\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDocument_a99777bedaef459f015d134396b0dd003}\label{classDocument_a99777bedaef459f015d134396b0dd003}} 
+\index{Document@{Document}!docChanged@{docChanged}}
+\index{docChanged@{docChanged}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{docChanged}{docChanged}}
+{\footnotesize\ttfamily bool Document\+::doc\+Changed\hspace{0.3cm}{\ttfamily [private]}}
+
+buffer information (the file text) if the file has changed \mbox{\Hypertarget{classDocument_a439e52a616c80fd6de04aee141224f3f}\label{classDocument_a439e52a616c80fd6de04aee141224f3f}} 
+\index{Document@{Document}!relPath@{relPath}}
+\index{relPath@{relPath}!Document@{Document}}
+\doxyparagraph{\texorpdfstring{relPath}{relPath}}
+{\footnotesize\ttfamily std\+::string Document\+::rel\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+relative path 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Kamil/\mbox{\hyperlink{Document_8h}{Document.\+h}}\item 
+src/\mbox{\hyperlink{Document_8cpp}{Document.\+cpp}}\end{DoxyCompactItemize}

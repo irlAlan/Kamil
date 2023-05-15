@@ -4,9 +4,17 @@
 /**
  * @file Interface file for the TextBox class
  *
- * Inherits from MyRect class and defines a basic text box in SFML
- * Allowd text to be written and deleted from it aswell has check if anything
- * is hovering over or selcted.
+ * @brief Creates a text box in SFML 
+ * 
+ * A class that inherits from MyRect class and defines a basic text box in SFML.
+ * Allows for integrated use with other SFML objects as it has an sf::Drawable property
+ * that allows it to nativly draw to a render target like every other SFML object through the shared
+ * inheritance with sf::Drawable from MyRect.
+ *
+ * For the text box in SFML to work we use the size and position passed into the class constructor 
+ * to create an sf::RectangleShape object and use it as the boundries of the text box while still drawing to the 
+ * screen with an sf::Text object.
+ *
  */
 
 #include <SFML/Graphics.hpp>
@@ -24,16 +32,6 @@
 
 #include "Keyboard.h"
 #include "MyRect.h"
-
-/*
- *
- * TODO:
- *       Make a RectangleShape that acts as the bounds of the TextBox
- *       then add limits to the textbox so it stays in the limits
- *
- *       Add the Keybord manager class here and use its methods
- *       to handle the key events
- */
 
 /**
  * @brief A class that makes a Textbox in SFML
@@ -53,6 +51,9 @@ public:
    * @param fcol - the initial font colour
    * @param background - the initial background colour
    * @param thicc - the padding for the RectangleShape
+   *
+   * ./png/TextBox/textConstructor.png
+   * ./eps/TextBox/textConstructor.eps
    */
   TextBox(sf::RenderWindow *win, sf::Vector2f pos, sf::Vector2f size,
           std::string sfont, int fsize, sf::Color fcol, sf::Color background,
@@ -62,92 +63,163 @@ public:
 
   /**
    * @brief Set the size of the text
+   *
+   * A setter method that sets the size of the text
+   *
    * @param size text size
    * @return void
+   *
+   * ./png/TextBox/textSetTextSize.png
+   *  ./eps/TextBox/textSetTextSize.eps
    */
   void setTextSize(int size);
 
   /**
    * @brief Get the size of the text
+   *
+   * A getter method that returns the size of the text
+   *
    * @param void
    * @return an int of the text size
+   *
+   *
+   * ./png/TextBox/textGetTextSize.png
+   *  ./eps/TextBox/textGetTextSize.eps
    */
   int getTextSize() const;
 
   /**
    * @brief Set the colour of the text
+   *
+   * A setter mehod that sets the colour of the text
+   *
    * @param fill font colour
    * @return void
+   *
+   *
+   * ./png/TextBox/textSetTextCol.png
+   *  ./eps/TextBox/textSetTextCol.eps
+   *
    */
   void setTextColour(sf::Color colour);
 
   /**
    * @brief Get the colour of the text
+   *
+   * A getter method that returns the colour of the text
+   *
    * @param void
    * @return sf::Colour textColour
+   *
+   * ./png/TextBox/textGetTextCol.png
+   *  ./eps/TextBox/textGetTextCol.eps
    */
   sf::Color getTextColour() const;
 
   /**
-   * @brief set what font you use
+   * @brief set what font you want to use
+   *
+   * A setter method overload of setFont function that sets the font using
+   * an object of type sf::Font
+   *
    * @param font file dir of font
    * @return void
+   *
+   *
+   * ./png/TextBox/textSetTextFont.png
+   *  ./eps/TextBox/textSetTextFont.eps
    */
   void setFont(sf::Font &font);
+
   
+  /**
+   * @brief set what font you use
+   *
+   * A setter method overload of setFont function that sets the font
+   * Allows the passing of strings instead of sf::Font types.
+   *
+   * @param font file dir of font
+   * @return void
+   *
+   * ./png/TextBox/textSetTextFont2.png
+   *  ./eps/TextBox/textSetTextFont2.eps
+   */
   void setFont(std::string font);
 
   /**
-   * @brief Get both the Text
+   * @brief Get sf::Text of the textbox
+   *
+   * A getter method for getting the sf::Text part of the TextBox class
+   * this is the part responsible for displaying all the text
+   *
    * @param void
-   * @return type Boxv2 that contains textbox and cmdbox
+   * @return sf::Text - contains the part responsible for drawing text on the screen
+   *
+   * ./png/TextBox/textGetTextBox.png
+   *  ./eps/TextBox/textGetTextBox.eps
+   *
    */
   sf::Text getTextBox() const;
 
   /**
-   * @brief Delete last character entered
-   * @param void
-   * @return void
-   */
-  void deleteChar();
-
-  /**
-   * @brief Handles Enter key press
-   * @param void
-   * @return void
-   */
-  void enterPress();
-
-  /**
    * @brief Sets the string
-   * @param nstring - new string placed on tbox
+   *
+   * A setter method that sets the string
+   * that is displayed on the screen
+   *
+   * @param std::string - new string placed on tbox
    * @return void
+   *
+   * ./png/TextBox/textGetTextBox.png
+   *  ./eps/TextBox/textGetTextBox.eps
+   *
    */
   void setString(std::string nstring);
 
   /**
    * @brief returns the text in tbox
+   *
+   * A getter method that returns the string 
+   * thats displayed on the screen
+   *
    * @param void
    * @return type std::string
+   *
+   * ./png/TextBox/textGetString.png
+   *  ./eps/TextBox/textGetString.eps
    */
   std::string getString() const;
 
   /**
    * @brief used to draw to the screen
-   * virutal method inherited from MyRect -> sf::Drawable thats overrided here
-   * is what allows us to draw to window using window.draw(TextBox)
+   * virutal method inherited from MyRect which inherited it from sf::Drawable thats overrided here
+   * it is an example of polymorphism as we are changing the behaviour of a method in the child class.
+   * By inheriting from sf::Drawable it allows us to keep a similar syntax to other SFML shapes and drawable objects
+   * window.draw(my_object).
+   * This allows our code to be more modular and easy for other people to use since they dont need to fumble around with
+   * my_object.draw(window)
    *
-   * Example of polymorphism
+   *
+   * ./png/TextBox/textDraw.png
+   *  ./eps/TextBox/textDraw.eps
+   *
    */
   void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 
-
-
-    void update();
-
   /**
    * @brief check if mouse is hovering over current textbox
-   * @return bool - yes if hovering
+   *
+   * Useful for when you want specific events to happen only when the mouse hovers over
+   * like text inputting.
+   *
+   * We are able to check if the mouse is hovering through the extra collision functionality that FloatRect
+   * gives us. see MyRect
+   * 
+   * @return bool - yes if hovering over the text box
+   *
+   * ./png/TextBox/textIsMouseHover.png
+   *  ./eps/TextBox/textIsMouseHover.eps
+   *
    */
   bool isMouseHover();
 

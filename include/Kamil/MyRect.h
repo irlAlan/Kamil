@@ -100,7 +100,6 @@ public:
   void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 
 protected:
-  // sf::FloatRect fRect;     /**< for collision checking */
   sf::RectangleShape rect;
   sf::Vector2f pos;        /**< position of rect */
   sf::Vector2f size;       /**< size of rect */

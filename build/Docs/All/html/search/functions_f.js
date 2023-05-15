@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['savefile_0',['saveFile',['../d1/d67/classDocument.html#aa076e1fbc11e56c32d2fc88cfa8ef15b',1,'Document::saveFile()'],['../d1/d67/classDocument.html#a0ee9d0dc188296e457eb28202c45ffa6',1,'Document::saveFile(const std::string &amp;filename)']]],
+  ['set_5ferror_1',['set_error',['../de/d85/classparser.html#a31c2edec3fb91f39428f2acac0c958aa',1,'parser']]],
+  ['set_5ferror_5fat_2',['set_error_at',['../de/d85/classparser.html#acb095b7cd99f714f2cf838e2e924b44d',1,'parser']]],
+  ['setbuffinfo_3',['setBuffInfo',['../d1/d67/classDocument.html#a47e3f3a9121cc4a3b69ed12433813519',1,'Document']]],
+  ['setchange_4',['setChange',['../d1/d67/classDocument.html#a473c0998c1c14411f6728b070cc78b05',1,'Document']]],
+  ['setcmdtextentered_5',['setCmdTextEntered',['../dc/dd2/classKeyboard.html#ad3d85b5347b98d960855a9eda62dd1c7',1,'Keyboard']]],
+  ['setfillcolour_6',['setFillColour',['../d9/d1c/classMyRect.html#abf35db87008be9e2a804b603e46fb4e2',1,'MyRect']]],
+  ['setfont_7',['setFont',['../d2/d68/classTextBox.html#a4225c5a37dfa286b0ad2f2e09fb4b335',1,'TextBox::setFont(sf::Font &amp;font)'],['../d2/d68/classTextBox.html#a95acc51d7b24bb92204be0835137a0ae',1,'TextBox::setFont(std::string font)']]],
+  ['setposition_8',['setPosition',['../d9/d1c/classMyRect.html#a8d82606eca0c71f19e4e51ec047e37f4',1,'MyRect']]],
+  ['setsize_9',['setSize',['../d9/d1c/classMyRect.html#a63d3276bf02e1a4f7bd000854a1ff8e7',1,'MyRect']]],
+  ['setstring_10',['setString',['../d2/d68/classTextBox.html#afe605dd74dd6f90181038115f8b5283e',1,'TextBox']]],
+  ['settextcolour_11',['setTextColour',['../d2/d68/classTextBox.html#a560aa18bf1233da966bd179511ddf2c2',1,'TextBox']]],
+  ['settextentered_12',['setTextEntered',['../dc/dd2/classKeyboard.html#a8d6e7d2493b27ec4dff9293a555e5c8e',1,'Keyboard']]],
+  ['settextsize_13',['setTextSize',['../d2/d68/classTextBox.html#afaa6baa0b251f0516e4d48b5eed8ca02',1,'TextBox']]],
+  ['shrink_5fto_5ffit_14',['shrink_to_fit',['../d2/d41/classarray.html#ae420782d223545646c2f76a0f557bf1d',1,'array']]],
+  ['size_15',['size',['../d2/d41/classarray.html#aeb9d2f12b9199641b8b340365a59174b',1,'array::size()'],['../d8/de7/structparse__key__buffer.html#a0b6efc243f6498c089430873c5258ce0',1,'parse_key_buffer::size()'],['../dc/d8a/classpath.html#a4c5fe971603ea9fd3107ca14e9c60691',1,'path::size()'],['../d2/d08/classtable.html#affa7520e779cbbfc21bbdc31c4f8f7ce',1,'table::size()']]],
+  ['source_16',['source',['../dc/db2/classTOML__PARSE__ERROR__BASE.html#a7bc4debd390ea05d61cf6a11707edfd2',1,'TOML_PARSE_ERROR_BASE']]],
+  ['source_5fpath_17',['source_path',['../df/d01/structutf8__reader__interface.html#a4556538dd8acf45ad0e54594b7f23519',1,'utf8_reader_interface::source_path()'],['../d6/d9b/classutf8__reader.html#a780f2a782652606b6db722e880019eb2',1,'utf8_reader::source_path()'],['../da/d02/classutf8__buffered__reader.html#a82f28b3ba60daf554b34e7b588cd26a7',1,'utf8_buffered_reader::source_path()']]],
+  ['start_5frecording_18',['start_recording',['../de/d85/classparser.html#aebe4fea7b05becc92a052749733447a3',1,'parser']]],
+  ['step_5fback_19',['step_back',['../da/d02/classutf8__buffered__reader.html#aa31e6337c3669dc7bf2fcca5f2a4895e',1,'utf8_buffered_reader']]],
+  ['stop_5frecording_20',['stop_recording',['../de/d85/classparser.html#abc3cc4f20f7680fecaadcdace7f28b67',1,'parser']]],
+  ['str_21',['str',['../dc/d8a/classpath.html#a57d9527113e1c8a12d75f2a56e7d0ae7',1,'path']]],
+  ['subpath_22',['subpath',['../dc/d8a/classpath.html#af550d277cd6628ce830315fd95c2ee18',1,'path::subpath(const_iterator start, const_iterator end) const'],['../dc/d8a/classpath.html#ab968d69ab16d3edce0005630be2bd913',1,'path::subpath(size_t start, size_t length) const']]],
+  ['succeeded_23',['succeeded',['../da/de8/classparse__result.html#aebdf7ac3321c38cd4f66c5c9ca62e6cb',1,'parse_result']]]
+];

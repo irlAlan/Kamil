@@ -1,0 +1,75 @@
+\hypertarget{Keyboard_8h_source}{}\doxysubsection{Keyboard.\+h}
+\label{Keyboard_8h_source}\index{include/Kamil/Keyboard.h@{include/Kamil/Keyboard.h}}
+\mbox{\hyperlink{Keyboard_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KAMIL\_KEYBOARD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KAMIL\_KEYBOARD\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderWindow.hpp>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <SFML/Window/Keyboard.hpp>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Document_8h}{Document.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <fmt/core.h>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <array>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceKEYS}{KEYS}}\ \{}
+\DoxyCodeLine{00032\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065a3be57d8b1a4ea103e58a0402207b85ad}{ESCAPE}}\ =\ 0x1B,}
+\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065aded341e23f0353519f0cd5cb046d2b01}{ENTER}}\ =\ 0xD,}
+\DoxyCodeLine{00035\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065a367438cff178d918ea18fc1ecc666e91}{BS}}\ =\ 0x8,}
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065aeb6bf94638f62d48773bfced196c9818}{Shift\_A}}\ =\ 0x41,}
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065aa6a3b56f66767f0a70bbcbd0b742b240}{CTRL}}\ =\ 0x11,}
+\DoxyCodeLine{00038\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065ab0a71601906de387b51e327934215649}{DELETE}}\ =\ 0x7f,}
+\DoxyCodeLine{00039\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065a830997a0eb67be49c5ac321d7e85413e}{CR}}\ =\ 0x13,}
+\DoxyCodeLine{00040\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065ab26924b089bf1e6243c28d994b0c2ff4}{UP\_ARROW}}\ =\ 0x48,}
+\DoxyCodeLine{00041\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065a92dc07b03ffd4dd0cab132f002989dc0}{DOWN\_ARROW}}\ =\ 0x50,}
+\DoxyCodeLine{00042\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065a0c9c8b651c5cbef3880316c7a2ef300b}{RIGHT\_ARROW}}\ =\ 0x4D,}
+\DoxyCodeLine{00043\ \ \ \mbox{\hyperlink{namespaceKEYS_aee8ab20957db1a914620e3e5699e5065a73efe3b3ad9e381971417c0d73b8805b}{LEFT\_ARROW}}\ =\ 0x4B,}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classKeyboard}{Keyboard}}\ \{}
+\DoxyCodeLine{00051\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00060\ \ \ \mbox{\hyperlink{classKeyboard}{Keyboard}}(sf::RenderWindow\ *win,\ \mbox{\hyperlink{classDocument}{Document}}\ *doc,\ sf::Vector2f\ bounds);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00071\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classKeyboard_adeefc0fbd6da98d1ce45f3ebdff58af5}{isKeyPressed}}(sf::Keyboard::Key);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classKeyboard_a7e60951ef40673ec9a03ab57815e9981}{isTextEntered}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00092\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classKeyboard_a0ba406c300fc90a3bd348d8a7f471e9f}{isCmdTextEntered}}();}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00103\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classKeyboard_ad0df3d61c6cd369177379b9d051402bd}{isTextDeleted}}();}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00116\ \ \ std::string\ \mbox{\hyperlink{classKeyboard_ad7fce631b48c46c4fbe0428abfda74fc}{getTextEntered}}();}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00127\ \ \ std::string\ \mbox{\hyperlink{classKeyboard_ad14edd2f62d44ca40500e9616e9bdf62}{getCmdTextEntered}}();}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00142\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboard_a8d6e7d2493b27ec4dff9293a555e5c8e}{setTextEntered}}(std::string);}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00155\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboard_ad3d85b5347b98d960855a9eda62dd1c7}{setCmdTextEntered}}(std::string);}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00167\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboard_aa1a7684a8cdd57383590ca287b251e7d}{backSpace}}();}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00178\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboard_a47cd1af5705b6d5c24217744a6feb84a}{handleKeyEvent}}(sf::Event\ \&event);}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00188\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboard_a7dd8b4dd403277f702e202c593ed08d5}{handleCmdKeyEvent}}(sf::Event\&\ event);}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00195\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboard_a9b9ae75efb558cd0313d30b6a5573979}{handleMouseEvent}}(sf::Event\ \&event);\ \textcolor{comment}{//\ not\ implemented\ yet}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00199\ \ \ sf::RenderWindow\ *\mbox{\hyperlink{classKeyboard_a90f55d2a92e75ef0a65db349cd7eeb80}{window}};\ }
+\DoxyCodeLine{00200\ \ \ std::stringstream\ \mbox{\hyperlink{classKeyboard_a616120fa3472fd423d079cbba4df2d41}{tEntered}};\ }
+\DoxyCodeLine{00201\ \ \ std::stringstream\ \mbox{\hyperlink{classKeyboard_a25b87a12c235d056223486a1e71472e0}{tDeleted}};\ }
+\DoxyCodeLine{00204\ \ \ std::string\ \mbox{\hyperlink{classKeyboard_a779569019167f8c5da8bf39632a889ad}{ctEntered}};\ }
+\DoxyCodeLine{00205\ \ \ std::string\ \mbox{\hyperlink{classKeyboard_a8f49aaaabb0c707c0f3e1dec95cab702}{ctDeleted}};\ }
+\DoxyCodeLine{00206\ \};}
+\DoxyCodeLine{00207\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KAMIL\_KEYBOARD\_H}}
+
+\end{DoxyCode}

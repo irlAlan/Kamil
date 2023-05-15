@@ -1,0 +1,19 @@
+\begin{theindex}
+
+  \item {\_\_init\_\_}
+    \subitem {hey.App}, \hyperpage{2}
+
+  \indexspace
+
+  \item {hey.App}, \hyperpage{2}
+    \subitem {\_\_init\_\_}, \hyperpage{2}
+    \subitem {noise}, \hyperpage{2}
+  \item {hey.Base}, \hyperpage{3}
+  \item {hey.py}, \hyperpage{3}
+
+  \indexspace
+
+  \item {noise}
+    \subitem {hey.App}, \hyperpage{2}
+
+\end{theindex}

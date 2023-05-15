@@ -1,0 +1,104 @@
+\hypertarget{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4}{}\doxysection{utf8\+\_\+byte\+\_\+stream\texorpdfstring{$<$}{<} std\+::basic\+\_\+string\+\_\+view\texorpdfstring{$<$}{<} Char \texorpdfstring{$>$}{>} \texorpdfstring{$>$}{>} Class Template Reference}
+\label{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4}\index{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}}
+
+
+Collaboration diagram for utf8\+\_\+byte\+\_\+stream\texorpdfstring{$<$}{<} std\+::basic\+\_\+string\+\_\+view\texorpdfstring{$<$}{<} Char \texorpdfstring{$>$}{>} \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{d0/d61/classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{preprocessor_8h_a05c221a7e51165b50670f63540ab218a}{TOML\+\_\+\+NODISCARD\+\_\+\+CTOR}} constexpr \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a7ede07b930ef849492da6b24ef13b778}{utf8\+\_\+byte\+\_\+stream}} (std\+::basic\+\_\+string\+\_\+view$<$ Char $>$ sv) noexcept
+\item 
+\mbox{\hyperlink{preprocessor_8h_ad26b309f170b9504c99f7dd7b1a912f0}{TOML\+\_\+\+CONST\+\_\+\+INLINE\+\_\+\+GETTER}} constexpr bool \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_ac9be009983ef67089c25d51a74a4ee68}{error}} () const noexcept
+\item 
+\mbox{\hyperlink{preprocessor_8h_ab8168e9569e1eb2294b344fbb81983b5}{TOML\+\_\+\+PURE\+\_\+\+INLINE\+\_\+\+GETTER}} constexpr bool \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_adb397dfdc74f9978c9c32f3e05c328a7}{eof}} () const noexcept
+\item 
+\mbox{\hyperlink{preprocessor_8h_ab8168e9569e1eb2294b344fbb81983b5}{TOML\+\_\+\+PURE\+\_\+\+INLINE\+\_\+\+GETTER}} constexpr \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_aee49ba0b44a6b36dbc2a02bdd52750d0}{operator bool}} () const noexcept
+\item 
+\mbox{\hyperlink{preprocessor_8h_ab8168e9569e1eb2294b344fbb81983b5}{TOML\+\_\+\+PURE\+\_\+\+INLINE\+\_\+\+GETTER}} constexpr bool \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a4894d3e2f94b3f8b301816aeee1f45dc}{peek\+\_\+eof}} () const noexcept
+\item 
+\mbox{\hyperlink{preprocessor_8h_a471c97e396823de3fcca2272e3ef1bba}{TOML\+\_\+\+NODISCARD}} size\+\_\+t \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_ac5dcac7842c67a190084701a1ce0b1b2}{operator()}} (void $\ast$dest, size\+\_\+t num) noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::basic\+\_\+string\+\_\+view$<$ Char $>$ \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_aefea1de0ed1bcd342fd2564086618762}{source\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a6f0dcbc2689209ac034fe7d642924dad}{position\+\_\+}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a7ede07b930ef849492da6b24ef13b778}\label{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a7ede07b930ef849492da6b24ef13b778}} 
+\index{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}!utf8\_byte\_stream@{utf8\_byte\_stream}}
+\index{utf8\_byte\_stream@{utf8\_byte\_stream}!utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{utf8\_byte\_stream()}{utf8\_byte\_stream()}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+\mbox{\hyperlink{preprocessor_8h_a05c221a7e51165b50670f63540ab218a}{TOML\+\_\+\+NODISCARD\+\_\+\+CTOR}} constexpr utf8\+\_\+byte\+\_\+stream$<$ std\+::basic\+\_\+string\+\_\+view$<$ Char $>$ $>$\+::utf8\+\_\+byte\+\_\+stream (\begin{DoxyParamCaption}\item[{std\+::basic\+\_\+string\+\_\+view$<$ Char $>$}]{sv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_adb397dfdc74f9978c9c32f3e05c328a7}\label{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_adb397dfdc74f9978c9c32f3e05c328a7}} 
+\index{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}!eof@{eof}}
+\index{eof@{eof}!utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+\mbox{\hyperlink{preprocessor_8h_ab8168e9569e1eb2294b344fbb81983b5}{TOML\+\_\+\+PURE\+\_\+\+INLINE\+\_\+\+GETTER}} constexpr bool \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a7ede07b930ef849492da6b24ef13b778}{utf8\+\_\+byte\+\_\+stream}}$<$ std\+::basic\+\_\+string\+\_\+view$<$ Char $>$ $>$\+::eof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_ac9be009983ef67089c25d51a74a4ee68}\label{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_ac9be009983ef67089c25d51a74a4ee68}} 
+\index{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}!error@{error}}
+\index{error@{error}!utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+\mbox{\hyperlink{preprocessor_8h_ad26b309f170b9504c99f7dd7b1a912f0}{TOML\+\_\+\+CONST\+\_\+\+INLINE\+\_\+\+GETTER}} constexpr bool \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a7ede07b930ef849492da6b24ef13b778}{utf8\+\_\+byte\+\_\+stream}}$<$ std\+::basic\+\_\+string\+\_\+view$<$ Char $>$ $>$\+::error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_aee49ba0b44a6b36dbc2a02bdd52750d0}\label{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_aee49ba0b44a6b36dbc2a02bdd52750d0}} 
+\index{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+\mbox{\hyperlink{preprocessor_8h_ab8168e9569e1eb2294b344fbb81983b5}{TOML\+\_\+\+PURE\+\_\+\+INLINE\+\_\+\+GETTER}} constexpr \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a7ede07b930ef849492da6b24ef13b778}{utf8\+\_\+byte\+\_\+stream}}$<$ std\+::basic\+\_\+string\+\_\+view$<$ Char $>$ $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_ac5dcac7842c67a190084701a1ce0b1b2}\label{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_ac5dcac7842c67a190084701a1ce0b1b2}} 
+\index{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+\mbox{\hyperlink{preprocessor_8h_a471c97e396823de3fcca2272e3ef1bba}{TOML\+\_\+\+NODISCARD}} size\+\_\+t \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a7ede07b930ef849492da6b24ef13b778}{utf8\+\_\+byte\+\_\+stream}}$<$ std\+::basic\+\_\+string\+\_\+view$<$ Char $>$ $>$\+::operator() (\begin{DoxyParamCaption}\item[{void $\ast$}]{dest,  }\item[{size\+\_\+t}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a4894d3e2f94b3f8b301816aeee1f45dc}\label{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a4894d3e2f94b3f8b301816aeee1f45dc}} 
+\index{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}!peek\_eof@{peek\_eof}}
+\index{peek\_eof@{peek\_eof}!utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{peek\_eof()}{peek\_eof()}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+\mbox{\hyperlink{preprocessor_8h_ab8168e9569e1eb2294b344fbb81983b5}{TOML\+\_\+\+PURE\+\_\+\+INLINE\+\_\+\+GETTER}} constexpr bool \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a7ede07b930ef849492da6b24ef13b778}{utf8\+\_\+byte\+\_\+stream}}$<$ std\+::basic\+\_\+string\+\_\+view$<$ Char $>$ $>$\+::peek\+\_\+eof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a6f0dcbc2689209ac034fe7d642924dad}\label{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a6f0dcbc2689209ac034fe7d642924dad}} 
+\index{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}!position\_@{position\_}}
+\index{position\_@{position\_}!utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{position\_}{position\_}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+size\+\_\+t \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a7ede07b930ef849492da6b24ef13b778}{utf8\+\_\+byte\+\_\+stream}}$<$ std\+::basic\+\_\+string\+\_\+view$<$ Char $>$ $>$\+::position\+\_\+ = \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_aefea1de0ed1bcd342fd2564086618762}\label{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_aefea1de0ed1bcd342fd2564086618762}} 
+\index{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}!source\_@{source\_}}
+\index{source\_@{source\_}!utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$@{utf8\_byte\_stream$<$ std::basic\_string\_view$<$ Char $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{source\_}{source\_}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+std\+::basic\+\_\+string\+\_\+view$<$Char$>$ \mbox{\hyperlink{classutf8__byte__stream_3_01std_1_1basic__string__view_3_01Char_01_4_01_4_a7ede07b930ef849492da6b24ef13b778}{utf8\+\_\+byte\+\_\+stream}}$<$ std\+::basic\+\_\+string\+\_\+view$<$ Char $>$ $>$\+::source\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/toml++/impl/\mbox{\hyperlink{parser_8inl}{parser.\+inl}}\end{DoxyCompactItemize}

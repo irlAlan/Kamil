@@ -8,14 +8,14 @@ A Text Editor for kamil
 
 The Project I will be developing will be in answer to the challenge set out by
 the end user and friend of mine, Kamil. He challenged me to make a light weight
-editor that he can use in his day to day life and when doing python projects.
+editor that he can use in his day to day life and when doing python projects and general day to day use.
 
-The challenge started when he commented on my use of neovim and how it would be better if i used an actual IDE.
-I told him that ive used IDE's in the past and overall prefer the look and feel of a customised neovim. I then suggested him
+The challenge started when he commented on my use of neovim and how it would be better if I used an actual IDE.
+I told him that I've used IDE's in the past and overall prefer the look and feel of a customised neovim. I then suggested him
 to learn vim himself and that he wouldnt regret it, but he declined. Kamil then told me that I should create something easier
 for him to use and that could potentially change his use of IDE's.
 
-Upon being issues this challenge I had a few initial questions that I needed answering:
+Upon being issued with this challenge I created a few starter questions that I would research around for my NEA.
 
 1) What is a text editor and how does it differ from an IDE?
 2) How do I make a text editor for kamil
@@ -29,6 +29,7 @@ that it can open. While an IDE (Integrated Development Environment) is specifica
 for software development and comes with a multitude of features that engineers can make use of
 to streemline their workflow.
 
+
 A table of pros and cons:
 
 |               | Pros               | cons                        |
@@ -38,9 +39,9 @@ A table of pros and cons:
 |               | Resource efficient |                             |
 |               | Very Modular       |                             |
 |               |                    |                             |
-| IDE           | Has everything out | Slow                        |
-|               | the box            | Not very Resource efficient |
-|               | Modular            | Too many menus              |
+| IDE           | Has everything out the box| Slow                        |
+|               |                    | Not very Resource efficient |
+|               | can view memory    | Too many menus              |
 |               |                    | Limited in compatability    |
 
 
@@ -67,61 +68,90 @@ works with multiple different file types.
 
 
 Since this is a project that could quickly grow in scale due to all the different parts of handling the editor, text and documents etc.
-I am willing to set a few minimum requirements my program can achieve to be usable to Kamil.
-The requirements are: the prgram can load and save files, change text and background colour, change font and font size.
+The overall time complexity of the different algorithms coming together could exponentially increase the latency between the different commands.
+To ensure that the project meets the needs of Kamil, I have a few objectives.
 
-To conclude, the objectives of the projet:
+#### Objective 1
 
-We need a program that is not laggy and has minimal delay between text being pressed and it being displayed on the screen.
-This can be measured by taking the time taken between a key press and the setString function by SFML.
+Ensure that the program is properly optimised and not laggy.
+To ensure that the program is not laggy and has minimal delay we can get the time taken between function calls and their effect
+like the text being pressed and it being displayed on the screen and see how efficient it is and we can change it.
 
-We also need the ability to load and use multiple fonts and for it to load dynamically and save when we close the program.
-This is easier to check since all we need is to check the font save folder and make sure it is there when saved and loaded.
+Furthermore, In the code youll see optimisation techniques such as passing classes by pointer which essentially allows me
+to directly access the class in memory instead of accessing a cpoy of the class
 
-All the dynamic editor features like
-zooming in/out; changing the text colour and size
-moving around the text and text selection can be checked at runtime and can be benched mark to ensure
-it is still decently fast so it is not laggy and meets Kamil's preferences.
+#### Objective 2
+
+Allow it to be user configurable. We need the ability to load and use
+fonts specified by the user as well as change the theme of the program based on what the user wants.
+
+We can check this by successfully storing font files and changing them as well as having the user
+use a theme through a colourscheme and successfully have the program use them.
+
+#### Objective 3
+
+Run Python programs.
+Since Kamil mainly codes in Python having some python compatability would help him greatly.
+With that said we would need to be able to write, save and run python code and have it be accurate.
+
+This is easily measurable since a fully working python Implementation would be able to run and save our own files.
 
 
+#### Objective 4
+
+Allow for user data to be stored and recalled locally in a file system.
+For the Text editor to be a text editor we need the ability to successfully access the file tree system
+this allows for further I/O like file saving and writing.
+
+To test if this feature works we need to successfully save and load a file.
 
 
-- Not laggy
-- multple fonts
-- import own fonts
-- change colour of text
-- change size of font
-- select and format characters
+#### Objective 5
 
-Extra Features:
+Allow for cross platform support. Have the program successfully run on at least 2 of the 4 different Operating systems
+tehe four being, Windows, Mac, Linux, OpenBSD.
 
-- Zoom in / Out
-- Scroll up and down
-- change background colour
-- change text colour
-- (potentially) load default colourScheme
-- Handle commands such as cmd + s to save etc
-- Use arrorw keys and H,J,K,L to move through the text
-- Use mouse position to place cursor in text
-- select text using mouse
+Upon completion the program would be completely cross-platform.
 
-- Save files
-- Load files
-- create directory tree
-- traverse directory
-- handled in .txt format
 
-Minimum Requirements:
-- Load/Save files
-- Change txt and background colours
-- Change font and font size
+To summarise the objectives, the program must be:
+
+- Cross-platform
+- User-configurability
+- file I/O
+- Run Python files
+- Not Laggy
+
+
 
 ### Limitations
 
 The Limitations of my program are what give it a general architecure to work with.
-The Limits include: Time, Programming Language, formating standards, Operating System, Libraries
+The Limits my program will face are:
 
-The project is due on 16th May 2023 leaving me only 1month and 2weeks to get everything together.
+#### Limitations 1
+
+Programming Language
+I chose to use c++ as it is a language that im more familiar with. I understand a lot of the optimisations in the language
+and it is a very fast and performant language with good cross compatability which would make it good for the project.
+
+
+#### Limitations 2
+
+formating standards when it comes to writing good clean code, formatting the code is a big necessity
+that can help the overall functionality of the code and user experience.
+To do this i am using LLVM formatting standards  which are defined in teh cmake file and config-format file
+
+#### Limitations 3
+
+Operating System.
+Another limitation is the operating system since i am on linux and Kmail is on windows building the executable on one
+will make it not work on the other one.
+
+#### Limitations 4
+
+with the libraries There are a lot of good libraries that are useful for the project i will be using fmt, sfml and toml
+
 
 
 When it comes to the Programming Language I wrote my project in C++ (Cpp, Cxx, cc) with access to the C++17 language standard.
@@ -216,6 +246,14 @@ in style to a normal SFML class with little to no difference.
 
 (TextBox)
 
+### Testing the code
+
+I have made use of try, except statements --integration testing.
+white-box testing with the bounds checking to stop memory leaks
+pointer deallocation and reallocation for dangling pointers and buffer overflows
+Acceptance testing -- tell if the user likes it (part of the evaluation)
+
+
 #### Design Choices
 
 When developing the project I made a series of design choices that I thought would be best for the project.
@@ -234,6 +272,18 @@ since it doesnt need to copy and directly access the class.
 
 finish commenting the header file
 
-include teh cmake file
+include the cmake file
 show python thing
+
+
+
+
+
+
+## Evalute
+
+
+Could improve on command line interface, configuration file width of commands accepted
+string selections
+
 

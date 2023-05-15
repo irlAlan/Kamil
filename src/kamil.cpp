@@ -6,7 +6,6 @@
 #include <iostream>
 
 #include <Kamil/Document.h>
-#include <Kamil/TomlC.h>
 
 int main(int argc, char *argv[]) {
   std::string dir;

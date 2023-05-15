@@ -7,8 +7,7 @@
  * @brief Interface file for Keyboard.h
  *
  * A class that handles all keyboard and mouse events for the editor
- * is responsible for manging input of keyboard data and their corresponding
- * command
+ * is responsible for manging input of keyboard data and their corresponding command
  */
 
 #include <SFML/Graphics.hpp>
@@ -24,6 +23,10 @@
 
 /**
  * @brief An enum for Keyboard characters in hex form
+ *
+ * Used for when we need to check if some characters are being entered into the textbox since
+ * not all characters can be directly drawn to the screen but SFML will try to. 
+ * We can intercept them here and change or mute their behaviour.
  */
 namespace KEYS {
 enum {
@@ -41,12 +44,6 @@ enum {
 };
 }
 
-#ifdef USE_KEYS
-
-#define "LControl" sf::Keyboard::KEYS::LControl
-
-#endif
-
 /**
  * @brief A class to handle Keyboard input
  */
@@ -56,20 +53,30 @@ public:
    * @brief Constructor for Keyboard class
    * @param win - reference to main window
    * @param bounds - bounds of the window we are working in
+   *
+   * png/Keyboard/KeyConstructor.png
+   *  eps/Keyboard/KeyConstructor.eps
    */
   Keyboard(sf::RenderWindow *win, Document *doc, sf::Vector2f bounds);
 
 
   /**
    * @brief checks if a key is pressed
+   * @param sf::Keyboard::key enum from SFML
    * @return bool true if key is pressed false if not
+   *
+   *  png/Keyboard/keyIsKeyPressed.png
+   *  eps/Keyboard/keyIsKeyPressed.eps
    */
   bool isKeyPressed(sf::Keyboard::Key);
 
   /**
-   * @brief checks if a text is entered
+   * @brief checks if a text is entered to the text box
    * @param void
    * @return bool true if key is pressed false if not
+   *
+   *  png/Keyboard/keyIsTextEntered.png
+   *  eps/Keyboard/keyIsTextEntered.eps
    */
   bool isTextEntered();
 
@@ -77,6 +84,10 @@ public:
    * @brief checks if text is entered to the command box
    * @param void
    * @return bool tru eif key is pressed false if not
+   *
+   *
+   *  png/Keyboard/keyIsCmdTextEntered.png
+   *  eps/Keyboard/keyIsCmdTextEntered.eps
    */
   bool isCmdTextEntered();
 
@@ -84,48 +95,74 @@ public:
    * @brief check if text is being deleted
    * @param void
    * @return bool true if text is being deleted
+   *
+   *
+   * png/Keyboard/keyCheckDeleted.png
+   * eps/Keyboard/keyCheckDeleted.eps
    */
   bool isTextDeleted();
 
   /**
    * @brief returns text entered
+   *
+   * A getter method that returns the text entered
+   *
    * @param void
    * @return std::string text entered
+   *
+   * png/Keyboard/keyGTextEntered.png
+   * eps/Keyboard/keyGTextEntered.eps
    */
   std::string getTextEntered();
 
   /**
-   * @brief returns text entered
+   * @brief returns text entered from the command box
+   *
+   * A getter method that returns the text entered to the command box
+   *
    * @param void
    * @return std::string text entered
+   *
    */
   std::string getCmdTextEntered();
 
   /**
    * @brief sets text
-   * @param nstring - new string
+   *
+   * A setter method that sets the new text
+   *
+   * @param std::string - new string
    * @return void
+   *
+   *
+   * png/Keyboard/keyTextEntered.png
+   * eps/Keyboard/keyTextEntered.eps
+   *
    */
   void setTextEntered(std::string);
 
   /**
    * @brief sets text
-   * @param nstring - new string
+   * A setter method that sets the new text
+   * @param std::string - new string
    * @return void
+   *
+   *
+   *  png/Keyboard/keyCmdEntered.png
+   *  eps/Keyboard/keyCmdEntered.eps
+   *
    */
   void setCmdTextEntered(std::string);
 
-  /**
-   * @brief get the bounds of the area we are in
-   * @param void
-   * @return sf::Vector2f bounded area
-   */
-  sf::Vector2f getBounds() const;
 
   /**
    * @brief when we backspace on teh text
    * @param void
    * @return void
+   *
+   * png/Keyboard/keyBackspace.png
+   * eps/Keyboard/keyBackspace.eps
+   * 
    */
   void backSpace();
 
@@ -133,6 +170,10 @@ public:
    * @brief handle keyboard events
    * @param event - to get text entered from events
    * @return void
+   *
+   *  png/Keyboard/keyHandleKeyEvent.png
+   *  eps/Keyboard/keyHandleKeyEvent.eps
+   *
    */
   void handleKeyEvent(sf::Event &event);
 
@@ -140,8 +181,11 @@ public:
    * @brief handle keyboard events
    * @param event - to get text entered from events
    * @return void
+   *
+   * png/Keyboard/keyHandleCmdKeyEvent.png
+   * eps/Keyboard/keyHandleCmdKeyEvent.eps
    */
-  void handleCmdKeyEvent(/**sf::Event& event*/);
+  void handleCmdKeyEvent(sf::Event& event);
 
   /**
    * @brief mouse keyboard events
@@ -150,32 +194,14 @@ public:
    */
   void handleMouseEvent(sf::Event &event); // not implemented yet
 
-  /**
-   * @brief get line number
-   * @param void
-   * @return int - line number
-   */
-  int getLineNumber();
-
-
-  template <typename T, size_t N, typename... Args> void kbrCmd(Args... args) {
-    std::array<T, N> val{args...};
-    for (const auto &element : val) {
-      fmt::print("{}", element);
-    }
-  }
-
-  // get position in text
 
 private:
   sf::RenderWindow *window; /**< refernce to window */
-  // Document* doc;
-  sf::Vector2f bounds;  /**< store the bounded area */
   std::stringstream tEntered; /**< the text entered  to main box*/
   std::stringstream tDeleted; /**< the text deleted from main box*/
 
 
-  std::string ctEntered; /**< tmp for text enterd to cmd */
-  std::string ctDeleted; /**< tmp for text deleted to cmd */
+  std::string ctEntered; /**< temporary for text enterd to cmd  not working */
+  std::string ctDeleted; /**< temporary for text deleted to cmd  not working*/
 };
 #endif // KAMIL_KEYBOARD_H
