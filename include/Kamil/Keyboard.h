@@ -54,8 +54,8 @@ public:
    * @param win - reference to main window
    * @param bounds - bounds of the window we are working in
    *
-   * png/Keyboard/KeyConstructor.png
-   *  eps/Keyboard/KeyConstructor.eps
+   * \image html KeyConstructor.png
+   * \image latex KeyConstructor.eps
    */
   Keyboard(sf::RenderWindow *win, Document *doc, sf::Vector2f bounds);
 
@@ -65,8 +65,8 @@ public:
    * @param sf::Keyboard::key enum from SFML
    * @return bool true if key is pressed false if not
    *
-   *  png/Keyboard/keyIsKeyPressed.png
-   *  eps/Keyboard/keyIsKeyPressed.eps
+   *  \image html keyIsKeyPressed.png
+   *  \image latex keyIsKeyPressed.eps
    */
   bool isKeyPressed(sf::Keyboard::Key);
 
@@ -75,8 +75,8 @@ public:
    * @param void
    * @return bool true if key is pressed false if not
    *
-   *  png/Keyboard/keyIsTextEntered.png
-   *  eps/Keyboard/keyIsTextEntered.eps
+   *  \image html keyIsTextEntered.png
+   *  \image latex keyIsTextEntered.eps
    */
   bool isTextEntered();
 
@@ -86,8 +86,8 @@ public:
    * @return bool tru eif key is pressed false if not
    *
    *
-   *  png/Keyboard/keyIsCmdTextEntered.png
-   *  eps/Keyboard/keyIsCmdTextEntered.eps
+   *  \image html keyIsCmdTextEntered.png
+   *  \image latex keyIsCmdTextEntered.eps
    */
   bool isCmdTextEntered();
 
@@ -97,8 +97,8 @@ public:
    * @return bool true if text is being deleted
    *
    *
-   * png/Keyboard/keyCheckDeleted.png
-   * eps/Keyboard/keyCheckDeleted.eps
+   * \image html keyCheckDeleted.png
+   * \image latex keyCheckDeleted.eps
    */
   bool isTextDeleted();
 
@@ -110,8 +110,8 @@ public:
    * @param void
    * @return std::string text entered
    *
-   * png/Keyboard/keyGTextEntered.png
-   * eps/Keyboard/keyGTextEntered.eps
+   * \image html keyGTextEntered.png
+   * \image latex keyGTextEntered.eps
    */
   std::string getTextEntered();
 
@@ -135,8 +135,8 @@ public:
    * @return void
    *
    *
-   * png/Keyboard/keyTextEntered.png
-   * eps/Keyboard/keyTextEntered.eps
+   * \image html keyTextEntered.png
+   * \image latex keyTextEntered.eps
    *
    */
   void setTextEntered(std::string);
@@ -148,8 +148,8 @@ public:
    * @return void
    *
    *
-   *  png/Keyboard/keyCmdEntered.png
-   *  eps/Keyboard/keyCmdEntered.eps
+   *  \image html keyCmdEntered.png
+   *  \image latex keyCmdEntered.eps
    *
    */
   void setCmdTextEntered(std::string);
@@ -160,8 +160,8 @@ public:
    * @param void
    * @return void
    *
-   * png/Keyboard/keyBackspace.png
-   * eps/Keyboard/keyBackspace.eps
+   * \image html keyBackspace.png
+   * \image latex keyBackspace.eps
    * 
    */
   void backSpace();
@@ -171,8 +171,8 @@ public:
    * @param event - to get text entered from events
    * @return void
    *
-   *  png/Keyboard/keyHandleKeyEvent.png
-   *  eps/Keyboard/keyHandleKeyEvent.eps
+   *  \image html keyHandleKeyEvent.png
+   *  \image latex keyHandleKeyEvent.eps
    *
    */
   void handleKeyEvent(sf::Event &event);
@@ -182,8 +182,8 @@ public:
    * @param event - to get text entered from events
    * @return void
    *
-   * png/Keyboard/keyHandleCmdKeyEvent.png
-   * eps/Keyboard/keyHandleCmdKeyEvent.eps
+   * \image html keyHandleCmdKeyEvent.png
+   * \image latex keyHandleCmdKeyEvent.eps
    */
   void handleCmdKeyEvent(sf::Event& event);
 

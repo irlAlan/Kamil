@@ -135,29 +135,16 @@ Programming Language
 I chose to use c++ as it is a language that im more familiar with. I understand a lot of the optimisations in the language
 and it is a very fast and performant language with good cross compatability which would make it good for the project.
 
+When it comes to the Programming Language I wrote my project in C++ (Cpp, Cxx, cc) with access to the C++17 language standard.
+I chose this language becauase I am most familiar with it and prefer it over python for larger projects like this.
+It is fast, efficient and allows the use of pointers for memory and data management. An example of this can be shown when passing Classes
+to other Classes via pointer.
 
 #### Limitations 2
 
 formating standards when it comes to writing good clean code, formatting the code is a big necessity
 that can help the overall functionality of the code and user experience.
 To do this i am using LLVM formatting standards  which are defined in teh cmake file and config-format file
-
-#### Limitations 3
-
-Operating System.
-Another limitation is the operating system since i am on linux and Kmail is on windows building the executable on one
-will make it not work on the other one.
-
-#### Limitations 4
-
-with the libraries There are a lot of good libraries that are useful for the project i will be using fmt, sfml and toml
-
-
-
-When it comes to the Programming Language I wrote my project in C++ (Cpp, Cxx, cc) with access to the C++17 language standard.
-I chose this language becauase I am most familiar with it and prefer it over python for larger projects like this.
-It is fast, efficient and allows the use of pointers for memory and data management. An example of this can be shown when passing Classes
-to other Classes via pointer.
 
 The formatting standard im using is own defined by LLVM in a .clang-format file, it essentially dictates
 the formatting of files from how many spaces are used in a tab to length of lines and how many parameters apear on one line.
@@ -167,14 +154,14 @@ and easy to work with since any new programmers will have an easier time underst
 
 (include the clang-format file here)
 
-An example being:
+    An example being:
 
-\code{.cpp}
+    \code{.cpp}
 
     //without a formatting standard
 
     int printAninttoOutput
-        (int val) {return val;}
+    (int val) {return val;}
 
 
     int setintTooutPut
@@ -185,20 +172,23 @@ An example being:
 
 \code{.cpp}
 
-    // with a formatting standard
+// with a formatting standard
 
-    int Print_Int_To_Out(int val){
-        return val;
-    }
+int Print_Int_To_Out(int val){
+    return val;
+}
 
-    int Set_Int_To_Out(int val){
-        return val
-    }
+int Set_Int_To_Out(int val){
+    return val
+}
 \endcode
 
 From the examples shown above its clear that with the formatting the code is easier to read without any weird (but legal) C++ syntax,
-it also allows programmers to see a pattern and predict what the function they want to call is called without checking documentation.
+     it also allows programmers to see a pattern and predict what the function they want to call is called without checking documentation.
 
+#### Limitations 3
+
+Operating System.
 The operating System is a default limiter and denotes how everything comes together.
 By default I use Linux. This has the benefit of having more support for C++ coding and development in general
 with the caveat of programs not being very portable to other devices like windows machines.
@@ -209,6 +199,12 @@ is cross-platform or not. Some libraries make use of Os specific functionality a
 
 The issue for me here is that I use Linux and Kamil uses Windows, so how do I get my program to him on windows?
 Well the answer is by choosing libraries that are cross-compatible and using configuration files.
+Another limitation is the operating system since i am on linux and Kmail is on windows building the executable on one
+will make it not work on the other one.
+
+#### Limitations 4
+
+with the libraries There are a lot of good libraries that are useful for the project i will be using fmt, sfml and toml
 
 For the Libraries ill be using SFML to handle the events and graphics and fmt for normal printing to standard out. Both are cross platform
 and are built using a cmake file.
@@ -247,6 +243,8 @@ in style to a normal SFML class with little to no difference.
 (TextBox)
 
 ### Testing the code
+
+Upload yt video
 
 I have made use of try, except statements --integration testing.
 white-box testing with the bounds checking to stop memory leaks

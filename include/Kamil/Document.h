@@ -52,8 +52,8 @@ public:
     };
   /**
    * @brief Constructor for Document class
-   * png/Document/docConst1.png
-   *  eps/Document/docConst1.eps Constructor for Document
+   *  \image docConst1.png
+   *  \imag  docConst1.eps Constructor for Document
    */
   Document();
 
@@ -61,8 +61,8 @@ public:
    * @brief Constructor for Document class
    * @param fileP - file path
    *
-   * png/Document/docConst2.png
-   * eps/Document/docConst2.eps Constructor for Document
+   * \image docConst2.png
+   * \image docConst2.eps Constructor for Document
    */
   Document(std::string fileP);
 
@@ -71,8 +71,8 @@ public:
    * @param void
    * @return void
    *
-   * png/Document/docInit1.png
-   * eps/Document/docInit1.eps init method for Document
+   * \image docInit1.png
+   * \image docInit1.eps init method for Document
    */
   void init();
 
@@ -81,8 +81,8 @@ public:
    * @param inF - file location
    * @return void
    *
-   * png/Document/docInit2.png
-   * eps/Document/docInit2.eps init method for Document
+   * \image docInit2.png
+   * \image docInit2.eps init method for Document
    */
   void init(std::string inF);
 
@@ -91,8 +91,8 @@ public:
    * @param void
    * @return string containing the file info
    *
-   * html png/Document/docrFile.png
-   * latex eps/Document/docrFile.eps readFile method for Document
+   * \image html  docrFile.png
+   * \image latex docrFile.eps readFile method for Document
    */
   std::string readFile();
 
@@ -109,8 +109,8 @@ public:
    * @param void
    * @return string for absolute path
    *
-   * html png/Document/docgAbsPath.png
-   * latex eps/Document/docgAbsPath.eps
+   * \image html  docgAbsPath.png
+   * \image latex docgAbsPath.eps
    */
   std::string getAbsPath();
 
@@ -120,8 +120,8 @@ public:
    * @param void
    * @return bool - true if config.toml exists
    *
-   * html png/Document/findConfig.png
-   * latex eps/Document/findConfig.eps
+   * \image html findConfig.png
+   * \image latex findConfig.eps
    */
   bool findConfig();
 
@@ -131,8 +131,8 @@ public:
    * @param std::string - file name 
    * @return void
    *
-   * html png/Document/docCreateFile.png
-   * latex eps/Document/docCreateFile.eps
+   * \image html  docCreateFile.png
+   * \image latex docCreateFile.eps
    */
   void createFile(std::string filename);
 
@@ -141,8 +141,8 @@ public:
    * @param string - filename to save to
    * @return bool - true if saved
    *
-   * html png/Document/docSaveFile1.png
-   * latex eps/Document/docSaveFile1.eps
+   * \image html  docSaveFile1.png
+   * \image latex docSaveFile1.eps
    */
   bool saveFile(const std::string &filename);
 
@@ -151,8 +151,8 @@ public:
    * @param void
    * @return bool - true if saved
    *
-   * html png/Document/docSaveFile2.png
-   * latex eps/Document/docSaveFile2.eps
+   * \image html  docSaveFile2.png
+   * \image latex docSaveFile2.eps
    */
   bool saveFile();
 
@@ -161,8 +161,8 @@ public:
    * @param string buffer info
    * @return void 
    *
-   * html  png/Document/docSetBuffInfo.png
-   * latex eps/Document/docSetBuffInfo.eps
+   * \image html  docSetBuffInfo.png
+   * \image latex docSetBuffInfo.eps
    */
   void setBuffInfo(std::string info);
 
@@ -171,8 +171,8 @@ public:
    * @param void
    * @return bool - true if file has changed
    *
-   * html  png/Document/dochChange.png
-   * latex eps/Document/dochChange.eps
+   * \image html  dochChange.png
+   * \image latex dochChange.eps
    *
    */
   bool hasChanged();
@@ -182,8 +182,8 @@ public:
    * @param void
    * @return void
    * 
-   * html  png/Document/docsetChange.png
-   * latex eps/Document/docsetChange.eps
+   * \image html  docsetChange.png
+   * \image latex docsetChange.eps
    */
   void setChange();
 
@@ -196,8 +196,8 @@ public:
    * @param void
    * @return Config - config.toml information
    *
-   * html  png/Document/docgConf.png
-   * latex eps/Document/docgConf.eps
+   * \image html  docgConf.png
+   * \image latex docgConf.eps
    */
   Config getConfig();
 

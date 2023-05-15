@@ -34,8 +34,8 @@ public:
    * @param event - pointer to main event
    * @param doc - pointer to document
    *
-   * png/Editor/editorConstructor.png
-   *  eps/Editor/editorConstructor.eps
+   * \image html  editorConstructor.png
+   * \image latex editorConstructor.eps
    */
   Editor(sf::RenderWindow *window, sf::Event *event, Document *doc);
 
@@ -51,8 +51,8 @@ public:
    * @param void
    * @return void
    *
-   * png/Editor/editorDraw.png
-   *  eps/Editor/editorDraw.eps
+   * \image html  editorDraw.png
+   * \image latex editorDraw.eps
    */
   void draw();
 
@@ -66,8 +66,8 @@ public:
    * @param const Document::Config& - the config.toml information
    * @reutrn void
    *
-   * png/Editor/editorUseConfig.png
-   *  eps/Editor/editorUseConfig.eps
+   * \image html  editorUseConfig.png
+   * \image latex editorUseConfig.eps
    */
   void useConfig(const Document::Config& conf);
 
@@ -92,8 +92,8 @@ public:
    * @param void
    * @return void
    *
-   * png/Editor/editorRegex.png
-   *  eps/Editor/editorRegex.eps
+   * \image html  editorRegex.png
+   * \image latex editorRegex.eps
    */
   void regexPatternMatchin();
 

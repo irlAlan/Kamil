@@ -26,8 +26,8 @@ class CmdBox : public TextBox {
 public:
   /**
    * @brief Using the Parent class constructor
-   * html png/CmdBox/CmdBox.png
-   * latex png/CmdBox/CmdBox.eps
+   * \image html CmdBox/CmdBox.png
+   * \image latexCmdBox/CmdBox.eps
    */
   using TextBox::TextBox;
 };

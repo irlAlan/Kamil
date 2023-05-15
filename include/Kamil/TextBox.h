@@ -52,8 +52,8 @@ public:
    * @param background - the initial background colour
    * @param thicc - the padding for the RectangleShape
    *
-   * ./png/TextBox/textConstructor.png
-   * ./eps/TextBox/textConstructor.eps
+   * \image html textConstructor.png
+   * \image latex textConstructor.eps
    */
   TextBox(sf::RenderWindow *win, sf::Vector2f pos, sf::Vector2f size,
           std::string sfont, int fsize, sf::Color fcol, sf::Color background,
@@ -69,8 +69,8 @@ public:
    * @param size text size
    * @return void
    *
-   * ./png/TextBox/textSetTextSize.png
-   *  ./eps/TextBox/textSetTextSize.eps
+   * \image html textSetTextSize.png
+   * \image latex textSetTextSize.eps
    */
   void setTextSize(int size);
 
@@ -83,8 +83,8 @@ public:
    * @return an int of the text size
    *
    *
-   * ./png/TextBox/textGetTextSize.png
-   *  ./eps/TextBox/textGetTextSize.eps
+   *  \image html textGetTextSize.png
+   *  \image latex textGetTextSize.eps
    */
   int getTextSize() const;
 
@@ -97,8 +97,8 @@ public:
    * @return void
    *
    *
-   * ./png/TextBox/textSetTextCol.png
-   *  ./eps/TextBox/textSetTextCol.eps
+   *  \image html textSetTextCol.png
+   *  \image latex textSetTextCol.eps
    *
    */
   void setTextColour(sf::Color colour);
@@ -111,8 +111,8 @@ public:
    * @param void
    * @return sf::Colour textColour
    *
-   * ./png/TextBox/textGetTextCol.png
-   *  ./eps/TextBox/textGetTextCol.eps
+   *  \image html textGetTextCol.png
+   *  \image latex textGetTextCol.eps
    */
   sf::Color getTextColour() const;
 
@@ -126,8 +126,8 @@ public:
    * @return void
    *
    *
-   * ./png/TextBox/textSetTextFont.png
-   *  ./eps/TextBox/textSetTextFont.eps
+   * \image html textSetTextFont.png
+   * \image latex textSetTextFont.eps
    */
   void setFont(sf::Font &font);
 
@@ -141,8 +141,8 @@ public:
    * @param font file dir of font
    * @return void
    *
-   * ./png/TextBox/textSetTextFont2.png
-   *  ./eps/TextBox/textSetTextFont2.eps
+   * \image html textSetTextFont2.png
+   * \image latex textSetTextFont2.eps
    */
   void setFont(std::string font);
 
@@ -155,8 +155,8 @@ public:
    * @param void
    * @return sf::Text - contains the part responsible for drawing text on the screen
    *
-   * ./png/TextBox/textGetTextBox.png
-   *  ./eps/TextBox/textGetTextBox.eps
+   *  \image html textGetTextBox.png
+   *  \image latex textGetTextBox.eps
    *
    */
   sf::Text getTextBox() const;
@@ -170,8 +170,8 @@ public:
    * @param std::string - new string placed on tbox
    * @return void
    *
-   * ./png/TextBox/textGetTextBox.png
-   *  ./eps/TextBox/textGetTextBox.eps
+   * \image html textGetTextBox.png
+   * \image latex textGetTextBox.eps
    *
    */
   void setString(std::string nstring);
@@ -185,8 +185,8 @@ public:
    * @param void
    * @return type std::string
    *
-   * ./png/TextBox/textGetString.png
-   *  ./eps/TextBox/textGetString.eps
+   * \image html textGetString.png
+   * \image latex textGetString.eps
    */
   std::string getString() const;
 
@@ -200,8 +200,8 @@ public:
    * my_object.draw(window)
    *
    *
-   * ./png/TextBox/textDraw.png
-   *  ./eps/TextBox/textDraw.eps
+   * \image html textDraw.png
+   * \image latex textDraw.eps
    *
    */
   void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
@@ -217,8 +217,8 @@ public:
    * 
    * @return bool - yes if hovering over the text box
    *
-   * ./png/TextBox/textIsMouseHover.png
-   *  ./eps/TextBox/textIsMouseHover.eps
+   * \image html textIsMouseHover.png
+   * \image latex textIsMouseHover.eps
    *
    */
   bool isMouseHover();
