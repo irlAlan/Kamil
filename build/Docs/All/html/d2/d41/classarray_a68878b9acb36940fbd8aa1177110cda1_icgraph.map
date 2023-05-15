@@ -1,4 +1,0 @@
-<map id="array::at" name="array::at">
-<area shape="rect" id="node1" title="Gets a reference to the element at a specific index, throwing std::out_of_range if none existed." alt="" coords="123,5,192,32"/>
-<area shape="rect" id="node2" href="$d2/d41/classarray.html#ac8e8f2da27ed77280b6ee02d65dd2f82" title="Gets a reference to the element at a specific index, throwing std::out_of_range if none existed." alt="" coords="5,5,75,32"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="parser::parse_key_value_pair_and_insert" name="parser::parse_key_value_pair_and_insert">
-<area shape="rect" id="node1" title=" " alt="" coords="5,124,169,167"/>
-<area shape="rect" id="node2" href="$d2/d08/classtable.html#a6e49884f9b927770890cb9fe6df61a42" title="Returns a pointer to the table." alt="" coords="242,5,349,32"/>
-<area shape="rect" id="node3" href="$d8/de7/structparse__key__buffer.html#a471983ccaa14c3e702f8d111cc27b6a9" title=" " alt="" coords="217,56,374,83"/>
-<area shape="rect" id="node4" href="$d2/d08/classtable.html#aa3e78417a257af444322025c99059e2f" title="Returns an iterator to one&#45;past&#45;the&#45;last key&#45;value pair." alt="" coords="256,107,335,133"/>
-<area shape="rect" id="node5" href="$d2/d08/classtable.html#ac88a3ddbef7f2522fc3626a03077b238" title="Returns an iterator to the first key&#45;value pair with key that is not less than the given key." alt="" coords="230,157,361,184"/>
-<area shape="rect" id="node6" href="$d8/de7/structparse__key__buffer.html#a0b6efc243f6498c089430873c5258ce0" title=" " alt="" coords="219,208,372,235"/>
-<area shape="rect" id="node7" href="$df/de8/parser_8inl.html#a7962d3d78317c0c0bed873999e311627" title=" " alt="" coords="269,259,322,285"/>
-</map>

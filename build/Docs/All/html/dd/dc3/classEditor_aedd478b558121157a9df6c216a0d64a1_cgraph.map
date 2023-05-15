@@ -1,6 +1,0 @@
-<map id="Editor::useConfig" name="Editor::useConfig">
-<area shape="rect" id="node1" title="changes the editor looks and workings" alt="" coords="5,56,128,83"/>
-<area shape="rect" id="node2" href="$d9/d1c/classMyRect.html#abf35db87008be9e2a804b603e46fb4e2" title="set the fill colour of the rect" alt="" coords="181,5,329,32"/>
-<area shape="rect" id="node3" href="$d2/d68/classTextBox.html#a4225c5a37dfa286b0ad2f2e09fb4b335" title="set what font you want to use" alt="" coords="194,56,316,83"/>
-<area shape="rect" id="node4" href="$d2/d68/classTextBox.html#a560aa18bf1233da966bd179511ddf2c2" title="Set the colour of the text." alt="" coords="176,107,334,133"/>
-</map>

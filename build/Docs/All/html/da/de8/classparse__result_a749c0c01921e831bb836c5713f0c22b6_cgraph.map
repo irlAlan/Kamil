@@ -1,6 +1,0 @@
-<map id="parse_result::operator=" name="parse_result::operator=">
-<area shape="rect" id="node1" title="Move&#45;assignment operator." alt="" coords="5,56,161,83"/>
-<area shape="rect" id="node2" href="$da/de8/classparse__result.html#aa72006dae47c2a427b79bf67f838c4e8" title=" " alt="" coords="209,5,352,32"/>
-<area shape="rect" id="node3" href="$da/de8/classparse__result.html#aee9cab037d487c1ca09ad033400fd1f7" title="Returns the internal toml::parse_error." alt="" coords="217,56,344,83"/>
-<area shape="rect" id="node4" href="$d2/d08/classtable.html#a1de2fb31555f46715dcf27ddcf6da44d" title="Default constructor." alt="" coords="238,107,323,133"/>
-</map>

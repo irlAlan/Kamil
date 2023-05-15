@@ -1,4 +1,0 @@
-<map id="table::at" name="table::at">
-<area shape="rect" id="node1" title="Gets a reference to the element at a specific key, throwing std::out_of_range if none existed." alt="" coords="5,5,74,32"/>
-<area shape="rect" id="node2" href="$d2/d08/classtable.html#a0a56f283072073b872d15bb91889ede5" title="Gets a reference to the element at a specific key, throwing std::out_of_range if none existed." alt="" coords="122,5,190,32"/>
-</map>
