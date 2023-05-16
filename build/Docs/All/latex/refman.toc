@@ -1,0 +1,188 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {section}{\numberline {1}Evaluation}{1}{section.1}%
+\contentsline {section}{\numberline {2}Kamil Editor}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Analysis}{1}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Background and Identifying the problem}{1}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}End User needs}{2}{subsubsection.2.1.2}%
+\contentsline {paragraph}{\numberline {2.1.2.1}Objective 1}{3}{paragraph.2.1.2.1}%
+\contentsline {paragraph}{\numberline {2.1.2.2}Objective 2}{3}{paragraph.2.1.2.2}%
+\contentsline {paragraph}{\numberline {2.1.2.3}Objective 3}{3}{paragraph.2.1.2.3}%
+\contentsline {paragraph}{\numberline {2.1.2.4}Objective 4}{4}{paragraph.2.1.2.4}%
+\contentsline {paragraph}{\numberline {2.1.2.5}Objective 5}{4}{paragraph.2.1.2.5}%
+\contentsline {subsubsection}{\numberline {2.1.3}Limitations}{4}{subsubsection.2.1.3}%
+\contentsline {paragraph}{\numberline {2.1.3.1}Limitations 1}{4}{paragraph.2.1.3.1}%
+\contentsline {paragraph}{\numberline {2.1.3.2}Limitations 2}{4}{paragraph.2.1.3.2}%
+\contentsline {paragraph}{\numberline {2.1.3.3}Limitations 3}{5}{paragraph.2.1.3.3}%
+\contentsline {paragraph}{\numberline {2.1.3.4}Limitations 4}{5}{paragraph.2.1.3.4}%
+\contentsline {subsubsection}{\numberline {2.1.4}Design}{5}{subsubsection.2.1.4}%
+\contentsline {paragraph}{\numberline {2.1.4.1}Design Choices general}{6}{paragraph.2.1.4.1}%
+\contentsline {paragraph}{\numberline {2.1.4.2}Design Choices in OOP}{8}{paragraph.2.1.4.2}%
+\contentsline {subsubsection}{\numberline {2.1.5}Testing the code}{9}{subsubsection.2.1.5}%
+\contentsline {section}{\numberline {3}Namespace Index}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Namespace List}{10}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Hierarchical Index}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Class Hierarchy}{10}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Class Index}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Class List}{11}{subsection.5.1}%
+\contentsline {section}{\numberline {6}File Index}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}File List}{11}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Namespace Documentation}{12}{section.7}%
+\contentsline {subsection}{\numberline {7.1}KEYS Namespace Reference}{12}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Detailed Description}{12}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Enumeration Type Documentation}{12}{subsubsection.7.1.2}%
+\contentsline {paragraph}{\numberline {7.1.2.1}anonymous enum}{13}{paragraph.7.1.2.1}%
+\contentsline {section}{\numberline {8}Class Documentation}{13}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Cmd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box Class Reference}{13}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Detailed Description}{16}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Member Function Documentation}{17}{subsubsection.8.1.2}%
+\contentsline {paragraph}{\numberline {8.1.2.1}TextBox()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{17}{paragraph.8.1.2.1}%
+\contentsline {paragraph}{\numberline {8.1.2.2}TextBox()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{17}{paragraph.8.1.2.2}%
+\contentsline {subsection}{\numberline {8.2}Document\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Config Struct Reference}{18}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Detailed Description}{18}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Member Data Documentation}{19}{subsubsection.8.2.2}%
+\contentsline {paragraph}{\numberline {8.2.2.1}cmd}{19}{paragraph.8.2.2.1}%
+\contentsline {paragraph}{\numberline {8.2.2.2}font}{19}{paragraph.8.2.2.2}%
+\contentsline {paragraph}{\numberline {8.2.2.3}theme}{19}{paragraph.8.2.2.3}%
+\contentsline {subsection}{\numberline {8.3}Document Class Reference}{19}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Detailed Description}{21}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Constructor \& Destructor Documentation}{21}{subsubsection.8.3.2}%
+\contentsline {paragraph}{\numberline {8.3.2.1}Document()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{22}{paragraph.8.3.2.1}%
+\contentsline {paragraph}{\numberline {8.3.2.2}Document()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{22}{paragraph.8.3.2.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}Member Function Documentation}{23}{subsubsection.8.3.3}%
+\contentsline {paragraph}{\numberline {8.3.3.1}createFile()}{23}{paragraph.8.3.3.1}%
+\contentsline {paragraph}{\numberline {8.3.3.2}findConfig()}{24}{paragraph.8.3.3.2}%
+\contentsline {paragraph}{\numberline {8.3.3.3}getAbsPath()}{25}{paragraph.8.3.3.3}%
+\contentsline {paragraph}{\numberline {8.3.3.4}getConfig()}{26}{paragraph.8.3.3.4}%
+\contentsline {paragraph}{\numberline {8.3.3.5}getRelPath()}{26}{paragraph.8.3.3.5}%
+\contentsline {paragraph}{\numberline {8.3.3.6}hasChanged()}{27}{paragraph.8.3.3.6}%
+\contentsline {paragraph}{\numberline {8.3.3.7}init()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{27}{paragraph.8.3.3.7}%
+\contentsline {paragraph}{\numberline {8.3.3.8}init()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{29}{paragraph.8.3.3.8}%
+\contentsline {paragraph}{\numberline {8.3.3.9}readFile()}{30}{paragraph.8.3.3.9}%
+\contentsline {paragraph}{\numberline {8.3.3.10}saveFile()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{30}{paragraph.8.3.3.10}%
+\contentsline {paragraph}{\numberline {8.3.3.11}saveFile()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{31}{paragraph.8.3.3.11}%
+\contentsline {paragraph}{\numberline {8.3.3.12}setBuffInfo()}{32}{paragraph.8.3.3.12}%
+\contentsline {paragraph}{\numberline {8.3.3.13}setChange()}{33}{paragraph.8.3.3.13}%
+\contentsline {subsubsection}{\numberline {8.3.4}Member Data Documentation}{33}{subsubsection.8.3.4}%
+\contentsline {paragraph}{\numberline {8.3.4.1}absPath}{33}{paragraph.8.3.4.1}%
+\contentsline {paragraph}{\numberline {8.3.4.2}buffInfo}{34}{paragraph.8.3.4.2}%
+\contentsline {paragraph}{\numberline {8.3.4.3}docChanged}{34}{paragraph.8.3.4.3}%
+\contentsline {paragraph}{\numberline {8.3.4.4}relPath}{34}{paragraph.8.3.4.4}%
+\contentsline {subsection}{\numberline {8.4}Editor Class Reference}{34}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Detailed Description}{35}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.2}Constructor \& Destructor Documentation}{35}{subsubsection.8.4.2}%
+\contentsline {paragraph}{\numberline {8.4.2.1}Editor()}{35}{paragraph.8.4.2.1}%
+\contentsline {paragraph}{\numberline {8.4.2.2}$\sim $Editor()}{36}{paragraph.8.4.2.2}%
+\contentsline {subsubsection}{\numberline {8.4.3}Member Function Documentation}{36}{subsubsection.8.4.3}%
+\contentsline {paragraph}{\numberline {8.4.3.1}draw()}{36}{paragraph.8.4.3.1}%
+\contentsline {paragraph}{\numberline {8.4.3.2}regexPatternMatchin()}{38}{paragraph.8.4.3.2}%
+\contentsline {paragraph}{\numberline {8.4.3.3}useConfig()}{40}{paragraph.8.4.3.3}%
+\contentsline {subsubsection}{\numberline {8.4.4}Member Data Documentation}{40}{subsubsection.8.4.4}%
+\contentsline {paragraph}{\numberline {8.4.4.1}camera}{40}{paragraph.8.4.4.1}%
+\contentsline {paragraph}{\numberline {8.4.4.2}cmd}{40}{paragraph.8.4.4.2}%
+\contentsline {paragraph}{\numberline {8.4.4.3}doc}{41}{paragraph.8.4.4.3}%
+\contentsline {paragraph}{\numberline {8.4.4.4}event}{41}{paragraph.8.4.4.4}%
+\contentsline {paragraph}{\numberline {8.4.4.5}kb}{41}{paragraph.8.4.4.5}%
+\contentsline {paragraph}{\numberline {8.4.4.6}loadFromFile}{41}{paragraph.8.4.4.6}%
+\contentsline {paragraph}{\numberline {8.4.4.7}textBox}{41}{paragraph.8.4.4.7}%
+\contentsline {paragraph}{\numberline {8.4.4.8}window}{41}{paragraph.8.4.4.8}%
+\contentsline {subsection}{\numberline {8.5}Keyboard Class Reference}{41}{subsection.8.5}%
+\contentsline {subsubsection}{\numberline {8.5.1}Detailed Description}{43}{subsubsection.8.5.1}%
+\contentsline {subsubsection}{\numberline {8.5.2}Constructor \& Destructor Documentation}{43}{subsubsection.8.5.2}%
+\contentsline {paragraph}{\numberline {8.5.2.1}Keyboard()}{43}{paragraph.8.5.2.1}%
+\contentsline {subsubsection}{\numberline {8.5.3}Member Function Documentation}{44}{subsubsection.8.5.3}%
+\contentsline {paragraph}{\numberline {8.5.3.1}backSpace()}{44}{paragraph.8.5.3.1}%
+\contentsline {paragraph}{\numberline {8.5.3.2}getCmdTextEntered()}{44}{paragraph.8.5.3.2}%
+\contentsline {paragraph}{\numberline {8.5.3.3}getTextEntered()}{45}{paragraph.8.5.3.3}%
+\contentsline {paragraph}{\numberline {8.5.3.4}handleCmdKeyEvent()}{45}{paragraph.8.5.3.4}%
+\contentsline {paragraph}{\numberline {8.5.3.5}handleKeyEvent()}{46}{paragraph.8.5.3.5}%
+\contentsline {paragraph}{\numberline {8.5.3.6}handleMouseEvent()}{47}{paragraph.8.5.3.6}%
+\contentsline {paragraph}{\numberline {8.5.3.7}isCmdTextEntered()}{48}{paragraph.8.5.3.7}%
+\contentsline {paragraph}{\numberline {8.5.3.8}isKeyPressed()}{48}{paragraph.8.5.3.8}%
+\contentsline {paragraph}{\numberline {8.5.3.9}isTextDeleted()}{49}{paragraph.8.5.3.9}%
+\contentsline {paragraph}{\numberline {8.5.3.10}isTextEntered()}{49}{paragraph.8.5.3.10}%
+\contentsline {paragraph}{\numberline {8.5.3.11}setCmdTextEntered()}{50}{paragraph.8.5.3.11}%
+\contentsline {paragraph}{\numberline {8.5.3.12}setTextEntered()}{51}{paragraph.8.5.3.12}%
+\contentsline {subsubsection}{\numberline {8.5.4}Member Data Documentation}{51}{subsubsection.8.5.4}%
+\contentsline {paragraph}{\numberline {8.5.4.1}ctDeleted}{51}{paragraph.8.5.4.1}%
+\contentsline {paragraph}{\numberline {8.5.4.2}ctEntered}{51}{paragraph.8.5.4.2}%
+\contentsline {paragraph}{\numberline {8.5.4.3}tDeleted}{51}{paragraph.8.5.4.3}%
+\contentsline {paragraph}{\numberline {8.5.4.4}tEntered}{52}{paragraph.8.5.4.4}%
+\contentsline {paragraph}{\numberline {8.5.4.5}window}{52}{paragraph.8.5.4.5}%
+\contentsline {subsection}{\numberline {8.6}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rect Class Reference}{52}{subsection.8.6}%
+\contentsline {subsubsection}{\numberline {8.6.1}Detailed Description}{54}{subsubsection.8.6.1}%
+\contentsline {subsubsection}{\numberline {8.6.2}Constructor \& Destructor Documentation}{55}{subsubsection.8.6.2}%
+\contentsline {paragraph}{\numberline {8.6.2.1}MyRect()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{55}{paragraph.8.6.2.1}%
+\contentsline {paragraph}{\numberline {8.6.2.2}MyRect()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{55}{paragraph.8.6.2.2}%
+\contentsline {subsubsection}{\numberline {8.6.3}Member Function Documentation}{55}{subsubsection.8.6.3}%
+\contentsline {paragraph}{\numberline {8.6.3.1}draw()}{55}{paragraph.8.6.3.1}%
+\contentsline {paragraph}{\numberline {8.6.3.2}getPos()}{55}{paragraph.8.6.3.2}%
+\contentsline {paragraph}{\numberline {8.6.3.3}getSize()}{56}{paragraph.8.6.3.3}%
+\contentsline {paragraph}{\numberline {8.6.3.4}setFillColour()}{56}{paragraph.8.6.3.4}%
+\contentsline {paragraph}{\numberline {8.6.3.5}setPosition()}{57}{paragraph.8.6.3.5}%
+\contentsline {paragraph}{\numberline {8.6.3.6}setSize()}{57}{paragraph.8.6.3.6}%
+\contentsline {subsubsection}{\numberline {8.6.4}Member Data Documentation}{58}{subsubsection.8.6.4}%
+\contentsline {paragraph}{\numberline {8.6.4.1}fillColour}{58}{paragraph.8.6.4.1}%
+\contentsline {paragraph}{\numberline {8.6.4.2}outlineColour}{58}{paragraph.8.6.4.2}%
+\contentsline {paragraph}{\numberline {8.6.4.3}outlineThicknes}{58}{paragraph.8.6.4.3}%
+\contentsline {paragraph}{\numberline {8.6.4.4}pos}{58}{paragraph.8.6.4.4}%
+\contentsline {paragraph}{\numberline {8.6.4.5}rect}{58}{paragraph.8.6.4.5}%
+\contentsline {paragraph}{\numberline {8.6.4.6}size}{58}{paragraph.8.6.4.6}%
+\contentsline {subsection}{\numberline {8.7}Text\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box Class Reference}{59}{subsection.8.7}%
+\contentsline {subsubsection}{\numberline {8.7.1}Detailed Description}{61}{subsubsection.8.7.1}%
+\contentsline {subsubsection}{\numberline {8.7.2}Constructor \& Destructor Documentation}{61}{subsubsection.8.7.2}%
+\contentsline {paragraph}{\numberline {8.7.2.1}TextBox()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{62}{paragraph.8.7.2.1}%
+\contentsline {paragraph}{\numberline {8.7.2.2}TextBox()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{63}{paragraph.8.7.2.2}%
+\contentsline {subsubsection}{\numberline {8.7.3}Member Function Documentation}{63}{subsubsection.8.7.3}%
+\contentsline {paragraph}{\numberline {8.7.3.1}draw()}{63}{paragraph.8.7.3.1}%
+\contentsline {paragraph}{\numberline {8.7.3.2}getString()}{63}{paragraph.8.7.3.2}%
+\contentsline {paragraph}{\numberline {8.7.3.3}getTextBox()}{64}{paragraph.8.7.3.3}%
+\contentsline {paragraph}{\numberline {8.7.3.4}getTextColour()}{64}{paragraph.8.7.3.4}%
+\contentsline {paragraph}{\numberline {8.7.3.5}getTextSize()}{65}{paragraph.8.7.3.5}%
+\contentsline {paragraph}{\numberline {8.7.3.6}isMouseHover()}{65}{paragraph.8.7.3.6}%
+\contentsline {paragraph}{\numberline {8.7.3.7}setFont()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{65}{paragraph.8.7.3.7}%
+\contentsline {paragraph}{\numberline {8.7.3.8}setFont()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{66}{paragraph.8.7.3.8}%
+\contentsline {paragraph}{\numberline {8.7.3.9}setString()}{67}{paragraph.8.7.3.9}%
+\contentsline {paragraph}{\numberline {8.7.3.10}setTextColour()}{67}{paragraph.8.7.3.10}%
+\contentsline {paragraph}{\numberline {8.7.3.11}setTextSize()}{68}{paragraph.8.7.3.11}%
+\contentsline {subsubsection}{\numberline {8.7.4}Member Data Documentation}{68}{subsubsection.8.7.4}%
+\contentsline {paragraph}{\numberline {8.7.4.1}fcol}{68}{paragraph.8.7.4.1}%
+\contentsline {paragraph}{\numberline {8.7.4.2}fname}{68}{paragraph.8.7.4.2}%
+\contentsline {paragraph}{\numberline {8.7.4.3}font}{69}{paragraph.8.7.4.3}%
+\contentsline {paragraph}{\numberline {8.7.4.4}fsize}{69}{paragraph.8.7.4.4}%
+\contentsline {paragraph}{\numberline {8.7.4.5}mouseHover}{69}{paragraph.8.7.4.5}%
+\contentsline {paragraph}{\numberline {8.7.4.6}tbox}{69}{paragraph.8.7.4.6}%
+\contentsline {paragraph}{\numberline {8.7.4.7}window}{69}{paragraph.8.7.4.7}%
+\contentsline {subsection}{\numberline {8.8}Document\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Theme Struct Reference}{69}{subsection.8.8}%
+\contentsline {subsubsection}{\numberline {8.8.1}Detailed Description}{70}{subsubsection.8.8.1}%
+\contentsline {subsubsection}{\numberline {8.8.2}Member Data Documentation}{70}{subsubsection.8.8.2}%
+\contentsline {paragraph}{\numberline {8.8.2.1}bcol}{70}{paragraph.8.8.2.1}%
+\contentsline {paragraph}{\numberline {8.8.2.2}fcol}{70}{paragraph.8.8.2.2}%
+\contentsline {section}{\numberline {9}File Documentation}{70}{section.9}%
+\contentsline {subsection}{\numberline {9.1}eval.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md File Reference}{70}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kamil/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cmd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box.h File Reference}{70}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Cmd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{71}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kamil/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Document.h File Reference}{71}{subsection.9.4}%
+\contentsline {subsubsection}{\numberline {9.4.1}Detailed Description}{72}{subsubsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.5}Document.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{73}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kamil/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Editor.h File Reference}{73}{subsection.9.6}%
+\contentsline {subsubsection}{\numberline {9.6.1}Detailed Description}{74}{subsubsection.9.6.1}%
+\contentsline {subsection}{\numberline {9.7}Editor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{74}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kamil/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard.h File Reference}{75}{subsection.9.8}%
+\contentsline {subsubsection}{\numberline {9.8.1}Detailed Description}{76}{subsubsection.9.8.1}%
+\contentsline {subsection}{\numberline {9.9}Keyboard.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{77}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kamil/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rect.h File Reference}{77}{subsection.9.10}%
+\contentsline {subsubsection}{\numberline {9.10.1}Detailed Description}{78}{subsubsection.9.10.1}%
+\contentsline {subsection}{\numberline {9.11}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rect.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{79}{subsection.9.11}%
+\contentsline {subsection}{\numberline {9.12}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kamil/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Text\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box.h File Reference}{79}{subsection.9.12}%
+\contentsline {subsection}{\numberline {9.13}Text\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{80}{subsection.9.13}%
+\contentsline {subsection}{\numberline {9.14}README.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md File Reference}{81}{subsection.9.14}%
+\contentsline {subsection}{\numberline {9.15}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Document.cpp File Reference}{81}{subsection.9.15}%
+\contentsline {subsubsection}{\numberline {9.15.1}Detailed Description}{81}{subsubsection.9.15.1}%
+\contentsline {subsection}{\numberline {9.16}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Editor.cpp File Reference}{82}{subsection.9.16}%
+\contentsline {subsection}{\numberline {9.17}src/kamil.cpp File Reference}{82}{subsection.9.17}%
+\contentsline {subsubsection}{\numberline {9.17.1}Function Documentation}{83}{subsubsection.9.17.1}%
+\contentsline {paragraph}{\numberline {9.17.1.1}main()}{83}{paragraph.9.17.1.1}%
+\contentsline {subsection}{\numberline {9.18}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard.cpp File Reference}{83}{subsection.9.18}%
+\contentsline {subsection}{\numberline {9.19}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rect.cpp File Reference}{84}{subsection.9.19}%
+\contentsline {subsection}{\numberline {9.20}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Text\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box.cpp File Reference}{84}{subsection.9.20}%
+\contentsline {section}{Index}{85}{section*.102}%

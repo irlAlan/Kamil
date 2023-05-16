@@ -11,6 +11,9 @@
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Window/Keyboard.hpp>
 
+#include <bits/chrono.h>
+#include <chrono>
+
 #include <regex>
 #include <fmt/core.h>
 #include <sstream>
@@ -26,17 +29,17 @@ Editor::Editor(sf::RenderWindow *window, sf::Event *event, Document *doc)
                                        (float)window->getSize().y - 25}, // starting position y
                           "../resource/fonts/arial.ttf", 20, sf::Color(171, 178, 191, 255), // font, font colour and font colour
                           sf::Color(40, 44,52, 255), 5}}, // background colour
-      cbox{new CmdBox{window,
-                      sf::Vector2f{0.f, (float)window->getSize().y - 25},
-                      sf::Vector2f{(float)window->getSize().x, 25},
-                      "../resource/fonts/arial.ttf", 20, sf::Color(171, 178, 191, 255),
-                      sf::Color(40,44,52,255), 5}},
+//      cbox{new CmdBox{window,
+//                      sf::Vector2f{0.f, (float)window->getSize().y - 25},
+//                      sf::Vector2f{(float)window->getSize().x, 25},
+//                      "../resource/fonts/arial.ttf", 20, sf::Color(171, 178, 191, 255),
+//                      sf::Color(40,44,52,255), 5}},
       kb{window, doc, textBox->getSize()}
 {}
 
 Editor::~Editor() { 
     delete textBox;
-    delete cbox;
+    // delete cbox;
 }
 
 
@@ -87,6 +90,7 @@ void Editor::draw() {
     camera.setCenter({window->getSize().x * 0.5f, window->getSize().y * 0.5f}); // set the centre of the view to the 
                                                                                 // centre of the window
 
+
     bool keyPressed{false};
 
   while (window->isOpen()) {
@@ -110,15 +114,16 @@ void Editor::draw() {
       doc->setBuffInfo(kb.getTextEntered().c_str());
     }
 
-    if (kb.isCmdTextEntered()) {
-      cbox->setString(kb.getCmdTextEntered() + "-");
-      if (kb.getCmdTextEntered() == "open") {
-        fmt::print("open says me\n");
-      }
-    }
+    // if (kb.isCmdTextEntered()) {
+    //   cbox->setString(kb.getCmdTextEntered() + "-");
+    //   if (kb.getCmdTextEntered() == "open") {
+    //     fmt::print("open says me\n");
+    //   }
+    // }
 
     // check if LControl and R are pressed so we can run the executable
     if(kb.isKeyPressed(sf::Keyboard::LControl) && kb.isKeyPressed(sf::Keyboard::R) && !keyPressed){
+        keyPressed = true;
         std::string run{cmd + ' ' + doc->getRelPath()};
         std::system(run.c_str());
     }
@@ -133,15 +138,22 @@ void Editor::draw() {
     else if(!kb.isKeyPressed(sf::Keyboard::LControl) && !kb.isKeyPressed(sf::Keyboard::A) && keyPressed)
         keyPressed = false;
 
+
+    //auto start{std::chrono::steady_clock::now()}; // to get the time taken for the event to run
+
     // check if Down arrow and LControl are pressed so we can move the camera down
     if(kb.isKeyPressed(sf::Keyboard::Down) && kb.isKeyPressed(sf::Keyboard::LControl) && !keyPressed){
-        camera.move(0.0f,0.8f); // positive x since SFML draws from the top left so down brings us further from 0
+        keyPressed = true;
+        camera.move(0.0f,20.0f); // positive x since SFML draws from the top left so down brings us further from 0
     }
     else if(!kb.isKeyPressed(sf::Keyboard::Down) && !kb.isKeyPressed(sf::Keyboard::LControl) && keyPressed)
         keyPressed = false;
+    // auto end{std::chrono::steady_clock::now()}; // to get the time taken for the event to run
+    // fmt::print("The time taken to move the window down is: {}\n", std::chrono::duration_cast<std::chrono::nanoseconds>(end-start).count());
 
     // check if the Up arrow and LControl are pressed so we can move the camera up
     if(kb.isKeyPressed(sf::Keyboard::Up) && kb.isKeyPressed(sf::Keyboard::LControl) && !keyPressed){
+        keyPressed = true;
         camera.move(0.0f,-0.8f); // negative x since SFML draws from top left  so up brings us closer to 0
     }
     else if(!kb.isKeyPressed(sf::Keyboard::Up) && !kb.isKeyPressed(sf::Keyboard::LControl) && keyPressed)
@@ -150,6 +162,7 @@ void Editor::draw() {
     // Check if S and LControl are pressed to save the file
     if (kb.isKeyPressed(sf::Keyboard::S) &&
         kb.isKeyPressed(sf::Keyboard::LControl) && !keyPressed) {
+        keyPressed = true;
         if(doc->getRelPath().empty()){
             std::string filename;
             fmt::print("Enter a file name: ");
@@ -167,7 +180,7 @@ void Editor::draw() {
     textBox->setPosition(camera.getCenter() - camera.getSize() *0.5f); // keeps the background rectangle in frame
     window->clear(sf::Color::Transparent);
     window->draw(*textBox);
-    window->draw(*cbox);
+    // window->draw(*cbox);
     window->setView(camera); // set the view
     window->display(); // put everything on the screen
   }

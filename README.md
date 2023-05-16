@@ -6,28 +6,29 @@ A Text Editor for kamil
 
 ### Background and Identifying the problem
 
+
 The Project I will be developing will be in answer to the challenge set out by
-the end user and friend of mine, Kamil. He challenged me to make a light weight
-editor that he can use in his day to day life and when doing python projects and general day to day use.
+the end user and friend of mine, Kamil. He challenged me to make a lightweight
+editor that he can use in his day-to-day life and when doing Python projects and general day-to-day use.
 
 The challenge started when he commented on my use of neovim and how it would be better if I used an actual IDE.
-I told him that I've used IDE's in the past and overall prefer the look and feel of a customised neovim. I then suggested him
-to learn vim himself and that he wouldnt regret it, but he declined. Kamil then told me that I should create something easier
-for him to use and that could potentially change his use of IDE's.
+I told him that I've used IDEs in the past and overall prefer the look and feel of a customized neovim. I then suggested that he
+learn Vim himself and that he wouldn't regret it, but he declined. Kamil then told me that I should create something easier
+for him to use and that could potentially change his use of IDEs.
 
 Upon being issued with this challenge I created a few starter questions that I would research around for my NEA.
 
 1) What is a text editor and how does it differ from an IDE?
-2) How do I make a text editor for kamil
+2) How do I make a text editor for Kamil
 3) How do I make it efficient enough to meet his standards?
 
-To kick things along I began to do research on Text editors and IDE's and
-found out that the difference between isnt limited to Operating System platforms
+To kick things along I began to research Text editors and IDEs and
+found out that the difference between them isn't limited to Operating System platforms
 or by how much better one is at a specific task but by the features each can do.
-Text Editors, as the name suggest are specifically desinged for manipulting any form of text
-that it can open. While an IDE (Integrated Development Environment) is specifically desinged
+Text Editors, as the name suggests are specifically designed for manipulating any form of text
+that it can open. While an IDE (Integrated Development Environment) is specifically designed
 for software development and comes with a multitude of features that engineers can make use of
-to streemline their workflow.
+to streamline their workflow.
 
 
 A table of pros and cons:
@@ -48,39 +49,40 @@ A table of pros and cons:
 
 Here are pictures of some text editors and IDE's:
 
-\image html neovimLook.png
 \image latex neovimLook.eps "My Neovim" width=10cm
 
 
-\image html baseVimLook.png
 \image latex baseVimLook.eps "My Vim" width=10cm
 
-(annotate hte image)
 
 ### End User needs
 
-When talking to Kamil about his needs it was apparant that he wanted something modular
-in the sense that it comes with what he needs so its not a hassle to work with and it
+When talking to Kamil about his needs it was apparent that he wanted something modular
+in the sense that it comes with what he needs so it is not a hassle to work with and it
 works with multiple different file types.
 
-\image html Kamil_info.png
+
 \image latex Kamil_info.eps
 
 
-Since this is a project that could quickly grow in scale due to all the different parts of handling the editor, text and documents etc.
-The overall time complexity of the different algorithms coming together could exponentially increase the latency between the different commands.
+Since this is a project that could quickly grow in scale due to all the different parts of the editor, text and documents.
+The overall time complexity of the different algorithms coming together could increase the latency between the different commands.
 To ensure that the project meets the needs of Kamil, I have a few objectives.
 
 #### Objective 1
 
+Optimised:
+
 Ensure that the program is properly optimised and not laggy.
 To ensure that the program is not laggy and has minimal delay we can get the time taken between function calls and their effect
-like the text being pressed and it being displayed on the screen and see how efficient it is and we can change it.
+like the time taken for a key press to happen and it being executed.
 
 Furthermore, In the code youll see optimisation techniques such as passing classes by pointer which essentially allows me
-to directly access the class in memory instead of accessing a cpoy of the class
+to directly access the class in memory instead of accessing a copy of the class.
 
 #### Objective 2
+
+User configurable:
 
 Allow it to be user configurable. We need the ability to load and use
 fonts specified by the user as well as change the theme of the program based on what the user wants.
@@ -89,6 +91,8 @@ We can check this by successfully storing font files and changing them as well a
 use a theme through a colourscheme and successfully have the program use them.
 
 #### Objective 3
+
+Run Python:
 
 Run Python programs.
 Since Kamil mainly codes in Python having some python compatability would help him greatly.
@@ -99,6 +103,8 @@ This is easily measurable since a fully working python Implementation would be a
 
 #### Objective 4
 
+File I/O:
+
 Allow for user data to be stored and recalled locally in a file system.
 For the Text editor to be a text editor we need the ability to successfully access the file tree system
 this allows for further I/O like file saving and writing.
@@ -107,6 +113,8 @@ To test if this feature works we need to successfully save and load a file.
 
 
 #### Objective 5
+
+Cross-platform:
 
 Allow for cross platform support. Have the program successfully run on at least 2 of the 4 different Operating systems
 tehe four being, Windows, Mac, Linux, OpenBSD.
@@ -117,12 +125,10 @@ Upon completion the program would be completely cross-platform.
 To summarise the objectives, the program must be:
 
 - Cross-platform
-- User-configurability
+- User-configurable
 - file I/O
 - Run Python files
 - Not Laggy
-
-
 
 ### Limitations
 
@@ -131,30 +137,24 @@ The Limits my program will face are:
 
 #### Limitations 1
 
-Programming Language
-I chose to use c++ as it is a language that im more familiar with. I understand a lot of the optimisations in the language
-and it is a very fast and performant language with good cross compatability which would make it good for the project.
+Programming Language:
 
 When it comes to the Programming Language I wrote my project in C++ (Cpp, Cxx, cc) with access to the C++17 language standard.
 I chose this language becauase I am most familiar with it and prefer it over python for larger projects like this.
-It is fast, efficient and allows the use of pointers for memory and data management. An example of this can be shown when passing Classes
-to other Classes via pointer.
+It is a fast and performant language with good cross compatability which would make it good for the project.
 
 #### Limitations 2
 
-formating standards when it comes to writing good clean code, formatting the code is a big necessity
+Formatting standard:
+
+This limitation is for the reusability and modularbility of the program when different users are making changes or when
+you come back to the code after a while. It is to keep everything orderly so you can focus entierly on the problem solving
+without having to worry about spaces and comments.
+
+When it comes to writing good clean code, formatting the code is a big necessity
 that can help the overall functionality of the code and user experience.
-To do this i am using LLVM formatting standards  which are defined in teh cmake file and config-format file
 
-The formatting standard im using is own defined by LLVM in a .clang-format file, it essentially dictates
-the formatting of files from how many spaces are used in a tab to length of lines and how many parameters apear on one line.
-
-By having a seperate program keep track of all code formatting and making sure its all standardised it makes the code more modular
-and easy to work with since any new programmers will have an easier time understanding code if its all similar.
-
-(include the clang-format file here)
-
-    An example being:
+An example being:
 
     \code{.cpp}
 
@@ -188,73 +188,55 @@ From the examples shown above its clear that with the formatting the code is eas
 
 #### Limitations 3
 
-Operating System.
+Operating System:
+
 The operating System is a default limiter and denotes how everything comes together.
 By default I use Linux. This has the benefit of having more support for C++ coding and development in general
 with the caveat of programs not being very portable to other devices like windows machines.
 This means that I will either need to cross-compile my program or convert Kamil, who is a windows user, over to Linux.
 
-In addition to the operating system, Libraries, specifically graphical Libraries in conjuction with config files can decide wheather a program
-is cross-platform or not. Some libraries make use of Os specific functionality and function calls that arent available elsewhere.
-
-The issue for me here is that I use Linux and Kamil uses Windows, so how do I get my program to him on windows?
-Well the answer is by choosing libraries that are cross-compatible and using configuration files.
-Another limitation is the operating system since i am on linux and Kmail is on windows building the executable on one
-will make it not work on the other one.
-
 #### Limitations 4
 
-with the libraries There are a lot of good libraries that are useful for the project i will be using fmt, sfml and toml
+Libraries:
 
-For the Libraries ill be using SFML to handle the events and graphics and fmt for normal printing to standard out. Both are cross platform
-and are built using a cmake file.
-
-
-The cmake file I use to compile and build my project is:
-(link to cmake file)
+Similar with the Operating system the functionality of a program is limited by the libraries that it calls and uses.
+For this project I need to use libraries that are cross platform and efficient.
 
 
 ### Design
 
-Throught the creation of the project I utilised an iterative deseign procedure where I would develop a basic version of the code,
-test it then improve on it.This form of design procedure requires a very modular and heavily commented code base so we dont get lost when
-adding new features and testing and checking old ones.
-
-(show pics of the program before and after for iterative)
+Throught the creation of the project I utilised a mix between modular and iterative design procedure where I would have a seperate test project (not one - one)
+that had all the basic functionality I needed and I would make the feature I am trying to add and test it on this dummy code, using
+techniques like integration and white-box testing. I would then iterate on any bugs found and fix them before moving the code to the main project. 
 
 My workflow is as:
 
-- Identify feature I want to add
-- Write out features it should be able to do
-- Create the class in a seperate file around a template SFML project i.e. similar style to main project but not 1-1 copy
-- Make sure the class follows DRY (Dont Repeat Yourself)
-- Test the code against what-if cases
-- Implement the code to the main project and check if it runs
-- Test program
-- Repeat
-
-(example of written work for TextBox class)
+\image latex reg.eps workflow
 
 
-Moreover, when designing the project I made use of OOP and Geneic programming using templates.
-Each section of my code is modular so that if someone where to take parts of it like the TextBox class, It would be similar
-in style to a normal SFML class with little to no difference.
+Example regex:
 
-(TextBox)
+\image latex regexTest.eps
 
-### Testing the code
+\image latex regexAfterTest.eps After testing
 
-Upload yt video
-
-I have made use of try, except statements --integration testing.
-white-box testing with the bounds checking to stop memory leaks
-pointer deallocation and reallocation for dangling pointers and buffer overflows
-Acceptance testing -- tell if the user likes it (part of the evaluation)
-
-
-#### Design Choices
+#### Design Choices general
 
 When developing the project I made a series of design choices that I thought would be best for the project.
+
+For the Libraries I will be using I chose to go with SFML for graphics, fmtllib for formatted printing and tomlc++ for .toml I/O.
+
+SFML is a graphics library that gives access to Opengl functions, it is also be used stand alone.
+
+fmtlib is a formatting library for standard out printing, it gives rust and python style printing to Cpp whilst being fast and efficient.
+fmtlib is faster than normal cpp standard out functions and the c-style printf whilst being safer.
+
+\image latex fmtlibSpeed.eps
+
+tomlc++ is a header only library that handles reading and writing to toml, json and yaml files. It handles everything in toml
+but can convert to json and yaml. It is very efficient and makes it easy for the user to configure the program
+
+\image latex tomlCDoc.eps
 
 In SFML when writing text to a screen it takes a, const sf::String& string, which devolves into std::string types and char[] arrays.
 Due to this and a need to be efficient I made the choice to manipulate all text input and output in a dynamic one dimensional character array
@@ -268,20 +250,74 @@ I did this because when they are passed through by pointer the program is only a
 it and then passing the values back to it when its done like what happens by default when passing a class through parameters. This choice speeds up the program
 since it doesnt need to copy and directly access the class.
 
-finish commenting the header file
+#### Design Choices in OOP
 
-include the cmake file
-show python thing
+When making the code I decided to use Object Oriented programming instead of Generic or Functional programming. This is because
+I wanted to maximise the modularbility of my code and make it easily scalable since all the related data would be grouped together
+and I can control how the data is modified behind the scenes leaving only the interface details to use.
+
+I would use many different techniques such as, prefering composition over inheritance unless its necessary; polymorphic behaviour and
+class dynamic heap allocation.
+
+\image latex compOverInhertance.eps
+
+I would instantiate classes inside other classes so i can manipulate their behaviour without inherting it directly. I did this
+because if I mainly inherited the classes then when i change the values of the parent class through the child class
+and i want to pass those values to a different subroutine or class I would need to copy the data over or pass in the child class and use that to access
+the values in the parent class. But by having an instantiated class inside I can simply call that variable and not the whole child class.
 
 
+\image latex inheritance.eps
+
+Inhertance is only done here so the class becomes recognised as Drawable by sf::RenderTargets i.e. RenderWindow.
+polymorphic behaviour is also shown here since when inheriting from sf::Drawable its mandatory to override the draw method.
+
+\image latex polymorph.eps
 
 
+Finishing off this section is Dynamic class allocation.
+When instantiate classes inside others like TextBox inside Editor I would dynamically create them, add them to the heap and not stack,
+this is because the classes are decently large in memory and
+I would be changing the values held inside the classes fairly often and it would be more problematic to have it pushed onto the stack.
 
 
-## Evalute
+### Testing the code
+
+When it comes to testing the project I have 3 main points of focus:
+
+1) The data being transferred around the project
+2) The data is read from and saved to a file
+3) Does it meet the objectives
+
+Focussing on the first two points youll see that:
+
+When it comes to testing the project  when reading and saving to a file, I have made use of white-box testing.
+This form of testing is most apparent when the program is handling the file data and keyboard Inputs.
+Since white-box testing is the process of making the data flow apparent and that there are no broken loops through the code. I make sure that the data is
+printed out at each stage in plain text and in hex so that we can view it and see if any changes have happened that shouldnt have happened.
+
+\image latex testWhiteBox.eps
+
+When checking how large the data I could send around the program was
+I made use of light integration testing by increasing the size of file
+and data the program transferes each time but I am yet to hit the maximum.
+It theoretically should be the same size as the computer allows since everything is trasnfered through a string which is dynamic ini size and we are
+most of the time accessing it directly in memory wich gets rid of any extra overhead.
+
+Onto the final point of it meeting the objectives.
+
+The program is optimised and extremly quick opening approx 1k lines immediatly.
+key presses were routinely sub 1 millisecond.
+
+\image latex timeTakenMS.eps millisecond time
+
+\image latex timTakenNS.eps nanosecond time
 
 
-Could improve on command line interface, configuration file width of commands accepted
-string selections
+The project can be loaded from a config file called config.toml
 
+\image latex Eval.eps
 
+The project works is cross platform and works in windows
+
+*+(show work in linux)

@@ -1,0 +1,139 @@
+\hypertarget{classCmdBox}{}\doxysubsection{Cmd\+Box Class Reference}
+\label{classCmdBox}\index{CmdBox@{CmdBox}}
+
+
+Class to handle the command \mbox{\hyperlink{classTextBox}{Text\+Box}}.  
+
+
+
+
+{\ttfamily \#include $<$Cmd\+Box.\+h$>$}
+
+
+
+Inheritance diagram for Cmd\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/d26/classCmdBox__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cmd\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/df0/classCmdBox__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCmdBox_a5bce441eccbec4bec019e6df29605e54}{Text\+Box}} (sf\+::\+Render\+Window $\ast$win, sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}}, sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}}, std\+::string sfont, int \mbox{\hyperlink{classTextBox_a29d2a814bf7d164b61a387cf078a56e8}{fsize}}, sf\+::\+Color \mbox{\hyperlink{classTextBox_a75f6b5783e47dcd456fbdba2da186373}{fcol}}, sf\+::\+Color background, float thicc)
+\begin{DoxyCompactList}\small\item\em Using the Parent class constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCmdBox_a25b67e5ff6788c60b8aef3f3540879d0}{Text\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Using the Parent class constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxyparagraph*{Public Member Functions inherited from \mbox{\hyperlink{classTextBox}{Text\+Box}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTextBox_a5bce441eccbec4bec019e6df29605e54}{Text\+Box}} (sf\+::\+Render\+Window $\ast$win, sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}}, sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}}, std\+::string sfont, int \mbox{\hyperlink{classTextBox_a29d2a814bf7d164b61a387cf078a56e8}{fsize}}, sf\+::\+Color \mbox{\hyperlink{classTextBox_a75f6b5783e47dcd456fbdba2da186373}{fcol}}, sf\+::\+Color background, float thicc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classTextBox}{Text\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTextBox_a25b67e5ff6788c60b8aef3f3540879d0}{Text\+Box}} ()
+\item 
+void \mbox{\hyperlink{classTextBox_afaa6baa0b251f0516e4d48b5eed8ca02}{set\+Text\+Size}} (int \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}})
+\begin{DoxyCompactList}\small\item\em Set the size of the text. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTextBox_aeb94b749199642bb10b168dce2560502}{get\+Text\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size of the text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_a560aa18bf1233da966bd179511ddf2c2}{set\+Text\+Colour}} (sf\+::\+Color colour)
+\begin{DoxyCompactList}\small\item\em Set the colour of the text. \end{DoxyCompactList}\item 
+sf\+::\+Color \mbox{\hyperlink{classTextBox_aca392ca5ef3966761e6279f2239f23fe}{get\+Text\+Colour}} () const
+\begin{DoxyCompactList}\small\item\em Get the colour of the text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_a4225c5a37dfa286b0ad2f2e09fb4b335}{set\+Font}} (sf\+::\+Font \&\mbox{\hyperlink{classTextBox_a2ab6b534d788191784115d891a4bc2f7}{font}})
+\begin{DoxyCompactList}\small\item\em set what font you want to use \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_a95acc51d7b24bb92204be0835137a0ae}{set\+Font}} (std\+::string \mbox{\hyperlink{classTextBox_a2ab6b534d788191784115d891a4bc2f7}{font}})
+\begin{DoxyCompactList}\small\item\em set what font you use \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{classTextBox_a78c37f8453105f1c044ecd2c03bf7ae6}{get\+Text\+Box}} () const
+\begin{DoxyCompactList}\small\item\em Get sf\+::\+Text of the textbox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_afe605dd74dd6f90181038115f8b5283e}{set\+String}} (std\+::string nstring)
+\begin{DoxyCompactList}\small\item\em Sets the string. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTextBox_a3cf46750f94b668e6c338334c9deefbb}{get\+String}} () const
+\begin{DoxyCompactList}\small\item\em returns the text in tbox \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextBox_a9b58260a30644338453856b8e8652d62}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em used to draw to the screen virutal method inherited from \mbox{\hyperlink{classMyRect}{My\+Rect}} which inherited it from sf\+::\+Drawable thats overrided here it is an example of polymorphism as we are changing the behaviour of a method in the child class. By inheriting from sf\+::\+Drawable it allows us to keep a similar syntax to other SFML shapes and drawable objects window.\+draw(my\+\_\+object). This allows our code to be more modular and easy for other people to use since they dont need to fumble around with my\+\_\+object.\+draw(window) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTextBox_a2b8a490293ae7f522091b2b690d5bf13}{is\+Mouse\+Hover}} ()
+\begin{DoxyCompactList}\small\item\em check if mouse is hovering over current textbox \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxyparagraph*{Public Member Functions inherited from \mbox{\hyperlink{classMyRect}{My\+Rect}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMyRect_a06af1d222788e2a608ff7f4e48a57380}{My\+Rect}} (sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}}, sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}}, sf\+::\+Color \mbox{\hyperlink{classMyRect_af5dc0b3d01b20c3ba06e6217709d825f}{fill\+Colour}}, sf\+::\+Color \mbox{\hyperlink{classMyRect_a5ae95d256f69eabd3151c991e751657e}{outline\+Colour}}, float \mbox{\hyperlink{classMyRect_a37e3d9054f98bb1ed6a4969f335213f7}{outline\+Thicknes}})
+\begin{DoxyCompactList}\small\item\em constructor for \mbox{\hyperlink{classMyRect}{My\+Rect}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMyRect_aeba15671c17ca989d03609d491e4d680}{My\+Rect}} ()
+\item 
+void \mbox{\hyperlink{classMyRect_a8d82606eca0c71f19e4e51ec047e37f4}{set\+Position}} (sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}})
+\begin{DoxyCompactList}\small\item\em sets the position of rect \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_aba57079a7eb2337d8bab558899fb67c6}{get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em get the position of rect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyRect_abf35db87008be9e2a804b603e46fb4e2}{set\+Fill\+Colour}} (sf\+::\+Color colour)
+\begin{DoxyCompactList}\small\item\em set the fill colour of the rect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyRect_a63d3276bf02e1a4f7bd000854a1ff8e7}{set\+Size}} (sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}})
+\begin{DoxyCompactList}\small\item\em set the size of the rect \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_aaa28af9ede7c38a67be121afb2e2b6b4}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em get the size of the rect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyRect_af2e2556e7d3fb5408b7a287a0d4d0ed1}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em virutal method to draw to window \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxyparagraph*{Protected Attributes inherited from \mbox{\hyperlink{classMyRect}{My\+Rect}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classMyRect_a5a03b64578577e901c2b9597a221f3c4}{rect}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}}
+\item 
+sf\+::\+Color \mbox{\hyperlink{classMyRect_af5dc0b3d01b20c3ba06e6217709d825f}{fill\+Colour}}
+\item 
+sf\+::\+Color \mbox{\hyperlink{classMyRect_a5ae95d256f69eabd3151c991e751657e}{outline\+Colour}}
+\item 
+float \mbox{\hyperlink{classMyRect_a37e3d9054f98bb1ed6a4969f335213f7}{outline\+Thicknes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Class to handle the command \mbox{\hyperlink{classTextBox}{Text\+Box}}. 
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCmdBox_a25b67e5ff6788c60b8aef3f3540879d0}\label{classCmdBox_a25b67e5ff6788c60b8aef3f3540879d0}} 
+\index{CmdBox@{CmdBox}!TextBox@{TextBox}}
+\index{TextBox@{TextBox}!CmdBox@{CmdBox}}
+\doxyparagraph{\texorpdfstring{TextBox()}{TextBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Text\+Box\+::\+Text\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Using the Parent class constructor. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{CmdBox}}
+\end{DoxyImageNoCaption}
+ \mbox{\Hypertarget{classCmdBox_a5bce441eccbec4bec019e6df29605e54}\label{classCmdBox_a5bce441eccbec4bec019e6df29605e54}} 
+\index{CmdBox@{CmdBox}!TextBox@{TextBox}}
+\index{TextBox@{TextBox}!CmdBox@{CmdBox}}
+\doxyparagraph{\texorpdfstring{TextBox()}{TextBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Text\+Box\+::\+Text\+Box (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{win,  }\item[{sf\+::\+Vector2f}]{pos,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{std\+::string}]{sfont,  }\item[{int}]{fsize,  }\item[{sf\+::\+Color}]{fcol,  }\item[{sf\+::\+Color}]{background,  }\item[{float}]{thicc }\end{DoxyParamCaption})}
+
+
+
+Using the Parent class constructor. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{CmdBox}}
+\end{DoxyImageNoCaption}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Kamil/\mbox{\hyperlink{CmdBox_8h}{Cmd\+Box.\+h}}\end{DoxyCompactItemize}

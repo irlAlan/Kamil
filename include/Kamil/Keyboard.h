@@ -54,8 +54,7 @@ public:
    * @param win - reference to main window
    * @param bounds - bounds of the window we are working in
    *
-   * \image html KeyConstructor.png
-   * \image latex KeyConstructor.eps
+   * \image latex keyConstructor.eps
    */
   Keyboard(sf::RenderWindow *win, Document *doc, sf::Vector2f bounds);
 
@@ -65,7 +64,6 @@ public:
    * @param sf::Keyboard::key enum from SFML
    * @return bool true if key is pressed false if not
    *
-   *  \image html keyIsKeyPressed.png
    *  \image latex keyIsKeyPressed.eps
    */
   bool isKeyPressed(sf::Keyboard::Key);
@@ -75,7 +73,6 @@ public:
    * @param void
    * @return bool true if key is pressed false if not
    *
-   *  \image html keyIsTextEntered.png
    *  \image latex keyIsTextEntered.eps
    */
   bool isTextEntered();
@@ -86,8 +83,7 @@ public:
    * @return bool tru eif key is pressed false if not
    *
    *
-   *  \image html keyIsCmdTextEntered.png
-   *  \image latex keyIsCmdTextEntered.eps
+   *  \image latex keyCmdTextEntered.eps
    */
   bool isCmdTextEntered();
 
@@ -97,7 +93,6 @@ public:
    * @return bool true if text is being deleted
    *
    *
-   * \image html keyCheckDeleted.png
    * \image latex keyCheckDeleted.eps
    */
   bool isTextDeleted();
@@ -110,7 +105,6 @@ public:
    * @param void
    * @return std::string text entered
    *
-   * \image html keyGTextEntered.png
    * \image latex keyGTextEntered.eps
    */
   std::string getTextEntered();
@@ -135,7 +129,6 @@ public:
    * @return void
    *
    *
-   * \image html keyTextEntered.png
    * \image latex keyTextEntered.eps
    *
    */
@@ -148,7 +141,6 @@ public:
    * @return void
    *
    *
-   *  \image html keyCmdEntered.png
    *  \image latex keyCmdEntered.eps
    *
    */
@@ -160,7 +152,6 @@ public:
    * @param void
    * @return void
    *
-   * \image html keyBackspace.png
    * \image latex keyBackspace.eps
    * 
    */
@@ -171,7 +162,6 @@ public:
    * @param event - to get text entered from events
    * @return void
    *
-   *  \image html keyHandleKeyEvent.png
    *  \image latex keyHandleKeyEvent.eps
    *
    */
@@ -182,7 +172,6 @@ public:
    * @param event - to get text entered from events
    * @return void
    *
-   * \image html keyHandleCmdKeyEvent.png
    * \image latex keyHandleCmdKeyEvent.eps
    */
   void handleCmdKeyEvent(sf::Event& event);

@@ -1,0 +1,67 @@
+\hypertarget{Document_8h_source}{}\doxysubsection{Document.\+h}
+\label{Document_8h_source}\index{include/Kamil/Document.h@{include/Kamil/Document.h}}
+\mbox{\hyperlink{Document_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KAMIL\_DOCUMENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KAMIL\_DOCUMENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}SFML/Graphics/Color.hpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDocument}{Document}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structDocument_1_1Theme}{Theme}}\{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ sf::Color\ \mbox{\hyperlink{structDocument_1_1Theme_a80ef6afd6a03fbcea973b28fe9c8907d}{bcol}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ sf::Color\ \mbox{\hyperlink{structDocument_1_1Theme_ad2ba8b03ff0782c094a5c6b764ab61d2}{fcol}};}
+\DoxyCodeLine{00035\ \ \ \ \ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structDocument_1_1Config}{Config}}\{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structDocument_1_1Config_a8a3a9e2d7bac1e235f2b3b55df80adf4}{cmd}};}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structDocument_1_1Config_a659e035d5202e85c5fc5b353579a94e4}{font}};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structDocument_1_1Theme}{Theme}}\ \mbox{\hyperlink{structDocument_1_1Config_a054c63a8bd9d08fa9c4d783ccec0746b}{theme}};}
+\DoxyCodeLine{00052\ \ \ \ \ \};}
+\DoxyCodeLine{00058\ \ \ \mbox{\hyperlink{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}{Document}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00066\ \ \ \mbox{\hyperlink{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}{Document}}(std::string\ fileP);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00075\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}{init}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00084\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDocument_a67e7f9b8c668a723b6f7173ae52e5c99}{init}}(std::string\ inF);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00093\ \ \ std::string\ \mbox{\hyperlink{classDocument_aca32ae3080ab09048e7522281b4d7ba6}{readFile}}();}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00101\ \ \ std::string\ \mbox{\hyperlink{classDocument_ae7c19c8c497d76f99c3c3ab59e7fcd75}{getRelPath}}();}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00110\ \ \ std::string\ \mbox{\hyperlink{classDocument_a7aa7f956d6fd898fb4ec61aceb45158e}{getAbsPath}}();}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00120\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDocument_a30a0627844cc96d37271184f7a6acc2c}{findConfig}}();}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00130\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDocument_ab9693ac587427e6f6dccdf5cc4c6cc6e}{createFile}}(std::string\ filename);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00139\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDocument_aa076e1fbc11e56c32d2fc88cfa8ef15b}{saveFile}}(\textcolor{keyword}{const}\ std::string\ \&filename);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00148\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDocument_aa076e1fbc11e56c32d2fc88cfa8ef15b}{saveFile}}();}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00157\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDocument_a47e3f3a9121cc4a3b69ed12433813519}{setBuffInfo}}(std::string\ info);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00167\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDocument_a01fab747cf4573078e23bbd49db21def}{hasChanged}}();}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00176\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDocument_a473c0998c1c14411f6728b070cc78b05}{setChange}}();}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00189\ \ \ \mbox{\hyperlink{structDocument_1_1Config}{Config}}\ \mbox{\hyperlink{classDocument_a047c15f0de308f773b7023e26eaae845}{getConfig}}();}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00193\ \ \ std::string\ \mbox{\hyperlink{classDocument_a439e52a616c80fd6de04aee141224f3f}{relPath}};\ }
+\DoxyCodeLine{00194\ \ \ std::string\ \mbox{\hyperlink{classDocument_afc0689ac2a0253d3682072f60d78a9b0}{absPath}};\ }
+\DoxyCodeLine{00196\ \ \ std::string\ \mbox{\hyperlink{classDocument_a5e14b182439e8c8fcfaf12b00425011c}{buffInfo}};\ }
+\DoxyCodeLine{00198\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDocument_a99777bedaef459f015d134396b0dd003}{docChanged}};\ }
+\DoxyCodeLine{00199\ \};}
+\DoxyCodeLine{00200\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KAMIL\_DOCUMENT\_H}}
+
+\end{DoxyCode}

@@ -41,8 +41,8 @@ public:
 
   /**
    * @brief Destructor for Editor class
-   * png/Editor/editorDestructor.png
-   *  eps/Editor/editorDestructor.eps
+   *
+   *  \image latex editorDestructor.eps
    */
   ~Editor();
 
@@ -51,7 +51,6 @@ public:
    * @param void
    * @return void
    *
-   * \image html  editorDraw.png
    * \image latex editorDraw.eps
    */
   void draw();
@@ -66,7 +65,6 @@ public:
    * @param const Document::Config& - the config.toml information
    * @reutrn void
    *
-   * \image html  editorUseConfig.png
    * \image latex editorUseConfig.eps
    */
   void useConfig(const Document::Config& conf);
@@ -92,17 +90,16 @@ public:
    * @param void
    * @return void
    *
-   * \image html  editorRegex.png
    * \image latex editorRegex.eps
    */
   void regexPatternMatchin();
 
 private:
   Document *doc;            /**< pointer to the working document */
-  TextBox *textBox;         /**< reference to textbox that we draw */
-  CmdBox *cbox;             /**< reference to command box that we draw */
-  sf::RenderWindow *window; /**< refernce to RenderWindow */
-  sf::Event *event;         /**< refernce to event */
+  TextBox *textBox;         /**< pointer to textbox that we draw */
+//  CmdBox *cbox;             /**< pointer to command box that we draw */
+  sf::RenderWindow *window; /**< pointer to RenderWindow */
+  sf::Event *event;         /**< pointer to event */
   sf::View camera; /**< for the camera */
   Keyboard kb; /**< handles keyboard events */
   std::string cmd;

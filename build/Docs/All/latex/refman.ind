@@ -1,0 +1,355 @@
+\begin{theindex}
+
+  \item {$\sim$Editor}
+    \subitem {Editor}, \hyperpage{36}
+
+  \indexspace
+
+  \item {absPath}
+    \subitem {Document}, \hyperpage{33}
+
+  \indexspace
+
+  \item {backSpace}
+    \subitem {Keyboard}, \hyperpage{44}
+  \item {bcol}
+    \subitem {Document::Theme}, \hyperpage{70}
+  \item {BS}
+    \subitem {KEYS}, \hyperpage{13}
+  \item {buffInfo}
+    \subitem {Document}, \hyperpage{33}
+
+  \indexspace
+
+  \item {camera}
+    \subitem {Editor}, \hyperpage{40}
+  \item {cmd}
+    \subitem {Document::Config}, \hyperpage{19}
+    \subitem {Editor}, \hyperpage{40}
+  \item {CmdBox}, \hyperpage{13}
+    \subitem {TextBox}, \hyperpage{17}
+  \item {CR}
+    \subitem {KEYS}, \hyperpage{13}
+  \item {createFile}
+    \subitem {Document}, \hyperpage{23}
+  \item {ctDeleted}
+    \subitem {Keyboard}, \hyperpage{51}
+  \item {ctEntered}
+    \subitem {Keyboard}, \hyperpage{51}
+  \item {CTRL}
+    \subitem {KEYS}, \hyperpage{13}
+
+  \indexspace
+
+  \item {DELETE}
+    \subitem {KEYS}, \hyperpage{13}
+  \item {doc}
+    \subitem {Editor}, \hyperpage{40}
+  \item {docChanged}
+    \subitem {Document}, \hyperpage{34}
+  \item {Document}, \hyperpage{19}
+    \subitem {absPath}, \hyperpage{33}
+    \subitem {buffInfo}, \hyperpage{33}
+    \subitem {createFile}, \hyperpage{23}
+    \subitem {docChanged}, \hyperpage{34}
+    \subitem {Document}, \hyperpage{21, 22}
+    \subitem {findConfig}, \hyperpage{23}
+    \subitem {getAbsPath}, \hyperpage{25}
+    \subitem {getConfig}, \hyperpage{25}
+    \subitem {getRelPath}, \hyperpage{26}
+    \subitem {hasChanged}, \hyperpage{27}
+    \subitem {init}, \hyperpage{27, 28}
+    \subitem {readFile}, \hyperpage{30}
+    \subitem {relPath}, \hyperpage{34}
+    \subitem {saveFile}, \hyperpage{30, 31}
+    \subitem {setBuffInfo}, \hyperpage{32}
+    \subitem {setChange}, \hyperpage{33}
+  \item {Document::Config}, \hyperpage{18}
+    \subitem {cmd}, \hyperpage{19}
+    \subitem {font}, \hyperpage{19}
+    \subitem {theme}, \hyperpage{19}
+  \item {Document::Theme}, \hyperpage{69}
+    \subitem {bcol}, \hyperpage{70}
+    \subitem {fcol}, \hyperpage{70}
+  \item {DOWN\_ARROW}
+    \subitem {KEYS}, \hyperpage{13}
+  \item {draw}
+    \subitem {Editor}, \hyperpage{36}
+    \subitem {MyRect}, \hyperpage{55}
+    \subitem {TextBox}, \hyperpage{63}
+
+  \indexspace
+
+  \item {Editor}, \hyperpage{34}
+    \subitem {$\sim$Editor}, \hyperpage{36}
+    \subitem {camera}, \hyperpage{40}
+    \subitem {cmd}, \hyperpage{40}
+    \subitem {doc}, \hyperpage{40}
+    \subitem {draw}, \hyperpage{36}
+    \subitem {Editor}, \hyperpage{35}
+    \subitem {event}, \hyperpage{41}
+    \subitem {kb}, \hyperpage{41}
+    \subitem {loadFromFile}, \hyperpage{41}
+    \subitem {regexPatternMatchin}, \hyperpage{38}
+    \subitem {textBox}, \hyperpage{41}
+    \subitem {useConfig}, \hyperpage{39}
+    \subitem {window}, \hyperpage{41}
+  \item {ENTER}
+    \subitem {KEYS}, \hyperpage{13}
+  \item {ESCAPE}
+    \subitem {KEYS}, \hyperpage{13}
+  \item {eval.md}, \hyperpage{70}
+  \item {event}
+    \subitem {Editor}, \hyperpage{41}
+
+  \indexspace
+
+  \item {fcol}
+    \subitem {Document::Theme}, \hyperpage{70}
+    \subitem {TextBox}, \hyperpage{68}
+  \item {fillColour}
+    \subitem {MyRect}, \hyperpage{58}
+  \item {findConfig}
+    \subitem {Document}, \hyperpage{23}
+  \item {fname}
+    \subitem {TextBox}, \hyperpage{68}
+  \item {font}
+    \subitem {Document::Config}, \hyperpage{19}
+    \subitem {TextBox}, \hyperpage{68}
+  \item {fsize}
+    \subitem {TextBox}, \hyperpage{69}
+
+  \indexspace
+
+  \item {getAbsPath}
+    \subitem {Document}, \hyperpage{25}
+  \item {getCmdTextEntered}
+    \subitem {Keyboard}, \hyperpage{44}
+  \item {getConfig}
+    \subitem {Document}, \hyperpage{25}
+  \item {getPos}
+    \subitem {MyRect}, \hyperpage{55}
+  \item {getRelPath}
+    \subitem {Document}, \hyperpage{26}
+  \item {getSize}
+    \subitem {MyRect}, \hyperpage{56}
+  \item {getString}
+    \subitem {TextBox}, \hyperpage{63}
+  \item {getTextBox}
+    \subitem {TextBox}, \hyperpage{64}
+  \item {getTextColour}
+    \subitem {TextBox}, \hyperpage{64}
+  \item {getTextEntered}
+    \subitem {Keyboard}, \hyperpage{45}
+  \item {getTextSize}
+    \subitem {TextBox}, \hyperpage{65}
+
+  \indexspace
+
+  \item {handleCmdKeyEvent}
+    \subitem {Keyboard}, \hyperpage{45}
+  \item {handleKeyEvent}
+    \subitem {Keyboard}, \hyperpage{46}
+  \item {handleMouseEvent}
+    \subitem {Keyboard}, \hyperpage{47}
+  \item {hasChanged}
+    \subitem {Document}, \hyperpage{27}
+
+  \indexspace
+
+  \item {include/Kamil/CmdBox.h}, \hyperpage{70, 71}
+  \item {include/Kamil/Document.h}, \hyperpage{71}, \hyperpage{73}
+  \item {include/Kamil/Editor.h}, \hyperpage{73, 74}
+  \item {include/Kamil/Keyboard.h}, \hyperpage{75}, \hyperpage{77}
+  \item {include/Kamil/MyRect.h}, \hyperpage{77}, \hyperpage{79}
+  \item {include/Kamil/TextBox.h}, \hyperpage{79, 80}
+  \item {init}
+    \subitem {Document}, \hyperpage{27, 28}
+  \item {isCmdTextEntered}
+    \subitem {Keyboard}, \hyperpage{48}
+  \item {isKeyPressed}
+    \subitem {Keyboard}, \hyperpage{48}
+  \item {isMouseHover}
+    \subitem {TextBox}, \hyperpage{65}
+  \item {isTextDeleted}
+    \subitem {Keyboard}, \hyperpage{49}
+  \item {isTextEntered}
+    \subitem {Keyboard}, \hyperpage{49}
+
+  \indexspace
+
+  \item {kamil.cpp}
+    \subitem {main}, \hyperpage{83}
+  \item {kb}
+    \subitem {Editor}, \hyperpage{41}
+  \item {Keyboard}, \hyperpage{41}
+    \subitem {backSpace}, \hyperpage{44}
+    \subitem {ctDeleted}, \hyperpage{51}
+    \subitem {ctEntered}, \hyperpage{51}
+    \subitem {getCmdTextEntered}, \hyperpage{44}
+    \subitem {getTextEntered}, \hyperpage{45}
+    \subitem {handleCmdKeyEvent}, \hyperpage{45}
+    \subitem {handleKeyEvent}, \hyperpage{46}
+    \subitem {handleMouseEvent}, \hyperpage{47}
+    \subitem {isCmdTextEntered}, \hyperpage{48}
+    \subitem {isKeyPressed}, \hyperpage{48}
+    \subitem {isTextDeleted}, \hyperpage{49}
+    \subitem {isTextEntered}, \hyperpage{49}
+    \subitem {Keyboard}, \hyperpage{43}
+    \subitem {setCmdTextEntered}, \hyperpage{50}
+    \subitem {setTextEntered}, \hyperpage{50}
+    \subitem {tDeleted}, \hyperpage{51}
+    \subitem {tEntered}, \hyperpage{51}
+    \subitem {window}, \hyperpage{52}
+  \item {KEYS}, \hyperpage{12}
+    \subitem {BS}, \hyperpage{13}
+    \subitem {CR}, \hyperpage{13}
+    \subitem {CTRL}, \hyperpage{13}
+    \subitem {DELETE}, \hyperpage{13}
+    \subitem {DOWN\_ARROW}, \hyperpage{13}
+    \subitem {ENTER}, \hyperpage{13}
+    \subitem {ESCAPE}, \hyperpage{13}
+    \subitem {LEFT\_ARROW}, \hyperpage{13}
+    \subitem {RIGHT\_ARROW}, \hyperpage{13}
+    \subitem {Shift\_A}, \hyperpage{13}
+    \subitem {UP\_ARROW}, \hyperpage{13}
+
+  \indexspace
+
+  \item {LEFT\_ARROW}
+    \subitem {KEYS}, \hyperpage{13}
+  \item {loadFromFile}
+    \subitem {Editor}, \hyperpage{41}
+
+  \indexspace
+
+  \item {main}
+    \subitem {kamil.cpp}, \hyperpage{83}
+  \item {mouseHover}
+    \subitem {TextBox}, \hyperpage{69}
+  \item {MyRect}, \hyperpage{52}
+    \subitem {draw}, \hyperpage{55}
+    \subitem {fillColour}, \hyperpage{58}
+    \subitem {getPos}, \hyperpage{55}
+    \subitem {getSize}, \hyperpage{56}
+    \subitem {MyRect}, \hyperpage{55}
+    \subitem {outlineColour}, \hyperpage{58}
+    \subitem {outlineThicknes}, \hyperpage{58}
+    \subitem {pos}, \hyperpage{58}
+    \subitem {rect}, \hyperpage{58}
+    \subitem {setFillColour}, \hyperpage{56}
+    \subitem {setPosition}, \hyperpage{57}
+    \subitem {setSize}, \hyperpage{57}
+    \subitem {size}, \hyperpage{58}
+
+  \indexspace
+
+  \item {outlineColour}
+    \subitem {MyRect}, \hyperpage{58}
+  \item {outlineThicknes}
+    \subitem {MyRect}, \hyperpage{58}
+
+  \indexspace
+
+  \item {pos}
+    \subitem {MyRect}, \hyperpage{58}
+
+  \indexspace
+
+  \item {readFile}
+    \subitem {Document}, \hyperpage{30}
+  \item {README.md}, \hyperpage{81}
+  \item {rect}
+    \subitem {MyRect}, \hyperpage{58}
+  \item {regexPatternMatchin}
+    \subitem {Editor}, \hyperpage{38}
+  \item {relPath}
+    \subitem {Document}, \hyperpage{34}
+  \item {RIGHT\_ARROW}
+    \subitem {KEYS}, \hyperpage{13}
+
+  \indexspace
+
+  \item {saveFile}
+    \subitem {Document}, \hyperpage{30, 31}
+  \item {setBuffInfo}
+    \subitem {Document}, \hyperpage{32}
+  \item {setChange}
+    \subitem {Document}, \hyperpage{33}
+  \item {setCmdTextEntered}
+    \subitem {Keyboard}, \hyperpage{50}
+  \item {setFillColour}
+    \subitem {MyRect}, \hyperpage{56}
+  \item {setFont}
+    \subitem {TextBox}, \hyperpage{65, 66}
+  \item {setPosition}
+    \subitem {MyRect}, \hyperpage{57}
+  \item {setSize}
+    \subitem {MyRect}, \hyperpage{57}
+  \item {setString}
+    \subitem {TextBox}, \hyperpage{66}
+  \item {setTextColour}
+    \subitem {TextBox}, \hyperpage{67}
+  \item {setTextEntered}
+    \subitem {Keyboard}, \hyperpage{50}
+  \item {setTextSize}
+    \subitem {TextBox}, \hyperpage{68}
+  \item {Shift\_A}
+    \subitem {KEYS}, \hyperpage{13}
+  \item {size}
+    \subitem {MyRect}, \hyperpage{58}
+  \item {src/Document.cpp}, \hyperpage{81}
+  \item {src/Editor.cpp}, \hyperpage{82}
+  \item {src/kamil.cpp}, \hyperpage{82}
+  \item {src/Keyboard.cpp}, \hyperpage{83}
+  \item {src/MyRect.cpp}, \hyperpage{84}
+  \item {src/TextBox.cpp}, \hyperpage{84}
+
+  \indexspace
+
+  \item {tbox}
+    \subitem {TextBox}, \hyperpage{69}
+  \item {tDeleted}
+    \subitem {Keyboard}, \hyperpage{51}
+  \item {tEntered}
+    \subitem {Keyboard}, \hyperpage{51}
+  \item {TextBox}, \hyperpage{59}
+    \subitem {CmdBox}, \hyperpage{17}
+    \subitem {draw}, \hyperpage{63}
+    \subitem {fcol}, \hyperpage{68}
+    \subitem {fname}, \hyperpage{68}
+    \subitem {font}, \hyperpage{68}
+    \subitem {fsize}, \hyperpage{69}
+    \subitem {getString}, \hyperpage{63}
+    \subitem {getTextBox}, \hyperpage{64}
+    \subitem {getTextColour}, \hyperpage{64}
+    \subitem {getTextSize}, \hyperpage{65}
+    \subitem {isMouseHover}, \hyperpage{65}
+    \subitem {mouseHover}, \hyperpage{69}
+    \subitem {setFont}, \hyperpage{65, 66}
+    \subitem {setString}, \hyperpage{66}
+    \subitem {setTextColour}, \hyperpage{67}
+    \subitem {setTextSize}, \hyperpage{68}
+    \subitem {tbox}, \hyperpage{69}
+    \subitem {TextBox}, \hyperpage{61}, \hyperpage{63}
+    \subitem {window}, \hyperpage{69}
+  \item {textBox}
+    \subitem {Editor}, \hyperpage{41}
+  \item {theme}
+    \subitem {Document::Config}, \hyperpage{19}
+
+  \indexspace
+
+  \item {UP\_ARROW}
+    \subitem {KEYS}, \hyperpage{13}
+  \item {useConfig}
+    \subitem {Editor}, \hyperpage{39}
+
+  \indexspace
+
+  \item {window}
+    \subitem {Editor}, \hyperpage{41}
+    \subitem {Keyboard}, \hyperpage{52}
+    \subitem {TextBox}, \hyperpage{69}
+
+\end{theindex}

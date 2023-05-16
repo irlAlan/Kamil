@@ -1,0 +1,45 @@
+\hypertarget{MyRect_8h_source}{}\doxysubsection{My\+Rect.\+h}
+\label{MyRect_8h_source}\index{include/Kamil/MyRect.h@{include/Kamil/MyRect.h}}
+\mbox{\hyperlink{MyRect_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KAMIL\_MYRECT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KAMIL\_MYRECT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Color.hpp>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Drawable.hpp>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Rect.hpp>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RectangleShape.hpp>}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderStates.hpp>}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderTarget.hpp>}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMyRect}{MyRect}}\ :\ \textcolor{keyword}{public}\ sf::FloatRect,\ \textcolor{keyword}{public}\ sf::Drawable\ \{}
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00052\ \ \ \mbox{\hyperlink{classMyRect_aeba15671c17ca989d03609d491e4d680}{MyRect}}(sf::Vector2f\ \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}},\ sf::Vector2f\ \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}},\ sf::Color\ \mbox{\hyperlink{classMyRect_af5dc0b3d01b20c3ba06e6217709d825f}{fillColour}},}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ sf::Color\ \mbox{\hyperlink{classMyRect_a5ae95d256f69eabd3151c991e751657e}{outlineColour}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classMyRect_a37e3d9054f98bb1ed6a4969f335213f7}{outlineThicknes}});}
+\DoxyCodeLine{00054\ \ \ \mbox{\hyperlink{classMyRect_aeba15671c17ca989d03609d491e4d680}{MyRect}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyRect_a8d82606eca0c71f19e4e51ec047e37f4}{setPosition}}(sf::Vector2f\ \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}});}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ sf::Vector2f\ \mbox{\hyperlink{classMyRect_aba57079a7eb2337d8bab558899fb67c6}{getPos}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyRect_abf35db87008be9e2a804b603e46fb4e2}{setFillColour}}(sf::Color\ colour);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyRect_a63d3276bf02e1a4f7bd000854a1ff8e7}{setSize}}(sf::Vector2f\ \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}});}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00088\ \ \ sf::Vector2f\ \mbox{\hyperlink{classMyRect_aaa28af9ede7c38a67be121afb2e2b6b4}{getSize}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00100\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyRect_af2e2556e7d3fb5408b7a287a0d4d0ed1}{draw}}(sf::RenderTarget\ \&target,\ sf::RenderStates\ states)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00103\ \ \ sf::RectangleShape\ \mbox{\hyperlink{classMyRect_a5a03b64578577e901c2b9597a221f3c4}{rect}};}
+\DoxyCodeLine{00104\ \ \ sf::Vector2f\ \mbox{\hyperlink{classMyRect_a3f1dc4fd37b28b1b735fce4efba0947d}{pos}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00105\ \ \ sf::Vector2f\ \mbox{\hyperlink{classMyRect_ab9943d7a2b66790c47ab1c9fc0955487}{size}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ sf::Color\ \mbox{\hyperlink{classMyRect_af5dc0b3d01b20c3ba06e6217709d825f}{fillColour}};\ \ \ \ }
+\DoxyCodeLine{00107\ \ \ sf::Color\ \mbox{\hyperlink{classMyRect_a5ae95d256f69eabd3151c991e751657e}{outlineColour}};\ }
+\DoxyCodeLine{00108\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classMyRect_a37e3d9054f98bb1ed6a4969f335213f7}{outlineThicknes}};\ \ \ }
+\DoxyCodeLine{00109\ \};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KAMIL\_MYRECT\_H}}
+
+\end{DoxyCode}

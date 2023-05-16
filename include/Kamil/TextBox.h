@@ -52,7 +52,6 @@ public:
    * @param background - the initial background colour
    * @param thicc - the padding for the RectangleShape
    *
-   * \image html textConstructor.png
    * \image latex textConstructor.eps
    */
   TextBox(sf::RenderWindow *win, sf::Vector2f pos, sf::Vector2f size,
@@ -69,7 +68,6 @@ public:
    * @param size text size
    * @return void
    *
-   * \image html textSetTextSize.png
    * \image latex textSetTextSize.eps
    */
   void setTextSize(int size);
@@ -83,7 +81,6 @@ public:
    * @return an int of the text size
    *
    *
-   *  \image html textGetTextSize.png
    *  \image latex textGetTextSize.eps
    */
   int getTextSize() const;
@@ -97,7 +94,6 @@ public:
    * @return void
    *
    *
-   *  \image html textSetTextCol.png
    *  \image latex textSetTextCol.eps
    *
    */
@@ -111,7 +107,6 @@ public:
    * @param void
    * @return sf::Colour textColour
    *
-   *  \image html textGetTextCol.png
    *  \image latex textGetTextCol.eps
    */
   sf::Color getTextColour() const;
@@ -126,8 +121,7 @@ public:
    * @return void
    *
    *
-   * \image html textSetTextFont.png
-   * \image latex textSetTextFont.eps
+   * \image latex textSetFont.eps
    */
   void setFont(sf::Font &font);
 
@@ -141,8 +135,7 @@ public:
    * @param font file dir of font
    * @return void
    *
-   * \image html textSetTextFont2.png
-   * \image latex textSetTextFont2.eps
+   * \image latex textSetFont2.eps
    */
   void setFont(std::string font);
 
@@ -155,7 +148,6 @@ public:
    * @param void
    * @return sf::Text - contains the part responsible for drawing text on the screen
    *
-   *  \image html textGetTextBox.png
    *  \image latex textGetTextBox.eps
    *
    */
@@ -170,8 +162,7 @@ public:
    * @param std::string - new string placed on tbox
    * @return void
    *
-   * \image html textGetTextBox.png
-   * \image latex textGetTextBox.eps
+   * \image latex textSetString.eps
    *
    */
   void setString(std::string nstring);
@@ -185,7 +176,6 @@ public:
    * @param void
    * @return type std::string
    *
-   * \image html textGetString.png
    * \image latex textGetString.eps
    */
   std::string getString() const;
@@ -200,7 +190,6 @@ public:
    * my_object.draw(window)
    *
    *
-   * \image html textDraw.png
    * \image latex textDraw.eps
    *
    */
@@ -217,7 +206,6 @@ public:
    * 
    * @return bool - yes if hovering over the text box
    *
-   * \image html textIsMouseHover.png
    * \image latex textIsMouseHover.eps
    *
    */

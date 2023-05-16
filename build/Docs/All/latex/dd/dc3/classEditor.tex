@@ -1,0 +1,254 @@
+\hypertarget{classEditor}{}\doxysubsection{Editor Class Reference}
+\label{classEditor}\index{Editor@{Editor}}
+
+
+Class that is a centre for how the other classes interact with each other and draws everything in the \mbox{\hyperlink{classEditor}{Editor}} to the screen.  
+
+
+
+
+{\ttfamily \#include $<$Editor.\+h$>$}
+
+
+
+Collaboration diagram for Editor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d52/classEditor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEditor_a2dd1f926754078766c9f9457c1eb3597}{Editor}} (sf\+::\+Render\+Window $\ast$\mbox{\hyperlink{classEditor_ac983684eb74cd21d181c813eab5b82e3}{window}}, sf\+::\+Event $\ast$\mbox{\hyperlink{classEditor_acb4234d552a8fd36b0e53131b954dab0}{event}}, \mbox{\hyperlink{classDocument}{Document}} $\ast$\mbox{\hyperlink{classEditor_af04df64e8c1399ac62d8a302cf0ceb2c}{doc}})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classEditor}{Editor}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEditor_ad465abc9575af92b4fa61525085172d6}{$\sim$\+Editor}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classEditor}{Editor}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEditor_a560909c31ad3cd0035c8d050f1042377}{draw}} ()
+\begin{DoxyCompactList}\small\item\em function that draws everything to Render\+Window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEditor_aedd478b558121157a9df6c216a0d64a1}{use\+Config}} (const \mbox{\hyperlink{structDocument_1_1Config}{Document\+::\+Config}} \&conf)
+\begin{DoxyCompactList}\small\item\em changes the editor looks and workings \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEditor_aa9b974ac5e865ee0ddbe0a2ad3cf8f6c}{regex\+Pattern\+Matchin}} ()
+\begin{DoxyCompactList}\small\item\em match patterns in the string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDocument}{Document}} $\ast$ \mbox{\hyperlink{classEditor_af04df64e8c1399ac62d8a302cf0ceb2c}{doc}}
+\item 
+\mbox{\hyperlink{classTextBox}{Text\+Box}} $\ast$ \mbox{\hyperlink{classEditor_a78a7460d9de2e9a108f4c4e38203b160}{text\+Box}}
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{classEditor_ac983684eb74cd21d181c813eab5b82e3}{window}}
+\item 
+sf\+::\+Event $\ast$ \mbox{\hyperlink{classEditor_acb4234d552a8fd36b0e53131b954dab0}{event}}
+\item 
+sf\+::\+View \mbox{\hyperlink{classEditor_aab5114d63270ecc8c77757aab92a1a47}{camera}}
+\item 
+\mbox{\hyperlink{classKeyboard}{Keyboard}} \mbox{\hyperlink{classEditor_aa13a10118305b120ace8e5ce5b2ccca3}{kb}}
+\item 
+std\+::string \mbox{\hyperlink{classEditor_a3ddd71ca9556371af6a6aad65b2f44f7}{cmd}}
+\item 
+bool \mbox{\hyperlink{classEditor_ab3b76da73ddf67ab102e59fb80820086}{load\+From\+File}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Class that is a centre for how the other classes interact with each other and draws everything in the \mbox{\hyperlink{classEditor}{Editor}} to the screen. 
+
+\doxysubsubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEditor_a2dd1f926754078766c9f9457c1eb3597}\label{classEditor_a2dd1f926754078766c9f9457c1eb3597}} 
+\index{Editor@{Editor}!Editor@{Editor}}
+\index{Editor@{Editor}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{Editor()}{Editor()}}
+{\footnotesize\ttfamily Editor\+::\+Editor (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window,  }\item[{sf\+::\+Event $\ast$}]{event,  }\item[{\mbox{\hyperlink{classDocument}{Document}} $\ast$}]{doc }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classEditor}{Editor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ pointer to main Render\+Window \\
+\hline
+{\em event} & -\/ pointer to main event \\
+\hline
+{\em doc} & -\/ pointer to document\\
+\hline
+\end{DoxyParams}
+ 
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{editorConstructor}}
+\end{DoxyImageNoCaption}
+ \mbox{\Hypertarget{classEditor_ad465abc9575af92b4fa61525085172d6}\label{classEditor_ad465abc9575af92b4fa61525085172d6}} 
+\index{Editor@{Editor}!````~Editor@{$\sim$Editor}}
+\index{````~Editor@{$\sim$Editor}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{$\sim$Editor()}{~Editor()}}
+{\footnotesize\ttfamily Editor\+::$\sim$\+Editor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \mbox{\hyperlink{classEditor}{Editor}} class. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{editorDestructor}}
+\end{DoxyImageNoCaption}
+ 
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEditor_a560909c31ad3cd0035c8d050f1042377}\label{classEditor_a560909c31ad3cd0035c8d050f1042377}} 
+\index{Editor@{Editor}!draw@{draw}}
+\index{draw@{draw}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Editor\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function that draws everything to Render\+Window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{editorDraw}}
+\end{DoxyImageNoCaption}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dc3/classEditor_a560909c31ad3cd0035c8d050f1042377_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEditor_aa9b974ac5e865ee0ddbe0a2ad3cf8f6c}\label{classEditor_aa9b974ac5e865ee0ddbe0a2ad3cf8f6c}} 
+\index{Editor@{Editor}!regexPatternMatchin@{regexPatternMatchin}}
+\index{regexPatternMatchin@{regexPatternMatchin}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{regexPatternMatchin()}{regexPatternMatchin()}}
+{\footnotesize\ttfamily void Editor\+::regex\+Pattern\+Matchin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+match patterns in the string 
+
+A method that is used to match and extract any math expressions in the text on the screen.
+
+Kamil enjoys maths alot and is even doing further maths at A-\/level. However, he finds the small maths questions like 782$\ast$7 tedius to type into the calculator. So to make sure he can focus only on the problem at hand and not any side questions I developed this regex method.
+
+It extracts the text on the screen and stores it as a string. It then calls the regex\+\_\+search() function passing in the string to search, an smatch type that contains the matchedsubstr and the regex to use. if the match is found then we extract it in the smatch type and preform the calculations on the substr. we then recursivly search the string by calling the smatch\+::suffix() method checking the rest of the string after the last match by doing this we ensure that any and all potential matches have been made
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{editorRegex}}
+\end{DoxyImageNoCaption}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dc3/classEditor_aa9b974ac5e865ee0ddbe0a2ad3cf8f6c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{dd/dc3/classEditor_aa9b974ac5e865ee0ddbe0a2ad3cf8f6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEditor_aedd478b558121157a9df6c216a0d64a1}\label{classEditor_aedd478b558121157a9df6c216a0d64a1}} 
+\index{Editor@{Editor}!useConfig@{useConfig}}
+\index{useConfig@{useConfig}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{useConfig()}{useConfig()}}
+{\footnotesize\ttfamily void Editor\+::use\+Config (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDocument_1_1Config}{Document\+::\+Config}} \&}]{conf }\end{DoxyParamCaption})}
+
+
+
+changes the editor looks and workings 
+
+uses the information of the config.\+toml to change how the editor looks and how it can work
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{structDocument_1_1Config}{Document\+::\+Config}}\& -\/ the config.\+toml information @reutrn void\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{editorUseConfig}}
+\end{DoxyImageNoCaption}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{dd/dc3/classEditor_aedd478b558121157a9df6c216a0d64a1_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEditor_aab5114d63270ecc8c77757aab92a1a47}\label{classEditor_aab5114d63270ecc8c77757aab92a1a47}} 
+\index{Editor@{Editor}!camera@{camera}}
+\index{camera@{camera}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily sf\+::\+View Editor\+::camera\hspace{0.3cm}{\ttfamily [private]}}
+
+for the camera \mbox{\Hypertarget{classEditor_a3ddd71ca9556371af6a6aad65b2f44f7}\label{classEditor_a3ddd71ca9556371af6a6aad65b2f44f7}} 
+\index{Editor@{Editor}!cmd@{cmd}}
+\index{cmd@{cmd}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{cmd}{cmd}}
+{\footnotesize\ttfamily std\+::string Editor\+::cmd\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEditor_af04df64e8c1399ac62d8a302cf0ceb2c}\label{classEditor_af04df64e8c1399ac62d8a302cf0ceb2c}} 
+\index{Editor@{Editor}!doc@{doc}}
+\index{doc@{doc}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{doc}{doc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDocument}{Document}}$\ast$ Editor\+::doc\hspace{0.3cm}{\ttfamily [private]}}
+
+pointer to the working document \mbox{\Hypertarget{classEditor_acb4234d552a8fd36b0e53131b954dab0}\label{classEditor_acb4234d552a8fd36b0e53131b954dab0}} 
+\index{Editor@{Editor}!event@{event}}
+\index{event@{event}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily sf\+::\+Event$\ast$ Editor\+::event\hspace{0.3cm}{\ttfamily [private]}}
+
+pointer to event \mbox{\Hypertarget{classEditor_aa13a10118305b120ace8e5ce5b2ccca3}\label{classEditor_aa13a10118305b120ace8e5ce5b2ccca3}} 
+\index{Editor@{Editor}!kb@{kb}}
+\index{kb@{kb}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{kb}{kb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classKeyboard}{Keyboard}} Editor\+::kb\hspace{0.3cm}{\ttfamily [private]}}
+
+handles keyboard events \mbox{\Hypertarget{classEditor_ab3b76da73ddf67ab102e59fb80820086}\label{classEditor_ab3b76da73ddf67ab102e59fb80820086}} 
+\index{Editor@{Editor}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{loadFromFile}{loadFromFile}}
+{\footnotesize\ttfamily bool Editor\+::load\+From\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+check if we are loading from file \mbox{\Hypertarget{classEditor_a78a7460d9de2e9a108f4c4e38203b160}\label{classEditor_a78a7460d9de2e9a108f4c4e38203b160}} 
+\index{Editor@{Editor}!textBox@{textBox}}
+\index{textBox@{textBox}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{textBox}{textBox}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTextBox}{Text\+Box}}$\ast$ Editor\+::text\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+pointer to textbox that we draw \mbox{\Hypertarget{classEditor_ac983684eb74cd21d181c813eab5b82e3}\label{classEditor_ac983684eb74cd21d181c813eab5b82e3}} 
+\index{Editor@{Editor}!window@{window}}
+\index{window@{window}!Editor@{Editor}}
+\doxyparagraph{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ Editor\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+pointer to Render\+Window 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Kamil/\mbox{\hyperlink{Editor_8h}{Editor.\+h}}\item 
+src/\mbox{\hyperlink{Editor_8cpp}{Editor.\+cpp}}\end{DoxyCompactItemize}
